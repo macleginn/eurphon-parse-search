@@ -7,11 +7,11 @@
 vowel : [pre_feature*] vowel_core
 
 ?vowel_core : monophthong
-    | dipththong
+    | diphthong
     | triphthong
 
 ?monophthong : vowel_atom
-dipththong  : polyphthong_element polyphthong_element
+diphthong  : polyphthong_element polyphthong_element
 triphthong  : polyphthong_element vowel_atom polyphthong_element
 
 ?polyphthong_element : onset_coda | vowel_atom

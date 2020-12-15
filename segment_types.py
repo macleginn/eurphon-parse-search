@@ -30,14 +30,25 @@ class VowelAtom:
         self.post_features = post_features
 
 
+# TODO: Add some kind of glyph to the next two types.
+class WGlyph:
+    def __init__(self):
+        pass
+
+
 class WElement:
+    def __init__(self):
+        self.glyph = WGlyph()
+
+
+class JGlyph:
     def __init__(self):
         pass
 
 
 class JElement:
     def __init__(self):
-        pass
+        self.glyph = JGlyph()
 
 
 class OnsetCoda:
@@ -47,6 +58,7 @@ class OnsetCoda:
         post_features: List[AdditionalArticulation]
     ):
         # We don't use the initial in any way for now.
+        self.glyph = initial.glyph
         self.post_features = set(post_features)
 
 

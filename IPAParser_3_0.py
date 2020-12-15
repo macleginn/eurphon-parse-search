@@ -1,5 +1,7 @@
+from copy import deepcopy
 from dataclasses import dataclass
 from typing import List, Set, Union
+
 from lark import Transformer, Lark
 
 from enums import AdditionalArticulation, Place, Height, Backness
@@ -23,6 +25,22 @@ class VowelParse:
     # Needed for tabulation; also pre-labialised vowels are sometimes posited.
     pre_features: Set[AdditionalArticulation]
     additional_articulations: Set[AdditionalArticulation]
+
+    def as_dict(self):
+        return {
+            'apical_vowel': self.apical_vowel,
+            'diphthong': self.diphthong,
+            'triphthong': self.triphthong,
+            'height': self.height.name.lower(),
+            'backness': self.backness.name.lower(),
+            'rounded': self.rounded,
+            'length': self.length.name.lower(),
+            'phonation': self.phonation.name.lower(),
+            'additional_articulations': set(
+                f.name.lower() for f in self.pre_features
+            ).union(set(
+                f.name.lower() for f in self.additional_articulations))
+        }
 
 
 @dataclass
@@ -52,11 +70,8 @@ class IPAQueryTransformer(Transformer):
     IPA notation is not recursive, so there is
     no need for an AST.
     """
-    def vowel(
-        self, 
-        pre_features: List[AdditionalArticulation], 
-        core: Union[VowelAtom, Diphthong, Triphthong]
-    ):
+    def vowel(self, params):
+        *pre_features, core = params
         if type(core) == Diphthong:
             tmp = VowelParse(False, True, False, None, None, None,
                 Length.SHORT, Phonation.MODAL, 
@@ -79,33 +94,20 @@ class IPAQueryTransformer(Transformer):
         add_post_features_to_vowel(tmp, core.post_features)
         return tmp
 
-    def diphthong(
-        self, 
-        onset: Union[OnsetCoda, VowelAtom], 
-        coda: Union[OnsetCoda, VowelAtom]
-    ):
+    def diphthong(self, params):
+        onset, coda = params
         return Diphthong(onset, coda)
 
-    def triphthong(
-        self,
-        onset: Union[OnsetCoda, VowelAtom],
-        middle_element: VowelAtom,
-        coda: Union[OnsetCoda, VowelAtom]
-    ):
+    def triphthong(self, params):
+        onset, middle_element, coda = params
         return Triphthong(onset, middle_element, coda)
 
-    def vowel_atom(
-        self,
-        vowel_glyph: Union[ApicalVowel, RegularVowel],
-        post_features: List[Union[AdditionalArticulation, Length, Phonation, Voice, Place]]
-    ):
+    def vowel_atom(self, params):
+        vowel_glyph, *post_features = params
         return VowelAtom(vowel_glyph, set(post_features))
 
-    def onset_coda(
-        self,
-        wj: Union[WElement, JElement],
-        post_features: List[Union[AdditionalArticulation, Length, Phonation, Voice, Place]]
-    ):
+    def onset_coda(self, params):
+        wj, *post_features = params
         return OnsetCoda(wj, set(post_features))
 
     def w(self, _):
@@ -309,3 +311,14 @@ def add_post_features_to_vowel(parse, features):
             parse.phonation = f
         else:
             parse.additional_articulations.add(f)
+
+
+if __name__ == "__main__":
+    import sys
+    input_segment = sys.argv[1]
+    with open(f'ipa_parse_grammar.lark', 'r', encoding='utf-8') as inp:
+        parser = Lark(inp.read(), start='vowel')
+    parse = parser.parse(input_segment)
+    print(parse.pretty())
+    result = IPAQueryTransformer().transform(parse)
+    print(result.as_dict())
