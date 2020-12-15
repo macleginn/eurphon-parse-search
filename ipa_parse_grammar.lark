@@ -1,0 +1,114 @@
+?segment : vowel // | consonant
+
+//
+// Vowels
+// 
+
+vowel : [pre_feature*] vowel_core
+
+?vowel_core : monophthong
+    | dipththong
+    | triphthong
+
+?monophthong : vowel_atom
+dipththong  : polyphthong_element polyphthong_element
+triphthong  : polyphthong_element vowel_atom polyphthong_element
+
+?polyphthong_element : onset_coda | vowel_atom
+onset_coda : w_j [post_feature*]
+?w_j : "w" -> w | "j" -> j
+vowel_atom : vowel_glyph [post_feature*]
+?vowel_glyph : apical_vowel | regular_vowel
+
+?apical_vowel : "ɿ" -> alveolar_apical_vowel_unrounded
+    | "ʮ"           -> alveolar_apical_vowel_rounded
+    | "ʅ"           -> postalveolar_apical_vowel_unrounded
+    | "ʯ"           -> postalveolar_apical_vowel_rounded
+
+?regular_vowel : /a(\u0308)?/ -> open_central_unrounded
+    | "e\u031e"               -> mid_front_unrounded
+    | "e"                     -> close_mid_front_unrounded
+    | "i"                     -> close_front_unrounded
+    | "o\u031e"               -> mid_back_rounded
+    | "o"                     -> close_mid_back_rounded
+    | "u"                     -> close_back_rounded
+    | "y"                     -> close_front_rounded
+    | "æ"                     -> near_open_front_unrounded
+    | "ø\u031e"               -> mid_front_rounded
+    | "ø"                     -> close_mid_front_rounded
+    | "œ"                     -> open_mid_front_rounded
+    | "ɐ"                     -> near_open_central_unrounded
+    | "ɑ"                     -> open_back_unrounded
+    | "ɒ\u0308"               -> open_central_rounded
+    | "ɒ"                     -> open_back_rounded
+    | "ɔ"                     -> open_mid_back_rounded
+    | "ɘ"                     -> close_mid_central_unrounded
+    | "ə"                     -> mid_central_unrounded
+    | "ɛ"                     -> open_mid_front_unrounded
+    | "ɜ"                     -> open_mid_central_unrounded
+    | "ɞ"                     -> open_mid_central_rounded
+    | "ɤ\u031e"               -> mid_back_unrounded
+    | "ɤ"                     -> close_mid_back_unrounded
+    | "ɨ\u031e"               -> near_close_central_unrounded
+    | "ɨ"                     -> close_central_unrounded
+    | "ɪ"                     -> near_close_front_unrounded
+    | "ɯ\u031e"               -> near_close_back_unrounded
+    | "ɯ"                     -> close_back_unrounded
+    | "ɵ"                     -> close_mid_central_rounded
+    | "ɶ"                     -> open_front_rounded
+    | "ʉ\u031e"               -> near_close_central_rounded
+    | "ʉ"                     -> close_central_rounded
+    | "ʊ"                     -> near_close_back_rounded
+    | "ʌ"                     -> open_mid_back_unrounded
+    | "ʏ"                     -> near_close_front_rounded
+
+
+// 
+// TODO: Consonants
+// 
+
+?pre_feature : /[ʰʱ]/   -> pre_aspirated
+    | /[ˀʼ]/            -> pre_glottalised
+    | /[ⁿnmŋɱ]/         -> pre_nasalised
+    | "ʷ"               -> pre_labialised
+
+?post_feature : /(ːː)|(::)/ -> overlong
+    | /[ː:]/                -> long
+    | "ˑ"                   -> half_long
+    | "ˤ"                   -> pharyngealised
+    | "\u0303"              -> nasalised       // ã
+    | "\u0306"              -> shortened       // ă
+    | "\u031d"              -> raised          // a̝
+	| "\u031e"              -> lowered         // a̞
+	| "\u031f"              -> advanced        // a̟
+	| "\u0320"              -> retracted       // a̠
+	| "\u0324"              -> breathy_voiced  // a̤
+	| /(\u030a)|(\u0325)/   -> voiceless       // å | ḁ
+	| "\u0330"              -> creaky_voiced   // a̰
+	| "\u2193"              -> ingressive      // a↓
+    | "\u02de"              -> rhotacised  // a˞
+	| "\u0348"              -> faucalised  // a͈
+	| "\u0308"              -> centralised  // ä
+	| "\u0318"              -> atr  // a̘
+	| "\u0319"              -> rtr  // a̙
+	| "\u031c"              -> less_rounded  // a̜
+	| "\u0339"              -> more_rounded  // a̹
+	| "\u032f"              -> non_syllabic  // a̯
+	| "\u033d"              -> mid_centralised  //  a̽
+	| /[ʰʱ]/                -> aspirated
+	| "ʲ"                   -> palatalised
+	| "ʷ"                   -> labialised
+	| /[’ʼ']/               -> ejective 
+	| "ˀ"                   -> glottalised  // d
+	| /ˠ|\u0334/            -> velarised  // l̴
+	| "\u02e1"              -> lateral_released  // dˡ
+	| "\u031a"              -> unreleased  // a̚
+	| "\u0329"              -> syllabic  // a̩
+	| "\u032a"              -> dental  // a̪
+	| "\u0347"              -> alveolar  // a͇
+	| "\u033a"              -> apical  // a̺
+	| "\u033b"              -> laminal  // a̻
+	| "\u0349"              -> weakly_articulated  // a͉
+	| "\u1da3"              -> labio_palatalised  // aᶣ
+	| "ⁿ"                   -> nasal_released
+	| /[ᶻˢ]/                -> affricated

@@ -1,0 +1,32 @@
+?query : query2
+    | query "or" query    -> or_node
+
+?query2 : query3 
+    | query2 "and" query2 -> and_node
+
+?query3 : query4
+    | "not" query3        -> not_node
+
+?query4 : predicate
+    | "(" query ")"
+
+predicate : yesno PHONEME      -> yesno_p
+    | yesno features           -> yesno_f
+    | eq NUMBER PHONEME        -> eq_p
+    | eq NUMBER features       -> eq_f
+    | eq features "," features -> feat_eq
+
+?yesno : "+" -> present | "-" -> absent
+?eq : ">="      -> ge 
+    | ">"       -> gt 
+    | "<="      -> le 
+    | "<"       -> lt 
+    | "="("=")? -> exactly
+features : [FEATURE+]
+
+PHONEME : "/" /[^ \/]+/ "/"
+FEATURE : /[a-z]+(-[a-z]+)?/
+NUMBER : /[0-9]+/
+
+%import common.WS
+%ignore WS
