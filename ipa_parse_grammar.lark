@@ -15,9 +15,9 @@ diphthong  : polyphthong_element polyphthong_element
 triphthong  : polyphthong_element vowel_atom polyphthong_element
 
 ?polyphthong_element : onset_coda | vowel_atom
-onset_coda : w_j [post_feature*]
+onset_coda : w_j post_feature*
 ?w_j : "w" -> w | "j" -> j
-vowel_atom : vowel_glyph [post_feature*]
+vowel_atom : vowel_glyph post_feature*
 ?vowel_glyph : apical_vowel | regular_vowel
 
 ?apical_vowel : "ɿ" -> alveolar_apical_vowel_unrounded
@@ -25,21 +25,23 @@ vowel_atom : vowel_glyph [post_feature*]
     | "ʅ"           -> postalveolar_apical_vowel_unrounded
     | "ʯ"           -> postalveolar_apical_vowel_rounded
 
+// Some special cases must be handled at the pre-processing step
+// because diacritics denoting vowel height are ambiguous there.
 ?regular_vowel : /a(\u0308)?/ -> open_central_unrounded
-    | "e\u031e"               -> mid_front_unrounded
+    | "E1"                    -> mid_front_unrounded            // e\u031e 
     | "e"                     -> close_mid_front_unrounded
     | "i"                     -> close_front_unrounded
-    | "o\u031e"               -> mid_back_rounded
+    | "O1"                    -> mid_back_rounded               // o\u031e 
     | "o"                     -> close_mid_back_rounded
     | "u"                     -> close_back_rounded
     | "y"                     -> close_front_rounded
     | "æ"                     -> near_open_front_unrounded
-    | "ø\u031e"               -> mid_front_rounded
+    | "O2"                    -> mid_front_rounded              // ø\u031e 
     | "ø"                     -> close_mid_front_rounded
     | "œ"                     -> open_mid_front_rounded
     | "ɐ"                     -> near_open_central_unrounded
     | "ɑ"                     -> open_back_unrounded
-    | "ɒ\u0308"               -> open_central_rounded
+    | "A1"                    -> open_central_rounded           // ɒ\u0308 
     | "ɒ"                     -> open_back_rounded
     | "ɔ"                     -> open_mid_back_rounded
     | "ɘ"                     -> close_mid_central_unrounded
@@ -47,16 +49,16 @@ vowel_atom : vowel_glyph [post_feature*]
     | "ɛ"                     -> open_mid_front_unrounded
     | "ɜ"                     -> open_mid_central_unrounded
     | "ɞ"                     -> open_mid_central_rounded
-    | "ɤ\u031e"               -> mid_back_unrounded
+    | "Y1"                    -> mid_back_unrounded              // ɤ\u031e 
     | "ɤ"                     -> close_mid_back_unrounded
-    | "ɨ\u031e"               -> near_close_central_unrounded
+    | "I1"                    -> near_close_central_unrounded    // ɨ\u031e 
     | "ɨ"                     -> close_central_unrounded
     | "ɪ"                     -> near_close_front_unrounded
-    | "ɯ\u031e"               -> near_close_back_unrounded
+    | "W1"                    -> near_close_back_unrounded       // ɯ\u031e 
     | "ɯ"                     -> close_back_unrounded
     | "ɵ"                     -> close_mid_central_rounded
     | "ɶ"                     -> open_front_rounded
-    | "ʉ\u031e"               -> near_close_central_rounded
+    | "U1"                    -> near_close_central_rounded      // ʉ\u031e 
     | "ʉ"                     -> close_central_rounded
     | "ʊ"                     -> near_close_back_rounded
     | "ʌ"                     -> open_mid_back_unrounded

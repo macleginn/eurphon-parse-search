@@ -1,6 +1,7 @@
 from copy import deepcopy
 from dataclasses import dataclass
 from typing import List, Set, Union
+from unicodedata import normalize
 
 from lark import Transformer, Lark
 
@@ -31,10 +32,10 @@ class VowelParse:
             'apical_vowel': self.apical_vowel,
             'diphthong': self.diphthong,
             'triphthong': self.triphthong,
-            'height': self.height.name.lower(),
-            'backness': self.backness.name.lower(),
+            'height': self.height.name.lower() if self.height is not None else None,
+            'backness': self.backness.name.lower() if self.backness is not None else None,
             'rounded': self.rounded,
-            'length': self.length.name.lower(),
+            'length': self.length.name.lower() if self.length is not None else None,
             'phonation': self.phonation.name.lower(),
             'additional_articulations': set(
                 f.name.lower() for f in self.pre_features
@@ -119,6 +120,7 @@ class IPAQueryTransformer(Transformer):
     # Functions for atomic elements.
 
     # Apical vowels
+
     def alveolar_apical_vowel_unrounded(self, _):
         return ApicalVowel(Place.ALVEOLAR, False)
     def alveolar_apical_vowel_rounded(self, _):
@@ -129,6 +131,7 @@ class IPAQueryTransformer(Transformer):
         return ApicalVowel(Place.POSTALVEOLAR, True)
 
     # Regular vowels
+
     def close_front_unrounded(self, _):
         return RegularVowel(Height.CLOSE, Backness.FRONT, False)
     def close_front_rounded(self, _):
@@ -313,12 +316,65 @@ def add_post_features_to_vowel(parse, features):
             parse.additional_articulations.add(f)
 
 
+# 
+# A replacement dictionary for handling ambiguous
+# sequences.
+# 
+
+replacement_dict = {
+    'e\u031e': 'E1',
+    'o\u031e': 'O1',
+    'ø\u031e': 'O2',
+    'ɒ\u0308': 'A1',
+    'ɤ\u031e': 'Y1',
+    'ɨ\u031e': 'I1',
+    'ɯ\u031e': 'W1',
+    'ʉ\u031e': 'U1'
+}
+
+
+# 
+# The exported class
+# 
+
+class IPAParser:
+    def __init__(self):
+        with open('ipa_parse_grammar.lark', 'r', encoding='utf-8') as inp:
+            self.parser = Lark(inp.read(), start='segment')
+        self.transformer = IPAQueryTransformer()
+
+    def _preprocess(self, input_str):
+        result = normalize('NFD', input_str.strip())
+        for k, v in replacement_dict.items():
+            result = result.replace(k,v)
+        return result
+
+    def parse(self, input_str):
+        "Returns the parse of input_str as a ConsonantParse or VowelParse."
+        return self.transformer.transform(
+            self.parser.parse(
+                self._preprocess(input_str)))
+    
+    def parse_no_transform(self, input_str):
+        "Returns the raw Lark output."
+        return self.parser.parse(
+            self._preprocess(input_str))
+
+
+# 
+# A basic test; see IPAParser_3_0_test.py for 
+# a more comprehensive test suite.
+# 
+
 if __name__ == "__main__":
     import sys
+    from pprint import pprint
     input_segment = sys.argv[1]
-    with open(f'ipa_parse_grammar.lark', 'r', encoding='utf-8') as inp:
-        parser = Lark(inp.read(), start='vowel')
-    parse = parser.parse(input_segment)
-    print(parse.pretty())
-    result = IPAQueryTransformer().transform(parse)
-    print(result.as_dict())
+    parser = IPAParser()
+    parse_raw = parser.parse_no_transform(input_segment)
+    result = parser.parse(input_segment)
+    print(f'Input segment: [{input_segment}]\n')
+    print('Lark parse tree:')
+    print(parse_raw.pretty())
+    print('Parse as a Python dictionary:')
+    pprint(result.as_dict())
