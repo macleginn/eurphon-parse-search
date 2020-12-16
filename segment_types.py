@@ -87,5 +87,7 @@ class Triphthong:
         self.post_features = set()
         for f in onset.post_features:
             self.post_features.add(f)
+        for f in middle_element.post_features:
+            self.post_features.add(f)
         for f in coda.post_features:
             self.post_features.add(f)
