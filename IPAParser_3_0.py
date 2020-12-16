@@ -19,7 +19,7 @@ class VowelParse:
     diphthong: bool
     triphthong: bool
     height: Height
-    backness: Backness
+    backness: Union[Backness, Place]  # Apical vowels have a place.
     rounded: bool
     length: Length
     phonation: Phonation
@@ -36,7 +36,7 @@ class VowelParse:
             'backness': self.backness.name.lower() if self.backness is not None else None,
             'rounded': self.rounded,
             'length': self.length.name.lower() if self.length is not None else None,
-            'phonation': self.phonation.name.lower(),
+            'phonation': self.phonation.name.lower() if self.phonation is not None else None,
             'additional_articulations': set(
                 f.name.lower() for f in self.pre_features
             ).union(set(
