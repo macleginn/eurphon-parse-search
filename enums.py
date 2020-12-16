@@ -87,7 +87,7 @@ class AdditionalArticulation(Enum):
     LESS_ROUNDED = auto()
     MORE_ROUNDED = auto()
     NON_SYLLABIC = auto()
-    MID_CETNRALISED = auto()
+    MID_CENTRALISED = auto()
     ASPIRATED = auto()
     PALATALISED = auto()
     LABIALISED = auto()

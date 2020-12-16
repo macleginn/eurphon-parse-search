@@ -266,7 +266,7 @@ class IPAQueryTransformer(Transformer):
     def non_syllabic(self, _):
         return AdditionalArticulation.NON_SYLLABIC
     def mid_centralised(self, _):
-        return AdditionalArticulation.MID_CETNRALISED
+        return AdditionalArticulation.MID_CENTRALISED
     def aspirated(self, _):
         return AdditionalArticulation.ASPIRATED
     def palatalised(self, _):
