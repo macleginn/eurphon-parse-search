@@ -105,3 +105,4 @@ class AdditionalArticulation(Enum):
     AFFRICATED = auto()
     EPILARYNGEAL_SOURCE = auto()
     FRICTIONALISED = auto()
+    TENUIS = auto()

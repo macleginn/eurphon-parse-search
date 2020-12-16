@@ -305,6 +305,8 @@ class IPAQueryTransformer(Transformer):
         return AdditionalArticulation.EPILARYNGEAL_SOURCE
     def frictionalised(self, _):
         return AdditionalArticulation.FRICTIONALISED
+    def tenuis(self, _):
+        return AdditionalArticulation.TENUIS
 
 # 
 # Helper functions
@@ -326,6 +328,7 @@ def add_post_features_to_vowel(parse, features):
 # 
 
 replacement_dict = {
+    # Vowel height or backness denoted by a diacritic
     'e\u031e': 'E1',
     'o\u031e': 'O1',
     'ø\u031e': 'O2',
@@ -334,7 +337,25 @@ replacement_dict = {
     'ɨ\u031e': 'I1',
     'ɯ\u031e': 'W1',
     'ʉ\u031e': 'U1',
-    'ɚ': 'ə\u02de'
+
+    # Approximants denoted as fricatives with a "lowered" diacritic
+    'θ\u031e': 'D1',
+    'ð\u031e': 'D2',
+    'ɸ\u031e': 'V1',
+    'β\u031e': 'V2',
+    'ʁ\u031e': 'R1',
+
+    # Fricatives denoted as approximants with a "raised" diacritic
+    '\u026d\u030a\u02d4': 'L1',
+    '\u028e\u031d\u030a': 'L2',
+    '\u029f\u031d\u030a': 'L3',
+    '\u029f\u031d': 'L4',
+
+    # Misc
+    'ɚ': 'ə\u02de',
+    'g': 'ɡ',
+    'ɫ': 'lˠ',
+    'ʟ\u0320': 'L5'
 }
 
 
