@@ -318,7 +318,7 @@ def add_post_features_to_vowel(parse, features):
 
 # 
 # A replacement dictionary for handling ambiguous
-# sequences.
+# and non-decomposable sequences.
 # 
 
 replacement_dict = {
@@ -329,7 +329,8 @@ replacement_dict = {
     'ɤ\u031e': 'Y1',
     'ɨ\u031e': 'I1',
     'ɯ\u031e': 'W1',
-    'ʉ\u031e': 'U1'
+    'ʉ\u031e': 'U1',
+    'ɚ': 'ə\u02de'
 }
 
 
