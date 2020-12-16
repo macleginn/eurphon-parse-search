@@ -301,6 +301,10 @@ class IPAQueryTransformer(Transformer):
         return AdditionalArticulation.NASAL_RELEASED
     def affricated(self, _):
         return AdditionalArticulation.AFFRICATED
+    def epilaryngeal_source(self, _):
+        return AdditionalArticulation.EPILARYNGEAL_SOURCE
+    def frictionalised(self, _):
+        return AdditionalArticulation.FRICTIONALISED
 
 # 
 # Helper functions

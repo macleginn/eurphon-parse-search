@@ -103,3 +103,5 @@ class AdditionalArticulation(Enum):
     LABIO_PALATALISED = auto()
     NASAL_RELEASED = auto()
     AFFRICATED = auto()
+    EPILARYNGEAL_SOURCE = auto()
+    FRICTIONALISED = auto()

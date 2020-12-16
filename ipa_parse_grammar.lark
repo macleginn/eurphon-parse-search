@@ -114,3 +114,5 @@ vowel_atom : vowel_glyph post_feature*
     | "\u1da3"              -> labio_palatalised  // aᶣ
     | "ⁿ"                   -> nasal_released
     | /[ᶻˢ]/                -> affricated
+    | "ᴱ"                   -> epilaryngeal_source
+    | "\u0353"              -> frictionalised  // a͓
