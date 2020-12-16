@@ -515,7 +515,46 @@ class TestVowelParsing(unittest.TestCase):
             })
 
     def test_apical_vowels(self):
-        pass
+        self.assertEqual(
+            parser.parse('ɿ').as_dict(),
+            {
+                'apical_vowel': True, 'diphthong': False, 'triphthong': False,
+                'height': None, 'backness': 'alveolar', 'rounded': False,
+                'length': 'short', 'phonation': None,
+                'additional_articulations': set()
+            })
+        self.assertEqual(
+            parser.parse('ʮ').as_dict(),
+            {
+                'apical_vowel': True, 'diphthong': False, 'triphthong': False,
+                'height': None, 'backness': 'alveolar', 'rounded': True,
+                'length': 'short', 'phonation': None,
+                'additional_articulations': set()
+            })
+        self.assertEqual(
+            parser.parse('ʅ').as_dict(),
+            {
+                'apical_vowel': True, 'diphthong': False, 'triphthong': False,
+                'height': None, 'backness': 'postalveolar', 'rounded': False,
+                'length': 'short', 'phonation': None,
+                'additional_articulations': set()
+            })
+        self.assertEqual(
+            parser.parse('ʯ').as_dict(),
+            {
+                'apical_vowel': True, 'diphthong': False, 'triphthong': False,
+                'height': None, 'backness': 'postalveolar', 'rounded': True,
+                'length': 'short', 'phonation': None,
+                'additional_articulations': set()
+            })
+        self.assertEqual(
+            parser.parse('ʮ̃ːː').as_dict(),
+            {
+                'apical_vowel': True, 'diphthong': False, 'triphthong': False,
+                'height': None, 'backness': 'alveolar', 'rounded': True,
+                'length': 'overlong', 'phonation': None,
+                'additional_articulations': {'nasalised'}
+            })
     
 
 if __name__ == '__main__':
