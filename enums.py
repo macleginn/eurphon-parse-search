@@ -22,7 +22,7 @@ class Phonation(Enum):
     BREATHY_VOICE = auto()
     CREAKY_VOICE = auto()
 
-    
+
 class Place(Enum):
     BILABIAL = auto()
     LABIODENTAL = auto()
@@ -39,6 +39,11 @@ class Place(Enum):
     PHARYNGEAL = auto()
     EPIGLOTTAL = auto()
     GLOTTAL = auto()
+    # Double articulations
+    LABIAL_ALVEOLAR = auto()
+    LABIAL_VELAR = auto()
+    UVULAR_EPIGLOTTAL = auto()
+
 
 
 class Manner(Enum):
