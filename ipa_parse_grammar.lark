@@ -2,7 +2,7 @@
 
 //
 // Vowels
-// 
+//
 
 vowel : [pre_feature*] vowel_core
 
@@ -28,20 +28,20 @@ vowel_atom : vowel_glyph post_feature*
 // Some special cases must be handled at the pre-processing step
 // because diacritics denoting vowel height are ambiguous there.
 ?regular_vowel : /a(\u0308)?/ -> open_central_unrounded
-    | "E1"                    -> mid_front_unrounded            // e\u031e 
+    | "E1"                    -> mid_front_unrounded            // e\u031e
     | "e"                     -> close_mid_front_unrounded
     | "i"                     -> close_front_unrounded
-    | "O1"                    -> mid_back_rounded               // o\u031e 
+    | "O1"                    -> mid_back_rounded               // o\u031e
     | "o"                     -> close_mid_back_rounded
     | "u"                     -> close_back_rounded
     | "y"                     -> close_front_rounded
     | "æ"                     -> near_open_front_unrounded
-    | "O2"                    -> mid_front_rounded              // ø\u031e 
+    | "O2"                    -> mid_front_rounded              // ø\u031e
     | "ø"                     -> close_mid_front_rounded
     | "œ"                     -> open_mid_front_rounded
     | "ɐ"                     -> near_open_central_unrounded
     | "ɑ"                     -> open_back_unrounded
-    | "A1"                    -> open_central_rounded           // ɒ\u0308 
+    | "A1"                    -> open_central_rounded           // ɒ\u0308
     | "ɒ"                     -> open_back_rounded
     | "ɔ"                     -> open_mid_back_rounded
     | "ɘ"                     -> close_mid_central_unrounded
@@ -49,39 +49,39 @@ vowel_atom : vowel_glyph post_feature*
     | "ɛ"                     -> open_mid_front_unrounded
     | "ɜ"                     -> open_mid_central_unrounded
     | "ɞ"                     -> open_mid_central_rounded
-    | "Y1"                    -> mid_back_unrounded              // ɤ\u031e 
+    | "Y1"                    -> mid_back_unrounded              // ɤ\u031e
     | "ɤ"                     -> close_mid_back_unrounded
-    | "I1"                    -> near_close_central_unrounded    // ɨ\u031e 
+    | "I1"                    -> near_close_central_unrounded    // ɨ\u031e
     | "ɨ"                     -> close_central_unrounded
     | "ɪ"                     -> near_close_front_unrounded
-    | "W1"                    -> near_close_back_unrounded       // ɯ\u031e 
+    | "W1"                    -> near_close_back_unrounded       // ɯ\u031e
     | "ɯ"                     -> close_back_unrounded
     | "ɵ"                     -> close_mid_central_rounded
     | "ɶ"                     -> open_front_rounded
-    | "U1"                    -> near_close_central_rounded      // ʉ\u031e 
+    | "U1"                    -> near_close_central_rounded      // ʉ\u031e
     | "ʉ"                     -> close_central_rounded
     | "ʊ"                     -> near_close_back_rounded
     | "ʌ"                     -> open_mid_back_unrounded
     | "ʏ"                     -> near_close_front_rounded
 
 
-// 
+//
 // Consonants
-// 
+//
 
 consonant : pre_feature* consonant_core
 
 // special mutli-glyph cases go here
-?consonant_core : affricate | simple_consonant // | click
+?consonant_core : simple_consonant | affricate // | click
 
-affricate : stop BRIDGE? fricative
-?simple_consonant: stop | fricative | approximant
+// affricate : stop BRIDGE? fricative
+?simple_consonant: stop // | fricative | approximant
 
 BRIDGE : "\u0361"  // ɠ͡ɓ
 
 stop : stop_core post_feature*
-fricative : fricative_core post_feature*
-approximant : approximant_core post_feature*
+//fricative : fricative_core post_feature*
+//approximant : approximant_core post_feature*
 
 ?stop_core : "p" -> voiceless_bilabial_plosive
     | "b" -> voiced_bilabial_plosive
@@ -95,7 +95,7 @@ approximant : approximant_core post_feature*
     | "ɡ" -> voiced_velar_plosive
     | "q" -> voiceless_uvular_plosive
     | "ɢ" -> voiced_uvular_plosive
-    | "ʡ" -> epiglottal_plosive 	
+    | "ʡ" -> epiglottal_plosive
     | "ʔ" -> glottal_stop
     | /(t͡p)|(tp)/ -> voiceless_labial_alveolar_plosive
     | /(d͡b)|(db)/ -> voiced_labial_alveolar_plosive
@@ -113,11 +113,11 @@ approximant : approximant_core post_feature*
     | /(ŋ͡m)|(ŋm)/ -> voiced_labial_velar_nasal_plosive
     | "ɓ" -> voiced_bilabial_implosive
     | "ɗ" -> voiced_alveolar_implosive
-    | "ᶑ" -> voiced_retroflex_implosive 
+    | "ᶑ" -> voiced_retroflex_implosive
     | "ʄ" -> voiced_palatal_implosive
-    | "ɠ" -> voiced_velar_implosive 
+    | "ɠ" -> voiced_velar_implosive
     | "ʛ" -> voiced_uvular_implosive
-    | /(ɠ͡ɓ)|(ɠɓ)/ -> voiced_labial_velar_implosive 
+    | /(ɠ͡ɓ)|(ɠɓ)/ -> voiced_labial_velar_implosive
 
 ?fricative_core : "s" -> voiceless_alveolar_fricative
     | "z" -> voiced_alveolar_fricative
@@ -146,8 +146,10 @@ approximant : approximant_core post_feature*
     | "ʢ" -> voiced_epiglottal_fricative
     | "ɬ" -> voiceless_alveolar_lateral_fricative
     | "ɮ" -> voiced_alveolar_lateral_fricative
-    | /ꞎ|(L1)/ -> voiceless_retroflex_lateral_fricative  // ɭ̊˔
+    | /ꞎ|(L1)/ -> voiceless_retroflex_lateral_fricative  // ɭ̝̊
+    | "L11" -> voiced_retroflex_lateral_fricative        // ɭ̝
     | "L2" -> voiceless_palatal_lateral_fricative        // ʎ̝̊
+    | "L22" -> voiced_palatal_lateral_fricative       // ʎ̝
     | "L3" -> voiceless_velar_lateral_fricative          // ʟ̝̊
     | "L4" -> voiced_velar_lateral_fricative             // ʟ̝
     | "h" -> voiceless_glottal_fricative
@@ -165,16 +167,16 @@ approximant : approximant_core post_feature*
     | "ɰ" -> voiced_velar_approximant
     | "l" -> voiced_alveolar_lateral_approximant
     | "ɭ" -> voiced_retroflex_lateral_approximant
-    | "ʎ" -> voiced_palatal_lateral_approximant 
+    | "ʎ" -> voiced_palatal_lateral_approximant
     | "ʟ" -> voiced_velar_lateral_approximant
     | "L5" -> voiced_uvular_lateral_approximant                   // ʟ̠
     | "ʍ" -> voiceless_labio_velar_approximant
     | "w" -> voiced_labio_velar_approximant
     | "ɥ" -> voiced_labio_palatal_approximant
 
-// 
+//
 // Additional articulations
-// 
+//
 
 ?pre_feature : /[ʰʱ]/   -> pre_aspirated
     | /[ˀʼ]/            -> pre_glottalised
@@ -207,7 +209,7 @@ approximant : approximant_core post_feature*
     | /[ʰʱ]/                -> aspirated
     | "ʲ"                   -> palatalised
     | "ʷ"                   -> labialised
-    | /[’ʼ']/               -> ejective 
+    | /[’ʼ']/               -> ejective
     | "ˀ"                   -> glottalised  // d
     | /ˠ|\u0334/            -> velarised  // l̴
     | "\u02e1"              -> lateral_released  // dˡ

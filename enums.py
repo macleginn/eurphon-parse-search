@@ -26,6 +26,7 @@ class Phonation(Enum):
 class Place(Enum):
     BILABIAL = auto()
     LABIODENTAL = auto()
+    INTERDENTAL = auto()
     LINGUO_LABIAL = auto()
     DENTAL = auto()
     ALVEOLAR = auto()
@@ -34,6 +35,7 @@ class Place(Enum):
     HISSING_HUSHING = auto()
     RETROFLEX = auto()
     PALATAL = auto()
+    PALATAL_VELAR = auto()
     VELAR = auto()
     UVULAR = auto()
     PHARYNGEAL = auto()
@@ -41,9 +43,9 @@ class Place(Enum):
     GLOTTAL = auto()
     # Double articulations
     LABIAL_ALVEOLAR = auto()
+    LABIAL_PALATAL = auto()
     LABIAL_VELAR = auto()
     UVULAR_EPIGLOTTAL = auto()
-
 
 
 class Manner(Enum):

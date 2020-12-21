@@ -13,6 +13,7 @@ from segment_types import *
 # The output types for the parser.
 #
 
+
 @dataclass
 class VowelParse:
     apical_vowel: bool
@@ -93,23 +94,23 @@ class IPAQueryTransformer(Transformer):
         *pre_features, core = params
         if type(core) == Diphthong:
             tmp = VowelParse(False, True, False, None, None, None,
-                Length.SHORT, Phonation.MODAL,
-                set(pre_features), set())
+                             Length.SHORT, Phonation.MODAL,
+                             set(pre_features), set())
         elif type(core) == Triphthong:
             tmp = VowelParse(False, False, True, None, None, None,
-                Length.SHORT, Phonation.MODAL,
-                set(pre_features), set())
+                             Length.SHORT, Phonation.MODAL,
+                             set(pre_features), set())
         else:
             if type(core.glyph) == ApicalVowel:
                 tmp = VowelParse(True, False, False, None,
-                    core.glyph.place, core.glyph.rounded,
-                    Length.SHORT, None,
-                    set(pre_features), set())
+                                 core.glyph.place, core.glyph.rounded,
+                                 Length.SHORT, None,
+                                 set(pre_features), set())
             else:
                 tmp = VowelParse(False, False, False,
-                    core.glyph.height, core.glyph.backness, core.glyph.rounded,
-                    Length.SHORT, Phonation.MODAL,
-                    set(pre_features), set())
+                                 core.glyph.height, core.glyph.backness, core.glyph.rounded,
+                                 Length.SHORT, Phonation.MODAL,
+                                 set(pre_features), set())
         add_post_features_to_vowel(tmp, core.post_features)
         return tmp
 
@@ -141,10 +142,13 @@ class IPAQueryTransformer(Transformer):
 
     def alveolar_apical_vowel_unrounded(self, _):
         return ApicalVowel(Place.ALVEOLAR, False)
+
     def alveolar_apical_vowel_rounded(self, _):
         return ApicalVowel(Place.ALVEOLAR, True)
+
     def postalveolar_apical_vowel_unrounded(self, _):
         return ApicalVowel(Place.POSTALVEOLAR, False)
+
     def postalveolar_apical_vowel_rounded(self, _):
         return ApicalVowel(Place.POSTALVEOLAR, True)
 
@@ -152,83 +156,111 @@ class IPAQueryTransformer(Transformer):
 
     def close_front_unrounded(self, _):
         return RegularVowel(Height.CLOSE, Backness.FRONT, False)
+
     def close_front_rounded(self, _):
         return RegularVowel(Height.CLOSE, Backness.FRONT, True)
+
     def close_central_unrounded(self, _):
         return RegularVowel(Height.CLOSE, Backness.CENTRAL, False)
+
     def close_central_rounded(self, _):
         return RegularVowel(Height.CLOSE, Backness.CENTRAL, True)
+
     def close_back_unrounded(self, _):
         return RegularVowel(Height.CLOSE, Backness.BACK, False)
+
     def close_back_rounded(self, _):
         return RegularVowel(Height.CLOSE, Backness.BACK, True)
 
     def near_close_front_unrounded(self, _):
         return RegularVowel(Height.NEAR_CLOSE, Backness.FRONT, False)
+
     def near_close_front_rounded(self, _):
         return RegularVowel(Height.NEAR_CLOSE, Backness.FRONT, True)
+
     def near_close_central_unrounded(self, _):
         return RegularVowel(Height.NEAR_CLOSE, Backness.CENTRAL, False)
+
     def near_close_central_rounded(self, _):
         return RegularVowel(Height.NEAR_CLOSE, Backness.CENTRAL, True)
+
     def near_close_back_unrounded(self, _):
         return RegularVowel(Height.NEAR_CLOSE, Backness.BACK, False)
+
     def near_close_back_rounded(self, _):
         return RegularVowel(Height.NEAR_CLOSE, Backness.BACK, True)
 
     def close_mid_front_unrounded(self, _):
         return RegularVowel(Height.CLOSE_MID, Backness.FRONT, False)
+
     def close_mid_front_rounded(self, _):
         return RegularVowel(Height.CLOSE_MID, Backness.FRONT, True)
+
     def close_mid_central_unrounded(self, _):
         return RegularVowel(Height.CLOSE_MID, Backness.CENTRAL, False)
+
     def close_mid_central_rounded(self, _):
         return RegularVowel(Height.CLOSE_MID, Backness.CENTRAL, True)
+
     def close_mid_back_unrounded(self, _):
         return RegularVowel(Height.CLOSE_MID, Backness.BACK, False)
+
     def close_mid_back_rounded(self, _):
         return RegularVowel(Height.CLOSE_MID, Backness.BACK, True)
 
     def mid_front_unrounded(self, _):
         return RegularVowel(Height.MID, Backness.FRONT, False)
+
     def mid_front_rounded(self, _):
         return RegularVowel(Height.MID, Backness.FRONT, True)
+
     def mid_central_unrounded(self, _):
         return RegularVowel(Height.MID, Backness.CENTRAL, False)
+
     def mid_back_unrounded(self, _):
         return RegularVowel(Height.MID, Backness.BACK, False)
+
     def mid_back_rounded(self, _):
         return RegularVowel(Height.MID, Backness.BACK, True)
 
     def open_mid_front_rounded(self, _):
         return RegularVowel(Height.OPEN_MID, Backness.FRONT, True)
+
     def open_mid_front_unrounded(self, _):
         return RegularVowel(Height.OPEN_MID, Backness.FRONT, False)
+
     def open_mid_central_unrounded(self, _):
         return RegularVowel(Height.OPEN_MID, Backness.CENTRAL, False)
+
     def open_mid_central_rounded(self, _):
         return RegularVowel(Height.OPEN_MID, Backness.CENTRAL, True)
+
     def open_mid_back_unrounded(self, _):
         return RegularVowel(Height.OPEN_MID, Backness.BACK, False)
+
     def open_mid_back_rounded(self, _):
         return RegularVowel(Height.OPEN_MID, Backness.BACK, True)
 
     def near_open_front_unrounded(self, _):
         return RegularVowel(Height.NEAR_OPEN, Backness.FRONT, False)
+
     def near_open_central_unrounded(self, _):
         return RegularVowel(Height.NEAR_OPEN, Backness.CENTRAL, False)
 
     def open_front_rounded(self, _):
         return RegularVowel(Height.OPEN, Backness.FRONT, True)
+
     def open_central_unrounded(self, _):
         return RegularVowel(Height.OPEN, Backness.CENTRAL, False)
+
     def open_central_rounded(self, _):
         return RegularVowel(Height.OPEN, Backness.CENTRAL, True)
+
     def open_back_unrounded(self, _):
         return RegularVowel(Height.OPEN, Backness.BACK, False)
+
     def open_back_rounded(self, _):
         return RegularVowel(Height.OPEN, Backness.BACK, True)
-
 
     #
     # Consonants
@@ -259,178 +291,420 @@ class IPAQueryTransformer(Transformer):
 
     # Atomic consonants
 
+    # Plosives
     def voiceless_bilabial_plosive(self, _):
         return SimpleConsonant(Place.BILABIAL, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_bilabial_plosive(self, _):
         return SimpleConsonant(Place.BILABIAL, Manner.PLOSIVE, Voice.VOICED)
+
     def voiceless_alveolar_plosive(self, _):
         return SimpleConsonant(Place.ALVEOLAR, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_alveolar_plosive(self, _):
         return SimpleConsonant(Place.ALVEOLAR, Manner.PLOSIVE, Voice.VOICED)
+
     def voiceless_retroflex_plosive(self, _):
         return SimpleConsonant(Place.RETROFLEX, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_retroflex_plosive(self, _):
         return SimpleConsonant(Place.RETROFLEX, Manner.PLOSIVE, Voice.VOICED)
+
     def voiceless_palatal_plosive(self, _):
         return SimpleConsonant(Place.PALATAL, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_palatal_plosive(self, _):
         return SimpleConsonant(Place.PALATAL, Manner.PLOSIVE, Voice.VOICED)
+
     def voiceless_velar_plosive(self, _):
         return SimpleConsonant(Place.VELAR, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_velar_plosive(self, _):
         return SimpleConsonant(Place.VELAR, Manner.PLOSIVE, Voice.VOICED)
+
     def voiceless_uvular_plosive(self, _):
         return SimpleConsonant(Place.UVULAR, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_uvular_plosive(self, _):
         return SimpleConsonant(Place.UVULAR, Manner.PLOSIVE, Voice.VOICED)
-    def epiglottal_plosive 	(self, _):
+
+    def epiglottal_plosive(self, _):
         return SimpleConsonant(Place.EPIGLOTTAL, Manner.PLOSIVE, None)
+
     def glottal_stop(self, _):
         return SimpleConsonant(Place.GLOTTAL, Manner.PLOSIVE, None)
+
     def voiceless_labial_alveolar_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_ALVEOLAR, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_labial_alveolar_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_ALVEOLAR, Manner.PLOSIVE, Voice.VOICED)
+
     def voiceless_labial_velar_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_VELAR, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_labial_velar_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_VELAR, Manner.PLOSIVE, Voice.VOICED)
+
     def voiceless_uvular_epiglottal_plosive(self, _):
         return SimpleConsonant(Place.UVULAR_EPIGLOTTAL, Manner.PLOSIVE, Voice.VOICELESS)
+
     def voiced_bilabial_nasal_plosive(self, _):
         return SimpleConsonant(Place.BILABIAL, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_labiodental_nasal_plosive(self, _):
         return SimpleConsonant(Place.LABIODENTAL, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_alveolar_nasal_plosive(self, _):
         return SimpleConsonant(Place.ALVEOLAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_retroflex_nasal_plosive(self, _):
         return SimpleConsonant(Place.RETROFLEX, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_palatal_nasal_plosive(self, _):
         return SimpleConsonant(Place.PALATAL, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_velar_nasal_plosive(self, _):
         return SimpleConsonant(Place.VELAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_uvular_nasal_plosive(self, _):
         return SimpleConsonant(Place.UVULAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_labial_alveolar_nasal_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_ALVEOLAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_labial_velar_nasal_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_VELAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
     def voiced_bilabial_implosive(self, _):
         return SimpleConsonant(Place.BILABIAL, Manner.PLOSIVE, Voice.VOICED, implosive=True)
+
     def voiced_alveolar_implosive(self, _):
         return SimpleConsonant(Place.ALVEOLAR, Manner.PLOSIVE, Voice.VOICED, implosive=True)
+
     def voiced_retroflex_implosive(self, _):
         return SimpleConsonant(Place.RETROFLEX, Manner.PLOSIVE, Voice.VOICED, implosive=True)
+
     def voiced_palatal_implosive(self, _):
         return SimpleConsonant(Place.PALATAL, Manner.PLOSIVE, Voice.VOICED, implosive=True)
-    def voiced_velar_implosive (self, _):
+
+    def voiced_velar_implosive(self, _):
         return SimpleConsonant(Place.VELAR, Manner.PLOSIVE, Voice.VOICED, implosive=True)
+
     def voiced_uvular_implosive(self, _):
         return SimpleConsonant(Place.UVULAR, Manner.PLOSIVE, Voice.VOICED, implosive=True)
-    def voiced_labial_velar_implosive (self, _):
+
+    def voiced_labial_velar_implosive(self, _):
         return SimpleConsonant(Place.LABIAL_VELAR, Manner.PLOSIVE, Voice.VOICED, implosive=True)
+
+    # Fricatives
+    def voiceless_bilabial_fricative(self, _):
+        return SimpleConsonant(Place.BILABIAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_bilabial_fricative(self, _):
+        return SimpleConsonant(Place.BILABIAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_labiodental_fricative(self, _):
+        return SimpleConsonant(Place.LABIODENTAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_labiodental_fricative(self, _):
+        return SimpleConsonant(Place.LABIODENTAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_interdental_fricative(self, _):
+        return SimpleConsonant(Place.INTERDENTAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_interdental_fricative(self, _):
+        return SimpleConsonant(Place.INTERDENTAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_alveolar_fricative(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_alveolar_fricative(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_postalveolar_fricative(self, _):
+        return SimpleConsonant(Place.POSTALVEOLAR, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_postalveolar_fricative(self, _):
+        return SimpleConsonant(Place.POSTALVEOLAR, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_alveolo_palatal_fricative(self, _):
+        return SimpleConsonant(Place.ALVEOLO_PALATAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_alveolo_palatal_fricative(self, _):
+        return SimpleConsonant(Place.ALVEOLO_PALATAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_retroflex_fricative(self, _):
+        return SimpleConsonant(Place.RETROFLEX, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_retroflex_fricative(self, _):
+        return SimpleConsonant(Place.RETROFLEX, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_palatal_fricative(self, _):
+        return SimpleConsonant(Place.PALATAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_palatal_fricative(self, _):
+        return SimpleConsonant(Place.PALATAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_velar_fricative(self, _):
+        return SimpleConsonant(Place.VELAR, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_velar_fricative(self, _):
+        return SimpleConsonant(Place.VELAR, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_palatal_velar_fricative(self, _):  # ɧ
+        return SimpleConsonant(Place.PALATAL_VELAR, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiceless_uvular_fricative(self, _):
+        return SimpleConsonant(Place.UVULAR, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_uvular_fricative(self, _):
+        return SimpleConsonant(Place.UVULAR, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_pharyngeal_fricative(self, _):
+        return SimpleConsonant(Place.PHARYNGEAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_pharyngeal_fricative(self, _):
+        return SimpleConsonant(Place.PHARYNGEAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_glottal_fricative(self, _):
+        return SimpleConsonant(Place.GLOTTAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_glottal_fricative(self, _):
+        return SimpleConsonant(Place.GLOTTAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_epiglottal_fricative(self, _):
+        return SimpleConsonant(Place.EPIGLOTTAL, Manner.FRICATIVE, Voice.VOICELESS)
+
+    def voiced_epiglottal_fricative(self, _):
+        return SimpleConsonant(Place.EPIGLOTTAL, Manner.FRICATIVE, Voice.VOICED)
+
+    def voiceless_alveolar_lateral_fricative(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.FRICATIVE, Voice.VOICELESS, lateral=True)
+
+    def voiced_alveolar_lateral_fricative(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.FRICATIVE, Voice.VOICED, lateral=True)
+
+    def voiceless_retroflex_lateral_fricative(self, _):
+        return SimpleConsonant(Place.RETROFLEX, Manner.FRICATIVE, Voice.VOICELESS, lateral=True)
+
+    def voiced_retroflex_lateral_fricative(self, _):
+        return SimpleConsonant(Place.RETROFLEX, Manner.FRICATIVE, Voice.VOICED, lateral=True)
+
+    def voiceless_palatal_lateral_fricative(self, _):
+        return SimpleConsonant(Place.PALATAL, Manner.FRICATIVE, Voice.VOICELESS, lateral=True)
+
+    def voiced_palatal_lateral_fricative(self, _):
+        return SimpleConsonant(Place.PALATAL, Manner.FRICATIVE, Voice.VOICED, lateral=True)
+
+    def voiceless_velar_lateral_fricative(self, _):
+        return SimpleConsonant(Place.VELAR, Manner.FRICATIVE, Voice.VOICELESS, lateral=True)
+
+    def voiced_velar_lateral_fricative(self, _):
+        return SimpleConsonant(Place.VELAR, Manner.FRICATIVE, Voice.VOICED, lateral=True)
+
+    # Approximants
+    def voiceless_interdental_approximant(self, _):
+        return SimpleConsonant(Place.INTERDENTAL, Manner.APPROXIMANT, Voice.VOICELESS)
+
+    def voiced_interdental_approximant(self, _):
+        return SimpleConsonant(Place.INTERDENTAL, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiceless_bilabial_approximant(self, _):
+        return SimpleConsonant(Place.BILABIAL, Manner.APPROXIMANT, Voice.VOICELESS)
+
+    def voiced_bilabial_approximant(self, _):
+        return SimpleConsonant(Place.BILABIAL, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_labiodental_approximant(self, _):
+        return SimpleConsonant(Place.LABIODENTAL, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_alveolar_approximant(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_retroflex_approximant(self, _):
+        return SimpleConsonant(Place.RETROFLEX, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_palatal_approximant(self, _):
+        return SimpleConsonant(Place.PALATAL, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_velar_approximant(self, _):
+        return SimpleConsonant(Place.VELAR, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_uvular_approximant(self, _):
+        return SimpleConsonant(Place.UVULAR, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_alveolar_lateral_approximant(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.APPROXIMANT, Voice.VOICED, lateral=True)
+
+    def voiced_retroflex_lateral_approximant(self, _):
+        return SimpleConsonant(Place.RETROFLEX, Manner.APPROXIMANT, Voice.VOICED, lateral=True)
+
+    def voiced_palatal_lateral_approximant(self, _):
+        return SimpleConsonant(Place.PALATAL, Manner.APPROXIMANT, Voice.VOICED, lateral=True)
+
+    def voiced_velar_lateral_approximant(self, _):
+        return SimpleConsonant(Place.VELAR, Manner.APPROXIMANT, Voice.VOICED, lateral=True)
+
+    def voiced_uvular_lateral_approximant(self, _):
+        return SimpleConsonant(Place.UVULAR, Manner.APPROXIMANT, Voice.VOICED, lateral=True)
+
+    def voiceless_labio_velar_approximant(self, _):
+        return SimpleConsonant(Place.LABIAL_VELAR, Manner.APPROXIMANT, Voice.VOICELESS)
+
+    def voiced_labio_velar_approximant(self, _):
+        return SimpleConsonant(Place.LABIAL_VELAR, Manner.APPROXIMANT, Voice.VOICED)
+
+    def voiced_labio_palatal_approximant(self, _):
+        return SimpleConsonant(Place.LABIAL_PALATAL, Manner.APPROXIMANT, Voice.VOICED)
 
     # Functions for additional articulations
 
     def pre_aspirated(self, _):
         return AdditionalArticulation.PRE_ASPIRATED
+
     def pre_glottalised(self, _):
         return AdditionalArticulation.PRE_GLOTTALISED
+
     def pre_nasalised(self, _):
         return AdditionalArticulation.PRE_NASALISED
+
     def pre_labialised(self, _):
         return AdditionalArticulation.PRE_LABIALISED
 
     def overlong(self, _):
         return Length.OVERLONG
+
     def long(self, _):
         return Length.LONG
+
     def half_long(self, _):
         return Length.HALF_LONG
+
     def pharyngealised(self, _):
         return AdditionalArticulation.PHARYNGEALISED
+
     def nasalised(self, _):
         return AdditionalArticulation.NASALISED
+
     def shortened(self, _):
         return Length.SHORTENED
+
     def raised(self, _):
         return AdditionalArticulation.RAISED
+
     def lowered(self, _):
         return AdditionalArticulation.LOWERED
+
     def advanced(self, _):
         return AdditionalArticulation.ADVANCED
+
     def retracted(self, _):
         return AdditionalArticulation.RETRACTED
+
     def breathy_voiced(self, _):
         return Phonation.BREATHY_VOICE
+
     def voiceless(self, _):
         return Voice.VOICELESS
+
     def creaky_voiced(self, _):
         return Phonation.CREAKY_VOICE
+
     def ingressive(self, _):
         return AdditionalArticulation.INGRESSIVE
+
     def rhotacised(self, _):
         return AdditionalArticulation.RHOTACISED
+
     def faucalised(self, _):
         return AdditionalArticulation.FAUCALISED
+
     def centralised(self, _):
         return AdditionalArticulation.CENTRALISED
+
     def atr(self, _):
         return AdditionalArticulation.ATR
+
     def rtr(self, _):
         return AdditionalArticulation.RTR
+
     def less_rounded(self, _):
         return AdditionalArticulation.LESS_ROUNDED
+
     def more_rounded(self, _):
         return AdditionalArticulation.MORE_ROUNDED
+
     def non_syllabic(self, _):
         return AdditionalArticulation.NON_SYLLABIC
+
     def mid_centralised(self, _):
         return AdditionalArticulation.MID_CENTRALISED
+
     def aspirated(self, _):
         return AdditionalArticulation.ASPIRATED
+
     def palatalised(self, _):
         return AdditionalArticulation.PALATALISED
+
     def labialised(self, _):
         return AdditionalArticulation.LABIALISED
-    def ejective (self, _):
+
+    def ejective(self, _):
         return AdditionalArticulation.EJECTIVE
+
     def glottalised(self, _):
         return AdditionalArticulation.GLOTTALISED
+
     def velarised(self, _):
         return AdditionalArticulation.VELARISED
+
     def lateral_released(self, _):
         return AdditionalArticulation.LATERAL_RELEASED
+
     def unreleased(self, _):
         return AdditionalArticulation.UNRELEASED
+
     def syllabic(self, _):
         return AdditionalArticulation.SYLLABIC
+
     def dental(self, _):
         return Place.DENTAL
+
     def alveolar(self, _):
         return Place.ALVEOLAR
+
     def apical(self, _):
         return AdditionalArticulation.APICAL
+
     def laminal(self, _):
         return AdditionalArticulation.LAMINAL
+
     def weakly_articulated(self, _):
         return AdditionalArticulation.WEAKLY_ARTICULATED
+
     def labio_palatalised(self, _):
         return AdditionalArticulation.LABIO_PALATALISED
+
     def nasal_released(self, _):
         return AdditionalArticulation.NASAL_RELEASED
+
     def affricated(self, _):
         return AdditionalArticulation.AFFRICATED
+
     def epilaryngeal_source(self, _):
         return AdditionalArticulation.EPILARYNGEAL_SOURCE
+
     def frictionalised(self, _):
         return AdditionalArticulation.FRICTIONALISED
+
     def tenuis(self, _):
         return AdditionalArticulation.TENUIS
 
 #
 # Helper functions
 #
+
 
 def add_post_features_to_vowel(parse, features):
     for f in features:
@@ -449,7 +723,11 @@ def add_post_features_to_consonant(parse: ConsonantParse, features):
         elif type(f) == Place:
             parse.place = f
         elif type(f) == Voice:
-            if parse.voice == Voice.VOICED and f == Voice.VOICELESS:
+            if (
+                parse.voice == Voice.VOICED and
+                f == Voice.VOICELESS and
+                parse.manner == Manner.PLOSIVE
+            ):
                 parse.voice = Voice.DEVOICED
             else:
                 parse.voice = f
@@ -481,9 +759,14 @@ replacement_dict = {
     'ʁ\u031e': 'R1',
 
     # Fricatives denoted as approximants with a "raised" diacritic
-    '\u026d\u030a\u02d4': 'L1',
+    '\u026d\u030a\u031d': 'L1',
+    '\u026d\u031d\u030a': 'L1',
+    '\u026d\u031d': 'L11',
     '\u028e\u031d\u030a': 'L2',
+    '\u028e\u030a\u031d': 'L2',
+    '\u028e\u031d': 'L22',
     '\u029f\u031d\u030a': 'L3',
+    '\u029f\u030a\u031d': 'L3',
     '\u029f\u031d': 'L4',
 
     # Misc
@@ -506,8 +789,11 @@ class IPAParser:
 
     def _preprocess(self, input_str):
         result = normalize('NFD', input_str.strip())
+        # Replace single glyphs
+        result = result.replace('\u02d4', '\u031d')
+        # Replace glyph combinations
         for k, v in replacement_dict.items():
-            result = result.replace(k,v)
+            result = result.replace(k, v)
         return result
 
     def parse(self, input_str):

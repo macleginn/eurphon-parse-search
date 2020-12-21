@@ -2,10 +2,12 @@ from dataclasses import dataclass
 from typing import List, Set, Union
 from enums import AdditionalArticulation, Place, Manner, Voice, Height, Backness
 
+
 #
 # Classes encapsulating properties of different
 # vowel types.
 #
+
 
 @dataclass
 class ApicalVowel:
