@@ -74,14 +74,22 @@ consonant : pre_feature* consonant_core
 // special mutli-glyph cases go here
 ?consonant_core : simple_consonant | affricate // | click
 
-affricate : stop BRIDGE? fricative
-?simple_consonant: stop | fricative | approximant
+affricate : stop fricative
+    | stop trill
+    | stop tap
 
-BRIDGE : "\u0361"  // ɠ͡ɓ
+%ignore "\u0361"  // ɠ͡ɓ
+?simple_consonant: stop
+    | fricative
+    | approximant
+    | tap
+    | trill
 
-stop : stop_core post_feature*
-fricative : fricative_core post_feature*
+stop        : stop_core post_feature*
+fricative   : fricative_core post_feature*
 approximant : approximant_core post_feature*
+tap         : tap_core post_feature*
+trill       : trill_core post_feature*
 
 ?stop_core : "p" -> voiceless_bilabial_plosive
     | "b" -> voiced_bilabial_plosive
@@ -97,11 +105,11 @@ approximant : approximant_core post_feature*
     | "ɢ" -> voiced_uvular_plosive
     | "ʡ" -> epiglottal_plosive
     | "ʔ" -> glottal_stop
-    | /(t͡p)|(tp)/ -> voiceless_labial_alveolar_plosive
-    | /(d͡b)|(db)/ -> voiced_labial_alveolar_plosive
-    | /(k͡p)|(kp)/ -> voiceless_labial_velar_plosive
-    | /(ɡ͡b)|(ɡb)/ -> voiced_labial_velar_plosive
-    | /(q͡ʡ)|(qʡ)/ -> voiceless_uvular_epiglottal_plosive
+    | "tp" -> voiceless_labial_alveolar_plosive
+    | "db" -> voiced_labial_alveolar_plosive
+    | "kp" -> voiceless_labial_velar_plosive
+    | "ɡb" -> voiced_labial_velar_plosive
+    | "qʡ" -> voiceless_uvular_epiglottal_plosive
     | "m" -> voiced_bilabial_nasal_plosive
     | "ɱ" -> voiced_labiodental_nasal_plosive
     | "n" -> voiced_alveolar_nasal_plosive
@@ -109,15 +117,17 @@ approximant : approximant_core post_feature*
     | "ɲ" -> voiced_palatal_nasal_plosive
     | "ŋ" -> voiced_velar_nasal_plosive
     | "ɴ" -> voiced_uvular_nasal_plosive
-    | /(n͡m)|(nm)/ -> voiced_labial_alveolar_nasal_plosive
-    | /(ŋ͡m)|(ŋm)/ -> voiced_labial_velar_nasal_plosive
+    | "nm" -> voiced_labial_alveolar_nasal_plosive
+    | "n̊m̊" -> voiceless_labial_alveolar_nasal_plosive
+    | "ŋm" -> voiced_labial_velar_nasal_plosive
+    | "ŋ̊m̊" -> voiceless_labial_velar_nasal_plosive
     | "ɓ" -> voiced_bilabial_implosive
     | "ɗ" -> voiced_alveolar_implosive
     | "ᶑ" -> voiced_retroflex_implosive
     | "ʄ" -> voiced_palatal_implosive
     | "ɠ" -> voiced_velar_implosive
     | "ʛ" -> voiced_uvular_implosive
-    | /(ɠ͡ɓ)|(ɠɓ)/ -> voiced_labial_velar_implosive
+    | /ɠɓ|ɡɓ/ -> voiced_labial_velar_implosive
 
 ?fricative_core : "s" -> voiceless_alveolar_fricative
     | "z" -> voiced_alveolar_fricative
@@ -174,13 +184,23 @@ approximant : approximant_core post_feature*
     | "w" -> voiced_labio_velar_approximant
     | "ɥ" -> voiced_labio_palatal_approximant
 
+?tap_core : /ɾ|ᴅ/ -> voiced_alveolar_tap
+    | "ɺ" -> voiced_alveolar_lateral_tap
+    | "ɽ" -> voiced_retroflex_tap
+    | "ⱱ" -> voiced_labiodental_tap  // NB: some fonts represent this character
+                                     // incorrectly, but not to worry.
+
+?trill_core : "r" -> voiced_alveolar_trill
+    | "ʙ" -> voiced_bilabial_trill
+    | "ʀ" -> voiced_uvular_trill
+
 //
 // Additional articulations
 //
 
 ?pre_feature : /[ʰʱ]/   -> pre_aspirated
     | /[ˀʼ]/            -> pre_glottalised
-    | /[ⁿnmŋɱ]/         -> pre_nasalised
+    | /[ⁿnmŋɳɲɱɴ]/      -> pre_nasalised
     | "ʷ"               -> pre_labialised
 
 ?post_feature : /(ːː)|(::)/ -> overlong
@@ -226,4 +246,6 @@ approximant : approximant_core post_feature*
     | "ᴱ"                   -> epilaryngeal_source
     | "\u0353"              -> frictionalised  // a͓
     | "\u02ed"              -> tenuis  // t˭
+    | "\u032c"              -> voiced
+    | "\u033c"              -> linguo_labial
 
