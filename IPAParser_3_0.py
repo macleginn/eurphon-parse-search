@@ -74,6 +74,14 @@ class ConsonantParse:
 
 
 #
+# Global variables that hold parts of affricates
+# for closer inspection
+#
+affricates_first = None
+affricate_second = None
+
+
+#
 # Classes and helper functions needed to manipulate
 # the output of the Lark parser
 #
@@ -288,12 +296,21 @@ class IPAQueryTransformer(Transformer):
     stop = simple_consonant
     fricative = simple_consonant
     approximant = simple_consonant
+    tap = simple_consonant
+    trill = simple_consonant
 
     def affricate(self, params: List[ConsonantCore]):
         stop_part, fricative_part = params
+        # Set the global variables, so that the user
+        # could have a full picture of the affricate components
+        global affricates_first
+        affricates_first = stop_part
+        global affricate_second
+        affricate_second = fricative_part
         # The fricative part determines the parse.
-        fricative_part.glyph.manner = Manner.AFFRICATE
-        return ConsonantCore(fricative_part.glyph, set.union(
+        affricate_glyph = deepcopy(fricative_part.glyph)
+        affricate_glyph.manner = Manner.AFFRICATE
+        return ConsonantCore(affricate_glyph, set.union(
             stop_part.post_features,
             fricative_part.post_features
         ))
@@ -379,11 +396,17 @@ class IPAQueryTransformer(Transformer):
     def voiced_uvular_nasal_plosive(self, _):
         return SimpleConsonant(Place.UVULAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
 
+    def voiceless_labial_alveolar_nasal_plosive(self, _):
+        return SimpleConsonant(Place.LABIAL_ALVEOLAR, Manner.PLOSIVE, Voice.VOICELESS, nasal=True)
+
     def voiced_labial_alveolar_nasal_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_ALVEOLAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
 
     def voiced_labial_velar_nasal_plosive(self, _):
         return SimpleConsonant(Place.LABIAL_VELAR, Manner.PLOSIVE, Voice.VOICED, nasal=True)
+
+    def voiceless_labial_velar_nasal_plosive(self, _):
+        return SimpleConsonant(Place.LABIAL_VELAR, Manner.PLOSIVE, Voice.VOICELESS, nasal=True)
 
     def voiced_bilabial_implosive(self, _):
         return SimpleConsonant(Place.BILABIAL, Manner.PLOSIVE, Voice.VOICED, implosive=True)
@@ -567,6 +590,31 @@ class IPAQueryTransformer(Transformer):
     def voiced_labio_palatal_approximant(self, _):
         return SimpleConsonant(Place.LABIAL_PALATAL, Manner.APPROXIMANT, Voice.VOICED)
 
+    # Taps
+
+    def voiced_labiodental_tap(self, _):
+        return SimpleConsonant(Place.LABIODENTAL, Manner.TAP, Voice.VOICED)
+
+    def voiced_alveolar_tap(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.TAP, Voice.VOICED)
+
+    def voiced_alveolar_lateral_tap(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.TAP, Voice.VOICED, lateral=True)
+
+    def voiced_retroflex_tap(self, _):
+        return SimpleConsonant(Place.RETROFLEX, Manner.TAP, Voice.VOICED)
+
+    # Trills
+
+    def voiced_alveolar_trill(self, _):
+        return SimpleConsonant(Place.ALVEOLAR, Manner.TRILL, Voice.VOICED)
+
+    def voiced_bilabial_trill(self, _):
+        return SimpleConsonant(Place.BILABIAL, Manner.TRILL, Voice.VOICED)
+
+    def voiced_uvular_trill(self, _):
+        return SimpleConsonant(Place.UVULAR, Manner.TRILL, Voice.VOICED)
+
     # Functions for additional articulations
 
     def pre_aspirated(self, _):
@@ -616,6 +664,9 @@ class IPAQueryTransformer(Transformer):
 
     def voiceless(self, _):
         return Voice.VOICELESS
+
+    def voiced(self, _):
+        return Voice.VOICED
 
     def creaky_voiced(self, _):
         return Phonation.CREAKY_VOICE
@@ -710,6 +761,9 @@ class IPAQueryTransformer(Transformer):
     def tenuis(self, _):
         return AdditionalArticulation.TENUIS
 
+    def linguo_labial(self, _):
+        return AdditionalArticulation.LINGUO_LABIAL
+
 #
 # Helper functions
 #
@@ -767,7 +821,8 @@ replacement_dict = {
     'β\u031e': 'V2',
     'ʁ\u031e': 'R1',
 
-    # Fricatives denoted as approximants with a "raised" diacritic
+    # Fricatives denoted as approximants with a
+    # "raised"/"frictionalised" diacritic
     '\u026d\u030a\u031d': 'L1',
     '\u026d\u031d\u030a': 'L1',
     '\u026d\u031d': 'L11',
@@ -777,12 +832,42 @@ replacement_dict = {
     '\u029f\u031d\u030a': 'L3',
     '\u029f\u030a\u031d': 'L3',
     '\u029f\u031d': 'L4',
+    '\u029f\u0353': 'L4',
 
     # Misc
     'ɚ': 'ə\u02de',
     'g': 'ɡ',
     'ɫ': 'lˠ',
-    'ʟ\u0320': 'L5'
+    'ʟ\u0320': 'L5',
+    'c\u0327': '\xe7',  # Denormalise decomposed /ç/
+
+    # Redundant encoding of features in PHOIBLE
+    'n̠d̠': 'nd',
+    'n̠t̠': 'nt',
+    'n̤d̤z̤': 'nd̤z̤',
+    'n̠d̠ʒ': 'ndʒ',
+    'n̠̤d̠̤ʒ': 'nd̠̤ʒ',
+    'n̠̊t̠ʃ': 'ntʃ',
+    'n̠t̠ʃ': 'ntʃ',
+    'n̤d̤ɮ̤': 'nd̤ɮ̤',
+    'n̪t̪': 'nt̪',
+    'n̪d̪': 'nd̪',
+    'n̤d̤': 'nd̤',
+    'm̤b̤': 'mb̤',
+    'n̤ɡ̤': 'nɡ̤',
+    'ŋ̤ɡ̤': 'ŋɡ̤',
+    'm̤b̤v̤': 'mb̤v̤',
+    'ɲ̤ɟ̤': 'ɲɟ̤',
+    'm̊p': 'mp',
+    'm̤pʰ': 'mpʰ',
+    'n̤tʰ': 'ntʰ',
+    'ŋ̤kʰ': 'ŋkʰ',
+    'ɲ̤cʰ': 'ɲcʰ',
+    'ŋɡmb': 'ŋɡb',
+    'ŋmkp': 'ŋkp',
+    'ȵ': 'ɲ',
+    'ɲ̟dʑ': 'ɲdʑ',
+    'ɲ̟tɕʰ': 'ɲtɕʰ',
 }
 
 
@@ -798,8 +883,9 @@ class IPAParser:
 
     def _preprocess(self, input_str):
         result = normalize('NFD', input_str.strip())
-        # Replace single glyphs
-        result = result.replace('\u02d4', '\u031d')
+        # Replace single glyphs for uniformity.
+        result = result.replace('\u02d4', '\u031d')   # Raised
+        result = result.replace('\u0325', '\u030a')   # Voiceless
         # Replace glyph combinations
         for k, v in replacement_dict.items():
             result = result.replace(k, v)
@@ -834,3 +920,7 @@ if __name__ == "__main__":
     print(parse_raw.pretty())
     print('Parse as a Python dictionary:')
     pprint(result.as_dict())
+    if result.manner == Manner.AFFRICATE:
+        print('Affricate components:')
+        print('First part:', affricates_first.as_dict())
+        print('Second part:', affricate_second.as_dict())
