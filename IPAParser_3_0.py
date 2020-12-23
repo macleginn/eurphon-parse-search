@@ -286,8 +286,17 @@ class IPAQueryTransformer(Transformer):
         return ConsonantCore(core, set(post_features))
 
     stop = simple_consonant
-    # fricative = simple_consonant
-    # approximant = simple_consonant
+    fricative = simple_consonant
+    approximant = simple_consonant
+
+    def affricate(self, params: List[ConsonantCore]):
+        stop_part, fricative_part = params
+        # The fricative part determines the parse.
+        fricative_part.glyph.manner = Manner.AFFRICATE
+        return ConsonantCore(fricative_part.glyph, set.union(
+            stop_part.post_features,
+            fricative_part.post_features
+        ))
 
     # Atomic consonants
 

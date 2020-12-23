@@ -74,14 +74,14 @@ consonant : pre_feature* consonant_core
 // special mutli-glyph cases go here
 ?consonant_core : simple_consonant | affricate // | click
 
-// affricate : stop BRIDGE? fricative
-?simple_consonant: stop // | fricative | approximant
+affricate : stop BRIDGE? fricative
+?simple_consonant: stop | fricative | approximant
 
 BRIDGE : "\u0361"  // ɠ͡ɓ
 
 stop : stop_core post_feature*
-//fricative : fricative_core post_feature*
-//approximant : approximant_core post_feature*
+fricative : fricative_core post_feature*
+approximant : approximant_core post_feature*
 
 ?stop_core : "p" -> voiceless_bilabial_plosive
     | "b" -> voiced_bilabial_plosive
