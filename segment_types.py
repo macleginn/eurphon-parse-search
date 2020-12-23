@@ -119,3 +119,11 @@ class ConsonantCore:
     ):
         self.glyph = glyph
         self.post_features = post_features
+
+    def as_dict(self):
+        return {
+            'place': self.glyph.place.name.lower(),
+            'manner': self.glyph.manner.name.lower(),
+            'voice': self.glyph.voice.name.lower(),
+            'additional_articulations': set(el.name.lower() for el in self.post_features)
+        }
