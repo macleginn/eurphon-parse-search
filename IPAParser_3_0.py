@@ -677,8 +677,8 @@ class IPAQueryTransformer(Transformer):
     def rhotacised(self, _):
         return AdditionalArticulation.RHOTACISED
 
-    def faucalised(self, _):
-        return AdditionalArticulation.FAUCALISED
+    def strong_articulation(self, _):
+        return AdditionalArticulation.STRONG_ARTICULATION
 
     def centralised(self, _):
         return AdditionalArticulation.CENTRALISED
@@ -846,9 +846,11 @@ replacement_dict = {
     'n̠t̠': 'nt',
     'n̤d̤z̤': 'nd̤z̤',
     'n̠d̠ʒ': 'ndʒ',
-    'n̠̤d̠̤ʒ': 'nd̠̤ʒ',
+    'd̠ʒ': 'dʒ',
+    'n̠̤d̠̤ʒ': 'nd̤ʒ',
     'n̠̊t̠ʃ': 'ntʃ',
     'n̠t̠ʃ': 'ntʃ',
+    't̠ʃ': 'tʃ',
     'n̤d̤ɮ̤': 'nd̤ɮ̤',
     'n̪t̪': 'nt̪',
     'n̪d̪': 'nd̪',
@@ -868,6 +870,8 @@ replacement_dict = {
     'ȵ': 'ɲ',
     'ɲ̟dʑ': 'ɲdʑ',
     'ɲ̟tɕʰ': 'ɲtɕʰ',
+    'ʆ': 'ʃʲ',
+    'ʓ': 'ʒʲ',
 }
 
 

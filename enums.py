@@ -87,7 +87,7 @@ class AdditionalArticulation(Enum):
     CREAKY_VOICED = auto()
     INGRESSIVE = auto()
     RHOTACISED = auto()
-    FAUCALISED = auto()
+    STRONG_ARTICULATION = auto()
     CENTRALISED = auto()
     ATR = auto()
     RTR = auto()

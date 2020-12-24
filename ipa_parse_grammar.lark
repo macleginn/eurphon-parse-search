@@ -218,7 +218,7 @@ trill       : trill_core post_feature*
     | "\u0330"              -> creaky_voiced   // a̰
     | "\u2193"              -> ingressive      // a↓
     | "\u02de"              -> rhotacised  // a˞
-    | "\u0348"              -> faucalised  // a͈
+    | "\u0348"              -> strong_articulation  // a͈
     | "\u0308"              -> centralised  // ä
     | "\u0318"              -> atr  // a̘
     | "\u0319"              -> rtr  // a̙
