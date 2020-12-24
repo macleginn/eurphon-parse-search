@@ -92,6 +92,16 @@ for consonant in consonants:
         or 'ɬl' in consonant
         or 'ʍw' in consonant
         or 'ʀʁ' in consonant
+        or 'ʔj' in consonant
+        or 'cn̠' in consonant
+        or 'xk' in consonant
+        or 'ʆ' in consonant
+        or 'ʓ' in consonant
+        or 'ȶ' in consonant
+        or 'ȴ' in consonant
+        or 'dʒɾ' in consonant
+        or 'xʀ̊' in consonant
+        or 'ɖɳ' in consonant
     ):
         continue
     try:
