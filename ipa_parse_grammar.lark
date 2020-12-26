@@ -131,6 +131,8 @@ trill       : trill_core post_feature*
 
 ?fricative_core : "s" -> voiceless_alveolar_fricative
     | "z" -> voiced_alveolar_fricative
+    | "S1" -> voiceless_hissing_hushing_fricative    // ŝ
+    | "Z1" -> voiced_hissing_hushing_fricative       // ẑ
     | "ʃ" -> voiceless_postalveolar_fricative
     | "ʒ" -> voiced_postalveolar_fricative
     | "ɕ" -> voiceless_alveolo_palatal_fricative
@@ -159,7 +161,7 @@ trill       : trill_core post_feature*
     | /ꞎ|(L1)/ -> voiceless_retroflex_lateral_fricative  // ɭ̝̊
     | "L11" -> voiced_retroflex_lateral_fricative        // ɭ̝
     | "L2" -> voiceless_palatal_lateral_fricative        // ʎ̝̊
-    | "L22" -> voiced_palatal_lateral_fricative       // ʎ̝
+    | "L22" -> voiced_palatal_lateral_fricative          // ʎ̝
     | "L3" -> voiceless_velar_lateral_fricative          // ʟ̝̊
     | "L4" -> voiced_velar_lateral_fricative             // ʟ̝
     | "h" -> voiceless_glottal_fricative
@@ -249,3 +251,5 @@ trill       : trill_core post_feature*
     | "\u032c"              -> voiced
     | "\u033c"              -> linguo_labial
 
+%import common.WS
+%ignore WS

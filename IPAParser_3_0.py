@@ -454,6 +454,12 @@ class IPAQueryTransformer(Transformer):
     def voiced_alveolar_fricative(self, _):
         return SimpleConsonant(Place.ALVEOLAR, Manner.FRICATIVE, Voice.VOICED)
 
+    def voiceless_hissing_hushing_fricative(self, _):
+        return SimpleConsonant(Place.HISSING_HUSHING, Manner.FRICATIVE, Voice.VOICELESS)
+    
+    def voiced_hissing_hushing_fricative(self, _):
+        return SimpleConsonant(Place.HISSING_HUSHING, Manner.FRICATIVE, Voice.VOICED)
+    
     def voiceless_postalveolar_fricative(self, _):
         return SimpleConsonant(Place.POSTALVEOLAR, Manner.FRICATIVE, Voice.VOICELESS)
 
@@ -833,6 +839,10 @@ replacement_dict = {
     '\u029f\u030a\u031d': 'L3',
     '\u029f\u031d': 'L4',
     '\u029f\u0353': 'L4',
+
+    # Hissing-hushing fricatives
+    's\u0302': 'S1',
+    'z\u0302': 'Z1',
 
     # Misc
     'ɚ': 'ə\u02de',
