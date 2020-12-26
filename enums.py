@@ -22,10 +22,11 @@ class Phonation(Enum):
     BREATHY_VOICE = auto()
     CREAKY_VOICE = auto()
 
-    
+
 class Place(Enum):
     BILABIAL = auto()
     LABIODENTAL = auto()
+    INTERDENTAL = auto()
     LINGUO_LABIAL = auto()
     DENTAL = auto()
     ALVEOLAR = auto()
@@ -34,11 +35,17 @@ class Place(Enum):
     HISSING_HUSHING = auto()
     RETROFLEX = auto()
     PALATAL = auto()
+    PALATAL_VELAR = auto()
     VELAR = auto()
     UVULAR = auto()
     PHARYNGEAL = auto()
     EPIGLOTTAL = auto()
     GLOTTAL = auto()
+    # Double articulations
+    LABIAL_ALVEOLAR = auto()
+    LABIAL_PALATAL = auto()
+    LABIAL_VELAR = auto()
+    UVULAR_EPIGLOTTAL = auto()
 
 
 class Manner(Enum):
@@ -80,14 +87,14 @@ class AdditionalArticulation(Enum):
     CREAKY_VOICED = auto()
     INGRESSIVE = auto()
     RHOTACISED = auto()
-    FAUCALISED = auto()
+    STRONG_ARTICULATION = auto()
     CENTRALISED = auto()
     ATR = auto()
     RTR = auto()
     LESS_ROUNDED = auto()
     MORE_ROUNDED = auto()
     NON_SYLLABIC = auto()
-    MID_CETNRALISED = auto()
+    MID_CENTRALISED = auto()
     ASPIRATED = auto()
     PALATALISED = auto()
     LABIALISED = auto()
@@ -103,3 +110,7 @@ class AdditionalArticulation(Enum):
     LABIO_PALATALISED = auto()
     NASAL_RELEASED = auto()
     AFFRICATED = auto()
+    EPILARYNGEAL_SOURCE = auto()
+    FRICTIONALISED = auto()
+    TENUIS = auto()
+    LINGUO_LABIAL = auto()
