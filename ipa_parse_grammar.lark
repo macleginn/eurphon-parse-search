@@ -16,7 +16,7 @@ triphthong  : polyphthong_element vowel_atom polyphthong_element
 
 ?polyphthong_element : onset_coda | vowel_atom
 onset_coda : w_j post_feature*
-?w_j : "w" -> w | "j" -> j
+?w_j : /w|ɰ/ -> w | "j" -> j
 vowel_atom : vowel_glyph post_feature*
 ?vowel_glyph : apical_vowel | regular_vowel
 
