@@ -38,11 +38,14 @@ def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
 
 def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
     result = set()
+    # A search optimisation
+    hit_tmp = {}
     for language_id in get_all_language_ids(db_connection):
         diff = get_count_for_features(
             language_id,
             query.features,
-            db_connection) - query.number
+            db_connection,
+            hit_tmp) - query.number
         if check_eq(diff, query.op):
             result.add(language_id)
     return result
