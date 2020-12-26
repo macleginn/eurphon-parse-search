@@ -114,3 +114,21 @@ class AdditionalArticulation(Enum):
     FRICTIONALISED = auto()
     TENUIS = auto()
     LINGUO_LABIAL = auto()
+
+
+#
+# Helper functions
+#
+
+
+def s(x):
+    """
+    Extracts the name of an enum element.
+    Doesn't handle None.
+    """
+    return x.name.lower().replace('_', '-')
+
+
+def n(x):
+    "Extracts the name of an enum element or None."
+    return s(x) if x is not None else None

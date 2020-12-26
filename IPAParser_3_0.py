@@ -7,6 +7,7 @@ from lark import Transformer, Lark
 
 from enums import AdditionalArticulation, Place, Height, Backness
 from enums import Length, Phonation, Voice, Manner
+from enums import s, n
 from segment_types import *
 
 #
@@ -20,7 +21,8 @@ class VowelParse:
     diphthong: bool
     triphthong: bool
     height: Height
-    backness: Union[Backness, Place]  # Apical vowels have a place.
+    # Apical vowels have a place. It is stored in this field.
+    backness: Union[Backness, Place]
     rounded: bool
     length: Length
     phonation: Phonation
@@ -29,23 +31,50 @@ class VowelParse:
     additional_articulations: Set[AdditionalArticulation]
 
     def as_dict(self):
+        """
+        n or s stringification is used on nullable
+        and non-nullable features respectively.
+        Booleans are all non-nullable and are returned as is.
+        """
         return {
+            'type': 'vowel',
             'apical_vowel': self.apical_vowel,
             'diphthong': self.diphthong,
             'triphthong': self.triphthong,
-            'height': self.height.name.lower() if self.height is not None else None,
-            'backness': self.backness.name.lower() if self.backness is not None else None,
+            # Apical vowels don't have height
+            'height': n(self.height),
+            'backness': s(self.backness),
             'rounded': self.rounded,
-            'length': self.length.name.lower() if self.length is not None else None,
-            'phonation': self.phonation.name.lower() if self.phonation is not None else None,
-            'additional_articulations': set(
-                f.name.lower() for f in self.pre_features
-            ).union(set(
-                f.name.lower() for f in self.additional_articulations))
+            'length': s(self.length),
+            'phonation': s(self.phonation),
+            'additional_articulations': set(s(f) for f in self.pre_features) |
+            set(s(f) for f in self.additional_articulations)
         }
 
+    def as_set(self):
+        result = set()
+        result.add('vowel')
+        if self.apical_vowel:
+            result.add('apical vowel')
+        if self.diphthong:
+            result.add('diphthong')
+        if self.triphthong:
+            result.add('triphthong')
+        if self.rounded:
+            result.add('rounded')
+        if self.height is not None:
+            result.add(s(self.height))
+        result |= set([
+            s(self.backness),
+            s(self.length),
+            s(self.phonation)
+        ])
+        result |= (set(s(f) for f in self.pre_features))
+        result |= (set(s(f) for f in self.additional_articulations))
+        return result
 
-@dataclass
+
+@ dataclass
 class ConsonantParse:
     place: Place
     manner: Manner
@@ -59,18 +88,36 @@ class ConsonantParse:
 
     def as_dict(self):
         return {
-            'place': self.place.name.lower(),
-            'manner': self.manner.name.lower(),
-            'voice': self.voice.name.lower(),
-            'length': self.length.name.lower(),
+            'type': 'consonant',
+            'place': s(self.place),
+            'manner': s(self.manner),
+            'voice': s(self.voice),
+            'length': s(self.length),
             'lateral': self.lateral,
             'nasal': self.nasal,
             'implosive': self.implosive,
-            'additional_articulations': set(
-                f.name.lower() for f in self.pre_features
-            ).union(set(
-                f.name.lower() for f in self.additional_articulations))
+            'additional_articulations': set(s(f) for f in self.pre_features) |
+            set(s(f) for f in self.additional_articulations)
         }
+
+    def as_set(self):
+        result = set()
+        result.add('consonant')
+        if self.lateral:
+            result.add('lateral')
+        if self.nasal:
+            result.add('nasal')
+        if self.implosive:
+            result.add('implosive')
+        result |= set([
+            s(self.place),
+            s(self.manner),
+            s(self.voice),
+            s(self.length)
+        ])
+        result |= (set(s(f) for f in self.pre_features))
+        result |= (set(s(f) for f in self.additional_articulations))
+        return result
 
 
 #
@@ -112,7 +159,7 @@ class IPAQueryTransformer(Transformer):
             if type(core.glyph) == ApicalVowel:
                 tmp = VowelParse(True, False, False, None,
                                  core.glyph.place, core.glyph.rounded,
-                                 Length.SHORT, None,
+                                 Length.SHORT, Phonation.MODAL,
                                  set(pre_features), set())
             else:
                 tmp = VowelParse(False, False, False,
@@ -456,10 +503,10 @@ class IPAQueryTransformer(Transformer):
 
     def voiceless_hissing_hushing_fricative(self, _):
         return SimpleConsonant(Place.HISSING_HUSHING, Manner.FRICATIVE, Voice.VOICELESS)
-    
+
     def voiced_hissing_hushing_fricative(self, _):
         return SimpleConsonant(Place.HISSING_HUSHING, Manner.FRICATIVE, Voice.VOICED)
-    
+
     def voiceless_postalveolar_fricative(self, _):
         return SimpleConsonant(Place.POSTALVEOLAR, Manner.FRICATIVE, Voice.VOICELESS)
 
@@ -934,7 +981,10 @@ if __name__ == "__main__":
     print(parse_raw.pretty())
     print('Parse as a Python dictionary:')
     pprint(result.as_dict())
-    if result.manner == Manner.AFFRICATE:
+    if type(result) == ConsonantParse and result.manner == Manner.AFFRICATE:
         print('Affricate components:')
-        print('First part:', affricates_first.as_dict())
-        print('Second part:', affricate_second.as_dict())
+        print('First part:', affricates_first.as_set())
+        print('Second part:', affricate_second.as_set())
+    print()
+    print('Parse as a set:')
+    pprint(result.as_set())

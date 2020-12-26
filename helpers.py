@@ -1,6 +1,9 @@
 import sqlite3
-# TODO: implement parse_vowel using Lark
-from IPAParser_2_0 import parse_vowel, parse_consonant
+
+import IPAParser_3_0
+
+
+PARSER = IPAParser_3_0.IPAParser()
 
 
 def get_all_language_ids(db_connection: sqlite3.Connection):
@@ -45,11 +48,11 @@ def get_count_for_features(language_id, features, db_connection):
     vowels = get_vowels_for_language(language_id, db_connection)
     hit_count = 0
     for c in consonants:
-        feature_dict = parse_consonant(c)
+        feature_dict = PARSER.parse(c).as_dict()
         if satisfies_consonants(feature_dict, features):
             hit_count += 1
     for v in vowels:
-        feature_dict = parse_vowel(v)
+        feature_dict = PARSER.parse(v).as_dict()
         if satisfies_vowels(feature_dict, features):
             hit_count += 1
     return hit_count

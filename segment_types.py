@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import List, Set, Union
-from enums import AdditionalArticulation, Place, Manner, Voice, Height, Backness
+from enums import AdditionalArticulation, Place, Manner, Voice, Height, Backness, s, n
 
 
 #
@@ -122,8 +122,15 @@ class ConsonantCore:
 
     def as_dict(self):
         return {
-            'place': self.glyph.place.name.lower(),
-            'manner': self.glyph.manner.name.lower(),
-            'voice': self.glyph.voice.name.lower(),
-            'additional_articulations': set(el.name.lower() for el in self.post_features)
+            'place': s(self.glyph.place),
+            'manner': s(self.glyph.manner),
+            'voice': s(self.glyph.voice),
+            'additional_articulations': set(s(el) for el in self.post_features)
         }
+
+    def as_set(self):
+        return set([
+            s(self.glyph.place),
+            s(self.glyph.manner),
+            s(self.glyph.voice)
+        ]) | set(s(el) for el in self.post_features)
