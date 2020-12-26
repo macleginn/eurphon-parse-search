@@ -1,0 +1,13346 @@
+{
+  "p": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "b": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "m": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "f": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "short",
+    "voiceless"
+  ],
+  "v": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "short",
+    "voiced"
+  ],
+  "t̪": [
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̪": [
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "θ": [
+    "consonant",
+    "fricative",
+    "interdental",
+    "short",
+    "voiceless"
+  ],
+  "ð": [
+    "consonant",
+    "fricative",
+    "interdental",
+    "short",
+    "voiced"
+  ],
+  "n": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "s̠": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "retracted",
+    "short",
+    "voiceless"
+  ],
+  "z̠": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "retracted",
+    "short",
+    "voiced"
+  ],
+  "ɾ̠": [
+    "alveolar",
+    "consonant",
+    "retracted",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "l": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "k": [
+    "consonant",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "g": [
+    "consonant",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "x": [
+    "consonant",
+    "fricative",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ɣ": [
+    "consonant",
+    "fricative",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ʎ": [
+    "approximant",
+    "consonant",
+    "lateral",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ɲ̟": [
+    "advanced",
+    "consonant",
+    "nasal",
+    "palatal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "c": [
+    "consonant",
+    "palatal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "ç": [
+    "consonant",
+    "fricative",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "ʝ": [
+    "consonant",
+    "fricative",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ɟ": [
+    "consonant",
+    "palatal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɐ": [
+    "central",
+    "modal",
+    "near-open",
+    "short",
+    "vowel"
+  ],
+  "e̞": [
+    "front",
+    "mid",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "o̞": [
+    "back",
+    "mid",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "i": [
+    "close",
+    "front",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "u": [
+    "back",
+    "close",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "pʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʃʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "kʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʔ": [
+    "consonant",
+    "glottal",
+    "plosive",
+    "short"
+  ],
+  "d": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "dʒ": [
+    "affricate",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "ɡ": [
+    "consonant",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "s": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ʃ": [
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "z": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "ɻ": [
+    "approximant",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ŋ": [
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "w": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "short",
+    "voiced"
+  ],
+  "j": [
+    "approximant",
+    "consonant",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ɵ": [
+    "central",
+    "close-mid",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "e": [
+    "close-mid",
+    "front",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ə": [
+    "central",
+    "mid",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "o": [
+    "back",
+    "close-mid",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "a": [
+    "central",
+    "modal",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "iː": [
+    "close",
+    "front",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɵː": [
+    "central",
+    "close-mid",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "uː": [
+    "back",
+    "close",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "eː": [
+    "close-mid",
+    "front",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "əː": [
+    "central",
+    "long",
+    "mid",
+    "modal",
+    "vowel"
+  ],
+  "oː": [
+    "back",
+    "close-mid",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "aː": [
+    "central",
+    "long",
+    "modal",
+    "open",
+    "vowel"
+  ],
+  "pʼ": [
+    "bilabial",
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʰ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ː": [
+    "consonant",
+    "dental",
+    "long",
+    "plosive",
+    "voiceless"
+  ],
+  "t̪ʼ": [
+    "consonant",
+    "dental",
+    "ejective",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "l̪": [
+    "approximant",
+    "consonant",
+    "dental",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "tsʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "tsʼ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "short",
+    "voiceless"
+  ],
+  "sː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "long",
+    "voiceless"
+  ],
+  "ɾ̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "r̺̥": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "trill",
+    "voiceless"
+  ],
+  "tʃʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ʒ": [
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "kʲʰ": [
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʲʼ": [
+    "consonant",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "gʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "kʼ": [
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "x̠": [
+    "consonant",
+    "fricative",
+    "retracted",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʁ": [
+    "consonant",
+    "fricative",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "qʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qː": [
+    "consonant",
+    "long",
+    "plosive",
+    "uvular",
+    "voiceless"
+  ],
+  "qʼ": [
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ʡ": [
+    "consonant",
+    "epiglottal",
+    "plosive",
+    "short"
+  ],
+  "h": [
+    "consonant",
+    "fricative",
+    "glottal",
+    "short",
+    "voiceless"
+  ],
+  "ʜ": [
+    "consonant",
+    "epiglottal",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʼˤ": [
+    "consonant",
+    "dental",
+    "ejective",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʃʼˤ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "pharyngealised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʰˤ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʃʰˤ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "pharyngealised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "pʰˤ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tsʰˤ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "pharyngealised",
+    "short",
+    "voiceless"
+  ],
+  "bˤ": [
+    "bilabial",
+    "consonant",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "d̪ˤ": [
+    "consonant",
+    "dental",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "mˤ": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "nˤ": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "vˤ": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "pharyngealised",
+    "short",
+    "voiced"
+  ],
+  "zˤ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "pharyngealised",
+    "short",
+    "voiced"
+  ],
+  "ʒˤ": [
+    "consonant",
+    "fricative",
+    "pharyngealised",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "ɪ": [
+    "front",
+    "modal",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ʊ": [
+    "back",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɨ": [
+    "central",
+    "close",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iːɛ": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "uːʌ": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɛ": [
+    "front",
+    "modal",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ʌ": [
+    "back",
+    "modal",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ɛ̯æː": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "æ": [
+    "front",
+    "modal",
+    "near-open",
+    "short",
+    "vowel"
+  ],
+  "ɔaː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ts": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "tʃ": [
+    "affricate",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "dz": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "χ": [
+    "consonant",
+    "fricative",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "n̪": [
+    "consonant",
+    "dental",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɾ": [
+    "alveolar",
+    "consonant",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ɔ": [
+    "back",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "œ": [
+    "front",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "y": [
+    "close",
+    "front",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "t": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "q": [
+    "consonant",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "r": [
+    "alveolar",
+    "consonant",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "ʉ": [
+    "central",
+    "close",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɲ": [
+    "consonant",
+    "nasal",
+    "palatal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ʈʂ": [
+    "affricate",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ä": [
+    "central",
+    "modal",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "i̯": [
+    "close",
+    "front",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "u̯": [
+    "back",
+    "close",
+    "modal",
+    "non-syllabic",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɯ": [
+    "back",
+    "close",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤ": [
+    "back",
+    "close-mid",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ia": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɯa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ua": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "pʲ": [
+    "bilabial",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʂ": [
+    "affricate",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "tɕ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "pʰʲ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʂʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "tɕʰ": [
+    "affricate",
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "ʂ": [
+    "consonant",
+    "fricative",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɕ": [
+    "alveolo-palatal",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ʐ": [
+    "consonant",
+    "fricative",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʑ": [
+    "alveolo-palatal",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "mʲ": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "m̥": [
+    "bilabial",
+    "consonant",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "short"
+  ],
+  "m̥ʲ": [
+    "bilabial",
+    "consonant",
+    "devoiced",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "short"
+  ],
+  "n̥": [
+    "alveolar",
+    "consonant",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "short"
+  ],
+  "ɲ̊": [
+    "consonant",
+    "devoiced",
+    "nasal",
+    "palatal",
+    "plosive",
+    "short"
+  ],
+  "ŋ̊": [
+    "consonant",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "short",
+    "velar"
+  ],
+  "l̥": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "ɿ": [
+    "alveolar",
+    "apical vowel",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɛ̃": [
+    "front",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ɑ": [
+    "back",
+    "modal",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ɑ̃": [
+    "back",
+    "modal",
+    "nasalised",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ɛi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ui": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɑi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɑi": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "iu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ou": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iɑu": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "ɑu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iɛ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "uɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɑ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ʈ": [
+    "consonant",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʈʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʈʂʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɖ": [
+    "consonant",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ɖʐ": [
+    "affricate",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "dʑ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "ɬ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "ɿ̰": [
+    "alveolar",
+    "apical vowel",
+    "creaky-voice",
+    "short",
+    "vowel"
+  ],
+  "ḭ": [
+    "close",
+    "creaky-voice",
+    "front",
+    "short",
+    "vowel"
+  ],
+  "ɯ̰": [
+    "back",
+    "close",
+    "creaky-voice",
+    "short",
+    "vowel"
+  ],
+  "ṵ": [
+    "back",
+    "close",
+    "creaky-voice",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ḛ": [
+    "close-mid",
+    "creaky-voice",
+    "front",
+    "short",
+    "vowel"
+  ],
+  "o̰": [
+    "back",
+    "close-mid",
+    "creaky-voice",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɛ̰": [
+    "creaky-voice",
+    "front",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "a̰": [
+    "central",
+    "creaky-voice",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ø": [
+    "close-mid",
+    "front",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ai": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "au": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "eu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ie": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uai": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "yo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "øy": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ⁿb": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "ⁿd̪": [
+    "consonant",
+    "dental",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "ⁿɢ": [
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "ⁿg": [
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "n̥̪": [
+    "consonant",
+    "dental",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "short"
+  ],
+  "t̪s̪": [
+    "affricate",
+    "consonant",
+    "dental",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "dental",
+    "short",
+    "voiceless"
+  ],
+  "d̪z̪": [
+    "affricate",
+    "consonant",
+    "dental",
+    "short",
+    "voiced"
+  ],
+  "ⁿd̪z̪": [
+    "affricate",
+    "consonant",
+    "dental",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "ⁿɖʐ": [
+    "affricate",
+    "consonant",
+    "pre-nasalised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ⁿdʑ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "s̪": [
+    "consonant",
+    "dental",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "z̪": [
+    "consonant",
+    "dental",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "ɦ": [
+    "consonant",
+    "fricative",
+    "glottal",
+    "short",
+    "voiced"
+  ],
+  "ɬ̪": [
+    "consonant",
+    "dental",
+    "fricative",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "r̪": [
+    "consonant",
+    "dental",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "z̩": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "ɘ": [
+    "central",
+    "close-mid",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɜ": [
+    "central",
+    "modal",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ə˞": [
+    "central",
+    "mid",
+    "modal",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "ĩ": [
+    "close",
+    "front",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ỹ": [
+    "close",
+    "front",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "æ̃": [
+    "front",
+    "modal",
+    "nasalised",
+    "near-open",
+    "short",
+    "vowel"
+  ],
+  "ã": [
+    "central",
+    "modal",
+    "nasalised",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ɘ̃": [
+    "central",
+    "close-mid",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ũ": [
+    "back",
+    "close",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "õ": [
+    "back",
+    "close-mid",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɔ̃": [
+    "back",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "iɜ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iæ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "yĩ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "iæ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "yi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "yɜ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "yæ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɜ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uæ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɛ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "uã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "r̥": [
+    "alveolar",
+    "consonant",
+    "short",
+    "trill",
+    "voiceless"
+  ],
+  "ɹ̥": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "i̞": [
+    "close",
+    "front",
+    "lowered",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "u̞": [
+    "back",
+    "close",
+    "lowered",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɑ̞": [
+    "back",
+    "lowered",
+    "modal",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ɐʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "øɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "h̃": [
+    "consonant",
+    "fricative",
+    "glottal",
+    "nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ʅ": [
+    "apical vowel",
+    "modal",
+    "postalveolar",
+    "short",
+    "vowel"
+  ],
+  "tʰʲ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "kʰʲ": [
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "nʲ": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "nˠ": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "fʲ": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "ɣʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ðʲ": [
+    "consonant",
+    "fricative",
+    "interdental",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "ɾˠ": [
+    "alveolar",
+    "consonant",
+    "short",
+    "tap",
+    "velarised",
+    "voiced"
+  ],
+  "lʲ": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "lˠ": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "ɪ̃": [
+    "front",
+    "modal",
+    "nasalised",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ɪ̃ː": [
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "near-close",
+    "vowel"
+  ],
+  "ɛː": [
+    "front",
+    "long",
+    "modal",
+    "open-mid",
+    "vowel"
+  ],
+  "ɛ̃ː": [
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "vowel"
+  ],
+  "ãː": [
+    "central",
+    "long",
+    "modal",
+    "nasalised",
+    "open",
+    "vowel"
+  ],
+  "ũː": [
+    "back",
+    "close",
+    "long",
+    "modal",
+    "nasalised",
+    "rounded",
+    "vowel"
+  ],
+  "ɔː": [
+    "back",
+    "long",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɔ̃ː": [
+    "back",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɯː": [
+    "back",
+    "close",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɯ̃ː": [
+    "back",
+    "close",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ɤː": [
+    "back",
+    "close-mid",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ei": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ii": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "u̠u": [
+    "diphthong",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ɛ̃ũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ẽɪ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ãũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ũã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɪ̃ə̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "s̻": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "s̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ts̺": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "ts̻": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "n̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "l̺": [
+    "alveolar",
+    "apical",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "r̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "l̪ʲ": [
+    "approximant",
+    "consonant",
+    "dental",
+    "lateral",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "ø̞": [
+    "front",
+    "mid",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ie̞": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æː": [
+    "front",
+    "long",
+    "modal",
+    "near-open",
+    "vowel"
+  ],
+  "yː": [
+    "close",
+    "front",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "øː": [
+    "close-mid",
+    "front",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ɜː": [
+    "central",
+    "long",
+    "modal",
+    "open-mid",
+    "vowel"
+  ],
+  "äː": [
+    "central",
+    "long",
+    "modal",
+    "open",
+    "vowel"
+  ],
+  "o̞ː": [
+    "back",
+    "long",
+    "mid",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "æ̰": [
+    "creaky-voice",
+    "front",
+    "near-open",
+    "short",
+    "vowel"
+  ],
+  "e̞̰": [
+    "creaky-voice",
+    "front",
+    "mid",
+    "short",
+    "vowel"
+  ],
+  "ɵ̞̰": [
+    "central",
+    "close-mid",
+    "creaky-voice",
+    "lowered",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "pː": [
+    "bilabial",
+    "consonant",
+    "long",
+    "plosive",
+    "voiceless"
+  ],
+  "ɾ̥": [
+    "alveolar",
+    "consonant",
+    "short",
+    "tap",
+    "voiceless"
+  ],
+  "ɫ̪": [
+    "approximant",
+    "consonant",
+    "dental",
+    "lateral",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "ʰk": [
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʢ": [
+    "consonant",
+    "epiglottal",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "je": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "e̞ː": [
+    "front",
+    "long",
+    "mid",
+    "modal",
+    "vowel"
+  ],
+  "y̯ø": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "yø": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "woː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɑː": [
+    "back",
+    "long",
+    "modal",
+    "open",
+    "vowel"
+  ],
+  "ĩː": [
+    "close",
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "jẽ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "iẽ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ẽ̞ː": [
+    "front",
+    "long",
+    "mid",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ʊ̃": [
+    "back",
+    "modal",
+    "nasalised",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "wõ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "wõː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ə̃": [
+    "central",
+    "mid",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɑ̃ː": [
+    "back",
+    "long",
+    "modal",
+    "nasalised",
+    "open",
+    "vowel"
+  ],
+  "ɒ": [
+    "back",
+    "modal",
+    "open",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɒː": [
+    "back",
+    "long",
+    "modal",
+    "open",
+    "rounded",
+    "vowel"
+  ],
+  "ei̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "eːi̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "œː": [
+    "front",
+    "long",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ʏ": [
+    "front",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "oːu̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "ɒ̃": [
+    "back",
+    "modal",
+    "nasalised",
+    "open",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɒ̃ː": [
+    "back",
+    "long",
+    "modal",
+    "nasalised",
+    "open",
+    "rounded",
+    "vowel"
+  ],
+  "ẽ": [
+    "close-mid",
+    "front",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ẽː": [
+    "close-mid",
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "õː": [
+    "back",
+    "close-mid",
+    "long",
+    "modal",
+    "nasalised",
+    "rounded",
+    "vowel"
+  ],
+  "œ̃": [
+    "front",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "œ̃ː": [
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "aːu̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "wɔː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "øy̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "øːy̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "ɒːi̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "t̺ʰ": [
+    "alveolar",
+    "apical",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "cʰ": [
+    "aspirated",
+    "consonant",
+    "palatal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̺ʼ": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "cʼ": [
+    "consonant",
+    "ejective",
+    "palatal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɢ": [
+    "consonant",
+    "plosive",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "ɯ̝": [
+    "back",
+    "close",
+    "modal",
+    "raised",
+    "short",
+    "vowel"
+  ],
+  "ɭ̥": [
+    "approximant",
+    "consonant",
+    "lateral",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɽ̊": [
+    "consonant",
+    "retroflex",
+    "short",
+    "tap",
+    "voiceless"
+  ],
+  "u̞ː": [
+    "back",
+    "close",
+    "long",
+    "lowered",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ɨ̹": [
+    "central",
+    "close",
+    "modal",
+    "more-rounded",
+    "short",
+    "vowel"
+  ],
+  "ɨ̹ː": [
+    "central",
+    "close",
+    "long",
+    "modal",
+    "more-rounded",
+    "vowel"
+  ],
+  "ɜ̹": [
+    "central",
+    "modal",
+    "more-rounded",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ɜ̹ː": [
+    "central",
+    "long",
+    "modal",
+    "more-rounded",
+    "open-mid",
+    "vowel"
+  ],
+  "ɬʲ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "lateral",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "ɕː": [
+    "alveolo-palatal",
+    "consonant",
+    "fricative",
+    "long",
+    "voiceless"
+  ],
+  "ɑ̟ˑ": [
+    "advanced",
+    "back",
+    "half-long",
+    "modal",
+    "open",
+    "vowel"
+  ],
+  "ɑ̝̟": [
+    "advanced",
+    "back",
+    "modal",
+    "open",
+    "raised",
+    "short",
+    "vowel"
+  ],
+  "o̟ˑ": [
+    "advanced",
+    "back",
+    "close-mid",
+    "half-long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ɞ": [
+    "central",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ʊ̈": [
+    "back",
+    "centralised",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "u̞ˑ": [
+    "back",
+    "close",
+    "half-long",
+    "lowered",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "eˑ": [
+    "close-mid",
+    "front",
+    "half-long",
+    "modal",
+    "vowel"
+  ],
+  "ə̆": [
+    "central",
+    "mid",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "pʲʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "bʲ": [
+    "bilabial",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "tʲʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "dʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "z̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "r̺ʲ": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "palatalised",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "xʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ɴ": [
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "ħ": [
+    "consonant",
+    "fricative",
+    "pharyngeal",
+    "short",
+    "voiceless"
+  ],
+  "ɨ̟ː": [
+    "advanced",
+    "central",
+    "close",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɤ̟": [
+    "advanced",
+    "back",
+    "close-mid",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤ̟ː": [
+    "advanced",
+    "back",
+    "close-mid",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɛ̞ː": [
+    "front",
+    "long",
+    "lowered",
+    "modal",
+    "open-mid",
+    "vowel"
+  ],
+  "œ̞ɛ̞": [
+    "diphthong",
+    "lowered",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɵ̟ː": [
+    "advanced",
+    "central",
+    "close-mid",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ʊi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʊː": [
+    "back",
+    "long",
+    "modal",
+    "near-close",
+    "rounded",
+    "vowel"
+  ],
+  "ʍ": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "short",
+    "voiceless"
+  ],
+  "ɪː": [
+    "front",
+    "long",
+    "modal",
+    "near-close",
+    "vowel"
+  ],
+  "ʊ̃ː": [
+    "back",
+    "long",
+    "modal",
+    "nasalised",
+    "near-close",
+    "rounded",
+    "vowel"
+  ],
+  "ɾ̞": [
+    "alveolar",
+    "consonant",
+    "lowered",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ɟʝ̞": [
+    "affricate",
+    "consonant",
+    "lowered",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ɹ": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "ɧ": [
+    "consonant",
+    "fricative",
+    "palatal-velar",
+    "short",
+    "voiceless"
+  ],
+  "ʉ̟ː": [
+    "advanced",
+    "central",
+    "close",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ʋ": [
+    "approximant",
+    "consonant",
+    "labiodental",
+    "short",
+    "voiced"
+  ],
+  "ʔː": [
+    "consonant",
+    "glottal",
+    "long",
+    "plosive"
+  ],
+  "gʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɟʰ": [
+    "aspirated",
+    "consonant",
+    "palatal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɖʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "d̪ʰ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "bʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "əi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "əĩ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "əu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "əũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "β̞": [
+    "approximant",
+    "bilabial",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "iˤ": [
+    "close",
+    "front",
+    "modal",
+    "pharyngealised",
+    "short",
+    "vowel"
+  ],
+  "iˤː": [
+    "close",
+    "front",
+    "long",
+    "modal",
+    "pharyngealised",
+    "vowel"
+  ],
+  "iˤæ": [
+    "diphthong",
+    "modal",
+    "pharyngealised",
+    "short",
+    "vowel"
+  ],
+  "oˤ": [
+    "back",
+    "close-mid",
+    "modal",
+    "pharyngealised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "oˤː": [
+    "back",
+    "close-mid",
+    "long",
+    "modal",
+    "pharyngealised",
+    "rounded",
+    "vowel"
+  ],
+  "uˤ": [
+    "back",
+    "close",
+    "modal",
+    "pharyngealised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "uˤː": [
+    "back",
+    "close",
+    "long",
+    "modal",
+    "pharyngealised",
+    "rounded",
+    "vowel"
+  ],
+  "z̻": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "laminal",
+    "short",
+    "voiced"
+  ],
+  "ä̃": [
+    "central",
+    "modal",
+    "nasalised",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ẽ̞": [
+    "front",
+    "mid",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "õ̞": [
+    "back",
+    "mid",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "sʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ʃʰ": [
+    "aspirated",
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ɕʰ": [
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ⁿd": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "ⁿdz": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "ⁿdʒ": [
+    "affricate",
+    "consonant",
+    "postalveolar",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "iø": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ue": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "yɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "io": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iɔ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɔ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɫ": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "ø̞ː": [
+    "front",
+    "long",
+    "mid",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "t̻": [
+    "alveolar",
+    "consonant",
+    "laminal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̻": [
+    "alveolar",
+    "consonant",
+    "laminal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɟ̟": [
+    "advanced",
+    "consonant",
+    "palatal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "t̻s̻̪": [
+    "affricate",
+    "consonant",
+    "dental",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "n̻": [
+    "alveolar",
+    "consonant",
+    "laminal",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ʎ̟": [
+    "advanced",
+    "approximant",
+    "consonant",
+    "lateral",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "rʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "ʉ̟": [
+    "advanced",
+    "central",
+    "close",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɵ̟": [
+    "advanced",
+    "central",
+    "close-mid",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "i̠": [
+    "close",
+    "front",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "e̠": [
+    "close-mid",
+    "front",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ä̠": [
+    "central",
+    "centralised",
+    "modal",
+    "open",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ʌi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɐi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɐu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "θʼ": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "interdental",
+    "short",
+    "voiceless"
+  ],
+  "t’": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "s’": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ɬ’": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "fricative",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "ɕ’": [
+    "alveolo-palatal",
+    "consonant",
+    "ejective",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "k’": [
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʕ": [
+    "consonant",
+    "fricative",
+    "pharyngeal",
+    "short",
+    "voiced"
+  ],
+  "ai̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "au̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "əi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "əu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "β": [
+    "bilabial",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "tʼ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tsːʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "long",
+    "voiceless"
+  ],
+  "ʃː": [
+    "consonant",
+    "fricative",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "tʃːʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "kːʰ": [
+    "aspirated",
+    "consonant",
+    "long",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "xː": [
+    "consonant",
+    "fricative",
+    "long",
+    "velar",
+    "voiceless"
+  ],
+  "ɬː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "lateral",
+    "long",
+    "voiceless"
+  ],
+  "tɬːʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "lateral",
+    "long",
+    "voiceless"
+  ],
+  "tɬʼ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "χː": [
+    "consonant",
+    "fricative",
+    "long",
+    "uvular",
+    "voiceless"
+  ],
+  "ʁː": [
+    "consonant",
+    "fricative",
+    "long",
+    "uvular",
+    "voiced"
+  ],
+  "qχʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ʔˤ": [
+    "consonant",
+    "glottal",
+    "pharyngealised",
+    "plosive",
+    "short"
+  ],
+  "cːʰ": [
+    "aspirated",
+    "consonant",
+    "long",
+    "palatal",
+    "plosive",
+    "voiceless"
+  ],
+  "kʷʰ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kːʷʰ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "long",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "kʼʷ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "qʼʷ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "χʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "œi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "yə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɪə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɵə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "b̤ʱ": [
+    "aspirated",
+    "bilabial",
+    "breathy-voice",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "d̪̤ʱ": [
+    "aspirated",
+    "breathy-voice",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɖ̤ʱ": [
+    "aspirated",
+    "breathy-voice",
+    "consonant",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ɳ": [
+    "consonant",
+    "nasal",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ɺ": [
+    "alveolar",
+    "consonant",
+    "lateral",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "d̤ʒ̤ʱ": [
+    "affricate",
+    "aspirated",
+    "breathy-voice",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "g̤ʱ": [
+    "aspirated",
+    "breathy-voice",
+    "consonant",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "i̤": [
+    "breathy-voice",
+    "close",
+    "front",
+    "short",
+    "vowel"
+  ],
+  "ɛ̤": [
+    "breathy-voice",
+    "front",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ä̤": [
+    "breathy-voice",
+    "central",
+    "centralised",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ə̤": [
+    "breathy-voice",
+    "central",
+    "mid",
+    "short",
+    "vowel"
+  ],
+  "ɔ̤": [
+    "back",
+    "breathy-voice",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ṳ": [
+    "back",
+    "breathy-voice",
+    "close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɛː̃": [
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "vowel"
+  ],
+  "äː̃": [
+    "central",
+    "long",
+    "modal",
+    "nasalised",
+    "open",
+    "vowel"
+  ],
+  "əː̃": [
+    "central",
+    "long",
+    "mid",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ɔː̃": [
+    "back",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "uː̃": [
+    "back",
+    "close",
+    "long",
+    "modal",
+    "nasalised",
+    "rounded",
+    "vowel"
+  ],
+  "ĩ̤ː": [
+    "breathy-voice",
+    "close",
+    "front",
+    "long",
+    "nasalised",
+    "vowel"
+  ],
+  "ɛ̤̃ː": [
+    "breathy-voice",
+    "front",
+    "long",
+    "nasalised",
+    "open-mid",
+    "vowel"
+  ],
+  "ä̤̃ː": [
+    "breathy-voice",
+    "central",
+    "centralised",
+    "long",
+    "nasalised",
+    "open",
+    "vowel"
+  ],
+  "ə̤̃ː": [
+    "breathy-voice",
+    "central",
+    "long",
+    "mid",
+    "nasalised",
+    "vowel"
+  ],
+  "ɔ̤̃ː": [
+    "back",
+    "breathy-voice",
+    "long",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ṳ̃ː": [
+    "back",
+    "breathy-voice",
+    "close",
+    "long",
+    "nasalised",
+    "rounded",
+    "vowel"
+  ],
+  "dʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "dzʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "j̊": [
+    "approximant",
+    "consonant",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "oi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "sʲ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "zʲ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "ɾʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ɬˠ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "lateral",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "ɾ̥ʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "short",
+    "tap",
+    "voiceless"
+  ],
+  "tsʲ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "ɮ̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "fricative",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "qχ": [
+    "affricate",
+    "consonant",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "dzʲ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "vʲ": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "iɪ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɯɪ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɘ̆": [
+    "central",
+    "close-mid",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "ɵ̆": [
+    "central",
+    "close-mid",
+    "modal",
+    "rounded",
+    "shortened",
+    "vowel"
+  ],
+  "ɤ̞̆": [
+    "back",
+    "mid",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "ŏ": [
+    "back",
+    "close-mid",
+    "modal",
+    "rounded",
+    "shortened",
+    "vowel"
+  ],
+  "ⁿɖ": [
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ỹː": [
+    "close",
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "rounded",
+    "vowel"
+  ],
+  "ø̃ː": [
+    "close-mid",
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "rounded",
+    "vowel"
+  ],
+  "ɭ": [
+    "approximant",
+    "consonant",
+    "lateral",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "b̥": [
+    "bilabial",
+    "consonant",
+    "devoiced",
+    "plosive",
+    "short"
+  ],
+  "t̺": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̺̥": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "devoiced",
+    "plosive",
+    "short"
+  ],
+  "t̺s̺ʰ": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "aspirated",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "t̺s̺": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "d̺̥z̺̥": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "t̺s̺ʼ": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "ejective",
+    "short",
+    "voiceless"
+  ],
+  "g̊": [
+    "consonant",
+    "devoiced",
+    "plosive",
+    "short",
+    "velar"
+  ],
+  "kʰʷ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʷ": [
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "g̊ʷ": [
+    "consonant",
+    "devoiced",
+    "labialised",
+    "plosive",
+    "short",
+    "velar"
+  ],
+  "qʷ": [
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ʁʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "d̥ʒ̥": [
+    "affricate",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ɨ̆": [
+    "central",
+    "close",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "ɐ̆": [
+    "central",
+    "modal",
+    "near-open",
+    "shortened",
+    "vowel"
+  ],
+  "ae": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ow": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "œj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɽ": [
+    "consonant",
+    "retroflex",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "s̠̻": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "laminal",
+    "retracted",
+    "short",
+    "voiceless"
+  ],
+  "ʊ̞": [
+    "back",
+    "lowered",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ʊ̈i": [
+    "centralised",
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "tɬʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "gʷ": [
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "tʰʷ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tsʰʷ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "tʃʰʷ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "tɬʰʷ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "qʰʷ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "tʼʷ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tsʼʷ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "tʃʼʷ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "tɬʼʷ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "labialised",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "zʷ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "labialised",
+    "short",
+    "voiced"
+  ],
+  "ʒʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "ʢʷ": [
+    "consonant",
+    "epiglottal",
+    "fricative",
+    "labialised",
+    "short",
+    "voiced"
+  ],
+  "sʷ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʃʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ɬʷ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "labialised",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "xʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʜʷ": [
+    "consonant",
+    "epiglottal",
+    "fricative",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "hʷ": [
+    "consonant",
+    "fricative",
+    "glottal",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʰpʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "d̥": [
+    "alveolar",
+    "consonant",
+    "devoiced",
+    "plosive",
+    "short"
+  ],
+  "ʰtʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰkʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ɢ̥": [
+    "consonant",
+    "devoiced",
+    "plosive",
+    "short",
+    "uvular"
+  ],
+  "ʰqʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "z̥": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ʰsʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ɖ̥ʐ̥": [
+    "affricate",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʰʈʂʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "pre-aspirated",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "d̥ʒ̊": [
+    "affricate",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ʰtʃʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "postalveolar",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "d̥z̥": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "ʰtsʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "d̥ʑ̥": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "ʰtɕʰ": [
+    "affricate",
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "t̺̪": [
+    "apical",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "ð̺̪": [
+    "apical",
+    "consonant",
+    "dental",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "y̞": [
+    "close",
+    "front",
+    "lowered",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɪ̈": [
+    "centralised",
+    "front",
+    "modal",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ʌː": [
+    "back",
+    "long",
+    "modal",
+    "open-mid",
+    "vowel"
+  ],
+  "ʌ̤": [
+    "back",
+    "breathy-voice",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ɛ̤ː": [
+    "breathy-voice",
+    "front",
+    "long",
+    "open-mid",
+    "vowel"
+  ],
+  "ʌ̤ː": [
+    "back",
+    "breathy-voice",
+    "long",
+    "open-mid",
+    "vowel"
+  ],
+  "ɔ̤ː": [
+    "back",
+    "breathy-voice",
+    "long",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "dʒʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "ɐː": [
+    "central",
+    "long",
+    "modal",
+    "near-open",
+    "vowel"
+  ],
+  "tʷʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "dʷ": [
+    "alveolar",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "tʷʼ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "kʷʼ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "qʲʼ": [
+    "consonant",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qʷʼ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "tŝʷʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "hissing-hushing",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "tŝʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "hissing-hushing",
+    "short",
+    "voiceless"
+  ],
+  "dẑʷ": [
+    "affricate",
+    "consonant",
+    "hissing-hushing",
+    "labialised",
+    "short",
+    "voiced"
+  ],
+  "dẑ": [
+    "affricate",
+    "consonant",
+    "hissing-hushing",
+    "short",
+    "voiced"
+  ],
+  "ʈʂʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "tŝʷʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "hissing-hushing",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "tŝʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "hissing-hushing",
+    "short",
+    "voiceless"
+  ],
+  "ŝ": [
+    "consonant",
+    "fricative",
+    "hissing-hushing",
+    "short",
+    "voiceless"
+  ],
+  "ẑ": [
+    "consonant",
+    "fricative",
+    "hissing-hushing",
+    "short",
+    "voiced"
+  ],
+  "ŝʷ": [
+    "consonant",
+    "fricative",
+    "hissing-hushing",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "ẑʷ": [
+    "consonant",
+    "fricative",
+    "hissing-hushing",
+    "labialised",
+    "short",
+    "voiced"
+  ],
+  "ʁʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "χʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ħʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "pharyngeal",
+    "short",
+    "voiceless"
+  ],
+  "ɥˤ": [
+    "approximant",
+    "consonant",
+    "labial-palatal",
+    "pharyngealised",
+    "short",
+    "voiced"
+  ],
+  "χˤʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "pharyngealised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "χˤ": [
+    "consonant",
+    "fricative",
+    "pharyngealised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ⁿɟ": [
+    "consonant",
+    "palatal",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "ⁿɡ": [
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "d̪ʲ": [
+    "consonant",
+    "dental",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "t̪ʲ": [
+    "consonant",
+    "dental",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  " ʑ": [
+    "alveolo-palatal",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "ɯ̽": [
+    "back",
+    "close",
+    "mid-centralised",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʉː": [
+    "central",
+    "close",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ʉ̃": [
+    "central",
+    "close",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ʉ̃ː": [
+    "central",
+    "close",
+    "long",
+    "modal",
+    "nasalised",
+    "rounded",
+    "vowel"
+  ],
+  "t͇s͇": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "t͇s͇ʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "d͇z͇": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "ʈɽ": [
+    "affricate",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʈɽʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ɖɽ": [
+    "affricate",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "s͇": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "z͇": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "ⁿpʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿtʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿkʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ⁿt̪s̪ʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "dental",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿt͇s͇ʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿd͇z͇": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiced"
+  ],
+  "ⁿtɕʰ": [
+    "affricate",
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿʈɽʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "pre-nasalised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ⁿɖɽ": [
+    "affricate",
+    "consonant",
+    "pre-nasalised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "a˞": [
+    "central",
+    "modal",
+    "open",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "ɿ̹": [
+    "alveolar",
+    "apical vowel",
+    "modal",
+    "more-rounded",
+    "short",
+    "vowel"
+  ],
+  "p’": [
+    "bilabial",
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪’": [
+    "consonant",
+    "dental",
+    "ejective",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "q’": [
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "k’ʷ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "q’ʷ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ts’": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "short",
+    "voiceless"
+  ],
+  "tɬ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "tɬ’": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "tʃ’": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ʏː": [
+    "front",
+    "long",
+    "modal",
+    "near-close",
+    "rounded",
+    "vowel"
+  ],
+  "ʊɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɛɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aˤ": [
+    "central",
+    "modal",
+    "open",
+    "pharyngealised",
+    "short",
+    "vowel"
+  ],
+  "ɛˤ": [
+    "front",
+    "modal",
+    "open-mid",
+    "pharyngealised",
+    "short",
+    "vowel"
+  ],
+  "bː": [
+    "bilabial",
+    "consonant",
+    "long",
+    "plosive",
+    "voiced"
+  ],
+  "dː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "plosive",
+    "voiced"
+  ],
+  "dʒː": [
+    "affricate",
+    "consonant",
+    "long",
+    "postalveolar",
+    "voiced"
+  ],
+  "gː": [
+    "consonant",
+    "long",
+    "plosive",
+    "velar",
+    "voiced"
+  ],
+  "tsː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "long",
+    "voiceless"
+  ],
+  "tʃː": [
+    "affricate",
+    "consonant",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "tɬː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "lateral",
+    "long",
+    "voiceless"
+  ],
+  "kː": [
+    "consonant",
+    "long",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "tsʼː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "long",
+    "voiceless"
+  ],
+  "tʃʼː": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "tɬʼː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "lateral",
+    "long",
+    "voiceless"
+  ],
+  "kʼː": [
+    "consonant",
+    "ejective",
+    "long",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "qʼː": [
+    "consonant",
+    "ejective",
+    "long",
+    "plosive",
+    "uvular",
+    "voiceless"
+  ],
+  "gːʷ": [
+    "consonant",
+    "labialised",
+    "long",
+    "plosive",
+    "velar",
+    "voiced"
+  ],
+  "kːʷ": [
+    "consonant",
+    "labialised",
+    "long",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "kʼːʷ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "long",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "xːʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "long",
+    "velar",
+    "voiceless"
+  ],
+  "ɢʷ": [
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "qːʷ": [
+    "consonant",
+    "labialised",
+    "long",
+    "plosive",
+    "uvular",
+    "voiceless"
+  ],
+  "qʼːʷ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "long",
+    "plosive",
+    "uvular",
+    "voiceless"
+  ],
+  "χːʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "long",
+    "uvular",
+    "voiceless"
+  ],
+  "ʔ̃": [
+    "consonant",
+    "glottal",
+    "nasalised",
+    "plosive",
+    "short"
+  ],
+  "ɮ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "d̪̥": [
+    "consonant",
+    "dental",
+    "devoiced",
+    "plosive",
+    "short"
+  ],
+  "w̜": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "less-rounded",
+    "short",
+    "voiced"
+  ],
+  "ɮʲ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "lateral",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "d̥ʲ": [
+    "alveolar",
+    "consonant",
+    "devoiced",
+    "palatalised",
+    "plosive",
+    "short"
+  ],
+  "w̜ʲ": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "less-rounded",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "l̻": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "laminal",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "ɘ̠": [
+    "central",
+    "close-mid",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ɨ̠": [
+    "central",
+    "close",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "t̪̺": [
+    "apical",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̪̺": [
+    "apical",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "cç": [
+    "affricate",
+    "consonant",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "ɟʝ": [
+    "affricate",
+    "consonant",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ɥ": [
+    "approximant",
+    "consonant",
+    "labial-palatal",
+    "short",
+    "voiced"
+  ],
+  "uʌ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʊ̯": [
+    "back",
+    "modal",
+    "near-close",
+    "non-syllabic",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɻ̊": [
+    "approximant",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɫ̥": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "l̥ʲ": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "r̥ʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "short",
+    "trill",
+    "voiceless"
+  ],
+  "hʲ": [
+    "consonant",
+    "fricative",
+    "glottal",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "ŋʲ": [
+    "consonant",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɨː": [
+    "central",
+    "close",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "oä": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "äi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɨi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɛi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "oi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "iɛi̯": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "ŋʷ": [
+    "consonant",
+    "labialised",
+    "nasal",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "eɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oɔ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "t̻s̻": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "ɛ̠": [
+    "front",
+    "modal",
+    "open-mid",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ɯ̟": [
+    "advanced",
+    "back",
+    "close",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤ̟̹": [
+    "advanced",
+    "back",
+    "close-mid",
+    "modal",
+    "more-rounded",
+    "short",
+    "vowel"
+  ],
+  "ea": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ĩẽ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "õã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "iˑ": [
+    "close",
+    "front",
+    "half-long",
+    "modal",
+    "vowel"
+  ],
+  "æˑ": [
+    "front",
+    "half-long",
+    "modal",
+    "near-open",
+    "vowel"
+  ],
+  "yˑ": [
+    "close",
+    "front",
+    "half-long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "øˑ": [
+    "close-mid",
+    "front",
+    "half-long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ɯˑ": [
+    "back",
+    "close",
+    "half-long",
+    "modal",
+    "vowel"
+  ],
+  "ɑˑ": [
+    "back",
+    "half-long",
+    "modal",
+    "open",
+    "vowel"
+  ],
+  "oˑ": [
+    "back",
+    "close-mid",
+    "half-long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ɯ̽ː": [
+    "back",
+    "close",
+    "long",
+    "mid-centralised",
+    "modal",
+    "vowel"
+  ],
+  "ɑ̰ː": [
+    "back",
+    "creaky-voice",
+    "long",
+    "open",
+    "vowel"
+  ],
+  "ɛ̰ː": [
+    "creaky-voice",
+    "front",
+    "long",
+    "open-mid",
+    "vowel"
+  ],
+  "ḭː": [
+    "close",
+    "creaky-voice",
+    "front",
+    "long",
+    "vowel"
+  ],
+  "ɯ̰̽ː": [
+    "back",
+    "close",
+    "creaky-voice",
+    "long",
+    "mid-centralised",
+    "vowel"
+  ],
+  "ɔ̰ː": [
+    "back",
+    "creaky-voice",
+    "long",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "œ̰ː": [
+    "creaky-voice",
+    "front",
+    "long",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ṵː": [
+    "back",
+    "close",
+    "creaky-voice",
+    "long",
+    "rounded",
+    "vowel"
+  ],
+  "y̰ː": [
+    "close",
+    "creaky-voice",
+    "front",
+    "long",
+    "rounded",
+    "vowel"
+  ],
+  "ø̞̜": [
+    "front",
+    "less-rounded",
+    "mid",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ø̞̜ː": [
+    "front",
+    "less-rounded",
+    "long",
+    "mid",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ɛ̝": [
+    "front",
+    "modal",
+    "open-mid",
+    "raised",
+    "short",
+    "vowel"
+  ],
+  "ɑ̟ː": [
+    "advanced",
+    "back",
+    "long",
+    "modal",
+    "open",
+    "vowel"
+  ],
+  "o̞̜": [
+    "back",
+    "less-rounded",
+    "mid",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ʊ̜": [
+    "back",
+    "less-rounded",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɘː": [
+    "central",
+    "close-mid",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɨi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "d̺z̺": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "mː": [
+    "bilabial",
+    "consonant",
+    "long",
+    "nasal",
+    "plosive",
+    "voiced"
+  ],
+  "fː": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "long",
+    "voiceless"
+  ],
+  "tː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "plosive",
+    "voiceless"
+  ],
+  "nː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "nasal",
+    "plosive",
+    "voiced"
+  ],
+  "rː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "trill",
+    "voiced"
+  ],
+  "s̺ː": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "fricative",
+    "long",
+    "voiceless"
+  ],
+  "lː": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "long",
+    "voiced"
+  ],
+  "l̥ː": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "long",
+    "voiceless"
+  ],
+  "t̺s̺ː": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "long",
+    "voiceless"
+  ],
+  "d̺z̺ː": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "long",
+    "voiced"
+  ],
+  "ɐ̃": [
+    "central",
+    "modal",
+    "nasalised",
+    "near-open",
+    "short",
+    "vowel"
+  ],
+  "ʏ̃": [
+    "front",
+    "modal",
+    "nasalised",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɔ̞": [
+    "back",
+    "lowered",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɔ̞̃": [
+    "back",
+    "lowered",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ʏ̃ː": [
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "near-close",
+    "rounded",
+    "vowel"
+  ],
+  "ɔ̞ː": [
+    "back",
+    "long",
+    "lowered",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɔ̞̃ː": [
+    "back",
+    "long",
+    "lowered",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ai̯ː": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "ãɪ̯ː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "vowel"
+  ],
+  "auː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɪɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɪ̃ɛ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɪɛː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɪ̃ɛː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ũo": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "uoː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ũoː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "yœ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ỹœ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "yœː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ỹœː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ɔy̯ː": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "i̯uo": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "i̯ũo": [
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "t̻ʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "laminal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̻̤ʱ": [
+    "alveolar",
+    "aspirated",
+    "breathy-voice",
+    "consonant",
+    "laminal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɽ̤ʱ": [
+    "aspirated",
+    "breathy-voice",
+    "consonant",
+    "retroflex",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ä̃ː": [
+    "central",
+    "long",
+    "modal",
+    "nasalised",
+    "open",
+    "vowel"
+  ],
+  "t̪ˢʲ": [
+    "affricated",
+    "consonant",
+    "dental",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̪ᶻʲ": [
+    "affricated",
+    "consonant",
+    "dental",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "t̪s": [
+    "affricate",
+    "consonant",
+    "dental",
+    "short",
+    "voiceless"
+  ],
+  "n̪ʲ": [
+    "consonant",
+    "dental",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "n̩": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "l̩": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "r̩": [
+    "alveolar",
+    "consonant",
+    "short",
+    "syllabic",
+    "trill",
+    "voiced"
+  ],
+  "ⁿp": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿt": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿc": [
+    "consonant",
+    "palatal",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿk": [
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ⁿq": [
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ⁿcʰ": [
+    "aspirated",
+    "consonant",
+    "palatal",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿqʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ⁿts": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿtʃ": [
+    "affricate",
+    "consonant",
+    "postalveolar",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿʈʂ": [
+    "affricate",
+    "consonant",
+    "pre-nasalised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ⁿtsʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿtʃʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "postalveolar",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿʈʂʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "pre-nasalised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "aɰ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ŋ̩": [
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "syllabic",
+    "velar",
+    "voiced"
+  ],
+  "ɰ": [
+    "approximant",
+    "consonant",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɯ̃": [
+    "back",
+    "close",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɨ̞": [
+    "central",
+    "modal",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ɯ̤": [
+    "back",
+    "breathy-voice",
+    "close",
+    "short",
+    "vowel"
+  ],
+  "e̤": [
+    "breathy-voice",
+    "close-mid",
+    "front",
+    "short",
+    "vowel"
+  ],
+  "o̤": [
+    "back",
+    "breathy-voice",
+    "close-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "a̤": [
+    "breathy-voice",
+    "central",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "mʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "nʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ŋʰ": [
+    "aspirated",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "rʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "ɽʰ": [
+    "aspirated",
+    "consonant",
+    "retroflex",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "lʰ": [
+    "alveolar",
+    "approximant",
+    "aspirated",
+    "consonant",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "ʌ̃": [
+    "back",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ãĩ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ʃʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ʒʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "tʃʲ": [
+    "affricate",
+    "consonant",
+    "palatalised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "dʒʲ": [
+    "affricate",
+    "consonant",
+    "palatalised",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "a̟": [
+    "advanced",
+    "central",
+    "modal",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ɑ̆": [
+    "back",
+    "modal",
+    "open",
+    "shortened",
+    "vowel"
+  ],
+  "ĕ": [
+    "close-mid",
+    "front",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "ɛa̟": [
+    "advanced",
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɛɐ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iɐ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɐ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ua̟": [
+    "advanced",
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iau": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "ʐʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "tʃ̺": [
+    "affricate",
+    "apical",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "tʃ̺ʰ": [
+    "affricate",
+    "apical",
+    "aspirated",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ʃ̺": [
+    "apical",
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ɹ̺": [
+    "alveolar",
+    "apical",
+    "approximant",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "ye": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iou": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "uei": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "ɔ̜ː": [
+    "back",
+    "less-rounded",
+    "long",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ʡˤ": [
+    "consonant",
+    "epiglottal",
+    "pharyngealised",
+    "plosive",
+    "short"
+  ],
+  "qˤ": [
+    "consonant",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ə̞̆": [
+    "central",
+    "lowered",
+    "mid",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "o̞̜ː": [
+    "back",
+    "less-rounded",
+    "long",
+    "mid",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "pʼʷ": [
+    "bilabial",
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "ɡʷ": [
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ʔʼ": [
+    "consonant",
+    "ejective",
+    "glottal",
+    "plosive",
+    "short"
+  ],
+  "ʔʼʷ": [
+    "consonant",
+    "ejective",
+    "glottal",
+    "labialised",
+    "plosive",
+    "short"
+  ],
+  "tɕʼ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "ejective",
+    "short",
+    "voiceless"
+  ],
+  "ŝʼ": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "hissing-hushing",
+    "short",
+    "voiceless"
+  ],
+  "ŝʼʷ": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "hissing-hushing",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "tŝʷ": [
+    "affricate",
+    "consonant",
+    "hissing-hushing",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "ɬʼ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "fricative",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʰʷ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʷ": [
+    "consonant",
+    "dental",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʼʷ": [
+    "consonant",
+    "dental",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʼ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "ejective",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʰʷ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "dental",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʷ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʼʷ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "ejective",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "s̪ʷ": [
+    "consonant",
+    "dental",
+    "fricative",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "z̪ʷ": [
+    "consonant",
+    "dental",
+    "fricative",
+    "labialised",
+    "short",
+    "voiced"
+  ],
+  "pʼʲ": [
+    "bilabial",
+    "consonant",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʰʲ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʼʲ": [
+    "consonant",
+    "dental",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʰʷʲ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʷʲ": [
+    "consonant",
+    "dental",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪ʼʷʲ": [
+    "consonant",
+    "dental",
+    "ejective",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʲ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʼʲ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "ejective",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʰʲ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "dental",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʰʷʲ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "dental",
+    "labialised",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʷʲ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "labialised",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "t̪s̪ʼʷʲ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "ejective",
+    "labialised",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "s̪ʲ": [
+    "consonant",
+    "dental",
+    "fricative",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "s̪ʷʲ": [
+    "consonant",
+    "dental",
+    "fricative",
+    "labialised",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "kʼʲ": [
+    "consonant",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʷʲ": [
+    "consonant",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʰʷʲ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʼʷʲ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "qʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qʰʲ": [
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qʼʲ": [
+    "consonant",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qʼʷʲ": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qʰʷʲ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qʷʲ": [
+    "consonant",
+    "labialised",
+    "palatalised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "χʷʲ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "palatalised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "t̪s̪ː": [
+    "affricate",
+    "consonant",
+    "dental",
+    "long",
+    "voiceless"
+  ],
+  "s̪ː": [
+    "consonant",
+    "dental",
+    "fricative",
+    "long",
+    "voiceless"
+  ],
+  "tʃʷ": [
+    "affricate",
+    "consonant",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "tʃːʷ": [
+    "affricate",
+    "consonant",
+    "labialised",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "ʃːʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "ɣʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɑ̝": [
+    "back",
+    "modal",
+    "open",
+    "raised",
+    "short",
+    "vowel"
+  ],
+  "ɞ̰": [
+    "central",
+    "creaky-voice",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɑ̝ː": [
+    "back",
+    "long",
+    "modal",
+    "open",
+    "raised",
+    "vowel"
+  ],
+  "eɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "øə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔʏ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "z̪ʲ": [
+    "consonant",
+    "dental",
+    "fricative",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "d̪z̪ʲ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "ʒːʲ": [
+    "consonant",
+    "fricative",
+    "long",
+    "palatalised",
+    "postalveolar",
+    "voiced"
+  ],
+  "tʃːʲ": [
+    "affricate",
+    "consonant",
+    "long",
+    "palatalised",
+    "postalveolar",
+    "voiceless"
+  ],
+  "ʃːʲ": [
+    "consonant",
+    "fricative",
+    "long",
+    "palatalised",
+    "postalveolar",
+    "voiceless"
+  ],
+  "wʲ": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "ɯɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʂʰ": [
+    "aspirated",
+    "consonant",
+    "fricative",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɓ": [
+    "bilabial",
+    "consonant",
+    "implosive",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɗ": [
+    "alveolar",
+    "consonant",
+    "implosive",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɨə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "əɨ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ao": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "cçː": [
+    "affricate",
+    "consonant",
+    "long",
+    "palatal",
+    "voiceless"
+  ],
+  "ɶ": [
+    "front",
+    "modal",
+    "open",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɶː": [
+    "front",
+    "long",
+    "modal",
+    "open",
+    "rounded",
+    "vowel"
+  ],
+  "ɞː": [
+    "central",
+    "long",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ⁿʈʰ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "pre-nasalised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɸ": [
+    "bilabial",
+    "consonant",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ʼs": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "pre-glottalised",
+    "short",
+    "voiceless"
+  ],
+  "ʼʃ": [
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "pre-glottalised",
+    "short",
+    "voiceless"
+  ],
+  "ʼm": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ʼn": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ʼŋ": [
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ʼɲ": [
+    "consonant",
+    "nasal",
+    "palatal",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ʼl": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ʼw": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ʼj": [
+    "approximant",
+    "consonant",
+    "palatal",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "i̤ː": [
+    "breathy-voice",
+    "close",
+    "front",
+    "long",
+    "vowel"
+  ],
+  "y̤": [
+    "breathy-voice",
+    "close",
+    "front",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɨ̤": [
+    "breathy-voice",
+    "central",
+    "close",
+    "short",
+    "vowel"
+  ],
+  "e̤ː": [
+    "breathy-voice",
+    "close-mid",
+    "front",
+    "long",
+    "vowel"
+  ],
+  "ø̤": [
+    "breathy-voice",
+    "close-mid",
+    "front",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "o̤ː": [
+    "back",
+    "breathy-voice",
+    "close-mid",
+    "long",
+    "rounded",
+    "vowel"
+  ],
+  "ɛ̤i̤": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "a̤ː": [
+    "breathy-voice",
+    "central",
+    "long",
+    "open",
+    "vowel"
+  ],
+  "ø̃": [
+    "close-mid",
+    "front",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ej": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ðˤ": [
+    "consonant",
+    "fricative",
+    "interdental",
+    "pharyngealised",
+    "short",
+    "voiced"
+  ],
+  "t̪ˤ": [
+    "consonant",
+    "dental",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "sˤ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "pharyngealised",
+    "short",
+    "voiceless"
+  ],
+  "aːu": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɛu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "øu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "cçʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "qχʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ĩ̯": [
+    "close",
+    "front",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "j̃": [
+    "approximant",
+    "consonant",
+    "nasalised",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "w̥": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "short",
+    "voiceless"
+  ],
+  "ɥ̊": [
+    "approximant",
+    "consonant",
+    "labial-palatal",
+    "short",
+    "voiceless"
+  ],
+  "əy": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ãw̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ũ̯": [
+    "back",
+    "close",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "eɪ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "aɪ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "aʊ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "oʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oʊ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "bʱ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "d̺ʱ": [
+    "alveolar",
+    "apical",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "d̪ʱ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "dzʱ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "gʱ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "mʱ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "n̪ʱ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ŋʱ": [
+    "aspirated",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "rʱ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "lʱ": [
+    "alveolar",
+    "approximant",
+    "aspirated",
+    "consonant",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "ũĩ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ʉu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɛa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "r̝": [
+    "alveolar",
+    "consonant",
+    "raised",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "ou̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "äu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɛu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "xʰ": [
+    "aspirated",
+    "consonant",
+    "fricative",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ɫ̻": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "laminal",
+    "lateral",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "ɾ̻": [
+    "alveolar",
+    "consonant",
+    "laminal",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ɾ̪": [
+    "consonant",
+    "dental",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "eä̯ ": [
+    "centralised",
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "oä̯ ": [
+    "centralised",
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɽ̃": [
+    "consonant",
+    "nasalised",
+    "retroflex",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "d̪z": [
+    "affricate",
+    "consonant",
+    "dental",
+    "short",
+    "voiced"
+  ],
+  "ɨa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "tʃːʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "tsːʼ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "long",
+    "voiceless"
+  ],
+  "tɬːʼ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "lateral",
+    "long",
+    "voiceless"
+  ],
+  "çː": [
+    "consonant",
+    "fricative",
+    "long",
+    "palatal",
+    "voiceless"
+  ],
+  "kxːʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "long",
+    "velar",
+    "voiceless"
+  ],
+  "kxːʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "long",
+    "velar",
+    "voiceless"
+  ],
+  "qχːʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "long",
+    "uvular",
+    "voiceless"
+  ],
+  "qχːʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "long",
+    "uvular",
+    "voiceless"
+  ],
+  "ĩ̞": [
+    "close",
+    "front",
+    "lowered",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "eo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɛo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʀ": [
+    "consonant",
+    "short",
+    "trill",
+    "uvular",
+    "voiced"
+  ],
+  "ɜi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æːi": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "əʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æːʊ": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɑʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "m̩": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "v̩": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "ʒ̩": [
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "ɿˠ": [
+    "alveolar",
+    "apical vowel",
+    "modal",
+    "short",
+    "velarised",
+    "vowel"
+  ],
+  "ʅ̹": [
+    "apical vowel",
+    "modal",
+    "more-rounded",
+    "postalveolar",
+    "short",
+    "vowel"
+  ],
+  "ʰp": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰpː": [
+    "bilabial",
+    "consonant",
+    "long",
+    "plosive",
+    "pre-aspirated",
+    "voiceless"
+  ],
+  "vː": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "long",
+    "voiced"
+  ],
+  "ʰt": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰtː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "plosive",
+    "pre-aspirated",
+    "voiceless"
+  ],
+  "ʰts": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰtsː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "long",
+    "pre-aspirated",
+    "voiceless"
+  ],
+  "ʰtʃ": [
+    "affricate",
+    "consonant",
+    "postalveolar",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰtʃː": [
+    "affricate",
+    "consonant",
+    "long",
+    "postalveolar",
+    "pre-aspirated",
+    "voiceless"
+  ],
+  "ɲː": [
+    "consonant",
+    "long",
+    "nasal",
+    "palatal",
+    "plosive",
+    "voiced"
+  ],
+  "jː": [
+    "approximant",
+    "consonant",
+    "long",
+    "palatal",
+    "voiced"
+  ],
+  "ʰkː": [
+    "consonant",
+    "long",
+    "plosive",
+    "pre-aspirated",
+    "velar",
+    "voiceless"
+  ],
+  "ŋː": [
+    "consonant",
+    "long",
+    "nasal",
+    "plosive",
+    "velar",
+    "voiced"
+  ],
+  "ðː": [
+    "consonant",
+    "fricative",
+    "interdental",
+    "long",
+    "voiced"
+  ],
+  "ʊa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "pˤ": [
+    "bilabial",
+    "consonant",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tˤ": [
+    "alveolar",
+    "consonant",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "dˤ": [
+    "alveolar",
+    "consonant",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "tʃˤ": [
+    "affricate",
+    "consonant",
+    "pharyngealised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "lˤ": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "pharyngealised",
+    "short",
+    "voiced"
+  ],
+  "rˤ": [
+    "alveolar",
+    "consonant",
+    "pharyngealised",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "œ̠": [
+    "front",
+    "modal",
+    "open-mid",
+    "retracted",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɞ̠": [
+    "central",
+    "modal",
+    "open-mid",
+    "retracted",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "iɛ̠": [
+    "diphthong",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ʉɞ̠": [
+    "diphthong",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ʉœ̠": [
+    "diphthong",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ɨä̠": [
+    "centralised",
+    "diphthong",
+    "modal",
+    "retracted",
+    "short",
+    "vowel"
+  ],
+  "ɛ̠ː": [
+    "front",
+    "long",
+    "modal",
+    "open-mid",
+    "retracted",
+    "vowel"
+  ],
+  "œ̠ː": [
+    "front",
+    "long",
+    "modal",
+    "open-mid",
+    "retracted",
+    "rounded",
+    "vowel"
+  ],
+  "ɞ̠ː": [
+    "central",
+    "long",
+    "modal",
+    "open-mid",
+    "retracted",
+    "rounded",
+    "vowel"
+  ],
+  "ä̠ː": [
+    "central",
+    "centralised",
+    "long",
+    "modal",
+    "open",
+    "retracted",
+    "vowel"
+  ],
+  "ew": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "əw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "əj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɨj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ij": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɨɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "we": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "s̺̠": [
+    "alveolar",
+    "apical",
+    "consonant",
+    "fricative",
+    "retracted",
+    "short",
+    "voiceless"
+  ],
+  "ya": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ð̞": [
+    "approximant",
+    "consonant",
+    "interdental",
+    "short",
+    "voiced"
+  ],
+  "eə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʊə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "i̯ɛ": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "u̯ɔ": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "æɪ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɔʊ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "s̪ˤ": [
+    "consonant",
+    "dental",
+    "fricative",
+    "pharyngealised",
+    "short",
+    "voiceless"
+  ],
+  "z̪ˤ": [
+    "consonant",
+    "dental",
+    "fricative",
+    "pharyngealised",
+    "short",
+    "voiced"
+  ],
+  "ɯə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "kx": [
+    "affricate",
+    "consonant",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ɬ̺̪": [
+    "apical",
+    "consonant",
+    "dental",
+    "fricative",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "n̺̪": [
+    "apical",
+    "consonant",
+    "dental",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "pʰʷ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "pʷ": [
+    "bilabial",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "mʷ": [
+    "bilabial",
+    "consonant",
+    "labialised",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ʈ̻ʂ̻": [
+    "affricate",
+    "consonant",
+    "laminal",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɖ̻ʐ̻": [
+    "affricate",
+    "consonant",
+    "laminal",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʂ̻": [
+    "consonant",
+    "fricative",
+    "laminal",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʐ̻": [
+    "consonant",
+    "fricative",
+    "laminal",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ɘ̟": [
+    "advanced",
+    "central",
+    "close-mid",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "βʲ": [
+    "bilabial",
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "n̥ʲ": [
+    "alveolar",
+    "consonant",
+    "devoiced",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "short"
+  ],
+  "βː": [
+    "bilabial",
+    "consonant",
+    "fricative",
+    "long",
+    "voiced"
+  ],
+  "d̥ː": [
+    "alveolar",
+    "consonant",
+    "devoiced",
+    "long",
+    "plosive"
+  ],
+  "b̥ː": [
+    "bilabial",
+    "consonant",
+    "devoiced",
+    "long",
+    "plosive"
+  ],
+  "g̊ː": [
+    "consonant",
+    "devoiced",
+    "long",
+    "plosive",
+    "velar"
+  ],
+  "m̥ː": [
+    "bilabial",
+    "consonant",
+    "devoiced",
+    "long",
+    "nasal",
+    "plosive"
+  ],
+  "zː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "long",
+    "voiced"
+  ],
+  "n̥ː": [
+    "alveolar",
+    "consonant",
+    "devoiced",
+    "long",
+    "nasal",
+    "plosive"
+  ],
+  "ʂː": [
+    "consonant",
+    "fricative",
+    "long",
+    "retroflex",
+    "voiceless"
+  ],
+  "tɕː": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "long",
+    "voiceless"
+  ],
+  "r̥ː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "trill",
+    "voiceless"
+  ],
+  "ʝː": [
+    "consonant",
+    "fricative",
+    "long",
+    "palatal",
+    "voiced"
+  ],
+  "βʲː": [
+    "bilabial",
+    "consonant",
+    "fricative",
+    "long",
+    "palatalised",
+    "voiced"
+  ],
+  "fʲː": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "long",
+    "palatalised",
+    "voiceless"
+  ],
+  "bʲː": [
+    "bilabial",
+    "consonant",
+    "long",
+    "palatalised",
+    "plosive",
+    "voiced"
+  ],
+  "pʲː": [
+    "bilabial",
+    "consonant",
+    "long",
+    "palatalised",
+    "plosive",
+    "voiceless"
+  ],
+  "mʲː": [
+    "bilabial",
+    "consonant",
+    "long",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "voiced"
+  ],
+  "m̥ʲː": [
+    "bilabial",
+    "consonant",
+    "devoiced",
+    "long",
+    "nasal",
+    "palatalised",
+    "plosive"
+  ],
+  "zʲː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "long",
+    "palatalised",
+    "voiced"
+  ],
+  "sʲː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "long",
+    "palatalised",
+    "voiceless"
+  ],
+  "nʲː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "voiced"
+  ],
+  "lʲː": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "long",
+    "palatalised",
+    "voiced"
+  ],
+  "n̥ʲː": [
+    "alveolar",
+    "consonant",
+    "devoiced",
+    "long",
+    "nasal",
+    "palatalised",
+    "plosive"
+  ],
+  "l̥ʲː": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "long",
+    "palatalised",
+    "voiceless"
+  ],
+  "tsʲː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "long",
+    "palatalised",
+    "voiceless"
+  ],
+  "rʲː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "palatalised",
+    "trill",
+    "voiced"
+  ],
+  "r̥ʲː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "palatalised",
+    "trill",
+    "voiceless"
+  ],
+  "xʲː": [
+    "consonant",
+    "fricative",
+    "long",
+    "palatalised",
+    "velar",
+    "voiceless"
+  ],
+  "gʲː": [
+    "consonant",
+    "long",
+    "palatalised",
+    "plosive",
+    "velar",
+    "voiced"
+  ],
+  "kʲː": [
+    "consonant",
+    "long",
+    "palatalised",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "ŋʲː": [
+    "consonant",
+    "long",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "velar",
+    "voiced"
+  ],
+  "d̥z̥ʲ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "ʰtɕ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰpʲ": [
+    "bilabial",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰtʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʰkʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʰtsʲ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "o̞ä": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uä": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ue̞": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ts̪": [
+    "affricate",
+    "consonant",
+    "dental",
+    "short",
+    "voiceless"
+  ],
+  "dz̪": [
+    "affricate",
+    "consonant",
+    "dental",
+    "short",
+    "voiced"
+  ],
+  "u̟": [
+    "advanced",
+    "back",
+    "close",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɔ̟̜": [
+    "advanced",
+    "back",
+    "less-rounded",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "u̯ɑ": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɖʱ": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ɽʱ": [
+    "aspirated",
+    "consonant",
+    "retroflex",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ɟʱ": [
+    "aspirated",
+    "consonant",
+    "palatal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "t̪̻": [
+    "consonant",
+    "dental",
+    "laminal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "d̪̻": [
+    "consonant",
+    "dental",
+    "laminal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "s̪̻": [
+    "consonant",
+    "dental",
+    "fricative",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "z̪̻": [
+    "consonant",
+    "dental",
+    "fricative",
+    "laminal",
+    "short",
+    "voiced"
+  ],
+  "t̪̻s̪̻": [
+    "affricate",
+    "consonant",
+    "dental",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "t̻ʃ̻": [
+    "affricate",
+    "consonant",
+    "laminal",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "d̻ʒ̻": [
+    "affricate",
+    "consonant",
+    "laminal",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "t̺ʃ̺ʷ": [
+    "affricate",
+    "apical",
+    "consonant",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "d̺ʒ̺ʷ": [
+    "affricate",
+    "apical",
+    "consonant",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "ʒ̺": [
+    "apical",
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "ɵ̃": [
+    "central",
+    "close-mid",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɢʁ": [
+    "affricate",
+    "consonant",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "aːi̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "dʑʰ": [
+    "affricate",
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "uo̞": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "yø̞": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "pf": [
+    "affricate",
+    "consonant",
+    "labiodental",
+    "short",
+    "voiceless"
+  ],
+  "õj": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ãj": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ãw": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ẽj": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ãõ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "œy": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʌu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "c̟": [
+    "advanced",
+    "consonant",
+    "palatal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "ʰʈ": [
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʰc": [
+    "consonant",
+    "palatal",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʱb": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱd": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱɖ": [
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʱɟ": [
+    "consonant",
+    "palatal",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱɡ": [
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ʱdz": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱdʑ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ⁿsʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿxʰ": [
+    "aspirated",
+    "consonant",
+    "fricative",
+    "pre-nasalised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʱz": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱʐ": [
+    "consonant",
+    "fricative",
+    "pre-aspirated",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʱm": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱn": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱɲ": [
+    "consonant",
+    "nasal",
+    "palatal",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱŋ": [
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-aspirated",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ʰl̥": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "pre-aspirated",
+    "short",
+    "voiceless"
+  ],
+  "ʱl": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʱj": [
+    "approximant",
+    "consonant",
+    "palatal",
+    "pre-aspirated",
+    "short",
+    "voiced"
+  ],
+  "ʰʷt": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "pre-labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʰʷʈ": [
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "pre-labialised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʰʷk": [
+    "consonant",
+    "plosive",
+    "pre-aspirated",
+    "pre-labialised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʰʷts": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "pre-aspirated",
+    "pre-labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʰʷtɕ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "pre-aspirated",
+    "pre-labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʰʷs": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "pre-aspirated",
+    "pre-labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʰʷsʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "pre-aspirated",
+    "pre-labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʰʷʂʰ": [
+    "aspirated",
+    "consonant",
+    "fricative",
+    "pre-aspirated",
+    "pre-labialised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʰʷɕʰ": [
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "pre-aspirated",
+    "pre-labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʷd": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "pre-labialised",
+    "short",
+    "voiced"
+  ],
+  "ʷɟ": [
+    "consonant",
+    "palatal",
+    "plosive",
+    "pre-labialised",
+    "short",
+    "voiced"
+  ],
+  "ʷz": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "pre-labialised",
+    "short",
+    "voiced"
+  ],
+  "ʷʐ": [
+    "consonant",
+    "fricative",
+    "pre-labialised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʷʑ": [
+    "alveolo-palatal",
+    "consonant",
+    "fricative",
+    "pre-labialised",
+    "short",
+    "voiced"
+  ],
+  "ʷm": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-labialised",
+    "short",
+    "voiced"
+  ],
+  "ʷl": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "pre-labialised",
+    "short",
+    "voiced"
+  ],
+  "tʷ": [
+    "alveolar",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "tʃʷʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "yu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "œ̞": [
+    "front",
+    "lowered",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "œ̞ː": [
+    "front",
+    "long",
+    "lowered",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɵy": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uəi": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "i˞": [
+    "close",
+    "front",
+    "modal",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "e˞": [
+    "close-mid",
+    "front",
+    "modal",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "dz̺": [
+    "affricate",
+    "alveolar",
+    "apical",
+    "consonant",
+    "short",
+    "voiced"
+  ],
+  "ɫ̺": [
+    "alveolar",
+    "apical",
+    "approximant",
+    "consonant",
+    "lateral",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "ə̟̆": [
+    "advanced",
+    "central",
+    "mid",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "θ̪": [
+    "consonant",
+    "dental",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "i̯e": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "r̩ː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "syllabic",
+    "trill",
+    "voiced"
+  ],
+  "ɔi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ui̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "yi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "eu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "iu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɔu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ja": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "jɔ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "jɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ju": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wei̯": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "jau̯": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "jɛi̯": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "jei̯": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "weu̯": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "wɛi̯": [
+    "modal",
+    "non-syllabic",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "tˢ": [
+    "affricated",
+    "alveolar",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "ʋ̩": [
+    "approximant",
+    "consonant",
+    "labiodental",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "s̩": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "syllabic",
+    "voiceless"
+  ],
+  "f̩": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "short",
+    "syllabic",
+    "voiceless"
+  ],
+  "ɯ̞": [
+    "back",
+    "modal",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ŋ̥": [
+    "consonant",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "short",
+    "velar"
+  ],
+  "ɪu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wʰ": [
+    "approximant",
+    "aspirated",
+    "consonant",
+    "labial-velar",
+    "short",
+    "voiced"
+  ],
+  "æ̃ɪ̯̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɔ̃ʊ̯̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "n̪̩": [
+    "consonant",
+    "dental",
+    "nasal",
+    "plosive",
+    "short",
+    "syllabic",
+    "voiced"
+  ],
+  "u˞": [
+    "back",
+    "close",
+    "modal",
+    "rhotacised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɑ˞": [
+    "back",
+    "modal",
+    "open",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "uɑ˞": [
+    "diphthong",
+    "modal",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "pˠ": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "bˠ": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "fˠ": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "mˠ": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "t̪ˠ": [
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "d̪ˠ": [
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "t̠ʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "retracted",
+    "short",
+    "voiceless"
+  ],
+  "d̠ʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "retracted",
+    "short",
+    "voiced"
+  ],
+  "n̪ˠ": [
+    "consonant",
+    "dental",
+    "nasal",
+    "plosive",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "n̠ʲ": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "retracted",
+    "short",
+    "voiced"
+  ],
+  "l̪ˠ": [
+    "approximant",
+    "consonant",
+    "dental",
+    "lateral",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "l̠ʲ": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "palatalised",
+    "retracted",
+    "short",
+    "voiced"
+  ],
+  "sˠ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "ɛ˞": [
+    "front",
+    "modal",
+    "open-mid",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "ɔ˞": [
+    "back",
+    "modal",
+    "open-mid",
+    "rhotacised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "aɯ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "əɯ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɪ̰": [
+    "creaky-voice",
+    "front",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ḛɪ̰": [
+    "creaky-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "a̰ɪ̰": [
+    "creaky-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "a̰ɯ̰": [
+    "creaky-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ə̰ɯ̰": [
+    "creaky-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ʊ̰": [
+    "back",
+    "creaky-voice",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "kˤ": [
+    "consonant",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ɖː": [
+    "consonant",
+    "long",
+    "plosive",
+    "retroflex",
+    "voiced"
+  ],
+  "dzː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "long",
+    "voiced"
+  ],
+  "uẽ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "əo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤ̞": [
+    "back",
+    "mid",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɪ̞": [
+    "front",
+    "lowered",
+    "modal",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ɪ̞̈": [
+    "centralised",
+    "front",
+    "lowered",
+    "modal",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ʊ̞̈": [
+    "back",
+    "centralised",
+    "lowered",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ʉ̞": [
+    "central",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ĩã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ĩõ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ʼɡ": [
+    "consonant",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ʼb": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ʼd": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ʼɣ": [
+    "consonant",
+    "fricative",
+    "pre-glottalised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "aːi": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "m ": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɑ̤": [
+    "back",
+    "breathy-voice",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "iw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʌw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɑw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʌj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɑj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ð͇ˠ": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "n̪̊": [
+    "consonant",
+    "dental",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "short"
+  ],
+  "l̪̊": [
+    "approximant",
+    "consonant",
+    "dental",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "b˞": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "rhotacised",
+    "short",
+    "voiced"
+  ],
+  "p˞": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "rhotacised",
+    "short",
+    "voiceless"
+  ],
+  "pʰ˞": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "plosive",
+    "rhotacised",
+    "short",
+    "voiceless"
+  ],
+  "g˞": [
+    "consonant",
+    "plosive",
+    "rhotacised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "k˞": [
+    "consonant",
+    "plosive",
+    "rhotacised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʰ˞": [
+    "aspirated",
+    "consonant",
+    "plosive",
+    "rhotacised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ɜj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "qˤʼ": [
+    "consonant",
+    "ejective",
+    "pharyngealised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ʁˤ": [
+    "consonant",
+    "fricative",
+    "pharyngealised",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "t̪ɬ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "t̪ɬʼ": [
+    "affricate",
+    "consonant",
+    "dental",
+    "ejective",
+    "lateral",
+    "short",
+    "voiceless"
+  ],
+  "i̯ẽ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "i̯a": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "u̯o": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "u̯a": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "u̯õ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "e̞u̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "o̞i̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "çʰ": [
+    "aspirated",
+    "consonant",
+    "fricative",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "ʁ̞": [
+    "approximant",
+    "consonant",
+    "short",
+    "uvular",
+    "voiced"
+  ],
+  "aˤː": [
+    "central",
+    "long",
+    "modal",
+    "open",
+    "pharyngealised",
+    "vowel"
+  ],
+  "ʌˤː": [
+    "back",
+    "long",
+    "modal",
+    "open-mid",
+    "pharyngealised",
+    "vowel"
+  ],
+  "ʊˤː": [
+    "back",
+    "long",
+    "modal",
+    "near-close",
+    "pharyngealised",
+    "rounded",
+    "vowel"
+  ],
+  "ɔˤː": [
+    "back",
+    "long",
+    "modal",
+    "open-mid",
+    "pharyngealised",
+    "rounded",
+    "vowel"
+  ],
+  "ɞʏ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ae̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "aɵ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɯ̯ɤ̞": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɯi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "i̯e̞": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɡʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɪ̯": [
+    "front",
+    "modal",
+    "near-close",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "pːʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "long",
+    "plosive",
+    "voiceless"
+  ],
+  "ʒ̊": [
+    "consonant",
+    "fricative",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ɟ̥ʝ̥": [
+    "affricate",
+    "consonant",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "ħ̃ʲ": [
+    "consonant",
+    "fricative",
+    "nasalised",
+    "palatalised",
+    "pharyngeal",
+    "short",
+    "voiceless"
+  ],
+  "ɔ̟̜̰": [
+    "advanced",
+    "back",
+    "creaky-voice",
+    "less-rounded",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɔ̟̜ː": [
+    "advanced",
+    "back",
+    "less-rounded",
+    "long",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɨ̞̰": [
+    "central",
+    "creaky-voice",
+    "near-close",
+    "short",
+    "vowel"
+  ],
+  "ɨ̞ː": [
+    "central",
+    "long",
+    "modal",
+    "near-close",
+    "vowel"
+  ],
+  "ɞ̜": [
+    "central",
+    "less-rounded",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɞ̜̰": [
+    "central",
+    "creaky-voice",
+    "less-rounded",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɞ̜ː": [
+    "central",
+    "less-rounded",
+    "long",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ʉ̰": [
+    "central",
+    "close",
+    "creaky-voice",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɨ̞̃ː": [
+    "central",
+    "long",
+    "modal",
+    "nasalised",
+    "near-close",
+    "vowel"
+  ],
+  "ɔ̟̜̃ː": [
+    "advanced",
+    "back",
+    "less-rounded",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɞ̜̃ː": [
+    "central",
+    "less-rounded",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɛ̃ːi̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "vowel"
+  ],
+  "ãɛ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "œ̃ɛ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɫː": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "long",
+    "velarised",
+    "voiced"
+  ],
+  "t̺ʃ̺": [
+    "affricate",
+    "apical",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "d̺ʒ̺": [
+    "affricate",
+    "apical",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "i̞ː": [
+    "close",
+    "front",
+    "long",
+    "lowered",
+    "modal",
+    "vowel"
+  ],
+  "ɪ̯ä": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɪ̯ɔ": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɪ̯u̞": [
+    "diphthong",
+    "lowered",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ʊ̯ɔ": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ʋʲ": [
+    "approximant",
+    "consonant",
+    "labiodental",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "jau": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "jo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wai": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "juː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "joː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "jaː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "waː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "juaː": [
+    "long",
+    "modal",
+    "triphthong",
+    "vowel"
+  ],
+  "jui": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "joi": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "jai": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "l̪ʱ": [
+    "approximant",
+    "aspirated",
+    "consonant",
+    "dental",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "nʱ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɳʱ": [
+    "aspirated",
+    "consonant",
+    "nasal",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "t̻ɕ̻": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "t̻ɕ̻ʰ": [
+    "affricate",
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "d̻ʑ̻": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "laminal",
+    "short",
+    "voiced"
+  ],
+  "d̻ʑ̻ʱ": [
+    "affricate",
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "laminal",
+    "short",
+    "voiced"
+  ],
+  "ʄ": [
+    "consonant",
+    "implosive",
+    "palatal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɠ": [
+    "consonant",
+    "implosive",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɪ̆": [
+    "front",
+    "modal",
+    "near-close",
+    "shortened",
+    "vowel"
+  ],
+  "ʊ̆": [
+    "back",
+    "modal",
+    "near-close",
+    "rounded",
+    "shortened",
+    "vowel"
+  ],
+  "u̙": [
+    "back",
+    "close",
+    "modal",
+    "rounded",
+    "rtr",
+    "short",
+    "vowel"
+  ],
+  "o̞̙": [
+    "back",
+    "mid",
+    "modal",
+    "rounded",
+    "rtr",
+    "short",
+    "vowel"
+  ],
+  "ɑ̙": [
+    "back",
+    "modal",
+    "open",
+    "rtr",
+    "short",
+    "vowel"
+  ],
+  "ɯ̙": [
+    "back",
+    "close",
+    "modal",
+    "rtr",
+    "short",
+    "vowel"
+  ],
+  "i̘": [
+    "atr",
+    "close",
+    "front",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ii̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɯ̙i̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "rtr",
+    "short",
+    "vowel"
+  ],
+  "uu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "yu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɔ̜̃ː": [
+    "back",
+    "less-rounded",
+    "long",
+    "modal",
+    "nasalised",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "sʲʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "ã̤": [
+    "breathy-voice",
+    "central",
+    "nasalised",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "y̰": [
+    "close",
+    "creaky-voice",
+    "front",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ø̰": [
+    "close-mid",
+    "creaky-voice",
+    "front",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ə̰": [
+    "central",
+    "creaky-voice",
+    "mid",
+    "short",
+    "vowel"
+  ],
+  "ɔ̰": [
+    "back",
+    "creaky-voice",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɐi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ŭ": [
+    "back",
+    "close",
+    "modal",
+    "rounded",
+    "shortened",
+    "vowel"
+  ],
+  "ðʼ": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "interdental",
+    "short",
+    "voiced"
+  ],
+  "dʼ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "sʼ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "fricative",
+    "short",
+    "voiceless"
+  ],
+  "ɮʼ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "fricative",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "ʃ̞": [
+    "consonant",
+    "fricative",
+    "lowered",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ʃ̞ʼ": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "lowered",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ɔ̜": [
+    "back",
+    "less-rounded",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "œ̜": [
+    "front",
+    "less-rounded",
+    "modal",
+    "open-mid",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "œ̜ː": [
+    "front",
+    "less-rounded",
+    "long",
+    "modal",
+    "open-mid",
+    "rounded",
+    "vowel"
+  ],
+  "ɞe̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ʉi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "æi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "dʱ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ẽ̞": [
+    "front",
+    "mid",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɑi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "q̺": [
+    "apical",
+    "consonant",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "t̺ɕ̺": [
+    "affricate",
+    "alveolo-palatal",
+    "apical",
+    "consonant",
+    "short",
+    "voiceless"
+  ],
+  "t̺ɕ̺ʼ": [
+    "affricate",
+    "alveolo-palatal",
+    "apical",
+    "consonant",
+    "ejective",
+    "short",
+    "voiceless"
+  ],
+  "u̜": [
+    "back",
+    "close",
+    "less-rounded",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "wə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "wɔ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "jɛ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "wə̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "wã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "wɛ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "wɔ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "uœ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɑːi̯": [
+    "diphthong",
+    "long",
+    "modal",
+    "non-syllabic",
+    "vowel"
+  ],
+  "fʼ": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "labiodental",
+    "short",
+    "voiceless"
+  ],
+  "ʔʷ": [
+    "consonant",
+    "glottal",
+    "labialised",
+    "plosive",
+    "short"
+  ],
+  "ɯo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "θ̻": [
+    "consonant",
+    "fricative",
+    "interdental",
+    "laminal",
+    "short",
+    "voiceless"
+  ],
+  "ð̺̞": [
+    "apical",
+    "consonant",
+    "fricative",
+    "interdental",
+    "lowered",
+    "short",
+    "voiced"
+  ],
+  "n̪̥": [
+    "consonant",
+    "dental",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "short"
+  ],
+  "ɲ̥": [
+    "consonant",
+    "devoiced",
+    "nasal",
+    "palatal",
+    "plosive",
+    "short"
+  ],
+  "ʏi̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "øɪ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "t̠": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "retracted",
+    "short",
+    "voiceless"
+  ],
+  "d̠": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "retracted",
+    "short",
+    "voiced"
+  ],
+  "t̠ʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "retracted",
+    "short",
+    "voiceless"
+  ],
+  "d̠ʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "plosive",
+    "retracted",
+    "short",
+    "voiced"
+  ],
+  "ɛe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oo̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɨ̃": [
+    "central",
+    "close",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ṳː": [
+    "back",
+    "breathy-voice",
+    "close",
+    "long",
+    "rounded",
+    "vowel"
+  ],
+  "ɑɒ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "əɒ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "n̪ʰ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "zʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "ʑʰ": [
+    "alveolo-palatal",
+    "aspirated",
+    "consonant",
+    "fricative",
+    "short",
+    "voiced"
+  ],
+  "jʰ": [
+    "approximant",
+    "aspirated",
+    "consonant",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ɛj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɛw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æ̃ː": [
+    "front",
+    "long",
+    "modal",
+    "nasalised",
+    "near-open",
+    "vowel"
+  ],
+  "ɳ̥": [
+    "consonant",
+    "devoiced",
+    "nasal",
+    "plosive",
+    "retroflex",
+    "short"
+  ],
+  " t": [
+    "alveolar",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "ɯi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  " ɔi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɯːi": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "uːi": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "eːi": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "əːi": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɔːi": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "əɯ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aɯ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aːɯ": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɛ̝ː": [
+    "front",
+    "long",
+    "modal",
+    "open-mid",
+    "raised",
+    "vowel"
+  ],
+  "ɔ̝": [
+    "back",
+    "modal",
+    "open-mid",
+    "raised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɔ̝ː": [
+    "back",
+    "long",
+    "modal",
+    "open-mid",
+    "raised",
+    "rounded",
+    "vowel"
+  ],
+  "i̽": [
+    "close",
+    "front",
+    "mid-centralised",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʊ̽": [
+    "back",
+    "mid-centralised",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɐ̟": [
+    "advanced",
+    "central",
+    "modal",
+    "near-open",
+    "short",
+    "vowel"
+  ],
+  "ɻˤ": [
+    "approximant",
+    "consonant",
+    "pharyngealised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʈʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɖʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ɳʲ": [
+    "consonant",
+    "nasal",
+    "palatalised",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "tsʷ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʈʂʷ": [
+    "affricate",
+    "consonant",
+    "labialised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɻʲ": [
+    "approximant",
+    "consonant",
+    "palatalised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʂʲ": [
+    "consonant",
+    "fricative",
+    "palatalised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʂʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ʐʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "o˞": [
+    "back",
+    "close-mid",
+    "modal",
+    "rhotacised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ⁿpʲʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿtʲ": [
+    "alveolar",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿtʲʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿtɕ": [
+    "affricate",
+    "alveolo-palatal",
+    "consonant",
+    "pre-nasalised",
+    "short",
+    "voiceless"
+  ],
+  "ⁿkʲ": [
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ⁿkʲʰ": [
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "qʷʰ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "plosive",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ⁿqʷ": [
+    "consonant",
+    "labialised",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "ⁿqʷʰ": [
+    "aspirated",
+    "consonant",
+    "labialised",
+    "plosive",
+    "pre-nasalised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "lʲʰ": [
+    "alveolar",
+    "approximant",
+    "aspirated",
+    "consonant",
+    "lateral",
+    "palatalised",
+    "short",
+    "voiced"
+  ],
+  "ɛɰ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "jɛː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ˀm": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ˀn": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ˀŋ": [
+    "consonant",
+    "nasal",
+    "plosive",
+    "pre-glottalised",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ˀl": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ˀr": [
+    "alveolar",
+    "consonant",
+    "pre-glottalised",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "ˀw": [
+    "approximant",
+    "consonant",
+    "labial-velar",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "ˀj": [
+    "approximant",
+    "consonant",
+    "palatal",
+    "pre-glottalised",
+    "short",
+    "voiced"
+  ],
+  "tʲː": [
+    "alveolar",
+    "consonant",
+    "long",
+    "palatalised",
+    "plosive",
+    "voiceless"
+  ],
+  "hː": [
+    "consonant",
+    "fricative",
+    "glottal",
+    "long",
+    "voiceless"
+  ],
+  "pːː": [
+    "bilabial",
+    "consonant",
+    "overlong",
+    "plosive",
+    "voiceless"
+  ],
+  "tːː": [
+    "alveolar",
+    "consonant",
+    "overlong",
+    "plosive",
+    "voiceless"
+  ],
+  "tʲːː": [
+    "alveolar",
+    "consonant",
+    "overlong",
+    "palatalised",
+    "plosive",
+    "voiceless"
+  ],
+  "kːː": [
+    "consonant",
+    "overlong",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "mːː": [
+    "bilabial",
+    "consonant",
+    "nasal",
+    "overlong",
+    "plosive",
+    "voiced"
+  ],
+  "nːː": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "overlong",
+    "plosive",
+    "voiced"
+  ],
+  "nʲːː": [
+    "alveolar",
+    "consonant",
+    "nasal",
+    "overlong",
+    "palatalised",
+    "plosive",
+    "voiced"
+  ],
+  "rːː": [
+    "alveolar",
+    "consonant",
+    "overlong",
+    "trill",
+    "voiced"
+  ],
+  "fːː": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "overlong",
+    "voiceless"
+  ],
+  "sːː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "overlong",
+    "voiceless"
+  ],
+  "ʃːː": [
+    "consonant",
+    "fricative",
+    "overlong",
+    "postalveolar",
+    "voiceless"
+  ],
+  "sʲːː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "overlong",
+    "palatalised",
+    "voiceless"
+  ],
+  "lːː": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "overlong",
+    "voiced"
+  ],
+  "lʲːː": [
+    "alveolar",
+    "approximant",
+    "consonant",
+    "lateral",
+    "overlong",
+    "palatalised",
+    "voiced"
+  ],
+  "hːː": [
+    "consonant",
+    "fricative",
+    "glottal",
+    "overlong",
+    "voiceless"
+  ],
+  "jːː": [
+    "approximant",
+    "consonant",
+    "overlong",
+    "palatal",
+    "voiced"
+  ],
+  "iːː": [
+    "close",
+    "front",
+    "modal",
+    "overlong",
+    "vowel"
+  ],
+  "yːː": [
+    "close",
+    "front",
+    "modal",
+    "overlong",
+    "rounded",
+    "vowel"
+  ],
+  "uːː": [
+    "back",
+    "close",
+    "modal",
+    "overlong",
+    "rounded",
+    "vowel"
+  ],
+  "eːː": [
+    "close-mid",
+    "front",
+    "modal",
+    "overlong",
+    "vowel"
+  ],
+  "øːː": [
+    "close-mid",
+    "front",
+    "modal",
+    "overlong",
+    "rounded",
+    "vowel"
+  ],
+  "ɤːː": [
+    "back",
+    "close-mid",
+    "modal",
+    "overlong",
+    "vowel"
+  ],
+  "oːː": [
+    "back",
+    "close-mid",
+    "modal",
+    "overlong",
+    "rounded",
+    "vowel"
+  ],
+  "æːː": [
+    "front",
+    "modal",
+    "near-open",
+    "overlong",
+    "vowel"
+  ],
+  "ɑːː": [
+    "back",
+    "modal",
+    "open",
+    "overlong",
+    "vowel"
+  ],
+  "ɑe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɑo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "eɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "æu": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "øɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "øe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "øi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "yɑ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʔ̙": [
+    "consonant",
+    "glottal",
+    "plosive",
+    "rtr",
+    "short"
+  ],
+  "uw": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɐ̃i": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "õi": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ũi": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɐ̃u": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "tç": [
+    "affricate",
+    "consonant",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "dʝ": [
+    "affricate",
+    "consonant",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ɔj": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ji": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "jy": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɛə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "t̪s̪’": [
+    "affricate",
+    "consonant",
+    "dental",
+    "ejective",
+    "short",
+    "voiceless"
+  ],
+  "ʡ’": [
+    "consonant",
+    "ejective",
+    "epiglottal",
+    "plosive",
+    "short"
+  ],
+  "ø̈": [
+    "centralised",
+    "close-mid",
+    "front",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɤ̤": [
+    "back",
+    "breathy-voice",
+    "close-mid",
+    "short",
+    "vowel"
+  ],
+  "ɯ̤ː": [
+    "back",
+    "breathy-voice",
+    "close",
+    "long",
+    "vowel"
+  ],
+  "ɤ̤ː": [
+    "back",
+    "breathy-voice",
+    "close-mid",
+    "long",
+    "vowel"
+  ],
+  "ɑ̤ː": [
+    "back",
+    "breathy-voice",
+    "long",
+    "open",
+    "vowel"
+  ],
+  "i̤a": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ɯ̤a": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ṳa": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "wˀ": [
+    "approximant",
+    "consonant",
+    "glottalised",
+    "labial-velar",
+    "short",
+    "voiced"
+  ],
+  "jˀ": [
+    "approximant",
+    "consonant",
+    "glottalised",
+    "palatal",
+    "short",
+    "voiced"
+  ],
+  "ʌ̟": [
+    "advanced",
+    "back",
+    "modal",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ɑ̟": [
+    "advanced",
+    "back",
+    "modal",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ʌ̟̤": [
+    "advanced",
+    "back",
+    "breathy-voice",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ɑ̟̤": [
+    "advanced",
+    "back",
+    "breathy-voice",
+    "open",
+    "short",
+    "vowel"
+  ],
+  "ɨ̤ː": [
+    "breathy-voice",
+    "central",
+    "close",
+    "long",
+    "vowel"
+  ],
+  "ɤ̟̤ː": [
+    "advanced",
+    "back",
+    "breathy-voice",
+    "close-mid",
+    "long",
+    "vowel"
+  ],
+  "ɑ̟̤ː": [
+    "advanced",
+    "back",
+    "breathy-voice",
+    "long",
+    "open",
+    "vowel"
+  ],
+  "i̤ɐ": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ea̤": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ɨɐ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɨ̤ɐ": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ṳɐ": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "ɤa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɤa̤": [
+    "breathy-voice",
+    "diphthong",
+    "short",
+    "vowel"
+  ],
+  "r̪ʲ": [
+    "consonant",
+    "dental",
+    "palatalised",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "f’": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "labiodental",
+    "short",
+    "voiceless"
+  ],
+  "c’": [
+    "consonant",
+    "ejective",
+    "palatal",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "v̥": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "short",
+    "voiceless"
+  ],
+  "ɣ̊": [
+    "consonant",
+    "fricative",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "iə̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "yə̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "uə̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "æu̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "dz̻": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "laminal",
+    "short",
+    "voiced"
+  ],
+  "iẽː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ʊ̜̈": [
+    "back",
+    "centralised",
+    "less-rounded",
+    "modal",
+    "near-close",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "pˠʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "vˠ": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "short",
+    "velarised",
+    "voiced"
+  ],
+  "t̪ˠʰ": [
+    "aspirated",
+    "consonant",
+    "dental",
+    "plosive",
+    "short",
+    "velarised",
+    "voiceless"
+  ],
+  "ɾ̪ˠ": [
+    "consonant",
+    "dental",
+    "short",
+    "tap",
+    "velarised",
+    "voiced"
+  ],
+  "ɾ̪ʲ": [
+    "consonant",
+    "dental",
+    "palatalised",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ŋ̟": [
+    "advanced",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɐɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iːə": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "uːə": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "uːe": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ʃʼ": [
+    "consonant",
+    "ejective",
+    "fricative",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "ç̟": [
+    "advanced",
+    "consonant",
+    "fricative",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "ɵ̞ː": [
+    "central",
+    "close-mid",
+    "long",
+    "lowered",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "aːɪ": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ɑʊ̯": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "uɔː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "iɛː": [
+    "diphthong",
+    "long",
+    "modal",
+    "vowel"
+  ],
+  "ũɔ̃ː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ĩɛ̃ː": [
+    "diphthong",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "æɛ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɵ̞": [
+    "central",
+    "close-mid",
+    "lowered",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ø̠̞": [
+    "close-mid",
+    "front",
+    "lowered",
+    "modal",
+    "retracted",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "y̠": [
+    "close",
+    "front",
+    "modal",
+    "retracted",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "ɤ̝": [
+    "back",
+    "close-mid",
+    "modal",
+    "raised",
+    "short",
+    "vowel"
+  ],
+  "ɛʉ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "jæ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "jæi": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "jɛi": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "wæi": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "wɛi": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "ə̹": [
+    "central",
+    "mid",
+    "modal",
+    "more-rounded",
+    "short",
+    "vowel"
+  ],
+  "ɛ̞": [
+    "front",
+    "lowered",
+    "modal",
+    "open-mid",
+    "short",
+    "vowel"
+  ],
+  "ɤˑ": [
+    "back",
+    "close-mid",
+    "half-long",
+    "modal",
+    "vowel"
+  ],
+  "ɛˑ": [
+    "front",
+    "half-long",
+    "modal",
+    "open-mid",
+    "vowel"
+  ],
+  "ʷr": [
+    "alveolar",
+    "consonant",
+    "pre-labialised",
+    "short",
+    "trill",
+    "voiced"
+  ],
+  "dʒʱ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "ᶑ": [
+    "consonant",
+    "implosive",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "dʐ": [
+    "affricate",
+    "consonant",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "əˤ": [
+    "central",
+    "mid",
+    "modal",
+    "pharyngealised",
+    "short",
+    "vowel"
+  ],
+  "i˞ˤ": [
+    "close",
+    "front",
+    "modal",
+    "pharyngealised",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "u˞ˤ": [
+    "back",
+    "close",
+    "modal",
+    "pharyngealised",
+    "rhotacised",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "a˞ˤ": [
+    "central",
+    "modal",
+    "open",
+    "pharyngealised",
+    "rhotacised",
+    "short",
+    "vowel"
+  ],
+  "ə˞ː": [
+    "central",
+    "long",
+    "mid",
+    "modal",
+    "rhotacised",
+    "vowel"
+  ],
+  "a˞ː": [
+    "central",
+    "long",
+    "modal",
+    "open",
+    "rhotacised",
+    "vowel"
+  ],
+  "i˞ˤː": [
+    "close",
+    "front",
+    "long",
+    "modal",
+    "pharyngealised",
+    "rhotacised",
+    "vowel"
+  ],
+  "u˞ˤː": [
+    "back",
+    "close",
+    "long",
+    "modal",
+    "pharyngealised",
+    "rhotacised",
+    "rounded",
+    "vowel"
+  ],
+  "ɐ̹̆": [
+    "central",
+    "modal",
+    "more-rounded",
+    "near-open",
+    "shortened",
+    "vowel"
+  ],
+  "ɑ̝̹": [
+    "back",
+    "modal",
+    "more-rounded",
+    "open",
+    "raised",
+    "short",
+    "vowel"
+  ],
+  "iʌ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɔə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɐə": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "uɤ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iəu": [
+    "modal",
+    "short",
+    "triphthong",
+    "vowel"
+  ],
+  "uæ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "iɐ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "uɐ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  " p": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "pʲʼ": [
+    "bilabial",
+    "consonant",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "bʼ": [
+    "bilabial",
+    "consonant",
+    "ejective",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "tʲʼ": [
+    "alveolar",
+    "consonant",
+    "ejective",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiceless"
+  ],
+  "cː": [
+    "consonant",
+    "long",
+    "palatal",
+    "plosive",
+    "voiceless"
+  ],
+  "vʲː": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "long",
+    "palatalised",
+    "voiced"
+  ],
+  "qχʰʷ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "tsʲʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "tsʲʼ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "palatalised",
+    "short",
+    "voiceless"
+  ],
+  "tʷː": [
+    "alveolar",
+    "consonant",
+    "labialised",
+    "long",
+    "plosive",
+    "voiceless"
+  ],
+  "tsʷʼ": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "ʃʷː": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "tsʷʰ": [
+    "affricate",
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "tsʷː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "labialised",
+    "long",
+    "voiceless"
+  ],
+  "dʒʷ": [
+    "affricate",
+    "consonant",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiced"
+  ],
+  "tʃʷː": [
+    "affricate",
+    "consonant",
+    "labialised",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "tʃʷʼ": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "kʷː": [
+    "consonant",
+    "labialised",
+    "long",
+    "plosive",
+    "velar",
+    "voiceless"
+  ],
+  "qʷː": [
+    "consonant",
+    "labialised",
+    "long",
+    "plosive",
+    "uvular",
+    "voiceless"
+  ],
+  "ʕʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "pharyngeal",
+    "short",
+    "voiced"
+  ],
+  " i": [
+    "close",
+    "front",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɪa": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɪo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "iə̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "iũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɪã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ɪõ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "aõ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "uĩ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "uə̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "oɪ̃": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "oã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "ts’ː": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "long",
+    "voiceless"
+  ],
+  "tsʷ’": [
+    "affricate",
+    "alveolar",
+    "consonant",
+    "ejective",
+    "labialised",
+    "short",
+    "voiceless"
+  ],
+  "sʷː": [
+    "alveolar",
+    "consonant",
+    "fricative",
+    "labialised",
+    "long",
+    "voiceless"
+  ],
+  "tʃ’ː": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "long",
+    "postalveolar",
+    "voiceless"
+  ],
+  "tʃʷ’": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "labialised",
+    "postalveolar",
+    "short",
+    "voiceless"
+  ],
+  "kʟ̥̝": [
+    "affricate",
+    "consonant",
+    "lateral",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʟ̥̝’": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "lateral",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʟ̥̝ʷ": [
+    "affricate",
+    "consonant",
+    "labialised",
+    "lateral",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʟ̥̝ʷ’": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "labialised",
+    "lateral",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʟ̝": [
+    "consonant",
+    "fricative",
+    "lateral",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ʟ̥̝": [
+    "consonant",
+    "fricative",
+    "lateral",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "ʟ̥̝ː": [
+    "consonant",
+    "fricative",
+    "lateral",
+    "long",
+    "velar",
+    "voiceless"
+  ],
+  "ʟ̥̝ʷː": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "lateral",
+    "long",
+    "velar",
+    "voiceless"
+  ],
+  "ʟ̥̝ʷ": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "lateral",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "kʷ’": [
+    "consonant",
+    "ejective",
+    "labialised",
+    "plosive",
+    "short",
+    "velar",
+    "voiceless"
+  ],
+  "qχ’": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qχ’ː": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "long",
+    "uvular",
+    "voiceless"
+  ],
+  "qχʷ": [
+    "affricate",
+    "consonant",
+    "labialised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "qχʷ’": [
+    "affricate",
+    "consonant",
+    "ejective",
+    "labialised",
+    "short",
+    "uvular",
+    "voiceless"
+  ],
+  "χʷː": [
+    "consonant",
+    "fricative",
+    "labialised",
+    "long",
+    "uvular",
+    "voiceless"
+  ],
+  "ɳʰ": [
+    "aspirated",
+    "consonant",
+    "nasal",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "ʈʲʰ": [
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiceless"
+  ],
+  "ɨ̃ː": [
+    "central",
+    "close",
+    "long",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "ə̃ː": [
+    "central",
+    "long",
+    "mid",
+    "modal",
+    "nasalised",
+    "vowel"
+  ],
+  "bʲʰ": [
+    "aspirated",
+    "bilabial",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "dʲʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ɖʲʰ": [
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "gʲʰ": [
+    "aspirated",
+    "consonant",
+    "palatalised",
+    "plosive",
+    "short",
+    "velar",
+    "voiced"
+  ],
+  "ɭʲ": [
+    "approximant",
+    "consonant",
+    "lateral",
+    "palatalised",
+    "retroflex",
+    "short",
+    "voiced"
+  ],
+  "əɪ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "eʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ɪʊ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "m̤": [
+    "bilabial",
+    "breathy-voice",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "n̤": [
+    "alveolar",
+    "breathy-voice",
+    "consonant",
+    "nasal",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "w̤": [
+    "approximant",
+    "breathy-voice",
+    "consonant",
+    "labial-velar",
+    "short",
+    "voiced"
+  ],
+  "l̤": [
+    "alveolar",
+    "approximant",
+    "breathy-voice",
+    "consonant",
+    "lateral",
+    "short",
+    "voiced"
+  ],
+  "ʌe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "o̜": [
+    "back",
+    "close-mid",
+    "less-rounded",
+    "modal",
+    "rounded",
+    "short",
+    "vowel"
+  ],
+  "u̜ː": [
+    "back",
+    "close",
+    "less-rounded",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "o̜ː": [
+    "back",
+    "close-mid",
+    "less-rounded",
+    "long",
+    "modal",
+    "rounded",
+    "vowel"
+  ],
+  "ɽ̃ʰ": [
+    "aspirated",
+    "consonant",
+    "nasalised",
+    "retroflex",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "ɾʰ": [
+    "alveolar",
+    "aspirated",
+    "consonant",
+    "short",
+    "tap",
+    "voiced"
+  ],
+  "aæ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "ʌo": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "aũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "iã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "e̯ã": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɪi": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "e̯æ": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "e̯ʊ": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ɪũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "e̯ũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "eũ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "e̯o": [
+    "diphthong",
+    "modal",
+    "non-syllabic",
+    "short",
+    "vowel"
+  ],
+  "ʊe": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "oæ": [
+    "diphthong",
+    "modal",
+    "short",
+    "vowel"
+  ],
+  "i̥": [
+    "close",
+    "front",
+    "modal",
+    "short",
+    "voiceless",
+    "vowel"
+  ],
+  "ĩ̥": [
+    "close",
+    "front",
+    "modal",
+    "nasalised",
+    "short",
+    "voiceless",
+    "vowel"
+  ],
+  "ũ̥": [
+    "back",
+    "close",
+    "modal",
+    "nasalised",
+    "rounded",
+    "short",
+    "voiceless",
+    "vowel"
+  ],
+  "e̥": [
+    "close-mid",
+    "front",
+    "modal",
+    "short",
+    "voiceless",
+    "vowel"
+  ],
+  "ẽ̥": [
+    "close-mid",
+    "front",
+    "modal",
+    "nasalised",
+    "short",
+    "voiceless",
+    "vowel"
+  ],
+  "aĩ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "tçʰ": [
+    "affricate",
+    "aspirated",
+    "consonant",
+    "palatal",
+    "short",
+    "voiceless"
+  ],
+  "ɐ̃ː": [
+    "central",
+    "long",
+    "modal",
+    "nasalised",
+    "near-open",
+    "vowel"
+  ],
+  "ɗ̪": [
+    "consonant",
+    "dental",
+    "implosive",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "ĭ": [
+    "close",
+    "front",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "ŭ̃": [
+    "back",
+    "close",
+    "modal",
+    "nasalised",
+    "rounded",
+    "shortened",
+    "vowel"
+  ],
+  "oĩ": [
+    "diphthong",
+    "modal",
+    "nasalised",
+    "short",
+    "vowel"
+  ],
+  "oĭ": [
+    "diphthong",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  "aĭ": [
+    "diphthong",
+    "modal",
+    "shortened",
+    "vowel"
+  ],
+  " b": [
+    "bilabial",
+    "consonant",
+    "plosive",
+    "short",
+    "voiced"
+  ],
+  "fˤ": [
+    "consonant",
+    "fricative",
+    "labiodental",
+    "pharyngealised",
+    "short",
+    "voiceless"
+  ]
+}

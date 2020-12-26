@@ -33,17 +33,15 @@ class VowelParse:
     def as_dict(self):
         """
         n or s stringification is used on nullable
-        and non-nullable features respectively.
-        Booleans are all non-nullable and are returned as is.
+        and non-nullable enum-encoded features respectively.
         """
         return {
             'type': 'vowel',
             'apical_vowel': self.apical_vowel,
             'diphthong': self.diphthong,
             'triphthong': self.triphthong,
-            # Apical vowels don't have height
             'height': n(self.height),
-            'backness': s(self.backness),
+            'backness': n(self.backness),
             'rounded': self.rounded,
             'length': s(self.length),
             'phonation': s(self.phonation),
@@ -64,8 +62,9 @@ class VowelParse:
             result.add('rounded')
         if self.height is not None:
             result.add(s(self.height))
+        if self.backness is not None:
+            result.add(s(self.backness))
         result |= set([
-            s(self.backness),
             s(self.length),
             s(self.phonation)
         ])
@@ -91,7 +90,8 @@ class ConsonantParse:
             'type': 'consonant',
             'place': s(self.place),
             'manner': s(self.manner),
-            'voice': s(self.voice),
+            # Glottals and epiglottals do not have voice.
+            'voice': n(self.voice),
             'length': s(self.length),
             'lateral': self.lateral,
             'nasal': self.nasal,
@@ -109,10 +109,11 @@ class ConsonantParse:
             result.add('nasal')
         if self.implosive:
             result.add('implosive')
+        if self.voice is not None:
+            result.add(s(self.voice))
         result |= set([
             s(self.place),
             s(self.manner),
-            s(self.voice),
             s(self.length)
         ])
         result |= (set(s(f) for f in self.pre_features))

@@ -1,19 +1,22 @@
 import sqlite3
+import json
 
 import IPAParser_3_0
 
 
 PARSER = IPAParser_3_0.IPAParser()
+with open('parses_cache.json', 'r', encoding='utf-8') as inp:
+    PARSES_CACHE = json.load(inp)
 
 
 def get_all_language_ids(db_connection: sqlite3.Connection):
     cursor = db_connection.cursor()
-    return set(cursor.execute("SELECT id FROM languages").fetchall())
+    return set(el[0] for el in cursor.execute("SELECT id FROM languages").fetchall())
 
 
 def get_consonants_for_language(language_id: int, db_connection: sqlite3.Connection):
     cursor = db_connection.cursor()
-    return set(cursor.execute(
+    return set(el[0].replace('(', '').replace(')', '') for el in cursor.execute(
         """
         SELECT ipa FROM segments
         WHERE `is_consonant` = 1
@@ -25,7 +28,7 @@ def get_consonants_for_language(language_id: int, db_connection: sqlite3.Connect
 
 def get_vowels_for_language(language_id: int, db_connection: sqlite3.Connection):
     cursor = db_connection.cursor()
-    return set(cursor.execute(
+    return set(el[0].replace('(', '').replace(')', '') for el in cursor.execute(
         """
         SELECT ipa FROM segments
         WHERE `is_consonant` = 0
@@ -35,25 +38,19 @@ def get_vowels_for_language(language_id: int, db_connection: sqlite3.Connection)
     ).fetchall())
 
 
-def satisfies_consonants(feature_dict, features):
-    return True
-
-
-def satisfies_vowels(feature_dict, features):
-    return False
+def get_parse(segment):
+    if segment in PARSES_CACHE:
+        return set(PARSES_CACHE[segment])
+    else:
+        return PARSER.parse(segment).as_set()
 
 
 def get_count_for_features(language_id, features, db_connection):
     consonants = get_consonants_for_language(language_id, db_connection)
     vowels = get_vowels_for_language(language_id, db_connection)
     hit_count = 0
-    for c in consonants:
-        feature_dict = PARSER.parse(c).as_dict()
-        if satisfies_consonants(feature_dict, features):
-            hit_count += 1
-    for v in vowels:
-        feature_dict = PARSER.parse(v).as_dict()
-        if satisfies_vowels(feature_dict, features):
+    for segment in consonants | vowels:
+        if features.issubset(get_parse(segment)):
             hit_count += 1
     return hit_count
 
