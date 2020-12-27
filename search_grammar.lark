@@ -17,11 +17,16 @@ predicate : yesno PHONEME      -> yesno_p
     | eq features "," features -> feat_eq
 
 ?yesno : "+" -> present | "-" -> absent
-?eq : ">="      -> ge
-    | ">"       -> gt
-    | "<="      -> le
-    | "<"       -> lt
-    | "="("=")? -> exactly
+?eq : MORETHANOREQUAL       -> ge
+    | ">"                     -> gt
+    | LESSTHANOREQUAL       -> le
+    | "<"                     -> lt
+    | EQUAL                   -> exactly
+
+MORETHANOREQUAL: ">="
+LESSTHANOREQUAL: "<="
+EQUAL: "="("=")?
+
 features : FEATURE+
 
 PHONEME : "/" /[^ \/]+/ "/"
