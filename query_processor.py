@@ -1,5 +1,6 @@
 import sqlite3
 from typing import Set
+from unicodedata import normalize
 
 from parser import query_parser, QueryTransformer, ASTNode, OrNode, AndNode, NotNode
 from parser import EqFeature, EqPhoneme, EqFeatures
@@ -25,15 +26,35 @@ def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
         return get_all_language_ids(db_connection) - apply_query(query.query, db_connection)
     elif type(query) == EqFeature:
         return apply_eq_feature(query, db_connection)
-    # elif type(query) == EqPhoneme:
-    #     # return apply_eq_phoneme(query, db_connection)
-    #     pass
+    elif type(query) == EqPhoneme:
+        return apply_eq_phoneme(query, db_connection)
     # elif type(query) == EqFeatures:
     #     # return apply_eq_features(query, db_connection)
     #     pass
     else:
         raise NotImplementedError(
             f'The query type is not recognised: {type(query)}')
+
+
+def apply_eq_phoneme(query: EqPhoneme, db_connection: sqlite3.Connection):
+    result = set()
+    test_segment = normalize('NFD', query.phoneme)
+    # Testing for absence
+    for language_id in get_all_language_ids(db_connection):
+        segment_count = 0
+        for (segment,) in db_connection.execute(
+            'SELECT ipa FROM segments WHERE `language_id` = ?',
+            (language_id,)
+        ):
+            if segment == test_segment:
+                segment_count += 1
+                # We expect to see each segment only once
+                # in an inventory.
+                break
+        diff = segment_count-query.number
+        if check_eq(diff, query.op):
+            result.add(language_id)
+    return result
 
 
 def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
