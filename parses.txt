@@ -1,0 +1,1735 @@
+/p/: short voiceless bilabial plosive consonant
+/b/: short voiced bilabial plosive consonant
+/m/: short voiced nasal bilabial plosive consonant
+/f/: short voiceless labiodental fricative consonant
+/v/: short voiced labiodental fricative consonant
+/t̪/: short voiceless dental plosive consonant
+/d̪/: short voiced dental plosive consonant
+/θ/: short voiceless interdental fricative consonant
+/ð/: short voiced interdental fricative consonant
+/n/: short voiced nasal alveolar plosive consonant
+/s̠/: short voiceless retracted alveolar fricative consonant
+/z̠/: short voiced retracted alveolar fricative consonant
+/ɾ̠/: short voiced retracted alveolar tap consonant
+/l/: short voiced lateral alveolar approximant consonant
+/k/: short voiceless velar plosive consonant
+/g/: short voiced velar plosive consonant
+/x/: short voiceless velar fricative consonant
+/ɣ/: short voiced velar fricative consonant
+/ʎ/: short voiced lateral palatal approximant consonant
+/ɲ̟/: short voiced advanced nasal palatal plosive consonant
+/c/: short voiceless palatal plosive consonant
+/ç/: short voiceless palatal fricative consonant
+/ʝ/: short voiced palatal fricative consonant
+/ɟ/: short voiced palatal plosive consonant
+/ɐ/: short modal-voice near-open central unrounded monophthong vowel
+/e̞/: short modal-voice mid front unrounded monophthong vowel
+/o̞/: short modal-voice mid back rounded monophthong vowel
+/i/: short modal-voice close front unrounded monophthong vowel
+/u/: short modal-voice close back rounded monophthong vowel
+/pʰ/: short voiceless aspirated bilabial plosive consonant
+/tʰ/: short voiceless aspirated alveolar plosive consonant
+/tʃʰ/: short voiceless aspirated postalveolar affricate consonant
+/kʰ/: short voiceless aspirated velar plosive consonant
+/ʔ/: short glottal plosive consonant
+/d/: short voiced alveolar plosive consonant
+/dʒ/: short voiced postalveolar affricate consonant
+/ɡ/: short voiced velar plosive consonant
+/s/: short voiceless alveolar fricative consonant
+/ʃ/: short voiceless postalveolar fricative consonant
+/z/: short voiced alveolar fricative consonant
+/ɻ/: short voiced retroflex approximant consonant
+/ŋ/: short voiced nasal velar plosive consonant
+/w/: short voiced labial-velar approximant consonant
+/j/: short voiced palatal approximant consonant
+/ɵ/: short modal-voice close-mid central rounded monophthong vowel
+/e/: short modal-voice close-mid front unrounded monophthong vowel
+/ə/: short modal-voice mid central unrounded monophthong vowel
+/o/: short modal-voice close-mid back rounded monophthong vowel
+/a/: short modal-voice open central unrounded monophthong vowel
+/iː/: long modal-voice close front unrounded monophthong vowel
+/ɵː/: long modal-voice close-mid central rounded monophthong vowel
+/uː/: long modal-voice close back rounded monophthong vowel
+/eː/: long modal-voice close-mid front unrounded monophthong vowel
+/əː/: long modal-voice mid central unrounded monophthong vowel
+/oː/: long modal-voice close-mid back rounded monophthong vowel
+/aː/: long modal-voice open central unrounded monophthong vowel
+/pʼ/: short voiceless ejective bilabial plosive consonant
+/t̪ʰ/: short voiceless aspirated dental plosive consonant
+/t̪ː/: long voiceless dental plosive consonant
+/t̪ʼ/: short voiceless ejective dental plosive consonant
+/l̪/: short voiced lateral dental approximant consonant
+/tsʰ/: short voiceless aspirated alveolar affricate consonant
+/tsʼ/: short voiceless ejective alveolar affricate consonant
+/sː/: long voiceless alveolar fricative consonant
+/ɾ̺/: short voiced apical alveolar tap consonant
+/r̺̥/: short voiceless apical alveolar trill consonant
+/tʃʼ/: short voiceless ejective postalveolar affricate consonant
+/ʒ/: short voiced postalveolar fricative consonant
+/kʲʰ/: short voiceless palatalised aspirated velar plosive consonant
+/kʲʼ/: short voiceless ejective palatalised velar plosive consonant
+/gʲ/: short voiced palatalised velar plosive consonant
+/kʼ/: short voiceless ejective velar plosive consonant
+/x̠/: short voiceless retracted velar fricative consonant
+/ʁ/: short voiced uvular fricative consonant
+/qʰ/: short voiceless aspirated uvular plosive consonant
+/qː/: long voiceless uvular plosive consonant
+/qʼ/: short voiceless ejective uvular plosive consonant
+/ʡ/: short epiglottal plosive consonant
+/h/: short voiceless glottal fricative consonant
+/ʜ/: short voiceless epiglottal fricative consonant
+/t̪ʼˤ/: short voiceless ejective pharyngealised dental plosive consonant
+/tʃʼˤ/: short voiceless ejective pharyngealised postalveolar affricate consonant
+/t̪ʰˤ/: short voiceless aspirated pharyngealised dental plosive consonant
+/tʃʰˤ/: short voiceless aspirated pharyngealised postalveolar affricate consonant
+/pʰˤ/: short voiceless aspirated pharyngealised bilabial plosive consonant
+/tsʰˤ/: short voiceless aspirated pharyngealised alveolar affricate consonant
+/bˤ/: short voiced pharyngealised bilabial plosive consonant
+/d̪ˤ/: short voiced pharyngealised dental plosive consonant
+/mˤ/: short voiced pharyngealised nasal bilabial plosive consonant
+/nˤ/: short voiced pharyngealised nasal alveolar plosive consonant
+/vˤ/: short voiced pharyngealised labiodental fricative consonant
+/zˤ/: short voiced pharyngealised alveolar fricative consonant
+/ʒˤ/: short voiced pharyngealised postalveolar fricative consonant
+/ɪ/: short modal-voice near-close front unrounded monophthong vowel
+/ʊ/: short modal-voice near-close back rounded monophthong vowel
+/ɨ/: short modal-voice close central unrounded monophthong vowel
+/iːɛ/: long modal-voice diphthong vowel
+/uːʌ/: long modal-voice diphthong vowel
+/ɛ/: short modal-voice open-mid front unrounded monophthong vowel
+/ʌ/: short modal-voice open-mid back unrounded monophthong vowel
+/ɛ̯æː/: long modal-voice diphthong vowel
+/æ/: short modal-voice near-open front unrounded monophthong vowel
+/ɔaː/: long modal-voice diphthong vowel
+/ts/: short voiceless alveolar affricate consonant
+/tʃ/: short voiceless postalveolar affricate consonant
+/dz/: short voiced alveolar affricate consonant
+/χ/: short voiceless uvular fricative consonant
+/n̪/: short voiced nasal dental plosive consonant
+/ɾ/: short voiced alveolar tap consonant
+/ɔ/: short modal-voice open-mid back rounded monophthong vowel
+/œ/: short modal-voice open-mid front rounded monophthong vowel
+/y/: short modal-voice close front rounded monophthong vowel
+/t/: short voiceless alveolar plosive consonant
+/q/: short voiceless uvular plosive consonant
+/r/: short voiced alveolar trill consonant
+/ʉ/: short modal-voice close central rounded monophthong vowel
+/ɲ/: short voiced nasal palatal plosive consonant
+/ʈʂ/: short voiceless retroflex affricate consonant
+/ä/: short modal-voice open central unrounded monophthong vowel
+/i̯/: short modal-voice non-syllabic close front unrounded monophthong vowel
+/u̯/: short modal-voice non-syllabic close back rounded monophthong vowel
+/ɯ/: short modal-voice close back unrounded monophthong vowel
+/ɤ/: short modal-voice close-mid back unrounded monophthong vowel
+/ia/: short modal-voice diphthong vowel
+/ɯa/: short modal-voice diphthong vowel
+/ua/: short modal-voice diphthong vowel
+/pʲ/: short voiceless palatalised bilabial plosive consonant
+/tɕ/: short voiceless alveolo-palatal affricate consonant
+/pʰʲ/: short voiceless aspirated palatalised bilabial plosive consonant
+/ʈʂʰ/: short voiceless aspirated retroflex affricate consonant
+/tɕʰ/: short voiceless aspirated alveolo-palatal affricate consonant
+/ʂ/: short voiceless retroflex fricative consonant
+/ɕ/: short voiceless alveolo-palatal fricative consonant
+/ʐ/: short voiced retroflex fricative consonant
+/ʑ/: short voiced alveolo-palatal fricative consonant
+/mʲ/: short voiced palatalised nasal bilabial plosive consonant
+/m̥/: short voiceless nasal bilabial plosive consonant
+/m̥ʲ/: short voiceless palatalised nasal bilabial plosive consonant
+/n̥/: short voiceless nasal alveolar plosive consonant
+/ɲ̊/: short voiceless nasal palatal plosive consonant
+/ŋ̊/: short voiceless nasal velar plosive consonant
+/l̥/: short voiceless lateral alveolar approximant consonant
+/ɿ/: short modal-voice alveolar unrounded monophthong apical vowel
+/ɛ̃/: short modal-voice nasalised open-mid front unrounded monophthong vowel
+/ɑ/: short modal-voice open back unrounded monophthong vowel
+/ɑ̃/: short modal-voice nasalised open back unrounded monophthong vowel
+/ɛi/: short modal-voice diphthong vowel
+/ui/: short modal-voice diphthong vowel
+/ɑi/: short modal-voice diphthong vowel
+/uɑi/: short modal-voice triphthong vowel
+/iu/: short modal-voice diphthong vowel
+/ou/: short modal-voice diphthong vowel
+/iɑu/: short modal-voice triphthong vowel
+/ɑu/: short modal-voice diphthong vowel
+/iɛ/: short modal-voice diphthong vowel
+/iɛ̃/: short modal-voice nasalised diphthong vowel
+/uɛ/: short modal-voice diphthong vowel
+/iɑ/: short modal-voice diphthong vowel
+/uɑ/: short modal-voice diphthong vowel
+/uɑ̃/: short modal-voice nasalised diphthong vowel
+/ʈ/: short voiceless retroflex plosive consonant
+/ʈʰ/: short voiceless aspirated retroflex plosive consonant
+/ɖ/: short voiced retroflex plosive consonant
+/ɖʐ/: short voiced retroflex affricate consonant
+/dʑ/: short voiced alveolo-palatal affricate consonant
+/ɬ/: short voiceless lateral alveolar fricative consonant
+/ɿ̰/: short creaky-voice alveolar unrounded monophthong apical vowel
+/ḭ/: short creaky-voice close front unrounded monophthong vowel
+/ɯ̰/: short creaky-voice close back unrounded monophthong vowel
+/ṵ/: short creaky-voice close back rounded monophthong vowel
+/ḛ/: short creaky-voice close-mid front unrounded monophthong vowel
+/o̰/: short creaky-voice close-mid back rounded monophthong vowel
+/ɛ̰/: short creaky-voice open-mid front unrounded monophthong vowel
+/a̰/: short creaky-voice open central unrounded monophthong vowel
+/ø/: short modal-voice close-mid front rounded monophthong vowel
+/ai/: short modal-voice diphthong vowel
+/au/: short modal-voice diphthong vowel
+/eu/: short modal-voice diphthong vowel
+/ie/: short modal-voice diphthong vowel
+/uo/: short modal-voice diphthong vowel
+/uai/: short modal-voice triphthong vowel
+/yo/: short modal-voice diphthong vowel
+/øy/: short modal-voice diphthong vowel
+/ⁿb/: short voiced pre-nasalised bilabial plosive consonant
+/ⁿd̪/: short voiced pre-nasalised dental plosive consonant
+/ⁿɢ/: short voiced pre-nasalised uvular plosive consonant
+/ⁿg/: short voiced pre-nasalised velar plosive consonant
+/n̥̪/: short voiceless nasal dental plosive consonant
+/t̪s̪/: short voiceless dental affricate consonant
+/t̪s̪ʰ/: short voiceless aspirated dental affricate consonant
+/d̪z̪/: short voiced dental affricate consonant
+/ⁿd̪z̪/: short voiced pre-nasalised dental affricate consonant
+/ⁿɖʐ/: short voiced pre-nasalised retroflex affricate consonant
+/ⁿdʑ/: short voiced pre-nasalised alveolo-palatal affricate consonant
+/s̪/: short voiceless dental fricative consonant
+/z̪/: short voiced dental fricative consonant
+/ɦ/: short voiced glottal fricative consonant
+/ɬ̪/: short voiceless lateral dental fricative consonant
+/r̪/: short voiced dental trill consonant
+/z̩/: short voiced syllabic alveolar fricative consonant
+/ɘ/: short modal-voice close-mid central unrounded monophthong vowel
+/ɜ/: short modal-voice open-mid central unrounded monophthong vowel
+/ə˞/: short modal-voice rhotacised mid central unrounded monophthong vowel
+/ĩ/: short modal-voice nasalised close front unrounded monophthong vowel
+/ỹ/: short modal-voice nasalised close front rounded monophthong vowel
+/æ̃/: short modal-voice nasalised near-open front unrounded monophthong vowel
+/ã/: short modal-voice nasalised open central unrounded monophthong vowel
+/ɘ̃/: short modal-voice nasalised close-mid central unrounded monophthong vowel
+/ũ/: short modal-voice nasalised close back rounded monophthong vowel
+/õ/: short modal-voice nasalised close-mid back rounded monophthong vowel
+/ɔ̃/: short modal-voice nasalised open-mid back rounded monophthong vowel
+/iɜ/: short modal-voice diphthong vowel
+/iæ/: short modal-voice diphthong vowel
+/yĩ/: short modal-voice nasalised diphthong vowel
+/iæ̃/: short modal-voice nasalised diphthong vowel
+/yi/: short modal-voice diphthong vowel
+/yɜ/: short modal-voice diphthong vowel
+/yæ/: short modal-voice diphthong vowel
+/uɜ/: short modal-voice diphthong vowel
+/uæ/: short modal-voice diphthong vowel
+/uɛ̃/: short modal-voice nasalised diphthong vowel
+/uã/: short modal-voice nasalised diphthong vowel
+/r̥/: short voiceless alveolar trill consonant
+/ɹ̥/: short voiceless alveolar approximant consonant
+/i̞/: short modal-voice lowered close front unrounded monophthong vowel
+/u̞/: short modal-voice lowered close back rounded monophthong vowel
+/ɑ̞/: short modal-voice lowered open back unrounded monophthong vowel
+/ɐʊ/: short modal-voice diphthong vowel
+/øɪ/: short modal-voice diphthong vowel
+/h̃/: short voiceless nasalised glottal fricative consonant
+/ʅ/: short modal-voice postalveolar unrounded monophthong apical vowel
+/tʰʲ/: short voiceless aspirated palatalised alveolar plosive consonant
+/tʲ/: short voiceless palatalised alveolar plosive consonant
+/kʰʲ/: short voiceless aspirated palatalised velar plosive consonant
+/kʲ/: short voiceless palatalised velar plosive consonant
+/nʲ/: short voiced palatalised nasal alveolar plosive consonant
+/nˠ/: short voiced velarised nasal alveolar plosive consonant
+/fʲ/: short voiceless palatalised labiodental fricative consonant
+/ɣʲ/: short voiced palatalised velar fricative consonant
+/ðʲ/: short voiced palatalised interdental fricative consonant
+/ɾˠ/: short voiced velarised alveolar tap consonant
+/lʲ/: short voiced palatalised lateral alveolar approximant consonant
+/lˠ/: short voiced velarised lateral alveolar approximant consonant
+/ɪ̃/: short modal-voice nasalised near-close front unrounded monophthong vowel
+/ɪ̃ː/: long modal-voice nasalised near-close front unrounded monophthong vowel
+/ɛː/: long modal-voice open-mid front unrounded monophthong vowel
+/ɛ̃ː/: long modal-voice nasalised open-mid front unrounded monophthong vowel
+/ãː/: long modal-voice nasalised open central unrounded monophthong vowel
+/ũː/: long modal-voice nasalised close back rounded monophthong vowel
+/ɔː/: long modal-voice open-mid back rounded monophthong vowel
+/ɔ̃ː/: long modal-voice nasalised open-mid back rounded monophthong vowel
+/ɯː/: long modal-voice close back unrounded monophthong vowel
+/ɯ̃ː/: long modal-voice nasalised close back unrounded monophthong vowel
+/ɤː/: long modal-voice close-mid back unrounded monophthong vowel
+/ei/: short modal-voice diphthong vowel
+/ɤi/: short modal-voice diphthong vowel
+/ɔu/: short modal-voice diphthong vowel
+/iə/: short modal-voice diphthong vowel
+/uə/: short modal-voice diphthong vowel
+/ii/: short modal-voice diphthong vowel
+/u̠u/: short modal-voice retracted diphthong vowel
+/ɛ̃ũ/: short modal-voice nasalised diphthong vowel
+/ẽɪ̃/: short modal-voice nasalised diphthong vowel
+/ãũ/: short modal-voice nasalised diphthong vowel
+/ũã/: short modal-voice nasalised diphthong vowel
+/ɪ̃ə̃/: short modal-voice nasalised diphthong vowel
+/s̻/: short voiceless laminal alveolar fricative consonant
+/s̺/: short voiceless apical alveolar fricative consonant
+/ts̺/: short voiceless apical alveolar affricate consonant
+/ts̻/: short voiceless laminal alveolar affricate consonant
+/n̺/: short voiced apical nasal alveolar plosive consonant
+/l̺/: short voiced apical lateral alveolar approximant consonant
+/r̺/: short voiced apical alveolar trill consonant
+/l̪ʲ/: short voiced palatalised lateral dental approximant consonant
+/ø̞/: short modal-voice mid front rounded monophthong vowel
+/ie̞/: short modal-voice diphthong vowel
+/æː/: long modal-voice near-open front unrounded monophthong vowel
+/yː/: long modal-voice close front rounded monophthong vowel
+/øː/: long modal-voice close-mid front rounded monophthong vowel
+/ɜː/: long modal-voice open-mid central unrounded monophthong vowel
+/äː/: long modal-voice open central unrounded monophthong vowel
+/o̞ː/: long modal-voice mid back rounded monophthong vowel
+/æ̰/: short creaky-voice near-open front unrounded monophthong vowel
+/e̞̰/: short creaky-voice mid front unrounded monophthong vowel
+/ɵ̞̰/: short creaky-voice lowered close-mid central rounded monophthong vowel
+/pː/: long voiceless bilabial plosive consonant
+/ɾ̥/: short voiceless alveolar tap consonant
+/ɫ̪/: short voiced velarised lateral dental approximant consonant
+/ʰk/: short voiceless pre-aspirated velar plosive consonant
+/ʢ/: short voiced epiglottal fricative consonant
+/je/: short modal-voice diphthong vowel
+/e̞ː/: long modal-voice mid front unrounded monophthong vowel
+/y̯ø/: short modal-voice diphthong vowel
+/yø/: short modal-voice diphthong vowel
+/wo/: short modal-voice diphthong vowel
+/woː/: long modal-voice diphthong vowel
+/ɑː/: long modal-voice open back unrounded monophthong vowel
+/ĩː/: long modal-voice nasalised close front unrounded monophthong vowel
+/jẽ/: short modal-voice nasalised diphthong vowel
+/iẽ/: short modal-voice nasalised diphthong vowel
+/ẽ̞ː/: long modal-voice nasalised mid front unrounded monophthong vowel
+/ʊ̃/: short modal-voice nasalised near-close back rounded monophthong vowel
+/wõ/: short modal-voice nasalised diphthong vowel
+/wõː/: long modal-voice nasalised diphthong vowel
+/ə̃/: short modal-voice nasalised mid central unrounded monophthong vowel
+/ɑ̃ː/: long modal-voice nasalised open back unrounded monophthong vowel
+/ɒ/: short modal-voice open back rounded monophthong vowel
+/ɒː/: long modal-voice open back rounded monophthong vowel
+/ei̯/: short modal-voice diphthong vowel
+/eːi̯/: long modal-voice diphthong vowel
+/œː/: long modal-voice open-mid front rounded monophthong vowel
+/ʏ/: short modal-voice near-close front rounded monophthong vowel
+/oːu̯/: long modal-voice diphthong vowel
+/ɒ̃/: short modal-voice nasalised open back rounded monophthong vowel
+/ɒ̃ː/: long modal-voice nasalised open back rounded monophthong vowel
+/ẽ/: short modal-voice nasalised close-mid front unrounded monophthong vowel
+/ẽː/: long modal-voice nasalised close-mid front unrounded monophthong vowel
+/õː/: long modal-voice nasalised close-mid back rounded monophthong vowel
+/œ̃/: short modal-voice nasalised open-mid front rounded monophthong vowel
+/œ̃ː/: long modal-voice nasalised open-mid front rounded monophthong vowel
+/aːu̯/: long modal-voice diphthong vowel
+/wɔː/: long modal-voice diphthong vowel
+/øy̯/: short modal-voice diphthong vowel
+/øːy̯/: long modal-voice diphthong vowel
+/ɒːi̯/: long modal-voice diphthong vowel
+/t̺ʰ/: short voiceless apical aspirated alveolar plosive consonant
+/cʰ/: short voiceless aspirated palatal plosive consonant
+/t̺ʼ/: short voiceless ejective apical alveolar plosive consonant
+/cʼ/: short voiceless ejective palatal plosive consonant
+/d̺/: short voiced apical alveolar plosive consonant
+/ɢ/: short voiced uvular plosive consonant
+/ɯ̝/: short modal-voice raised close back unrounded monophthong vowel
+/ɭ̥/: short voiceless lateral retroflex approximant consonant
+/ɽ̊/: short voiceless retroflex tap consonant
+/u̞ː/: long modal-voice lowered close back rounded monophthong vowel
+/ɨ̹/: short modal-voice more-rounded close central unrounded monophthong vowel
+/ɨ̹ː/: long modal-voice more-rounded close central unrounded monophthong vowel
+/ɜ̹/: short modal-voice more-rounded open-mid central unrounded monophthong vowel
+/ɜ̹ː/: long modal-voice more-rounded open-mid central unrounded monophthong vowel
+/ɬʲ/: short voiceless palatalised lateral alveolar fricative consonant
+/ɕː/: long voiceless alveolo-palatal fricative consonant
+/ɑ̟ˑ/: half-long modal-voice advanced open back unrounded monophthong vowel
+/ɑ̝̟/: short modal-voice advanced raised open back unrounded monophthong vowel
+/o̟ˑ/: half-long modal-voice advanced close-mid back rounded monophthong vowel
+/ɞ/: short modal-voice open-mid central rounded monophthong vowel
+/ʊ̈/: short modal-voice centralised near-close back rounded monophthong vowel
+/u̞ˑ/: half-long modal-voice lowered close back rounded monophthong vowel
+/eˑ/: half-long modal-voice close-mid front unrounded monophthong vowel
+/ə̆/: shortened modal-voice mid central unrounded monophthong vowel
+/pʲʰ/: short voiceless palatalised aspirated bilabial plosive consonant
+/bʲ/: short voiced palatalised bilabial plosive consonant
+/tʲʰ/: short voiceless palatalised aspirated alveolar plosive consonant
+/dʲ/: short voiced palatalised alveolar plosive consonant
+/z̺/: short voiced apical alveolar fricative consonant
+/r̺ʲ/: short voiced apical palatalised alveolar trill consonant
+/xʲ/: short voiceless palatalised velar fricative consonant
+/ɴ/: short voiced nasal uvular plosive consonant
+/ħ/: short voiceless pharyngeal fricative consonant
+/ɨ̟ː/: long modal-voice advanced close central unrounded monophthong vowel
+/ɤ̟/: short modal-voice advanced close-mid back unrounded monophthong vowel
+/ɤ̟ː/: long modal-voice advanced close-mid back unrounded monophthong vowel
+/ɛ̞ː/: long modal-voice lowered open-mid front unrounded monophthong vowel
+/œ̞ɛ̞/: short modal-voice lowered diphthong vowel
+/ɵ̟ː/: long modal-voice advanced close-mid central rounded monophthong vowel
+/ʊi/: short modal-voice diphthong vowel
+/ʊː/: long modal-voice near-close back rounded monophthong vowel
+/ʍ/: short voiceless labial-velar approximant consonant
+/ɪː/: long modal-voice near-close front unrounded monophthong vowel
+/ʊ̃ː/: long modal-voice nasalised near-close back rounded monophthong vowel
+/ɾ̞/: short voiced lowered alveolar tap consonant
+/ɟʝ̞/: short voiced lowered palatal affricate consonant
+/ɹ/: short voiced alveolar approximant consonant
+/ɧ/: short voiceless palatal-velar fricative consonant
+/ʉ̟ː/: long modal-voice advanced close central rounded monophthong vowel
+/ʋ/: short voiced labiodental approximant consonant
+/ʔː/: long glottal plosive consonant
+/gʰ/: short voiced aspirated velar plosive consonant
+/ɟʰ/: short voiced aspirated palatal plosive consonant
+/ɖʰ/: short voiced aspirated retroflex plosive consonant
+/d̪ʰ/: short voiced aspirated dental plosive consonant
+/bʰ/: short voiced aspirated bilabial plosive consonant
+/əi/: short modal-voice diphthong vowel
+/əĩ/: short modal-voice nasalised diphthong vowel
+/əu/: short modal-voice diphthong vowel
+/əũ/: short modal-voice nasalised diphthong vowel
+/β̞/: short voiced bilabial approximant consonant
+/iˤ/: short modal-voice pharyngealised close front unrounded monophthong vowel
+/iˤː/: long modal-voice pharyngealised close front unrounded monophthong vowel
+/iˤæ/: short modal-voice pharyngealised diphthong vowel
+/oˤ/: short modal-voice pharyngealised close-mid back rounded monophthong vowel
+/oˤː/: long modal-voice pharyngealised close-mid back rounded monophthong vowel
+/uˤ/: short modal-voice pharyngealised close back rounded monophthong vowel
+/uˤː/: long modal-voice pharyngealised close back rounded monophthong vowel
+/z̻/: short voiced laminal alveolar fricative consonant
+/ä̃/: short modal-voice nasalised open central unrounded monophthong vowel
+/ẽ̞/: short modal-voice nasalised mid front unrounded monophthong vowel
+/õ̞/: short modal-voice nasalised mid back rounded monophthong vowel
+/sʰ/: short voiceless aspirated alveolar fricative consonant
+/ʃʰ/: short voiceless aspirated postalveolar fricative consonant
+/ɕʰ/: short voiceless aspirated alveolo-palatal fricative consonant
+/ⁿd/: short voiced pre-nasalised alveolar plosive consonant
+/ⁿdz/: short voiced pre-nasalised alveolar affricate consonant
+/ⁿdʒ/: short voiced pre-nasalised postalveolar affricate consonant
+/iø/: short modal-voice diphthong vowel
+/ue/: short modal-voice diphthong vowel
+/yɛ/: short modal-voice diphthong vowel
+/io/: short modal-voice diphthong vowel
+/iɔ/: short modal-voice diphthong vowel
+/uɔ/: short modal-voice diphthong vowel
+/ɫ/: short voiced velarised lateral alveolar approximant consonant
+/ø̞ː/: long modal-voice mid front rounded monophthong vowel
+/t̻/: short voiceless laminal alveolar plosive consonant
+/d̻/: short voiced laminal alveolar plosive consonant
+/ɟ̟/: short voiced advanced palatal plosive consonant
+/t̻s̻̪/: short voiceless laminal dental affricate consonant
+/n̻/: short voiced laminal nasal alveolar plosive consonant
+/ʎ̟/: short voiced advanced lateral palatal approximant consonant
+/rʲ/: short voiced palatalised alveolar trill consonant
+/ʉ̟/: short modal-voice advanced close central rounded monophthong vowel
+/ɵ̟/: short modal-voice advanced close-mid central rounded monophthong vowel
+/i̠/: short modal-voice retracted close front unrounded monophthong vowel
+/e̠/: short modal-voice retracted close-mid front unrounded monophthong vowel
+/ä̠/: short modal-voice retracted centralised open central unrounded monophthong vowel
+/ʌi/: short modal-voice diphthong vowel
+/ɐi/: short modal-voice diphthong vowel
+/ɐu/: short modal-voice diphthong vowel
+/θʼ/: short voiceless ejective interdental fricative consonant
+/t’/: short voiceless ejective alveolar plosive consonant
+/s’/: short voiceless ejective alveolar fricative consonant
+/ɬ’/: short voiceless ejective lateral alveolar fricative consonant
+/ɕ’/: short voiceless ejective alveolo-palatal fricative consonant
+/k’/: short voiceless ejective velar plosive consonant
+/ʕ/: short voiced pharyngeal fricative consonant
+/ai̯/: short modal-voice diphthong vowel
+/au̯/: short modal-voice diphthong vowel
+/əi̯/: short modal-voice diphthong vowel
+/əu̯/: short modal-voice diphthong vowel
+/β/: short voiced bilabial fricative consonant
+/tʼ/: short voiceless ejective alveolar plosive consonant
+/tsːʰ/: long voiceless aspirated alveolar affricate consonant
+/ʃː/: long voiceless postalveolar fricative consonant
+/tʃːʰ/: long voiceless aspirated postalveolar affricate consonant
+/kːʰ/: long voiceless aspirated velar plosive consonant
+/xː/: long voiceless velar fricative consonant
+/ɬː/: long voiceless lateral alveolar fricative consonant
+/tɬːʰ/: long voiceless aspirated lateral alveolar affricate consonant
+/tɬʼ/: short voiceless ejective lateral alveolar affricate consonant
+/χː/: long voiceless uvular fricative consonant
+/ʁː/: long voiced uvular fricative consonant
+/qχʰ/: short voiceless aspirated uvular affricate consonant
+/ʔˤ/: short pharyngealised glottal plosive consonant
+/cːʰ/: long voiceless aspirated palatal plosive consonant
+/kʷʰ/: short voiceless labialised aspirated velar plosive consonant
+/kːʷʰ/: long voiceless labialised aspirated velar plosive consonant
+/kʼʷ/: short voiceless ejective labialised velar plosive consonant
+/qʼʷ/: short voiceless ejective labialised uvular plosive consonant
+/χʷ/: short voiceless labialised uvular fricative consonant
+/œi/: short modal-voice diphthong vowel
+/yə/: short modal-voice diphthong vowel
+/ɪə/: short modal-voice diphthong vowel
+/ɵə/: short modal-voice diphthong vowel
+/oə/: short modal-voice diphthong vowel
+/b̤ʱ/: short voiced breathy-voice aspirated bilabial plosive consonant
+/d̪̤ʱ/: short voiced breathy-voice aspirated dental plosive consonant
+/ɖ̤ʱ/: short voiced breathy-voice aspirated retroflex plosive consonant
+/ɳ/: short voiced nasal retroflex plosive consonant
+/ɺ/: short voiced lateral alveolar tap consonant
+/d̤ʒ̤ʱ/: short voiced breathy-voice aspirated postalveolar affricate consonant
+/g̤ʱ/: short voiced breathy-voice aspirated velar plosive consonant
+/i̤/: short breathy-voice close front unrounded monophthong vowel
+/ɛ̤/: short breathy-voice open-mid front unrounded monophthong vowel
+/ä̤/: short breathy-voice centralised open central unrounded monophthong vowel
+/ə̤/: short breathy-voice mid central unrounded monophthong vowel
+/ɔ̤/: short breathy-voice open-mid back rounded monophthong vowel
+/ṳ/: short breathy-voice close back rounded monophthong vowel
+/ɛː̃/: long modal-voice nasalised open-mid front unrounded monophthong vowel
+/äː̃/: long modal-voice nasalised open central unrounded monophthong vowel
+/əː̃/: long modal-voice nasalised mid central unrounded monophthong vowel
+/ɔː̃/: long modal-voice nasalised open-mid back rounded monophthong vowel
+/uː̃/: long modal-voice nasalised close back rounded monophthong vowel
+/ĩ̤ː/: long breathy-voice nasalised close front unrounded monophthong vowel
+/ɛ̤̃ː/: long breathy-voice nasalised open-mid front unrounded monophthong vowel
+/ä̤̃ː/: long breathy-voice nasalised centralised open central unrounded monophthong vowel
+/ə̤̃ː/: long breathy-voice nasalised mid central unrounded monophthong vowel
+/ɔ̤̃ː/: long breathy-voice nasalised open-mid back rounded monophthong vowel
+/ṳ̃ː/: long breathy-voice nasalised close back rounded monophthong vowel
+/dʰ/: short voiced aspirated alveolar plosive consonant
+/dzʰ/: short voiced aspirated alveolar affricate consonant
+/j̊/: short voiceless palatal approximant consonant
+/oi/: short modal-voice diphthong vowel
+/sʲ/: short voiceless palatalised alveolar fricative consonant
+/zʲ/: short voiced palatalised alveolar fricative consonant
+/ɾʲ/: short voiced palatalised alveolar tap consonant
+/ɬˠ/: short voiceless velarised lateral alveolar fricative consonant
+/ɾ̥ʲ/: short voiceless palatalised alveolar tap consonant
+/tsʲ/: short voiceless palatalised alveolar affricate consonant
+/ɮ̺/: short voiced apical lateral alveolar fricative consonant
+/qχ/: short voiceless uvular affricate consonant
+/dzʲ/: short voiced palatalised alveolar affricate consonant
+/vʲ/: short voiced palatalised labiodental fricative consonant
+/iɪ̯/: short modal-voice diphthong vowel
+/ɯɪ̯/: short modal-voice diphthong vowel
+/ɘ̆/: shortened modal-voice close-mid central unrounded monophthong vowel
+/ɵ̆/: shortened modal-voice close-mid central rounded monophthong vowel
+/ɤ̞̆/: shortened modal-voice mid back unrounded monophthong vowel
+/ŏ/: shortened modal-voice close-mid back rounded monophthong vowel
+/ⁿɖ/: short voiced pre-nasalised retroflex plosive consonant
+/ỹː/: long modal-voice nasalised close front rounded monophthong vowel
+/ø̃ː/: long modal-voice nasalised close-mid front rounded monophthong vowel
+/ɭ/: short voiced lateral retroflex approximant consonant
+/b̥/: short devoiced bilabial plosive consonant
+/t̺/: short voiceless apical alveolar plosive consonant
+/d̺̥/: short devoiced apical alveolar plosive consonant
+/t̺s̺ʰ/: short voiceless apical aspirated alveolar affricate consonant
+/t̺s̺/: short voiceless apical alveolar affricate consonant
+/d̺̥z̺̥/: short devoiced apical alveolar affricate consonant
+/t̺s̺ʼ/: short voiceless ejective apical alveolar affricate consonant
+/g̊/: short devoiced velar plosive consonant
+/kʰʷ/: short voiceless aspirated labialised velar plosive consonant
+/kʷ/: short voiceless labialised velar plosive consonant
+/g̊ʷ/: short devoiced labialised velar plosive consonant
+/qʷ/: short voiceless labialised uvular plosive consonant
+/ʁʷ/: short voiced labialised uvular fricative consonant
+/d̥ʒ̥/: short devoiced postalveolar affricate consonant
+/ɨ̆/: shortened modal-voice close central unrounded monophthong vowel
+/ɐ̆/: shortened modal-voice near-open central unrounded monophthong vowel
+/ae/: short modal-voice diphthong vowel
+/aj/: short modal-voice diphthong vowel
+/ow/: short modal-voice diphthong vowel
+/aw/: short modal-voice diphthong vowel
+/uj/: short modal-voice diphthong vowel
+/œj/: short modal-voice diphthong vowel
+/ɽ/: short voiced retroflex tap consonant
+/s̠̻/: short voiceless laminal retracted alveolar fricative consonant
+/ʊ̞/: short modal-voice lowered near-close back rounded monophthong vowel
+/ʊ̈i/: short modal-voice centralised diphthong vowel
+/tɬʰ/: short voiceless aspirated lateral alveolar affricate consonant
+/gʷ/: short voiced labialised velar plosive consonant
+/tʰʷ/: short voiceless aspirated labialised alveolar plosive consonant
+/tsʰʷ/: short voiceless aspirated labialised alveolar affricate consonant
+/tʃʰʷ/: short voiceless aspirated labialised postalveolar affricate consonant
+/tɬʰʷ/: short voiceless aspirated labialised lateral alveolar affricate consonant
+/qʰʷ/: short voiceless aspirated labialised uvular plosive consonant
+/tʼʷ/: short voiceless ejective labialised alveolar plosive consonant
+/tsʼʷ/: short voiceless ejective labialised alveolar affricate consonant
+/tʃʼʷ/: short voiceless ejective labialised postalveolar affricate consonant
+/tɬʼʷ/: short voiceless ejective labialised lateral alveolar affricate consonant
+/zʷ/: short voiced labialised alveolar fricative consonant
+/ʒʷ/: short voiced labialised postalveolar fricative consonant
+/ʢʷ/: short voiced labialised epiglottal fricative consonant
+/sʷ/: short voiceless labialised alveolar fricative consonant
+/ʃʷ/: short voiceless labialised postalveolar fricative consonant
+/ɬʷ/: short voiceless labialised lateral alveolar fricative consonant
+/xʷ/: short voiceless labialised velar fricative consonant
+/ʜʷ/: short voiceless labialised epiglottal fricative consonant
+/hʷ/: short voiceless labialised glottal fricative consonant
+/ʰpʰ/: short voiceless pre-aspirated aspirated bilabial plosive consonant
+/d̥/: short devoiced alveolar plosive consonant
+/ʰtʰ/: short voiceless pre-aspirated aspirated alveolar plosive consonant
+/ʰkʰ/: short voiceless pre-aspirated aspirated velar plosive consonant
+/ɢ̥/: short devoiced uvular plosive consonant
+/ʰqʰ/: short voiceless pre-aspirated aspirated uvular plosive consonant
+/z̥/: short voiceless alveolar fricative consonant
+/ʰsʰ/: short voiceless pre-aspirated aspirated alveolar fricative consonant
+/ɖ̥ʐ̥/: short devoiced retroflex affricate consonant
+/ʰʈʂʰ/: short voiceless pre-aspirated aspirated retroflex affricate consonant
+/d̥ʒ̊/: short devoiced postalveolar affricate consonant
+/ʰtʃʰ/: short voiceless pre-aspirated aspirated postalveolar affricate consonant
+/d̥z̥/: short devoiced alveolar affricate consonant
+/ʰtsʰ/: short voiceless pre-aspirated aspirated alveolar affricate consonant
+/d̥ʑ̥/: short devoiced alveolo-palatal affricate consonant
+/ʰtɕʰ/: short voiceless pre-aspirated aspirated alveolo-palatal affricate consonant
+/t̺̪/: short voiceless apical dental plosive consonant
+/ð̺̪/: short voiced apical dental fricative consonant
+/y̞/: short modal-voice lowered close front rounded monophthong vowel
+/ɪ̈/: short modal-voice centralised near-close front unrounded monophthong vowel
+/ʌː/: long modal-voice open-mid back unrounded monophthong vowel
+/ʌ̤/: short breathy-voice open-mid back unrounded monophthong vowel
+/ɛ̤ː/: long breathy-voice open-mid front unrounded monophthong vowel
+/ʌ̤ː/: long breathy-voice open-mid back unrounded monophthong vowel
+/ɔ̤ː/: long breathy-voice open-mid back rounded monophthong vowel
+/dʒʰ/: short voiced aspirated postalveolar affricate consonant
+/ɐː/: long modal-voice near-open central unrounded monophthong vowel
+/tʷʰ/: short voiceless labialised aspirated alveolar plosive consonant
+/dʷ/: short voiced labialised alveolar plosive consonant
+/tʷʼ/: short voiceless ejective labialised alveolar plosive consonant
+/kʷʼ/: short voiceless ejective labialised velar plosive consonant
+/qʲʼ/: short voiceless ejective palatalised uvular plosive consonant
+/qʷʼ/: short voiceless ejective labialised uvular plosive consonant
+/tŝʷʰ/: short voiceless labialised aspirated hissing-hushing affricate consonant
+/tŝʰ/: short voiceless aspirated hissing-hushing affricate consonant
+/dẑʷ/: short voiced labialised hissing-hushing affricate consonant
+/dẑ/: short voiced hissing-hushing affricate consonant
+/ʈʂʼ/: short voiceless ejective retroflex affricate consonant
+/tŝʷʼ/: short voiceless ejective labialised hissing-hushing affricate consonant
+/tŝʼ/: short voiceless ejective hissing-hushing affricate consonant
+/ŝ/: short voiceless hissing-hushing fricative consonant
+/ẑ/: short voiced hissing-hushing fricative consonant
+/ŝʷ/: short voiceless labialised hissing-hushing fricative consonant
+/ẑʷ/: short voiced labialised hissing-hushing fricative consonant
+/ʁʲ/: short voiced palatalised uvular fricative consonant
+/χʲ/: short voiceless palatalised uvular fricative consonant
+/ħʷ/: short voiceless labialised pharyngeal fricative consonant
+/ɥˤ/: short voiced pharyngealised labial-palatal approximant consonant
+/χˤʷ/: short voiceless pharyngealised labialised uvular fricative consonant
+/χˤ/: short voiceless pharyngealised uvular fricative consonant
+/ⁿɟ/: short voiced pre-nasalised palatal plosive consonant
+/ⁿɡ/: short voiced pre-nasalised velar plosive consonant
+/d̪ʲ/: short voiced palatalised dental plosive consonant
+/t̪ʲ/: short voiceless palatalised dental plosive consonant
+/ ʑ/: short voiced alveolo-palatal fricative consonant
+/ɯ̽/: short modal-voice mid-centralised close back unrounded monophthong vowel
+/ʉː/: long modal-voice close central rounded monophthong vowel
+/ʉ̃/: short modal-voice nasalised close central rounded monophthong vowel
+/ʉ̃ː/: long modal-voice nasalised close central rounded monophthong vowel
+/t͇s͇/: short voiceless alveolar affricate consonant
+/t͇s͇ʰ/: short voiceless aspirated alveolar affricate consonant
+/d͇z͇/: short voiced alveolar affricate consonant
+/ʈɽ/: short voiced retroflex affricate consonant
+/ʈɽʰ/: short voiced aspirated retroflex affricate consonant
+/ɖɽ/: short voiced retroflex affricate consonant
+/s͇/: short voiceless alveolar fricative consonant
+/z͇/: short voiced alveolar fricative consonant
+/ⁿpʰ/: short voiceless pre-nasalised aspirated bilabial plosive consonant
+/ⁿtʰ/: short voiceless pre-nasalised aspirated alveolar plosive consonant
+/ⁿkʰ/: short voiceless pre-nasalised aspirated velar plosive consonant
+/ⁿt̪s̪ʰ/: short voiceless pre-nasalised aspirated dental affricate consonant
+/ⁿt͇s͇ʰ/: short voiceless pre-nasalised aspirated alveolar affricate consonant
+/ⁿd͇z͇/: short voiced pre-nasalised alveolar affricate consonant
+/ⁿtɕʰ/: short voiceless pre-nasalised aspirated alveolo-palatal affricate consonant
+/ⁿʈɽʰ/: short voiced pre-nasalised aspirated retroflex affricate consonant
+/ⁿɖɽ/: short voiced pre-nasalised retroflex affricate consonant
+/a˞/: short modal-voice rhotacised open central unrounded monophthong vowel
+/ɿ̹/: short modal-voice more-rounded alveolar unrounded monophthong apical vowel
+/p’/: short voiceless ejective bilabial plosive consonant
+/t̪’/: short voiceless ejective dental plosive consonant
+/q’/: short voiceless ejective uvular plosive consonant
+/k’ʷ/: short voiceless ejective labialised velar plosive consonant
+/q’ʷ/: short voiceless ejective labialised uvular plosive consonant
+/ts’/: short voiceless ejective alveolar affricate consonant
+/tɬ/: short voiceless lateral alveolar affricate consonant
+/tɬ’/: short voiceless ejective lateral alveolar affricate consonant
+/tʃ’/: short voiceless ejective postalveolar affricate consonant
+/ʏː/: long modal-voice near-close front rounded monophthong vowel
+/ʊɪ/: short modal-voice diphthong vowel
+/aɪ/: short modal-voice diphthong vowel
+/ɔɪ/: short modal-voice diphthong vowel
+/ɛɪ/: short modal-voice diphthong vowel
+/aʊ/: short modal-voice diphthong vowel
+/ɔʊ/: short modal-voice diphthong vowel
+/aˤ/: short modal-voice pharyngealised open central unrounded monophthong vowel
+/ɛˤ/: short modal-voice pharyngealised open-mid front unrounded monophthong vowel
+/bː/: long voiced bilabial plosive consonant
+/dː/: long voiced alveolar plosive consonant
+/dʒː/: long voiced postalveolar affricate consonant
+/gː/: long voiced velar plosive consonant
+/tsː/: long voiceless alveolar affricate consonant
+/tʃː/: long voiceless postalveolar affricate consonant
+/tɬː/: long voiceless lateral alveolar affricate consonant
+/kː/: long voiceless velar plosive consonant
+/tsʼː/: long voiceless ejective alveolar affricate consonant
+/tʃʼː/: long voiceless ejective postalveolar affricate consonant
+/tɬʼː/: long voiceless ejective lateral alveolar affricate consonant
+/kʼː/: long voiceless ejective velar plosive consonant
+/qʼː/: long voiceless ejective uvular plosive consonant
+/gːʷ/: long voiced labialised velar plosive consonant
+/kːʷ/: long voiceless labialised velar plosive consonant
+/kʼːʷ/: long voiceless ejective labialised velar plosive consonant
+/xːʷ/: long voiceless labialised velar fricative consonant
+/ɢʷ/: short voiced labialised uvular plosive consonant
+/qːʷ/: long voiceless labialised uvular plosive consonant
+/qʼːʷ/: long voiceless ejective labialised uvular plosive consonant
+/χːʷ/: long voiceless labialised uvular fricative consonant
+/ʔ̃/: short nasalised glottal plosive consonant
+/ɮ/: short voiced lateral alveolar fricative consonant
+/d̪̥/: short devoiced dental plosive consonant
+/w̜/: short voiced less-rounded labial-velar approximant consonant
+/ɮʲ/: short voiced palatalised lateral alveolar fricative consonant
+/d̥ʲ/: short devoiced palatalised alveolar plosive consonant
+/w̜ʲ/: short voiced less-rounded palatalised labial-velar approximant consonant
+/l̻/: short voiced laminal lateral alveolar approximant consonant
+/ɘ̠/: short modal-voice retracted close-mid central unrounded monophthong vowel
+/ɨ̠/: short modal-voice retracted close central unrounded monophthong vowel
+/t̪̺/: short voiceless apical dental plosive consonant
+/d̪̺/: short voiced apical dental plosive consonant
+/cç/: short voiceless palatal affricate consonant
+/ɟʝ/: short voiced palatal affricate consonant
+/ɥ/: short voiced labial-palatal approximant consonant
+/uʌ/: short modal-voice diphthong vowel
+/ʊ̯/: short modal-voice non-syllabic near-close back rounded monophthong vowel
+/ɻ̊/: short voiceless retroflex approximant consonant
+/ɫ̥/: short voiceless velarised lateral alveolar approximant consonant
+/l̥ʲ/: short voiceless palatalised lateral alveolar approximant consonant
+/r̥ʲ/: short voiceless palatalised alveolar trill consonant
+/hʲ/: short voiceless palatalised glottal fricative consonant
+/ŋʲ/: short voiced palatalised nasal velar plosive consonant
+/ɨː/: long modal-voice close central unrounded monophthong vowel
+/oä/: short modal-voice diphthong vowel
+/äi̯/: short modal-voice diphthong vowel
+/ɨi̯/: short modal-voice diphthong vowel
+/ɛi̯/: short modal-voice diphthong vowel
+/oi̯/: short modal-voice diphthong vowel
+/iɛi̯/: short modal-voice triphthong vowel
+/ŋʷ/: short voiced labialised nasal velar plosive consonant
+/eɛ/: short modal-voice diphthong vowel
+/oɔ/: short modal-voice diphthong vowel
+/t̻s̻/: short voiceless laminal alveolar affricate consonant
+/ɛ̠/: short modal-voice retracted open-mid front unrounded monophthong vowel
+/ɯ̟/: short modal-voice advanced close back unrounded monophthong vowel
+/ɤ̟̹/: short modal-voice advanced more-rounded close-mid back unrounded monophthong vowel
+/ea/: short modal-voice diphthong vowel
+/oa/: short modal-voice diphthong vowel
+/ĩẽ/: short modal-voice nasalised diphthong vowel
+/õã/: short modal-voice nasalised diphthong vowel
+/iˑ/: half-long modal-voice close front unrounded monophthong vowel
+/æˑ/: half-long modal-voice near-open front unrounded monophthong vowel
+/yˑ/: half-long modal-voice close front rounded monophthong vowel
+/øˑ/: half-long modal-voice close-mid front rounded monophthong vowel
+/ɯˑ/: half-long modal-voice close back unrounded monophthong vowel
+/ɑˑ/: half-long modal-voice open back unrounded monophthong vowel
+/oˑ/: half-long modal-voice close-mid back rounded monophthong vowel
+/ɯ̽ː/: long modal-voice mid-centralised close back unrounded monophthong vowel
+/ɑ̰ː/: long creaky-voice open back unrounded monophthong vowel
+/ɛ̰ː/: long creaky-voice open-mid front unrounded monophthong vowel
+/ḭː/: long creaky-voice close front unrounded monophthong vowel
+/ɯ̰̽ː/: long creaky-voice mid-centralised close back unrounded monophthong vowel
+/ɔ̰ː/: long creaky-voice open-mid back rounded monophthong vowel
+/œ̰ː/: long creaky-voice open-mid front rounded monophthong vowel
+/ṵː/: long creaky-voice close back rounded monophthong vowel
+/y̰ː/: long creaky-voice close front rounded monophthong vowel
+/ø̞̜/: short modal-voice less-rounded mid front rounded monophthong vowel
+/ø̞̜ː/: long modal-voice less-rounded mid front rounded monophthong vowel
+/ɛ̝/: short modal-voice raised open-mid front unrounded monophthong vowel
+/ɑ̟ː/: long modal-voice advanced open back unrounded monophthong vowel
+/o̞̜/: short modal-voice less-rounded mid back rounded monophthong vowel
+/ʊ̜/: short modal-voice less-rounded near-close back rounded monophthong vowel
+/ɘː/: long modal-voice close-mid central unrounded monophthong vowel
+/ɨi/: short modal-voice diphthong vowel
+/d̺z̺/: short voiced apical alveolar affricate consonant
+/mː/: long voiced nasal bilabial plosive consonant
+/fː/: long voiceless labiodental fricative consonant
+/tː/: long voiceless alveolar plosive consonant
+/nː/: long voiced nasal alveolar plosive consonant
+/rː/: long voiced alveolar trill consonant
+/s̺ː/: long voiceless apical alveolar fricative consonant
+/lː/: long voiced lateral alveolar approximant consonant
+/l̥ː/: long voiceless lateral alveolar approximant consonant
+/t̺s̺ː/: long voiceless apical alveolar affricate consonant
+/d̺z̺ː/: long voiced apical alveolar affricate consonant
+/ɐ̃/: short modal-voice nasalised near-open central unrounded monophthong vowel
+/ʏ̃/: short modal-voice nasalised near-close front rounded monophthong vowel
+/ɔ̞/: short modal-voice lowered open-mid back rounded monophthong vowel
+/ɔ̞̃/: short modal-voice nasalised lowered open-mid back rounded monophthong vowel
+/ʏ̃ː/: long modal-voice nasalised near-close front rounded monophthong vowel
+/ɔ̞ː/: long modal-voice lowered open-mid back rounded monophthong vowel
+/ɔ̞̃ː/: long modal-voice nasalised lowered open-mid back rounded monophthong vowel
+/ai̯ː/: long modal-voice diphthong vowel
+/ãɪ̯ː/: long modal-voice nasalised diphthong vowel
+/auː/: long modal-voice diphthong vowel
+/ɪɛ/: short modal-voice diphthong vowel
+/ɪ̃ɛ/: short modal-voice nasalised diphthong vowel
+/ɪɛː/: long modal-voice diphthong vowel
+/ɪ̃ɛː/: long modal-voice nasalised diphthong vowel
+/ũo/: short modal-voice nasalised diphthong vowel
+/uoː/: long modal-voice diphthong vowel
+/ũoː/: long modal-voice nasalised diphthong vowel
+/yœ/: short modal-voice diphthong vowel
+/ỹœ/: short modal-voice nasalised diphthong vowel
+/yœː/: long modal-voice diphthong vowel
+/ỹœː/: long modal-voice nasalised diphthong vowel
+/ɔy̯ː/: long modal-voice diphthong vowel
+/i̯uo/: short modal-voice triphthong vowel
+/i̯ũo/: short modal-voice nasalised triphthong vowel
+/t̻ʰ/: short voiceless laminal aspirated alveolar plosive consonant
+/d̻̤ʱ/: short voiced laminal breathy-voice aspirated alveolar plosive consonant
+/ɽ̤ʱ/: short voiced breathy-voice aspirated retroflex tap consonant
+/ä̃ː/: long modal-voice nasalised open central unrounded monophthong vowel
+/t̪ˢʲ/: short voiceless affricated palatalised dental plosive consonant
+/d̪ᶻʲ/: short voiced affricated palatalised dental plosive consonant
+/t̪s/: short voiceless dental affricate consonant
+/n̪ʲ/: short voiced palatalised nasal dental plosive consonant
+/n̩/: short voiced syllabic nasal alveolar plosive consonant
+/l̩/: short voiced syllabic lateral alveolar approximant consonant
+/r̩/: short voiced syllabic alveolar trill consonant
+/ⁿp/: short voiceless pre-nasalised bilabial plosive consonant
+/ⁿt/: short voiceless pre-nasalised alveolar plosive consonant
+/ⁿc/: short voiceless pre-nasalised palatal plosive consonant
+/ⁿk/: short voiceless pre-nasalised velar plosive consonant
+/ⁿq/: short voiceless pre-nasalised uvular plosive consonant
+/ⁿcʰ/: short voiceless pre-nasalised aspirated palatal plosive consonant
+/ⁿqʰ/: short voiceless pre-nasalised aspirated uvular plosive consonant
+/ⁿts/: short voiceless pre-nasalised alveolar affricate consonant
+/ⁿtʃ/: short voiceless pre-nasalised postalveolar affricate consonant
+/ⁿʈʂ/: short voiceless pre-nasalised retroflex affricate consonant
+/ⁿtsʰ/: short voiceless pre-nasalised aspirated alveolar affricate consonant
+/ⁿtʃʰ/: short voiceless pre-nasalised aspirated postalveolar affricate consonant
+/ⁿʈʂʰ/: short voiceless pre-nasalised aspirated retroflex affricate consonant
+/aɰ/: short modal-voice diphthong vowel
+/ŋ̩/: short voiced syllabic nasal velar plosive consonant
+/ɰ/: short voiced velar approximant consonant
+/ɯ̃/: short modal-voice nasalised close back unrounded monophthong vowel
+/ɨ̞/: short modal-voice near-close central unrounded monophthong vowel
+/ɯ̤/: short breathy-voice close back unrounded monophthong vowel
+/e̤/: short breathy-voice close-mid front unrounded monophthong vowel
+/o̤/: short breathy-voice close-mid back rounded monophthong vowel
+/a̤/: short breathy-voice open central unrounded monophthong vowel
+/mʰ/: short voiced aspirated nasal bilabial plosive consonant
+/nʰ/: short voiced aspirated nasal alveolar plosive consonant
+/ŋʰ/: short voiced aspirated nasal velar plosive consonant
+/rʰ/: short voiced aspirated alveolar trill consonant
+/ɽʰ/: short voiced aspirated retroflex tap consonant
+/lʰ/: short voiced aspirated lateral alveolar approximant consonant
+/ʌ̃/: short modal-voice nasalised open-mid back unrounded monophthong vowel
+/ãĩ/: short modal-voice nasalised diphthong vowel
+/ʃʲ/: short voiceless palatalised postalveolar fricative consonant
+/ʒʲ/: short voiced palatalised postalveolar fricative consonant
+/tʃʲ/: short voiceless palatalised postalveolar affricate consonant
+/dʒʲ/: short voiced palatalised postalveolar affricate consonant
+/a̟/: short modal-voice advanced open central unrounded monophthong vowel
+/ɑ̆/: shortened modal-voice open back unrounded monophthong vowel
+/ĕ/: shortened modal-voice close-mid front unrounded monophthong vowel
+/ɛa̟/: short modal-voice advanced diphthong vowel
+/ɛɐ/: short modal-voice diphthong vowel
+/iɐ/: short modal-voice diphthong vowel
+/uɐ/: short modal-voice diphthong vowel
+/ua̟/: short modal-voice advanced diphthong vowel
+/ɔi/: short modal-voice diphthong vowel
+/iau/: short modal-voice triphthong vowel
+/ʐʲ/: short voiced palatalised retroflex fricative consonant
+/tʃ̺/: short voiceless apical postalveolar affricate consonant
+/tʃ̺ʰ/: short voiceless apical aspirated postalveolar affricate consonant
+/ʃ̺/: short voiceless apical postalveolar fricative consonant
+/ɹ̺/: short voiced apical alveolar approximant consonant
+/ye/: short modal-voice diphthong vowel
+/iou/: short modal-voice triphthong vowel
+/uei/: short modal-voice triphthong vowel
+/ɔ̜ː/: long modal-voice less-rounded open-mid back rounded monophthong vowel
+/ʡˤ/: short pharyngealised epiglottal plosive consonant
+/qˤ/: short voiceless pharyngealised uvular plosive consonant
+/ə̞̆/: shortened modal-voice lowered mid central unrounded monophthong vowel
+/o̞̜ː/: long modal-voice less-rounded mid back rounded monophthong vowel
+/pʼʷ/: short voiceless ejective labialised bilabial plosive consonant
+/ɡʷ/: short voiced labialised velar plosive consonant
+/ʔʼ/: short ejective glottal plosive consonant
+/ʔʼʷ/: short ejective labialised glottal plosive consonant
+/tɕʼ/: short voiceless ejective alveolo-palatal affricate consonant
+/ŝʼ/: short voiceless ejective hissing-hushing fricative consonant
+/ŝʼʷ/: short voiceless ejective labialised hissing-hushing fricative consonant
+/tŝʷ/: short voiceless labialised hissing-hushing affricate consonant
+/ɬʼ/: short voiceless ejective lateral alveolar fricative consonant
+/t̪ʰʷ/: short voiceless aspirated labialised dental plosive consonant
+/t̪ʷ/: short voiceless labialised dental plosive consonant
+/t̪ʼʷ/: short voiceless ejective labialised dental plosive consonant
+/t̪s̪ʼ/: short voiceless ejective dental affricate consonant
+/t̪s̪ʰʷ/: short voiceless aspirated labialised dental affricate consonant
+/t̪s̪ʷ/: short voiceless labialised dental affricate consonant
+/t̪s̪ʼʷ/: short voiceless ejective labialised dental affricate consonant
+/s̪ʷ/: short voiceless labialised dental fricative consonant
+/z̪ʷ/: short voiced labialised dental fricative consonant
+/pʼʲ/: short voiceless ejective palatalised bilabial plosive consonant
+/t̪ʰʲ/: short voiceless palatalised aspirated dental plosive consonant
+/t̪ʼʲ/: short voiceless ejective palatalised dental plosive consonant
+/t̪ʰʷʲ/: short voiceless aspirated palatalised labialised dental plosive consonant
+/t̪ʷʲ/: short voiceless palatalised labialised dental plosive consonant
+/t̪ʼʷʲ/: short voiceless ejective palatalised labialised dental plosive consonant
+/t̪s̪ʲ/: short voiceless palatalised dental affricate consonant
+/t̪s̪ʼʲ/: short voiceless ejective palatalised dental affricate consonant
+/t̪s̪ʰʲ/: short voiceless palatalised aspirated dental affricate consonant
+/t̪s̪ʰʷʲ/: short voiceless labialised palatalised aspirated dental affricate consonant
+/t̪s̪ʷʲ/: short voiceless palatalised labialised dental affricate consonant
+/t̪s̪ʼʷʲ/: short voiceless ejective palatalised labialised dental affricate consonant
+/s̪ʲ/: short voiceless palatalised dental fricative consonant
+/s̪ʷʲ/: short voiceless palatalised labialised dental fricative consonant
+/kʼʲ/: short voiceless ejective palatalised velar plosive consonant
+/kʷʲ/: short voiceless labialised palatalised velar plosive consonant
+/kʰʷʲ/: short voiceless aspirated palatalised labialised velar plosive consonant
+/kʼʷʲ/: short voiceless labialised ejective palatalised velar plosive consonant
+/qʲ/: short voiceless palatalised uvular plosive consonant
+/qʰʲ/: short voiceless aspirated palatalised uvular plosive consonant
+/qʼʲ/: short voiceless ejective palatalised uvular plosive consonant
+/qʼʷʲ/: short voiceless labialised ejective palatalised uvular plosive consonant
+/qʰʷʲ/: short voiceless aspirated palatalised labialised uvular plosive consonant
+/qʷʲ/: short voiceless labialised palatalised uvular plosive consonant
+/χʷʲ/: short voiceless labialised palatalised uvular fricative consonant
+/t̪s̪ː/: long voiceless dental affricate consonant
+/s̪ː/: long voiceless dental fricative consonant
+/tʃʷ/: short voiceless labialised postalveolar affricate consonant
+/tʃːʷ/: long voiceless labialised postalveolar affricate consonant
+/ʃːʷ/: long voiceless labialised postalveolar fricative consonant
+/ɣʷ/: short voiced labialised velar fricative consonant
+/ɑ̝/: short modal-voice raised open back unrounded monophthong vowel
+/ɞ̰/: short creaky-voice open-mid central rounded monophthong vowel
+/ɑ̝ː/: long modal-voice raised open back unrounded monophthong vowel
+/eɪ/: short modal-voice diphthong vowel
+/øə/: short modal-voice diphthong vowel
+/ɔʏ/: short modal-voice diphthong vowel
+/z̪ʲ/: short voiced palatalised dental fricative consonant
+/d̪z̪ʲ/: short voiced palatalised dental affricate consonant
+/ʒːʲ/: long voiced palatalised postalveolar fricative consonant
+/tʃːʲ/: long voiceless palatalised postalveolar affricate consonant
+/ʃːʲ/: long voiceless palatalised postalveolar fricative consonant
+/wʲ/: short voiced palatalised labial-velar approximant consonant
+/ɯɑ/: short modal-voice diphthong vowel
+/ʂʰ/: short voiceless aspirated retroflex fricative consonant
+/ɓ/: short voiced implosive bilabial plosive consonant
+/ɗ/: short voiced implosive alveolar plosive consonant
+/ɨə/: short modal-voice diphthong vowel
+/əɨ/: short modal-voice diphthong vowel
+/aə/: short modal-voice diphthong vowel
+/ao/: short modal-voice diphthong vowel
+/aɛ/: short modal-voice diphthong vowel
+/cçː/: long voiceless palatal affricate consonant
+/ɶ/: short modal-voice open front rounded monophthong vowel
+/ɶː/: long modal-voice open front rounded monophthong vowel
+/ɞː/: long modal-voice open-mid central rounded monophthong vowel
+/ⁿʈʰ/: short voiceless pre-nasalised aspirated retroflex plosive consonant
+/ɸ/: short voiceless bilabial fricative consonant
+/ʼs/: short voiceless pre-glottalised alveolar fricative consonant
+/ʼʃ/: short voiceless pre-glottalised postalveolar fricative consonant
+/ʼm/: short voiced pre-glottalised nasal bilabial plosive consonant
+/ʼn/: short voiced pre-glottalised nasal alveolar plosive consonant
+/ʼŋ/: short voiced pre-glottalised nasal velar plosive consonant
+/ʼɲ/: short voiced pre-glottalised nasal palatal plosive consonant
+/ʼl/: short voiced pre-glottalised lateral alveolar approximant consonant
+/ʼw/: short voiced pre-glottalised labial-velar approximant consonant
+/ʼj/: short voiced pre-glottalised palatal approximant consonant
+/i̤ː/: long breathy-voice close front unrounded monophthong vowel
+/y̤/: short breathy-voice close front rounded monophthong vowel
+/ɨ̤/: short breathy-voice close central unrounded monophthong vowel
+/e̤ː/: long breathy-voice close-mid front unrounded monophthong vowel
+/ø̤/: short breathy-voice close-mid front rounded monophthong vowel
+/o̤ː/: long breathy-voice close-mid back rounded monophthong vowel
+/ɛ̤i̤/: short breathy-voice diphthong vowel
+/a̤ː/: long breathy-voice open central unrounded monophthong vowel
+/ø̃/: short modal-voice nasalised close-mid front rounded monophthong vowel
+/ej/: short modal-voice diphthong vowel
+/oj/: short modal-voice diphthong vowel
+/ðˤ/: short voiced pharyngealised interdental fricative consonant
+/t̪ˤ/: short voiceless pharyngealised dental plosive consonant
+/sˤ/: short voiceless pharyngealised alveolar fricative consonant
+/aːu/: long modal-voice diphthong vowel
+/ɛu/: short modal-voice diphthong vowel
+/øu/: short modal-voice diphthong vowel
+/cçʰ/: short voiceless aspirated palatal affricate consonant
+/qχʼ/: short voiceless ejective uvular affricate consonant
+/ĩ̯/: short modal-voice non-syllabic nasalised close front unrounded monophthong vowel
+/j̃/: short voiced nasalised palatal approximant consonant
+/w̥/: short voiceless labial-velar approximant consonant
+/ɥ̊/: short voiceless labial-palatal approximant consonant
+/əy/: short modal-voice diphthong vowel
+/ãw̃/: short modal-voice nasalised diphthong vowel
+/ũ̯/: short modal-voice non-syllabic nasalised close back rounded monophthong vowel
+/eɪ̃/: short modal-voice nasalised diphthong vowel
+/aɪ̃/: short modal-voice nasalised diphthong vowel
+/aʊ̃/: short modal-voice nasalised diphthong vowel
+/oʊ/: short modal-voice diphthong vowel
+/oʊ̃/: short modal-voice nasalised diphthong vowel
+/bʱ/: short voiced aspirated bilabial plosive consonant
+/d̺ʱ/: short voiced apical aspirated alveolar plosive consonant
+/d̪ʱ/: short voiced aspirated dental plosive consonant
+/dzʱ/: short voiced aspirated alveolar affricate consonant
+/gʱ/: short voiced aspirated velar plosive consonant
+/mʱ/: short voiced aspirated nasal bilabial plosive consonant
+/n̪ʱ/: short voiced aspirated nasal dental plosive consonant
+/ŋʱ/: short voiced aspirated nasal velar plosive consonant
+/rʱ/: short voiced aspirated alveolar trill consonant
+/lʱ/: short voiced aspirated lateral alveolar approximant consonant
+/ũĩ/: short modal-voice nasalised diphthong vowel
+/ʉu/: short modal-voice diphthong vowel
+/ɛa/: short modal-voice diphthong vowel
+/ɔa/: short modal-voice diphthong vowel
+/r̝/: short voiced raised alveolar trill consonant
+/ou̯/: short modal-voice diphthong vowel
+/äu̯/: short modal-voice diphthong vowel
+/ɛu̯/: short modal-voice diphthong vowel
+/xʰ/: short voiceless aspirated velar fricative consonant
+/ɫ̻/: short voiced laminal velarised lateral alveolar approximant consonant
+/ɾ̻/: short voiced laminal alveolar tap consonant
+/ɾ̪/: short voiced dental tap consonant
+/eä̯ /: short modal-voice centralised diphthong vowel
+/oä̯ /: short modal-voice centralised diphthong vowel
+/ɽ̃/: short voiced nasalised retroflex tap consonant
+/d̪z/: short voiced dental affricate consonant
+/ɨa/: short modal-voice diphthong vowel
+/tʃːʼ/: long voiceless ejective postalveolar affricate consonant
+/tsːʼ/: long voiceless ejective alveolar affricate consonant
+/tɬːʼ/: long voiceless ejective lateral alveolar affricate consonant
+/çː/: long voiceless palatal fricative consonant
+/kxːʰ/: long voiceless aspirated velar affricate consonant
+/kxːʼ/: long voiceless ejective velar affricate consonant
+/qχːʰ/: long voiceless aspirated uvular affricate consonant
+/qχːʼ/: long voiceless ejective uvular affricate consonant
+/ĩ̞/: short modal-voice nasalised lowered close front unrounded monophthong vowel
+/eo/: short modal-voice diphthong vowel
+/ɔe/: short modal-voice diphthong vowel
+/ɛo/: short modal-voice diphthong vowel
+/oe/: short modal-voice diphthong vowel
+/ʀ/: short voiced uvular trill consonant
+/ɜi/: short modal-voice diphthong vowel
+/æːi/: long modal-voice diphthong vowel
+/əʊ/: short modal-voice diphthong vowel
+/æːʊ/: long modal-voice diphthong vowel
+/ɑʊ/: short modal-voice diphthong vowel
+/m̩/: short voiced syllabic nasal bilabial plosive consonant
+/v̩/: short voiced syllabic labiodental fricative consonant
+/ʒ̩/: short voiced syllabic postalveolar fricative consonant
+/ɿˠ/: short modal-voice velarised alveolar unrounded monophthong apical vowel
+/ʅ̹/: short modal-voice more-rounded postalveolar unrounded monophthong apical vowel
+/ʰp/: short voiceless pre-aspirated bilabial plosive consonant
+/ʰpː/: long voiceless pre-aspirated bilabial plosive consonant
+/vː/: long voiced labiodental fricative consonant
+/ʰt/: short voiceless pre-aspirated alveolar plosive consonant
+/ʰtː/: long voiceless pre-aspirated alveolar plosive consonant
+/ʰts/: short voiceless pre-aspirated alveolar affricate consonant
+/ʰtsː/: long voiceless pre-aspirated alveolar affricate consonant
+/ʰtʃ/: short voiceless pre-aspirated postalveolar affricate consonant
+/ʰtʃː/: long voiceless pre-aspirated postalveolar affricate consonant
+/ɲː/: long voiced nasal palatal plosive consonant
+/jː/: long voiced palatal approximant consonant
+/ʰkː/: long voiceless pre-aspirated velar plosive consonant
+/ŋː/: long voiced nasal velar plosive consonant
+/ðː/: long voiced interdental fricative consonant
+/ʊa/: short modal-voice diphthong vowel
+/pˤ/: short voiceless pharyngealised bilabial plosive consonant
+/tˤ/: short voiceless pharyngealised alveolar plosive consonant
+/dˤ/: short voiced pharyngealised alveolar plosive consonant
+/tʃˤ/: short voiceless pharyngealised postalveolar affricate consonant
+/lˤ/: short voiced pharyngealised lateral alveolar approximant consonant
+/rˤ/: short voiced pharyngealised alveolar trill consonant
+/œ̠/: short modal-voice retracted open-mid front rounded monophthong vowel
+/ɞ̠/: short modal-voice retracted open-mid central rounded monophthong vowel
+/iɛ̠/: short modal-voice retracted diphthong vowel
+/ʉɞ̠/: short modal-voice retracted diphthong vowel
+/ʉœ̠/: short modal-voice retracted diphthong vowel
+/ɨä̠/: short modal-voice retracted centralised diphthong vowel
+/ɛ̠ː/: long modal-voice retracted open-mid front unrounded monophthong vowel
+/œ̠ː/: long modal-voice retracted open-mid front rounded monophthong vowel
+/ɞ̠ː/: long modal-voice retracted open-mid central rounded monophthong vowel
+/ä̠ː/: long modal-voice retracted centralised open central unrounded monophthong vowel
+/ew/: short modal-voice diphthong vowel
+/əw/: short modal-voice diphthong vowel
+/ɔw/: short modal-voice diphthong vowel
+/əj/: short modal-voice diphthong vowel
+/ɨj/: short modal-voice diphthong vowel
+/ij/: short modal-voice diphthong vowel
+/ɨɛ/: short modal-voice diphthong vowel
+/wi/: short modal-voice diphthong vowel
+/we/: short modal-voice diphthong vowel
+/wɛ/: short modal-voice diphthong vowel
+/wa/: short modal-voice diphthong vowel
+/s̺̠/: short voiceless retracted apical alveolar fricative consonant
+/ya/: short modal-voice diphthong vowel
+/ð̞/: short voiced interdental approximant consonant
+/eə/: short modal-voice diphthong vowel
+/ʊə/: short modal-voice diphthong vowel
+/i̯ɛ/: short modal-voice diphthong vowel
+/u̯ɔ/: short modal-voice diphthong vowel
+/æɪ̯/: short modal-voice diphthong vowel
+/ɔʊ̯/: short modal-voice diphthong vowel
+/s̪ˤ/: short voiceless pharyngealised dental fricative consonant
+/z̪ˤ/: short voiced pharyngealised dental fricative consonant
+/ɯə/: short modal-voice diphthong vowel
+/kx/: short voiceless velar affricate consonant
+/ɬ̺̪/: short voiceless apical lateral dental fricative consonant
+/n̺̪/: short voiced apical nasal dental plosive consonant
+/pʰʷ/: short voiceless aspirated labialised bilabial plosive consonant
+/pʷ/: short voiceless labialised bilabial plosive consonant
+/mʷ/: short voiced labialised nasal bilabial plosive consonant
+/ʈ̻ʂ̻/: short voiceless laminal retroflex affricate consonant
+/ɖ̻ʐ̻/: short voiced laminal retroflex affricate consonant
+/ʂ̻/: short voiceless laminal retroflex fricative consonant
+/ʐ̻/: short voiced laminal retroflex fricative consonant
+/ɘ̟/: short modal-voice advanced close-mid central unrounded monophthong vowel
+/βʲ/: short voiced palatalised bilabial fricative consonant
+/n̥ʲ/: short voiceless palatalised nasal alveolar plosive consonant
+/βː/: long voiced bilabial fricative consonant
+/d̥ː/: long devoiced alveolar plosive consonant
+/b̥ː/: long devoiced bilabial plosive consonant
+/g̊ː/: long devoiced velar plosive consonant
+/m̥ː/: long voiceless nasal bilabial plosive consonant
+/zː/: long voiced alveolar fricative consonant
+/n̥ː/: long voiceless nasal alveolar plosive consonant
+/ʂː/: long voiceless retroflex fricative consonant
+/tɕː/: long voiceless alveolo-palatal affricate consonant
+/r̥ː/: long voiceless alveolar trill consonant
+/ʝː/: long voiced palatal fricative consonant
+/βʲː/: long voiced palatalised bilabial fricative consonant
+/fʲː/: long voiceless palatalised labiodental fricative consonant
+/bʲː/: long voiced palatalised bilabial plosive consonant
+/pʲː/: long voiceless palatalised bilabial plosive consonant
+/mʲː/: long voiced palatalised nasal bilabial plosive consonant
+/m̥ʲː/: long voiceless palatalised nasal bilabial plosive consonant
+/zʲː/: long voiced palatalised alveolar fricative consonant
+/sʲː/: long voiceless palatalised alveolar fricative consonant
+/nʲː/: long voiced palatalised nasal alveolar plosive consonant
+/lʲː/: long voiced palatalised lateral alveolar approximant consonant
+/n̥ʲː/: long voiceless palatalised nasal alveolar plosive consonant
+/l̥ʲː/: long voiceless palatalised lateral alveolar approximant consonant
+/tsʲː/: long voiceless palatalised alveolar affricate consonant
+/rʲː/: long voiced palatalised alveolar trill consonant
+/r̥ʲː/: long voiceless palatalised alveolar trill consonant
+/xʲː/: long voiceless palatalised velar fricative consonant
+/gʲː/: long voiced palatalised velar plosive consonant
+/kʲː/: long voiceless palatalised velar plosive consonant
+/ŋʲː/: long voiced palatalised nasal velar plosive consonant
+/d̥z̥ʲ/: short devoiced palatalised alveolar affricate consonant
+/ʰtɕ/: short voiceless pre-aspirated alveolo-palatal affricate consonant
+/ʰpʲ/: short voiceless pre-aspirated palatalised bilabial plosive consonant
+/ʰtʲ/: short voiceless pre-aspirated palatalised alveolar plosive consonant
+/ʰkʲ/: short voiceless pre-aspirated palatalised velar plosive consonant
+/ʰtsʲ/: short voiceless pre-aspirated palatalised alveolar affricate consonant
+/o̞ä/: short modal-voice diphthong vowel
+/uä/: short modal-voice diphthong vowel
+/ue̞/: short modal-voice diphthong vowel
+/ts̪/: short voiceless dental affricate consonant
+/dz̪/: short voiced dental affricate consonant
+/u̟/: short modal-voice advanced close back rounded monophthong vowel
+/ɔ̟̜/: short modal-voice advanced less-rounded open-mid back rounded monophthong vowel
+/u̯ɑ/: short modal-voice diphthong vowel
+/ɖʱ/: short voiced aspirated retroflex plosive consonant
+/ɽʱ/: short voiced aspirated retroflex tap consonant
+/ɟʱ/: short voiced aspirated palatal plosive consonant
+/t̪̻/: short voiceless laminal dental plosive consonant
+/d̪̻/: short voiced laminal dental plosive consonant
+/s̪̻/: short voiceless laminal dental fricative consonant
+/z̪̻/: short voiced laminal dental fricative consonant
+/t̪̻s̪̻/: short voiceless laminal dental affricate consonant
+/t̻ʃ̻/: short voiceless laminal postalveolar affricate consonant
+/d̻ʒ̻/: short voiced laminal postalveolar affricate consonant
+/t̺ʃ̺ʷ/: short voiceless apical labialised postalveolar affricate consonant
+/d̺ʒ̺ʷ/: short voiced apical labialised postalveolar affricate consonant
+/ʒ̺/: short voiced apical postalveolar fricative consonant
+/ɵ̃/: short modal-voice nasalised close-mid central rounded monophthong vowel
+/ɢʁ/: short voiced uvular affricate consonant
+/aːi̯/: long modal-voice diphthong vowel
+/dʑʰ/: short voiced aspirated alveolo-palatal affricate consonant
+/uo̞/: short modal-voice diphthong vowel
+/yø̞/: short modal-voice diphthong vowel
+/pf/: short voiceless labiodental affricate consonant
+/õj/: short modal-voice nasalised diphthong vowel
+/ãj/: short modal-voice nasalised diphthong vowel
+/ãw/: short modal-voice nasalised diphthong vowel
+/ẽj/: short modal-voice nasalised diphthong vowel
+/ãõ/: short modal-voice nasalised diphthong vowel
+/œy/: short modal-voice diphthong vowel
+/ʌu/: short modal-voice diphthong vowel
+/c̟/: short voiceless advanced palatal plosive consonant
+/ʰʈ/: short voiceless pre-aspirated retroflex plosive consonant
+/ʰc/: short voiceless pre-aspirated palatal plosive consonant
+/ʱb/: short voiced pre-aspirated bilabial plosive consonant
+/ʱd/: short voiced pre-aspirated alveolar plosive consonant
+/ʱɖ/: short voiced pre-aspirated retroflex plosive consonant
+/ʱɟ/: short voiced pre-aspirated palatal plosive consonant
+/ʱɡ/: short voiced pre-aspirated velar plosive consonant
+/ʱdz/: short voiced pre-aspirated alveolar affricate consonant
+/ʱdʑ/: short voiced pre-aspirated alveolo-palatal affricate consonant
+/ⁿsʰ/: short voiceless pre-nasalised aspirated alveolar fricative consonant
+/ⁿxʰ/: short voiceless pre-nasalised aspirated velar fricative consonant
+/ʱz/: short voiced pre-aspirated alveolar fricative consonant
+/ʱʐ/: short voiced pre-aspirated retroflex fricative consonant
+/ʱm/: short voiced pre-aspirated nasal bilabial plosive consonant
+/ʱn/: short voiced pre-aspirated nasal alveolar plosive consonant
+/ʱɲ/: short voiced pre-aspirated nasal palatal plosive consonant
+/ʱŋ/: short voiced pre-aspirated nasal velar plosive consonant
+/ʰl̥/: short voiceless pre-aspirated lateral alveolar approximant consonant
+/ʱl/: short voiced pre-aspirated lateral alveolar approximant consonant
+/ʱj/: short voiced pre-aspirated palatal approximant consonant
+/ʰʷt/: short voiceless pre-labialised pre-aspirated alveolar plosive consonant
+/ʰʷʈ/: short voiceless pre-labialised pre-aspirated retroflex plosive consonant
+/ʰʷk/: short voiceless pre-labialised pre-aspirated velar plosive consonant
+/ʰʷts/: short voiceless pre-labialised pre-aspirated alveolar affricate consonant
+/ʰʷtɕ/: short voiceless pre-labialised pre-aspirated alveolo-palatal affricate consonant
+/ʰʷs/: short voiceless pre-labialised pre-aspirated alveolar fricative consonant
+/ʰʷsʰ/: short voiceless pre-labialised pre-aspirated aspirated alveolar fricative consonant
+/ʰʷʂʰ/: short voiceless pre-labialised pre-aspirated aspirated retroflex fricative consonant
+/ʰʷɕʰ/: short voiceless pre-labialised pre-aspirated aspirated alveolo-palatal fricative consonant
+/ʷd/: short voiced pre-labialised alveolar plosive consonant
+/ʷɟ/: short voiced pre-labialised palatal plosive consonant
+/ʷz/: short voiced pre-labialised alveolar fricative consonant
+/ʷʐ/: short voiced pre-labialised retroflex fricative consonant
+/ʷʑ/: short voiced pre-labialised alveolo-palatal fricative consonant
+/ʷm/: short voiced pre-labialised nasal bilabial plosive consonant
+/ʷl/: short voiced pre-labialised lateral alveolar approximant consonant
+/tʷ/: short voiceless labialised alveolar plosive consonant
+/tʃʷʰ/: short voiceless labialised aspirated postalveolar affricate consonant
+/yu/: short modal-voice diphthong vowel
+/œ̞/: short modal-voice lowered open-mid front rounded monophthong vowel
+/œ̞ː/: long modal-voice lowered open-mid front rounded monophthong vowel
+/ɵy/: short modal-voice diphthong vowel
+/uəi/: short modal-voice triphthong vowel
+/i˞/: short modal-voice rhotacised close front unrounded monophthong vowel
+/e˞/: short modal-voice rhotacised close-mid front unrounded monophthong vowel
+/dz̺/: short voiced apical alveolar affricate consonant
+/ɫ̺/: short voiced apical velarised lateral alveolar approximant consonant
+/ə̟̆/: shortened modal-voice advanced mid central unrounded monophthong vowel
+/θ̪/: short voiceless dental fricative consonant
+/i̯e/: short modal-voice diphthong vowel
+/r̩ː/: long voiced syllabic alveolar trill consonant
+/ɔi̯/: short modal-voice diphthong vowel
+/ui̯/: short modal-voice diphthong vowel
+/yi̯/: short modal-voice diphthong vowel
+/eu̯/: short modal-voice diphthong vowel
+/iu̯/: short modal-voice diphthong vowel
+/ɔu̯/: short modal-voice diphthong vowel
+/ja/: short modal-voice diphthong vowel
+/jɔ/: short modal-voice diphthong vowel
+/jɛ/: short modal-voice diphthong vowel
+/ju/: short modal-voice diphthong vowel
+/wei̯/: short modal-voice triphthong vowel
+/jau̯/: short modal-voice triphthong vowel
+/jɛi̯/: short modal-voice triphthong vowel
+/jei̯/: short modal-voice triphthong vowel
+/weu̯/: short modal-voice triphthong vowel
+/wɛi̯/: short modal-voice triphthong vowel
+/tˢ/: short voiceless affricated alveolar plosive consonant
+/ʋ̩/: short voiced syllabic labiodental approximant consonant
+/s̩/: short voiceless syllabic alveolar fricative consonant
+/f̩/: short voiceless syllabic labiodental fricative consonant
+/ɯ̞/: short modal-voice near-close back unrounded monophthong vowel
+/ŋ̥/: short voiceless nasal velar plosive consonant
+/ɪu/: short modal-voice diphthong vowel
+/wʰ/: short voiced aspirated labial-velar approximant consonant
+/æ̃ɪ̯̃/: short modal-voice nasalised diphthong vowel
+/ɔ̃ʊ̯̃/: short modal-voice nasalised diphthong vowel
+/n̪̩/: short voiced syllabic nasal dental plosive consonant
+/u˞/: short modal-voice rhotacised close back rounded monophthong vowel
+/ɑ˞/: short modal-voice rhotacised open back unrounded monophthong vowel
+/uɑ˞/: short modal-voice rhotacised diphthong vowel
+/pˠ/: short voiceless velarised bilabial plosive consonant
+/bˠ/: short voiced velarised bilabial plosive consonant
+/fˠ/: short voiceless velarised labiodental fricative consonant
+/mˠ/: short voiced velarised nasal bilabial plosive consonant
+/t̪ˠ/: short voiceless velarised dental plosive consonant
+/d̪ˠ/: short voiced velarised dental plosive consonant
+/t̠ʲ/: short voiceless retracted palatalised alveolar plosive consonant
+/d̠ʲ/: short voiced retracted palatalised alveolar plosive consonant
+/n̪ˠ/: short voiced velarised nasal dental plosive consonant
+/n̠ʲ/: short voiced retracted palatalised nasal alveolar plosive consonant
+/l̪ˠ/: short voiced velarised lateral dental approximant consonant
+/l̠ʲ/: short voiced retracted palatalised lateral alveolar approximant consonant
+/sˠ/: short voiceless velarised alveolar fricative consonant
+/ɛ˞/: short modal-voice rhotacised open-mid front unrounded monophthong vowel
+/ɔ˞/: short modal-voice rhotacised open-mid back rounded monophthong vowel
+/aɯ̃/: short modal-voice nasalised diphthong vowel
+/əɯ̃/: short modal-voice nasalised diphthong vowel
+/ɪ̰/: short creaky-voice near-close front unrounded monophthong vowel
+/ḛɪ̰/: short creaky-voice diphthong vowel
+/a̰ɪ̰/: short creaky-voice diphthong vowel
+/a̰ɯ̰/: short creaky-voice diphthong vowel
+/ə̰ɯ̰/: short creaky-voice diphthong vowel
+/ʊ̰/: short creaky-voice near-close back rounded monophthong vowel
+/kˤ/: short voiceless pharyngealised velar plosive consonant
+/ɖː/: long voiced retroflex plosive consonant
+/dzː/: long voiced alveolar affricate consonant
+/uẽ/: short modal-voice nasalised diphthong vowel
+/əo/: short modal-voice diphthong vowel
+/ɤ̞/: short modal-voice mid back unrounded monophthong vowel
+/ɪ̞/: short modal-voice lowered near-close front unrounded monophthong vowel
+/ɪ̞̈/: short modal-voice lowered centralised near-close front unrounded monophthong vowel
+/ʊ̞̈/: short modal-voice lowered centralised near-close back rounded monophthong vowel
+/ʉ̞/: short modal-voice near-close central rounded monophthong vowel
+/ĩã/: short modal-voice nasalised diphthong vowel
+/ĩõ/: short modal-voice nasalised diphthong vowel
+/ʼɡ/: short voiced pre-glottalised velar plosive consonant
+/ʼb/: short voiced pre-glottalised bilabial plosive consonant
+/ʼd/: short voiced pre-glottalised alveolar plosive consonant
+/ʼɣ/: short voiced pre-glottalised velar fricative consonant
+/aːi/: long modal-voice diphthong vowel
+/m /: short voiced nasal bilabial plosive consonant
+/ɑ̤/: short breathy-voice open back unrounded monophthong vowel
+/iw/: short modal-voice diphthong vowel
+/ʌw/: short modal-voice diphthong vowel
+/ɑw/: short modal-voice diphthong vowel
+/ʌj/: short modal-voice diphthong vowel
+/ɑj/: short modal-voice diphthong vowel
+/ð͇ˠ/: short voiced velarised alveolar fricative consonant
+/n̪̊/: short voiceless nasal dental plosive consonant
+/l̪̊/: short voiceless lateral dental approximant consonant
+/b˞/: short voiced rhotacised bilabial plosive consonant
+/p˞/: short voiceless rhotacised bilabial plosive consonant
+/pʰ˞/: short voiceless rhotacised aspirated bilabial plosive consonant
+/g˞/: short voiced rhotacised velar plosive consonant
+/k˞/: short voiceless rhotacised velar plosive consonant
+/kʰ˞/: short voiceless rhotacised aspirated velar plosive consonant
+/ɜj/: short modal-voice diphthong vowel
+/qˤʼ/: short voiceless ejective pharyngealised uvular plosive consonant
+/ʁˤ/: short voiced pharyngealised uvular fricative consonant
+/t̪ɬ/: short voiceless lateral dental affricate consonant
+/t̪ɬʼ/: short voiceless ejective lateral dental affricate consonant
+/i̯ẽ/: short modal-voice nasalised diphthong vowel
+/i̯a/: short modal-voice diphthong vowel
+/u̯o/: short modal-voice diphthong vowel
+/u̯a/: short modal-voice diphthong vowel
+/u̯õ/: short modal-voice nasalised diphthong vowel
+/e̞u̯/: short modal-voice diphthong vowel
+/o̞i̯/: short modal-voice diphthong vowel
+/çʰ/: short voiceless aspirated palatal fricative consonant
+/ʁ̞/: short voiced uvular approximant consonant
+/aˤː/: long modal-voice pharyngealised open central unrounded monophthong vowel
+/ʌˤː/: long modal-voice pharyngealised open-mid back unrounded monophthong vowel
+/ʊˤː/: long modal-voice pharyngealised near-close back rounded monophthong vowel
+/ɔˤː/: long modal-voice pharyngealised open-mid back rounded monophthong vowel
+/ɞʏ̯/: short modal-voice diphthong vowel
+/ae̯/: short modal-voice diphthong vowel
+/aɵ̯/: short modal-voice diphthong vowel
+/ɯ̯ɤ̞/: short modal-voice diphthong vowel
+/ɯi̯/: short modal-voice diphthong vowel
+/i̯e̞/: short modal-voice diphthong vowel
+/ɡʲ/: short voiced palatalised velar plosive consonant
+/ɪ̯/: short modal-voice non-syllabic near-close front unrounded monophthong vowel
+/pːʰ/: long voiceless aspirated bilabial plosive consonant
+/ʒ̊/: short voiceless postalveolar fricative consonant
+/ɟ̥ʝ̥/: short devoiced palatal affricate consonant
+/ħ̃ʲ/: short voiceless nasalised palatalised pharyngeal fricative consonant
+/ɔ̟̜̰/: short creaky-voice advanced less-rounded open-mid back rounded monophthong vowel
+/ɔ̟̜ː/: long modal-voice advanced less-rounded open-mid back rounded monophthong vowel
+/ɨ̞̰/: short creaky-voice near-close central unrounded monophthong vowel
+/ɨ̞ː/: long modal-voice near-close central unrounded monophthong vowel
+/ɞ̜/: short modal-voice less-rounded open-mid central rounded monophthong vowel
+/ɞ̜̰/: short creaky-voice less-rounded open-mid central rounded monophthong vowel
+/ɞ̜ː/: long modal-voice less-rounded open-mid central rounded monophthong vowel
+/ʉ̰/: short creaky-voice close central rounded monophthong vowel
+/ɨ̞̃ː/: long modal-voice nasalised near-close central unrounded monophthong vowel
+/ɔ̟̜̃ː/: long modal-voice advanced nasalised less-rounded open-mid back rounded monophthong vowel
+/ɞ̜̃ː/: long modal-voice nasalised less-rounded open-mid central rounded monophthong vowel
+/ɛ̃ːi̯/: long modal-voice nasalised diphthong vowel
+/ãɛ̃/: short modal-voice nasalised diphthong vowel
+/œ̃ɛ̃/: short modal-voice nasalised diphthong vowel
+/ɫː/: long voiced velarised lateral alveolar approximant consonant
+/t̺ʃ̺/: short voiceless apical postalveolar affricate consonant
+/d̺ʒ̺/: short voiced apical postalveolar affricate consonant
+/i̞ː/: long modal-voice lowered close front unrounded monophthong vowel
+/ɪ̯ä/: short modal-voice diphthong vowel
+/ɪ̯ɔ/: short modal-voice diphthong vowel
+/ɪ̯u̞/: short modal-voice lowered diphthong vowel
+/ʊ̯ɔ/: short modal-voice diphthong vowel
+/ʋʲ/: short voiced palatalised labiodental approximant consonant
+/jau/: short modal-voice triphthong vowel
+/jo/: short modal-voice diphthong vowel
+/wai/: short modal-voice triphthong vowel
+/juː/: long modal-voice diphthong vowel
+/joː/: long modal-voice diphthong vowel
+/jaː/: long modal-voice diphthong vowel
+/waː/: long modal-voice diphthong vowel
+/juaː/: long modal-voice triphthong vowel
+/jui/: short modal-voice triphthong vowel
+/joi/: short modal-voice triphthong vowel
+/jai/: short modal-voice triphthong vowel
+/l̪ʱ/: short voiced aspirated lateral dental approximant consonant
+/nʱ/: short voiced aspirated nasal alveolar plosive consonant
+/ɳʱ/: short voiced aspirated nasal retroflex plosive consonant
+/t̻ɕ̻/: short voiceless laminal alveolo-palatal affricate consonant
+/t̻ɕ̻ʰ/: short voiceless laminal aspirated alveolo-palatal affricate consonant
+/d̻ʑ̻/: short voiced laminal alveolo-palatal affricate consonant
+/d̻ʑ̻ʱ/: short voiced laminal aspirated alveolo-palatal affricate consonant
+/ʄ/: short voiced implosive palatal plosive consonant
+/ɠ/: short voiced implosive velar plosive consonant
+/ɪ̆/: shortened modal-voice near-close front unrounded monophthong vowel
+/ʊ̆/: shortened modal-voice near-close back rounded monophthong vowel
+/u̙/: short modal-voice rtr close back rounded monophthong vowel
+/o̞̙/: short modal-voice rtr mid back rounded monophthong vowel
+/ɑ̙/: short modal-voice rtr open back unrounded monophthong vowel
+/ɯ̙/: short modal-voice rtr close back unrounded monophthong vowel
+/i̘/: short modal-voice atr close front unrounded monophthong vowel
+/ii̯/: short modal-voice diphthong vowel
+/ɯ̙i̯/: short modal-voice rtr diphthong vowel
+/uu̯/: short modal-voice diphthong vowel
+/yu̯/: short modal-voice diphthong vowel
+/ɔ̜̃ː/: long modal-voice nasalised less-rounded open-mid back rounded monophthong vowel
+/sʲʰ/: short voiceless palatalised aspirated alveolar fricative consonant
+/ã̤/: short breathy-voice nasalised open central unrounded monophthong vowel
+/y̰/: short creaky-voice close front rounded monophthong vowel
+/ø̰/: short creaky-voice close-mid front rounded monophthong vowel
+/ə̰/: short creaky-voice mid central unrounded monophthong vowel
+/ɔ̰/: short creaky-voice open-mid back rounded monophthong vowel
+/ɐi̯/: short modal-voice diphthong vowel
+/ŭ/: shortened modal-voice close back rounded monophthong vowel
+/ðʼ/: short voiced ejective interdental fricative consonant
+/dʼ/: short voiced ejective alveolar plosive consonant
+/sʼ/: short voiceless ejective alveolar fricative consonant
+/ɮʼ/: short voiced ejective lateral alveolar fricative consonant
+/ʃ̞/: short voiceless lowered postalveolar fricative consonant
+/ʃ̞ʼ/: short voiceless ejective lowered postalveolar fricative consonant
+/ɔ̜/: short modal-voice less-rounded open-mid back rounded monophthong vowel
+/œ̜/: short modal-voice less-rounded open-mid front rounded monophthong vowel
+/œ̜ː/: long modal-voice less-rounded open-mid front rounded monophthong vowel
+/ɞe̯/: short modal-voice diphthong vowel
+/ʉi̯/: short modal-voice diphthong vowel
+/æi̯/: short modal-voice diphthong vowel
+/dʱ/: short voiced aspirated alveolar plosive consonant
+/ẽ̞/: short modal-voice nasalised mid front unrounded monophthong vowel
+/ɑi̯/: short modal-voice diphthong vowel
+/q̺/: short voiceless apical uvular plosive consonant
+/t̺ɕ̺/: short voiceless apical alveolo-palatal affricate consonant
+/t̺ɕ̺ʼ/: short voiceless ejective apical alveolo-palatal affricate consonant
+/u̜/: short modal-voice less-rounded close back rounded monophthong vowel
+/wə/: short modal-voice diphthong vowel
+/wɔ/: short modal-voice diphthong vowel
+/jɛ̃/: short modal-voice nasalised diphthong vowel
+/wə̃/: short modal-voice nasalised diphthong vowel
+/wã/: short modal-voice nasalised diphthong vowel
+/wɛ̃/: short modal-voice nasalised diphthong vowel
+/wɔ̃/: short modal-voice nasalised diphthong vowel
+/uœ/: short modal-voice diphthong vowel
+/ɑːi̯/: long modal-voice diphthong vowel
+/fʼ/: short voiceless ejective labiodental fricative consonant
+/ʔʷ/: short labialised glottal plosive consonant
+/ɯo/: short modal-voice diphthong vowel
+/θ̻/: short voiceless laminal interdental fricative consonant
+/ð̺̞/: short voiced lowered apical interdental fricative consonant
+/n̪̥/: short voiceless nasal dental plosive consonant
+/ɲ̥/: short voiceless nasal palatal plosive consonant
+/ʏi̯/: short modal-voice diphthong vowel
+/øɪ̯/: short modal-voice diphthong vowel
+/t̠/: short voiceless retracted alveolar plosive consonant
+/d̠/: short voiced retracted alveolar plosive consonant
+/t̠ʰ/: short voiceless retracted aspirated alveolar plosive consonant
+/d̠ʰ/: short voiced retracted aspirated alveolar plosive consonant
+/ɛe/: short modal-voice diphthong vowel
+/ɔo/: short modal-voice diphthong vowel
+/oo̯/: short modal-voice diphthong vowel
+/ɨ̃/: short modal-voice nasalised close central unrounded monophthong vowel
+/ṳː/: long breathy-voice close back rounded monophthong vowel
+/ɑɒ/: short modal-voice diphthong vowel
+/əɒ/: short modal-voice diphthong vowel
+/n̪ʰ/: short voiced aspirated nasal dental plosive consonant
+/zʰ/: short voiced aspirated alveolar fricative consonant
+/ʑʰ/: short voiced aspirated alveolo-palatal fricative consonant
+/jʰ/: short voiced aspirated palatal approximant consonant
+/ɛj/: short modal-voice diphthong vowel
+/ɛw/: short modal-voice diphthong vowel
+/æ̃ː/: long modal-voice nasalised near-open front unrounded monophthong vowel
+/ɳ̥/: short voiceless nasal retroflex plosive consonant
+/ t/: short voiceless alveolar plosive consonant
+/ɯi/: short modal-voice diphthong vowel
+/ ɔi/: short modal-voice diphthong vowel
+/ɯːi/: long modal-voice diphthong vowel
+/uːi/: long modal-voice diphthong vowel
+/eːi/: long modal-voice diphthong vowel
+/əːi/: long modal-voice diphthong vowel
+/ɔːi/: long modal-voice diphthong vowel
+/əɯ/: short modal-voice diphthong vowel
+/aɯ/: short modal-voice diphthong vowel
+/aːɯ/: long modal-voice diphthong vowel
+/ɛ̝ː/: long modal-voice raised open-mid front unrounded monophthong vowel
+/ɔ̝/: short modal-voice raised open-mid back rounded monophthong vowel
+/ɔ̝ː/: long modal-voice raised open-mid back rounded monophthong vowel
+/i̽/: short modal-voice mid-centralised close front unrounded monophthong vowel
+/ʊ̽/: short modal-voice mid-centralised near-close back rounded monophthong vowel
+/ɐ̟/: short modal-voice advanced near-open central unrounded monophthong vowel
+/ɻˤ/: short voiced pharyngealised retroflex approximant consonant
+/ʈʲ/: short voiceless palatalised retroflex plosive consonant
+/ɖʲ/: short voiced palatalised retroflex plosive consonant
+/ɳʲ/: short voiced palatalised nasal retroflex plosive consonant
+/tsʷ/: short voiceless labialised alveolar affricate consonant
+/ʈʂʷ/: short voiceless labialised retroflex affricate consonant
+/ɻʲ/: short voiced palatalised retroflex approximant consonant
+/ʂʲ/: short voiceless palatalised retroflex fricative consonant
+/ʂʷ/: short voiceless labialised retroflex fricative consonant
+/ʐʷ/: short voiced labialised retroflex fricative consonant
+/o˞/: short modal-voice rhotacised close-mid back rounded monophthong vowel
+/ⁿpʲʰ/: short voiceless pre-nasalised palatalised aspirated bilabial plosive consonant
+/ⁿtʲ/: short voiceless pre-nasalised palatalised alveolar plosive consonant
+/ⁿtʲʰ/: short voiceless pre-nasalised palatalised aspirated alveolar plosive consonant
+/ⁿtɕ/: short voiceless pre-nasalised alveolo-palatal affricate consonant
+/ⁿkʲ/: short voiceless pre-nasalised palatalised velar plosive consonant
+/ⁿkʲʰ/: short voiceless pre-nasalised palatalised aspirated velar plosive consonant
+/qʷʰ/: short voiceless labialised aspirated uvular plosive consonant
+/ⁿqʷ/: short voiceless pre-nasalised labialised uvular plosive consonant
+/ⁿqʷʰ/: short voiceless pre-nasalised labialised aspirated uvular plosive consonant
+/lʲʰ/: short voiced palatalised aspirated lateral alveolar approximant consonant
+/ɛɰ/: short modal-voice diphthong vowel
+/ɤj/: short modal-voice diphthong vowel
+/jɛː/: long modal-voice diphthong vowel
+/ˀm/: short voiced pre-glottalised nasal bilabial plosive consonant
+/ˀn/: short voiced pre-glottalised nasal alveolar plosive consonant
+/ˀŋ/: short voiced pre-glottalised nasal velar plosive consonant
+/ˀl/: short voiced pre-glottalised lateral alveolar approximant consonant
+/ˀr/: short voiced pre-glottalised alveolar trill consonant
+/ˀw/: short voiced pre-glottalised labial-velar approximant consonant
+/ˀj/: short voiced pre-glottalised palatal approximant consonant
+/tʲː/: long voiceless palatalised alveolar plosive consonant
+/hː/: long voiceless glottal fricative consonant
+/pːː/: overlong voiceless bilabial plosive consonant
+/tːː/: overlong voiceless alveolar plosive consonant
+/tʲːː/: overlong voiceless palatalised alveolar plosive consonant
+/kːː/: overlong voiceless velar plosive consonant
+/mːː/: overlong voiced nasal bilabial plosive consonant
+/nːː/: overlong voiced nasal alveolar plosive consonant
+/nʲːː/: overlong voiced palatalised nasal alveolar plosive consonant
+/rːː/: overlong voiced alveolar trill consonant
+/fːː/: overlong voiceless labiodental fricative consonant
+/sːː/: overlong voiceless alveolar fricative consonant
+/ʃːː/: overlong voiceless postalveolar fricative consonant
+/sʲːː/: overlong voiceless palatalised alveolar fricative consonant
+/lːː/: overlong voiced lateral alveolar approximant consonant
+/lʲːː/: overlong voiced palatalised lateral alveolar approximant consonant
+/hːː/: overlong voiceless glottal fricative consonant
+/jːː/: overlong voiced palatal approximant consonant
+/iːː/: overlong modal-voice close front unrounded monophthong vowel
+/yːː/: overlong modal-voice close front rounded monophthong vowel
+/uːː/: overlong modal-voice close back rounded monophthong vowel
+/eːː/: overlong modal-voice close-mid front unrounded monophthong vowel
+/øːː/: overlong modal-voice close-mid front rounded monophthong vowel
+/ɤːː/: overlong modal-voice close-mid back unrounded monophthong vowel
+/oːː/: overlong modal-voice close-mid back rounded monophthong vowel
+/æːː/: overlong modal-voice near-open front unrounded monophthong vowel
+/ɑːː/: overlong modal-voice open back unrounded monophthong vowel
+/ɑe/: short modal-voice diphthong vowel
+/ɑo/: short modal-voice diphthong vowel
+/eɑ/: short modal-voice diphthong vowel
+/oɑ/: short modal-voice diphthong vowel
+/ɤɑ/: short modal-voice diphthong vowel
+/ɤe/: short modal-voice diphthong vowel
+/ɤo/: short modal-voice diphthong vowel
+/ɤu/: short modal-voice diphthong vowel
+/æe/: short modal-voice diphthong vowel
+/æi/: short modal-voice diphthong vowel
+/æo/: short modal-voice diphthong vowel
+/æu/: short modal-voice diphthong vowel
+/øɑ/: short modal-voice diphthong vowel
+/øe/: short modal-voice diphthong vowel
+/øi/: short modal-voice diphthong vowel
+/yɑ/: short modal-voice diphthong vowel
+/ʔ̙/: short rtr glottal plosive consonant
+/uw/: short modal-voice diphthong vowel
+/ɐ̃i/: short modal-voice nasalised diphthong vowel
+/õi/: short modal-voice nasalised diphthong vowel
+/ũi/: short modal-voice nasalised diphthong vowel
+/ɐ̃u/: short modal-voice nasalised diphthong vowel
+/tç/: short voiceless palatal affricate consonant
+/dʝ/: short voiced palatal affricate consonant
+/ɔj/: short modal-voice diphthong vowel
+/ji/: short modal-voice diphthong vowel
+/jy/: short modal-voice diphthong vowel
+/ɛə/: short modal-voice diphthong vowel
+/t̪s̪’/: short voiceless ejective dental affricate consonant
+/ʡ’/: short ejective epiglottal plosive consonant
+/ø̈/: short modal-voice centralised close-mid front rounded monophthong vowel
+/ɤ̤/: short breathy-voice close-mid back unrounded monophthong vowel
+/ɯ̤ː/: long breathy-voice close back unrounded monophthong vowel
+/ɤ̤ː/: long breathy-voice close-mid back unrounded monophthong vowel
+/ɑ̤ː/: long breathy-voice open back unrounded monophthong vowel
+/i̤a/: short breathy-voice diphthong vowel
+/ɯ̤a/: short breathy-voice diphthong vowel
+/ṳa/: short breathy-voice diphthong vowel
+/wˀ/: short voiced glottalised labial-velar approximant consonant
+/jˀ/: short voiced glottalised palatal approximant consonant
+/ʌ̟/: short modal-voice advanced open-mid back unrounded monophthong vowel
+/ɑ̟/: short modal-voice advanced open back unrounded monophthong vowel
+/ʌ̟̤/: short breathy-voice advanced open-mid back unrounded monophthong vowel
+/ɑ̟̤/: short breathy-voice advanced open back unrounded monophthong vowel
+/ɨ̤ː/: long breathy-voice close central unrounded monophthong vowel
+/ɤ̟̤ː/: long breathy-voice advanced close-mid back unrounded monophthong vowel
+/ɑ̟̤ː/: long breathy-voice advanced open back unrounded monophthong vowel
+/i̤ɐ/: short breathy-voice diphthong vowel
+/ea̤/: short breathy-voice diphthong vowel
+/ɨɐ/: short modal-voice diphthong vowel
+/ɨ̤ɐ/: short breathy-voice diphthong vowel
+/ṳɐ/: short breathy-voice diphthong vowel
+/ɤa/: short modal-voice diphthong vowel
+/ɤa̤/: short breathy-voice diphthong vowel
+/r̪ʲ/: short voiced palatalised dental trill consonant
+/f’/: short voiceless ejective labiodental fricative consonant
+/c’/: short voiceless ejective palatal plosive consonant
+/v̥/: short voiceless labiodental fricative consonant
+/ɣ̊/: short voiceless velar fricative consonant
+/iə̯/: short modal-voice diphthong vowel
+/yə̯/: short modal-voice diphthong vowel
+/uə̯/: short modal-voice diphthong vowel
+/æu̯/: short modal-voice diphthong vowel
+/dz̻/: short voiced laminal alveolar affricate consonant
+/iẽː/: long modal-voice nasalised diphthong vowel
+/ʊ̜̈/: short modal-voice less-rounded centralised near-close back rounded monophthong vowel
+/pˠʰ/: short voiceless velarised aspirated bilabial plosive consonant
+/vˠ/: short voiced velarised labiodental fricative consonant
+/t̪ˠʰ/: short voiceless aspirated velarised dental plosive consonant
+/ɾ̪ˠ/: short voiced velarised dental tap consonant
+/ɾ̪ʲ/: short voiced palatalised dental tap consonant
+/ŋ̟/: short voiced advanced nasal velar plosive consonant
+/ɐɪ/: short modal-voice diphthong vowel
+/iːə/: long modal-voice diphthong vowel
+/uːə/: long modal-voice diphthong vowel
+/uːe/: long modal-voice diphthong vowel
+/ʃʼ/: short voiceless ejective postalveolar fricative consonant
+/ç̟/: short voiceless advanced palatal fricative consonant
+/ɵ̞ː/: long modal-voice lowered close-mid central rounded monophthong vowel
+/aːɪ/: long modal-voice diphthong vowel
+/ɑʊ̯/: short modal-voice diphthong vowel
+/uɔː/: long modal-voice diphthong vowel
+/iɛː/: long modal-voice diphthong vowel
+/ũɔ̃ː/: long modal-voice nasalised diphthong vowel
+/ĩɛ̃ː/: long modal-voice nasalised diphthong vowel
+/æɛ/: short modal-voice diphthong vowel
+/ɵ̞/: short modal-voice lowered close-mid central rounded monophthong vowel
+/ø̠̞/: short modal-voice retracted lowered close-mid front rounded monophthong vowel
+/y̠/: short modal-voice retracted close front rounded monophthong vowel
+/ɤ̝/: short modal-voice raised close-mid back unrounded monophthong vowel
+/ɛʉ/: short modal-voice diphthong vowel
+/jæ/: short modal-voice diphthong vowel
+/jæi/: short modal-voice triphthong vowel
+/jɛi/: short modal-voice triphthong vowel
+/wæi/: short modal-voice triphthong vowel
+/wɛi/: short modal-voice triphthong vowel
+/ə̹/: short modal-voice more-rounded mid central unrounded monophthong vowel
+/ɛ̞/: short modal-voice lowered open-mid front unrounded monophthong vowel
+/ɤˑ/: half-long modal-voice close-mid back unrounded monophthong vowel
+/ɛˑ/: half-long modal-voice open-mid front unrounded monophthong vowel
+/ʷr/: short voiced pre-labialised alveolar trill consonant
+/dʒʱ/: short voiced aspirated postalveolar affricate consonant
+/ᶑ/: short voiced implosive retroflex plosive consonant
+/dʐ/: short voiced retroflex affricate consonant
+/əˤ/: short modal-voice pharyngealised mid central unrounded monophthong vowel
+/i˞ˤ/: short modal-voice rhotacised pharyngealised close front unrounded monophthong vowel
+/u˞ˤ/: short modal-voice rhotacised pharyngealised close back rounded monophthong vowel
+/a˞ˤ/: short modal-voice rhotacised pharyngealised open central unrounded monophthong vowel
+/ə˞ː/: long modal-voice rhotacised mid central unrounded monophthong vowel
+/a˞ː/: long modal-voice rhotacised open central unrounded monophthong vowel
+/i˞ˤː/: long modal-voice rhotacised pharyngealised close front unrounded monophthong vowel
+/u˞ˤː/: long modal-voice rhotacised pharyngealised close back rounded monophthong vowel
+/ɐ̹̆/: shortened modal-voice more-rounded near-open central unrounded monophthong vowel
+/ɑ̝̹/: short modal-voice more-rounded raised open back unrounded monophthong vowel
+/iʌ/: short modal-voice diphthong vowel
+/ɔə/: short modal-voice diphthong vowel
+/ɐə/: short modal-voice diphthong vowel
+/uɤ/: short modal-voice diphthong vowel
+/iəu/: short modal-voice triphthong vowel
+/uæ̃/: short modal-voice nasalised diphthong vowel
+/iɐ̃/: short modal-voice nasalised diphthong vowel
+/uɐ̃/: short modal-voice nasalised diphthong vowel
+/ p/: short voiceless bilabial plosive consonant
+/pʲʼ/: short voiceless ejective palatalised bilabial plosive consonant
+/bʼ/: short voiced ejective bilabial plosive consonant
+/tʲʼ/: short voiceless ejective palatalised alveolar plosive consonant
+/cː/: long voiceless palatal plosive consonant
+/vʲː/: long voiced palatalised labiodental fricative consonant
+/qχʰʷ/: short voiceless aspirated labialised uvular affricate consonant
+/tsʲʰ/: short voiceless palatalised aspirated alveolar affricate consonant
+/tsʲʼ/: short voiceless ejective palatalised alveolar affricate consonant
+/tʷː/: long voiceless labialised alveolar plosive consonant
+/tsʷʼ/: short voiceless ejective labialised alveolar affricate consonant
+/ʃʷː/: long voiceless labialised postalveolar fricative consonant
+/tsʷʰ/: short voiceless labialised aspirated alveolar affricate consonant
+/tsʷː/: long voiceless labialised alveolar affricate consonant
+/dʒʷ/: short voiced labialised postalveolar affricate consonant
+/tʃʷː/: long voiceless labialised postalveolar affricate consonant
+/tʃʷʼ/: short voiceless ejective labialised postalveolar affricate consonant
+/kʷː/: long voiceless labialised velar plosive consonant
+/qʷː/: long voiceless labialised uvular plosive consonant
+/ʕʷ/: short voiced labialised pharyngeal fricative consonant
+/ i/: short modal-voice close front unrounded monophthong vowel
+/ɪa/: short modal-voice diphthong vowel
+/ɪo/: short modal-voice diphthong vowel
+/oɪ/: short modal-voice diphthong vowel
+/iə̃/: short modal-voice nasalised diphthong vowel
+/iũ/: short modal-voice nasalised diphthong vowel
+/ɪã/: short modal-voice nasalised diphthong vowel
+/ɪõ/: short modal-voice nasalised diphthong vowel
+/aõ/: short modal-voice nasalised diphthong vowel
+/uĩ/: short modal-voice nasalised diphthong vowel
+/uə̃/: short modal-voice nasalised diphthong vowel
+/oɪ̃/: short modal-voice nasalised diphthong vowel
+/oã/: short modal-voice nasalised diphthong vowel
+/ts’ː/: long voiceless ejective alveolar affricate consonant
+/tsʷ’/: short voiceless ejective labialised alveolar affricate consonant
+/sʷː/: long voiceless labialised alveolar fricative consonant
+/tʃ’ː/: long voiceless ejective postalveolar affricate consonant
+/tʃʷ’/: short voiceless ejective labialised postalveolar affricate consonant
+/kʟ̥̝/: short voiceless lateral velar affricate consonant
+/kʟ̥̝’/: short voiceless ejective lateral velar affricate consonant
+/kʟ̥̝ʷ/: short voiceless labialised lateral velar affricate consonant
+/kʟ̥̝ʷ’/: short voiceless ejective labialised lateral velar affricate consonant
+/ʟ̝/: short voiced lateral velar fricative consonant
+/ʟ̥̝/: short voiceless lateral velar fricative consonant
+/ʟ̥̝ː/: long voiceless lateral velar fricative consonant
+/ʟ̥̝ʷː/: long voiceless labialised lateral velar fricative consonant
+/ʟ̥̝ʷ/: short voiceless labialised lateral velar fricative consonant
+/kʷ’/: short voiceless ejective labialised velar plosive consonant
+/qχ’/: short voiceless ejective uvular affricate consonant
+/qχ’ː/: long voiceless ejective uvular affricate consonant
+/qχʷ/: short voiceless labialised uvular affricate consonant
+/qχʷ’/: short voiceless ejective labialised uvular affricate consonant
+/χʷː/: long voiceless labialised uvular fricative consonant
+/ɳʰ/: short voiced aspirated nasal retroflex plosive consonant
+/ʈʲʰ/: short voiceless palatalised aspirated retroflex plosive consonant
+/ɨ̃ː/: long modal-voice nasalised close central unrounded monophthong vowel
+/ə̃ː/: long modal-voice nasalised mid central unrounded monophthong vowel
+/bʲʰ/: short voiced palatalised aspirated bilabial plosive consonant
+/dʲʰ/: short voiced palatalised aspirated alveolar plosive consonant
+/ɖʲʰ/: short voiced palatalised aspirated retroflex plosive consonant
+/gʲʰ/: short voiced palatalised aspirated velar plosive consonant
+/ɭʲ/: short voiced palatalised lateral retroflex approximant consonant
+/əɪ/: short modal-voice diphthong vowel
+/eʊ/: short modal-voice diphthong vowel
+/ɪʊ/: short modal-voice diphthong vowel
+/m̤/: short voiced breathy-voice nasal bilabial plosive consonant
+/n̤/: short voiced breathy-voice nasal alveolar plosive consonant
+/w̤/: short voiced breathy-voice labial-velar approximant consonant
+/l̤/: short voiced breathy-voice lateral alveolar approximant consonant
+/ʌe/: short modal-voice diphthong vowel
+/o̜/: short modal-voice less-rounded close-mid back rounded monophthong vowel
+/u̜ː/: long modal-voice less-rounded close back rounded monophthong vowel
+/o̜ː/: long modal-voice less-rounded close-mid back rounded monophthong vowel
+/ɽ̃ʰ/: short voiced nasalised aspirated retroflex tap consonant
+/ɾʰ/: short voiced aspirated alveolar tap consonant
+/aæ/: short modal-voice diphthong vowel
+/ʌo/: short modal-voice diphthong vowel
+/aũ/: short modal-voice nasalised diphthong vowel
+/iã/: short modal-voice nasalised diphthong vowel
+/e̯ã/: short modal-voice nasalised diphthong vowel
+/ɪi/: short modal-voice diphthong vowel
+/e̯æ/: short modal-voice diphthong vowel
+/e̯ʊ/: short modal-voice diphthong vowel
+/ɪũ/: short modal-voice nasalised diphthong vowel
+/e̯ũ/: short modal-voice nasalised diphthong vowel
+/eũ/: short modal-voice nasalised diphthong vowel
+/e̯o/: short modal-voice diphthong vowel
+/ʊe/: short modal-voice diphthong vowel
+/oæ/: short modal-voice diphthong vowel
+/i̥/: short modal-voice voiceless close front unrounded monophthong vowel
+/ĩ̥/: short modal-voice nasalised voiceless close front unrounded monophthong vowel
+/ũ̥/: short modal-voice nasalised voiceless close back rounded monophthong vowel
+/e̥/: short modal-voice voiceless close-mid front unrounded monophthong vowel
+/ẽ̥/: short modal-voice nasalised voiceless close-mid front unrounded monophthong vowel
+/aĩ/: short modal-voice nasalised diphthong vowel
+/tçʰ/: short voiceless aspirated palatal affricate consonant
+/ɐ̃ː/: long modal-voice nasalised near-open central unrounded monophthong vowel
+/ɗ̪/: short voiced implosive dental plosive consonant
+/ĭ/: shortened modal-voice close front unrounded monophthong vowel
+/ŭ̃/: shortened modal-voice nasalised close back rounded monophthong vowel
+/oĩ/: short modal-voice nasalised diphthong vowel
+/oĭ/: shortened modal-voice diphthong vowel
+/aĭ/: shortened modal-voice diphthong vowel
+/ b/: short voiced bilabial plosive consonant
+/fˤ/: short voiceless pharyngealised labiodental fricative consonant

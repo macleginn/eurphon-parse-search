@@ -1,8 +1,8 @@
 import sqlite3
 from typing import Set
 
-from parser import query_parser, QueryTransformer, ASTNode, OrNode, AndNode, NotNode
-from parser import EqFeature, EqPhoneme, EqFeatures
+from QueryParser import query_parser, QueryTransformer, ASTNode, OrNode, AndNode, NotNode
+from QueryParser import EqFeature, EqPhoneme, EqFeatures
 from helpers import get_count_for_features, get_all_language_ids, check_eq
 
 
