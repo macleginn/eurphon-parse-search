@@ -45,12 +45,14 @@ def get_parse(segment):
         return PARSER.parse(segment).as_set()
 
 
-def get_count_for_features(language_id, features, db_connection):
+def get_count_for_features(language_id, features, db_connection, hit_tmp):
     consonants = get_consonants_for_language(language_id, db_connection)
     vowels = get_vowels_for_language(language_id, db_connection)
     hit_count = 0
     for segment in consonants | vowels:
-        if features.issubset(get_parse(segment)):
+        if segment not in hit_tmp:
+            hit_tmp[segment] = features.issubset(get_parse(segment))
+        if hit_tmp[segment]:
             hit_count += 1
     return hit_count
 

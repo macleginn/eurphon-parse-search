@@ -1,7 +1,7 @@
 ?query : query2
     | query "or" query    -> or_node
 
-?query2 : query3 
+?query2 : query3
     | query2 "and" query2 -> and_node
 
 ?query3 : query4
@@ -17,12 +17,12 @@ predicate : yesno PHONEME      -> yesno_p
     | eq features "," features -> feat_eq
 
 ?yesno : "+" -> present | "-" -> absent
-?eq : ">="      -> ge 
-    | ">"       -> gt 
-    | "<="      -> le 
-    | "<"       -> lt 
+?eq : ">="      -> ge
+    | ">"       -> gt
+    | "<="      -> le
+    | "<"       -> lt
     | "="("=")? -> exactly
-features : [FEATURE+]
+features : FEATURE+
 
 PHONEME : "/" /[^ \/]+/ "/"
 FEATURE : /[a-z]+(-[a-z]+)?/

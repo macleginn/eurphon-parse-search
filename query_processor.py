@@ -38,11 +38,14 @@ def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
 
 def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
     result = set()
+    # A search optimisation
+    hit_tmp = {}
     for language_id in get_all_language_ids(db_connection):
         diff = get_count_for_features(
             language_id,
             query.features,
-            db_connection) - query.number
+            db_connection,
+            hit_tmp) - query.number
         if check_eq(diff, query.op):
             result.add(language_id)
     return result
@@ -59,7 +62,7 @@ if __name__ == "__main__":
             '''
 Usage
 =====
-            
+
 python query_processor.py query
 
 returns the list of languages satisfying the query.
@@ -71,15 +74,15 @@ lists all consonant and vowel features that can be used in a query.
 Query types
 ===========
 
-1. Presence/absence for segments and feature bundles: 
+1. Presence/absence for segments and feature bundles:
    "+ /p/", "- labio-dental fricative", &c.
 
-2. Count queries for segments and feature bundles: 
+2. Count queries for segments and feature bundles:
    "> 4 bilabial consonant", "= 3 plosive", &c.
    Supported comparison operators: =, <, >, <=, >=.
 
-3. Comparison queries for feature bundles: 
-   "> bilabial consonant, dental consonant", &c. 
+3. Comparison queries for feature bundles:
+   "> bilabial consonant, dental consonant", &c.
    The same comparison operators are supported as above.
    Note that elements of feature lists are separated by spaces,
    and the two lists are separated by a comma.
@@ -92,19 +95,24 @@ Queries can be negated using "not" and combined using
 
 Operator precedence order: not > and > or.
 
-Use parentheses for nested queries and clarity. 
+Use parentheses for nested queries and clarity.
 
 An example complex query:
 
 not (
-    >= bilabial plosive, labio-dental fricative 
-    or 
+    >= bilabial plosive, labio-dental fricative
+    or
     <= bilabial plosive, labio-dental fricative
 ) or
 + /p/ and > 4 approximant
 '''
         )
     conn = sqlite3.connect('europhon.sqlite')
+    lang_names = {
+        language_id: language_name
+        for language_id, language_name
+        in conn.execute("SELECT id, name FROM languages")
+    }
     raw_query = query_parser.parse(sys.argv[1])
     query_transformer = QueryTransformer()
     print(raw_query.pretty())
@@ -112,4 +120,5 @@ not (
     query = query_transformer.transform(raw_query)
     print(query)
     print()
-    print(apply_query(query, conn))
+    result = [lang_names[lang_id] for lang_id in apply_query(query, conn)]
+    print(result)
