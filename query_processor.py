@@ -270,7 +270,7 @@ if __name__ == "__main__":
     query_transformer = QueryTransformer()
     print(raw_query.pretty())
     query = query_transformer.transform(raw_query)
-    print(query + '\n')
+    print(query, '\n')
 
     result = apply_query(query, conn)
 
