@@ -205,7 +205,7 @@ trill       : trill_core post_feature*
     | /[ⁿnmŋɳɲɱɴ]/      -> pre_nasalised
     | "ʷ"               -> pre_labialised
 
-?post_feature : /(ːː)|(::)/ -> overlong
+?post_feature : "="         -> overlong
     | /[ː:]/                -> long
     | "ˑ"                   -> half_long
     | "ˤ"                   -> pharyngealised
@@ -219,35 +219,35 @@ trill       : trill_core post_feature*
     | /(\u030a)|(\u0325)/   -> voiceless       // å | ḁ
     | "\u0330"              -> creaky_voiced   // a̰
     | "\u2193"              -> ingressive      // a↓
-    | "\u02de"              -> rhotacised  // a˞
+    | "\u02de"              -> rhotacised      // a˞
     | "\u0348"              -> strong_articulation  // a͈
-    | "\u0308"              -> centralised  // ä
-    | "\u0318"              -> atr  // a̘
-    | "\u0319"              -> rtr  // a̙
-    | "\u031c"              -> less_rounded  // a̜
-    | "\u0339"              -> more_rounded  // a̹
-    | "\u032f"              -> non_syllabic  // a̯
+    | "\u0308"              -> centralised      // ä
+    | "\u0318"              -> atr              // a̘
+    | "\u0319"              -> rtr              // a̙
+    | "\u031c"              -> less_rounded     // a̜
+    | "\u0339"              -> more_rounded     // a̹
+    | "\u032f"              -> non_syllabic     // a̯
     | "\u033d"              -> mid_centralised  //  a̽
     | /[ʰʱ]/                -> aspirated
     | "ʲ"                   -> palatalised
     | "ʷ"                   -> labialised
     | /[’ʼ']/               -> ejective
-    | "ˀ"                   -> glottalised  // d
-    | /ˠ|\u0334/            -> velarised  // l̴
+    | "ˀ"                   -> glottalised       // d
+    | /ˠ|\u0334/            -> velarised         // l̴
     | "\u02e1"              -> lateral_released  // dˡ
-    | "\u031a"              -> unreleased  // a̚
-    | "\u0329"              -> syllabic  // a̩
-    | "\u032a"              -> dental  // a̪
-    | "\u0347"              -> alveolar  // a͇
-    | "\u033a"              -> apical  // a̺
-    | "\u033b"              -> laminal  // a̻
+    | "\u031a"              -> unreleased        // a̚
+    | "\u0329"              -> syllabic          // a̩
+    | "\u032a"              -> dental            // a̪
+    | "\u0347"              -> alveolar          // a͇
+    | "\u033a"              -> apical            // a̺
+    | "\u033b"              -> laminal           // a̻
     | "\u0349"              -> weakly_articulated  // a͉
-    | "\u1da3"              -> labio_palatalised  // aᶣ
+    | "\u1da3"              -> labio_palatalised   // aᶣ
     | "ⁿ"                   -> nasal_released
     | /[ᶻˢ]/                -> affricated
     | "ᴱ"                   -> epilaryngeal_source
     | "\u0353"              -> frictionalised  // a͓
-    | "\u02ed"              -> tenuis  // t˭
+    | "\u02ed"              -> tenuis          // t˭
     | "\u032c"              -> voiced
     | "\u033c"              -> linguo_labial
 

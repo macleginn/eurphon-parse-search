@@ -872,6 +872,13 @@ def add_post_features_to_consonant(parse: ConsonantParse, features):
 #
 
 replacement_dict = {
+    # A special symbol for double length
+    # to resolve ambiguity
+    '::': '=',
+    'ːː': '=',
+    'ː:': '=',
+    ':ː': '=',
+
     # Vowel height or backness denoted by a diacritic
     'e\u031e': 'E1',
     'o\u031e': 'O1',
