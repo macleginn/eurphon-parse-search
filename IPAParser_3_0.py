@@ -49,28 +49,34 @@ class VowelParse:
             set(s(f) for f in self.additional_articulations)
         }
 
-    def as_set(self):
-        result = set()
-        result.add('vowel')
-        if self.apical_vowel:
-            result.add('apical vowel')
-        if self.diphthong:
-            result.add('diphthong')
-        if self.triphthong:
-            result.add('triphthong')
-        if self.rounded:
-            result.add('rounded')
+    def as_list(self):
+        result = [s(self.length), s(self.phonation)] +\
+            [s(f) for f in self.pre_features] +\
+            [s(f) for f in self.additional_articulations]
+
         if self.height is not None:
-            result.add(s(self.height))
+            result.append(s(self.height))
         if self.backness is not None:
-            result.add(s(self.backness))
-        result |= set([
-            s(self.length),
-            s(self.phonation)
-        ])
-        result |= (set(s(f) for f in self.pre_features))
-        result |= (set(s(f) for f in self.additional_articulations))
+            result.append(s(self.backness))
+        if not (self.diphthong or self.triphthong):
+            if self.rounded:
+                result.append('rounded')
+            else:
+                result.append('unrounded')
+        if self.diphthong:
+            result.append('diphthong')
+        elif self.triphthong:
+            result.append('triphthong')
+        else:
+            result.append('monophthong')
+
+        if self.apical_vowel:
+            result.append('apical')
+        result.append('vowel')
         return result
+
+    def as_set(self):
+        return set(self.as_list())
 
 
 @ dataclass
@@ -100,25 +106,29 @@ class ConsonantParse:
             set(s(f) for f in self.additional_articulations)
         }
 
-    def as_set(self):
-        result = set()
-        result.add('consonant')
-        if self.lateral:
-            result.add('lateral')
-        if self.nasal:
-            result.add('nasal')
-        if self.implosive:
-            result.add('implosive')
+    def as_list(self):
+        result = [s(self.length)]
         if self.voice is not None:
-            result.add(s(self.voice))
-        result |= set([
+            result.append(s(self.voice))
+        result.extend(
+            [s(f) for f in self.pre_features] +
+            [s(f) for f in self.additional_articulations]
+        )
+        if self.lateral:
+            result.append('lateral')
+        if self.nasal:
+            result.append('nasal')
+        if self.implosive:
+            result.append('implosive')
+        result.extend([
             s(self.place),
-            s(self.manner),
-            s(self.length)
+            s(self.manner)
         ])
-        result |= (set(s(f) for f in self.pre_features))
-        result |= (set(s(f) for f in self.additional_articulations))
+        result.append('consonant')
         return result
+
+    def as_set(self):
+        return set(self.as_list())
 
 
 #
@@ -150,22 +160,22 @@ class IPAQueryTransformer(Transformer):
         *pre_features, core = params
         if type(core) == Diphthong:
             tmp = VowelParse(False, True, False, None, None, None,
-                             Length.SHORT, Phonation.MODAL,
+                             Length.SHORT, Phonation.MODAL_VOICE,
                              set(pre_features), set())
         elif type(core) == Triphthong:
             tmp = VowelParse(False, False, True, None, None, None,
-                             Length.SHORT, Phonation.MODAL,
+                             Length.SHORT, Phonation.MODAL_VOICE,
                              set(pre_features), set())
         else:
             if type(core.glyph) == ApicalVowel:
                 tmp = VowelParse(True, False, False, None,
                                  core.glyph.place, core.glyph.rounded,
-                                 Length.SHORT, Phonation.MODAL,
+                                 Length.SHORT, Phonation.MODAL_VOICE,
                                  set(pre_features), set())
             else:
                 tmp = VowelParse(False, False, False,
                                  core.glyph.height, core.glyph.backness, core.glyph.rounded,
-                                 Length.SHORT, Phonation.MODAL,
+                                 Length.SHORT, Phonation.MODAL_VOICE,
                                  set(pre_features), set())
         add_post_features_to_vowel(tmp, core.post_features)
         return tmp
@@ -823,13 +833,16 @@ class IPAQueryTransformer(Transformer):
 #
 
 
-def add_post_features_to_vowel(parse, features):
+def add_post_features_to_vowel(parse: VowelParse, features):
     for f in features:
         if type(f) == Length:
             parse.length = f
         elif type(f) == Phonation:
             parse.phonation = f
         else:
+            if f == AdditionalArticulation.NON_SYLLABIC and\
+                    (parse.diphthong or parse.triphthong):
+                continue
             parse.additional_articulations.add(f)
 
 
@@ -841,9 +854,10 @@ def add_post_features_to_consonant(parse: ConsonantParse, features):
             parse.place = f
         elif type(f) == Voice:
             if (
-                parse.voice == Voice.VOICED and
-                f == Voice.VOICELESS and
-                parse.manner == Manner.PLOSIVE
+                parse.voice == Voice.VOICED
+                and f == Voice.VOICELESS
+                and parse.manner in {Manner.PLOSIVE, Manner.AFFRICATE}
+                and not parse.nasal
             ):
                 parse.voice = Voice.DEVOICED
             else:

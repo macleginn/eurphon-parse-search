@@ -18,7 +18,7 @@ class Backness(Enum):
 
 
 class Phonation(Enum):
-    MODAL = auto()
+    MODAL_VOICE = auto()
     BREATHY_VOICE = auto()
     CREAKY_VOICE = auto()
 
