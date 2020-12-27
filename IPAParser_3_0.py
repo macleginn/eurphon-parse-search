@@ -1008,5 +1008,5 @@ if __name__ == "__main__":
         print('First part:', affricates_first.as_set())
         print('Second part:', affricate_second.as_set())
     print()
-    print('Parse as a set:')
-    pprint(result.as_set())
+    print('Parse as a (space-joined) list:')
+    pprint(' '.join(result.as_list()))
