@@ -5,15 +5,22 @@ import io
 from collections import defaultdict
 from typing import Set
 from unicodedata import normalize
+from dataclasses import dataclass
 
 from QueryParser import query_parser, QueryTransformer, ASTNode, OrNode, AndNode, NotNode
 from QueryParser import EqFeature, EqPhoneme, EqFeatures
 from helpers import get_count_for_features, get_all_language_ids, check_eq
 
+#
+# Globals
+#
 
 USAGE_short = """Usage:
+
 python query_processor.py query [phylum=family-list|genus=group-list]
+
 or
+
 python query_processor.py help
 """
 
@@ -84,6 +91,33 @@ python query_processor.py "- /p/" "phylum=Indo-European,Austronesian"
 python query_processor.py "< nasal consonant, lateral consonant" "genus=Avar-Andi"
 
 '''
+
+
+@dataclass
+class Language:
+    iso: str
+    name: str
+    phylum: str
+    genus: str
+
+
+db_connection = sqlite3.connect('europhon.sqlite')
+meta = {
+    language_id: Language(iso, language_name, phylum, genus)
+    for language_id, iso, language_name, phylum, genus
+    in db_connection.execute(
+        """
+            SELECT 
+                languages.id, languages.`iso_code`, languages.name, 
+                phyla.name, genera.name
+            FROM languages 
+                LEFT JOIN phyla ON
+                    languages.phylum_id = phyla.id
+                LEFT JOIN genera ON
+                    languages.genus_id = genera.id
+            """)
+}
+query_transformer = QueryTransformer()
 
 
 def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
@@ -192,13 +226,13 @@ def print_features():
         return out.getvalue()
 
 
-def print_phyla(db_connection):
+def print_phyla():
     phyla = sorted(row[0] for row
                    in db_connection.execute("SELECT name FROM phyla"))
     return '\n'.join(phyla)
 
 
-def print_genus_tree(db_connection):
+def print_genus_tree():
     tree = defaultdict(list)
     for phylum_id, phylum in db_connection.execute(
         "SELECT id, name FROM phyla"
@@ -214,52 +248,51 @@ def print_genus_tree(db_connection):
         return out.getvalue()
 
 
+def parse_query(query_string):
+    "We separate this bit into a separate function to catch Lark exceptions."
+    return query_parser.parse(query_string)
+
+
+def apply_query_and_filter(query_tree, restrictor_dict={}):
+    # Transforming the query after successfully
+    # parsing it should be safe.
+    query = query_transformer.transform(query_tree)
+    result = apply_query(query, db_connection)
+    if 'phylum' in restrictor_dict:
+        phyla = restrictor_dict['phylum']
+        result = list(
+            filter(lambda lang_id: meta[lang_id].phylum in phyla, result))
+    elif 'genus' in restrictor_dict:
+        genera = restrictor_dict['genus']
+        result = list(
+            filter(lambda lang_id: meta[lang_id].genus in genera, result))
+    result = {
+        lang_id: f'{meta[lang_id].name} ({meta[lang_id].iso})'
+        for lang_id in result
+    }
+    return result
+
+
 if __name__ == "__main__":
     import sys
-    from dataclasses import dataclass
 
-    @dataclass
-    class Language:
-        iso: str
-        name: str
-        phylum: str
-        genus: str
-
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
         print(USAGE_short)
         sys.exit()
     elif sys.argv[1] in {'-h', 'help', '--help', '-help'}:
         print(USAGE)
         sys.exit()
 
-    conn = sqlite3.connect('europhon.sqlite')
-
     if len(sys.argv) > 1:
         if sys.argv[1] == 'list-features':
             print(print_features(), end='')
             sys.exit()
         elif sys.argv[1] == 'list-phyla':
-            print(print_phyla(conn))
+            print(print_phyla())
             sys.exit()
         elif sys.argv[1] == 'genus-tree':
-            print(print_genus_tree(conn), end='')
+            print(print_genus_tree(), end='')
             sys.exit()
-
-    meta = {
-        language_id: Language(iso, language_name, phylum, genus)
-        for language_id, iso, language_name, phylum, genus
-        in conn.execute(
-            """
-            SELECT 
-                languages.id, languages.`iso_code`, languages.name, 
-                phyla.name, genera.name
-            FROM languages 
-                LEFT JOIN phyla ON
-                    languages.phylum_id = phyla.id
-                LEFT JOIN genera ON
-                    languages.genus_id = genera.id
-            """)
-    }
 
     try:
         raw_query = query_parser.parse(sys.argv[1])
@@ -272,7 +305,7 @@ if __name__ == "__main__":
     query = query_transformer.transform(raw_query)
     print(query, '\n')
 
-    result = apply_query(query, conn)
+    result = apply_query(query, db_connection)
 
     # Filter by phylum or genus when applicable
     if len(sys.argv) > 2:
@@ -284,21 +317,17 @@ if __name__ == "__main__":
             or restrictor.startswith('genus=')
         ):
             print(USAGE_short)
-            sys.exit()
+            sys.exit(1)
         if restrictor.startswith('phylum'):
             phyla = restrictor.split('=')[1].split(',')
-            result = [
-                lang_id for lang_id in result
-                if meta[lang_id].phylum in phyla
-            ]
+            result = list(
+                filter(lambda lang_id: meta[lang_id].phylum in phyla, result))
         else:
             genera = restrictor.split('=')[1].split(',')
-            result = [
-                lang_id for lang_id in result
-                if meta[lang_id].genus in genera
-            ]
+            result = list(
+                filter(lambda lang_id: meta[lang_id].genus in genera, result))
 
     # Format the output
-    result = [f'{meta[lang_id].name} ({meta[lang_id].iso})'
-              for lang_id in result]
+    result = list(
+        map(lambda lang_id: f'{meta[lang_id].name} ({meta[lang_id].iso})', result))
     print(result)
