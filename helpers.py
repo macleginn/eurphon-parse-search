@@ -50,9 +50,9 @@ def get_count_for_features(language_id, features, db_connection, hit_tmp):
 
     pos_features = set(el[1] for el in features if el[0] == '+')
     neg_features = set(el[1] for el in features if el[0] == '-')
-    if 'lateral' not in pos_features:
+    if 'approximant' in pos_features and 'lateral' not in pos_features:
         neg_features.add('lateral')
-    if 'nasal' not in pos_features:
+    if 'plosive' in pos_features and 'nasal' not in pos_features:
         neg_features.add('nasal')
     consonants = get_consonants_for_language(language_id, db_connection)
     vowels = get_vowels_for_language(language_id, db_connection)
@@ -63,7 +63,10 @@ def get_count_for_features(language_id, features, db_connection, hit_tmp):
             hit_tmp[segment] = pos_features.issubset(parse) and\
                 not neg_features & parse
         if hit_tmp[segment]:
+            print('Match:', segment)
             hit_count += 1
+        else:
+            print('Fail:', segment)
     return hit_count
 
 
