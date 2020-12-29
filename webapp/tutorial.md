@@ -62,7 +62,6 @@ not (
     > 10 voiced affricate
 ```
 <br/>
-<br/>
 Any redundant whitespace is ignored.
 
 ## Features
