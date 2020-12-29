@@ -25,7 +25,7 @@ The order of features does not matter. Some features (e.g., `nasalised`) are sha
 
 Diphthongs, triphthongs, and click consonants have features `diphthong`/`triphthong` and `click` respectively assigned to them. Monophthong vowels have a feature `monophthong`, and non-click consonants have a feature `non-click`. Use these features to explicitly query for monophthong vowels and non-click consonants (the same goal can be achieved using `^diphthong ^triphthong vowel` and `^click consonant` respectively).
 
-Note that negative values are supplied by default for `lateral` and `nasal` features. I.e., a query `= 0 voiced bilabial plosive` will ignore the presence of /m/ (voiced _nasal_ bilabial plosive) in an inventory, but will not return languages with /b/. Likewise, a query `= 0 approximant` will skip languages with /w/ and /j/, but will ignore the presence of /l/ (voiced _lateral_ alveolar approxumant).
+Note that the negative value for `lateral` is inserted by default for approximants and the negative value for `nasal` is inserted by default for plosives. I.e., the query `= 0 voiced bilabial plosive` will ignore the presence of /m/ (voiced _nasal_ bilabial plosive) in an inventory, but will not return languages with /b/. Likewise, the query `= 0 approximant` will skip languages with /w/ and /j/, but will ignore the presence of /l/ (voiced _lateral_ alveolar approxumant). The query `= 0 fricative`, by contrast, will skip a hypothetical language whose fricative inventory consists of /ɬ, ɮ/.
 
 To make it easier to look for presence and absence of feature bundles and phonemes, two shortcuts are provided: `+`, equivalent to `> 0`, and `-`, equivalent to `= 0`. E.g., a query for languages without /p/ looks like `- /p/`.
 
