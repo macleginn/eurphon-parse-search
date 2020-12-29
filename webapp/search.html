@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EURPhon search page</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+	<style type="text/css">
+		@font-face {
+			font-family: "DoulosSIL";
+			src: url("https://eurphon.info/static/fonts/DoulosSIL.woff") format("woff"); /* Modern Browsers */
+			font-weight: normal;
+			font-style: normal;
+		}
+		div#query-output {
+			width: 894px;
+			min-height: 150px;
+			border: 1px solid black;
+			border-radius: 2px;
+			margin: 0;
+			padding: 3px;
+		}
+		div#map {
+			width: 900px;
+			height: 560px;
+			border: 1px solid grey;
+			border-radius: 2px;
+			margin-top: 5px;
+			margin-bottom: 15px;
+			padding: 0;
+		}
+		span.lang-span {
+			display: inline-block;
+			margin: 2px;
+			padding: 5px;
+			border-radius: 5px;
+			background-color: beige;
+			cursor: pointer;
+		}
+		span.lang-span:hover {
+			background-color: black;
+		}
+		span.lang-span a {
+			color: black;
+			text-decoration: none;
+		}
+		span.lang-span:hover a {
+			color: white;			
+		}
+		body {
+			font-family: 'IBM Plex Serif', serif;
+			font-size: 14pt;
+			padding-left: 30px;
+			padding-top: 15px;
+			padding-bottom: 50px;
+			padding-right: 40px;
+			margin: 0;
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		textarea#query-string {
+			width: 894px;
+			height: 150px;
+			font-family: "DoulosSIL";
+			font-size: 14pt;
+		}
+
+		/* Map-marker styling */
+		div.circle {
+			border-width: 1px;
+			border-color: black;
+			border-radius: 8px;
+			border-style: solid;
+			width: 8px;
+			height: 8px;
+		}
+		div.circle-red { background-color: red; }
+		div.circle-blue { background-color: blue; }
+		div.circle-yellow { background-color: yellow; }
+		div.circle-black { background-color: black; }
+		div.circle-grey { background-color: lightgrey; }
+
+		.announce {
+			font-family: sans-serif; 
+			font-size: 11pt;
+			display: none;						
+		}
+
+		.blink {
+			animation: blinker 1.7s step-start infinite;
+			color: red; 
+		}
+
+		@keyframes blinker {
+			50% { opacity: 0; }
+		}
+	</style>
+</head>
+<body>
+<h1>EURPhon search interface</h1>
+
+<h3>Query:</h3>
+<textarea name="query-string" id="query-string"></textarea>
+<br/>
+<input type="button" name="submit-query" value="Submit" onclick="submitQuery();">
+<span id="waiting-span" class="blink announce">Waiting for response...</span>
+<span id="done-span" style="color: blue;" class="announce">Done!</span>
+<br/>
+<br/>
+<div id="map"></div>
+<div id="query-output"></div>
+
+</body>
+
+<script type="text/javascript">
+const REQUEST_URL = 'http://127.0.0.1:11000/query/query';
+
+let map,
+	mapMarkers = [];
+
+function byId(id) {
+	return document.getElementById(id);
+}
+
+async function submitQuery() {
+	byId('waiting-span').style.display = 'inline-block';
+
+	const queryString = byId('query-string').value;
+	if (queryString.length === 0)
+		return;
+	const response = await fetch(REQUEST_URL, {
+		method: 'POST',
+		body: JSON.stringify({
+			'query_string': queryString
+		})
+	});
+
+	byId('waiting-span').style.display = 'none';
+	byId('done-span').style.display = 'inline-block';
+	setTimeout(() => { byId('done-span').style.display = 'none'; }, 500);
+
+	if (!response.ok) {
+		const error = await response.text();
+		alert(`Error: ${error}`);
+		return;
+	}
+	const data = await response.json();
+	let nLangs = 0;
+	for (const key in data)
+		if (data.hasOwnProperty(key))
+			nLangs++;
+
+	// Delete old markers from the map.
+	for (const marker of mapMarkers)
+		map.removeLayer(marker);
+	mapMarkers.length = 0;
+
+
+	if (nLangs === 0) {
+		byId('query-output').innerHTML = `<span>0 languages found</span>`;
+		return;
+	} else if (nLangs === 1) {
+		byId('query-output').innerHTML = `<span>1 language:</span><br/><br/>`
+	} else {
+		byId('query-output').innerHTML = `<span>${nLangs} languages:</span><br/><br/>`
+	}	
+
+	for (const key in data) {
+		if (!data.hasOwnProperty(key))
+			continue;
+
+		// Add map markers
+		try {
+			const latitude = parseFloat(data[key].latitude),
+				longitude = parseFloat(data[key].longitude);
+			let circle = L.divIcon({
+				className: `circle circle-red`,
+				iconSize: [10, 10]
+			});
+			let marker = L.marker([latitude, longitude], {
+				icon: circle,
+				title: data[key].name
+			});
+
+			marker.on('click', () => {
+				window.open(`https://eurphon.info/languages/html?lang_id=${key}`)
+			});
+
+			mapMarkers.push(marker);
+			marker.addTo(map);
+		} catch {
+			;
+		}
+		
+		// Add link spans
+		let langSpan = document.createElement('span');
+		langSpan.classList.add('lang-span');
+		let a = document.createElement('a');
+		a.href = `https://eurphon.info/languages/html?lang_id=${key}`;
+		a.target = '_blank';
+		a.appendChild(document.createTextNode(`${data[key].name} (${data[key].iso})`));
+		langSpan.appendChild(a);
+		byId('query-output').appendChild(langSpan);
+	}
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	map = L.map('map', {zoomControl: false});
+	map.setView([52.483333, 96.085833], 2);
+	L.control.zoom({position: 'bottomleft'}).addTo(map);
+	L.tileLayer(
+		'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png',
+		{
+			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+			maxZoom: 18,
+		})
+		.addTo(map);
+});
+</script>
+
+</html>
