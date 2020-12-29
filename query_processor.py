@@ -99,17 +99,19 @@ class Language:
     name: str
     phylum: str
     genus: str
+    latitude: str
+    longitude: str
 
 
 db_connection = sqlite3.connect('europhon.sqlite')
 meta = {
-    language_id: Language(iso, language_name, phylum, genus)
-    for language_id, iso, language_name, phylum, genus
+    language_id: Language(iso, language_name, phylum, genus, latitude, longitude)
+    for language_id, iso, language_name, phylum, genus, latitude, longitude
     in db_connection.execute(
         """
             SELECT 
                 languages.id, languages.`iso_code`, languages.name, 
-                phyla.name, genera.name
+                phyla.name, genera.name, languages.latitude, languages.longitude
             FROM languages 
                 LEFT JOIN phyla ON
                     languages.phylum_id = phyla.id
@@ -267,8 +269,14 @@ def apply_query_and_filter(query_tree, restrictor_dict={}):
         result = list(
             filter(lambda lang_id: meta[lang_id].genus in genera, result))
     result = {
-        lang_id: f'{meta[lang_id].name} ({meta[lang_id].iso})'
-        for lang_id in result
+        lang_id: {
+            'name': meta[lang_id].name,
+            'iso': meta[lang_id].iso,
+            'phylum': meta[lang_id].phylum,
+            'genus': meta[lang_id].genus,
+            'latitude': meta[lang_id].latitude,
+            'longitude': meta[lang_id].longitude
+        } for lang_id in result
     }
     return result
 

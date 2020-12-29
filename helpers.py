@@ -38,14 +38,32 @@ def get_vowels_for_language(language_id: int, db_connection: sqlite3.Connection)
     ).fetchall())
 
 
+def supply_defaults(parse_set):
+    """
+    Excludes nasals, laterals, and implosives from the search
+    if they are not mentioned explicitely.
+    """
+    if 'lateral' not in parse_set:
+        parse_set.add('non-lateral')
+    if 'nasal' not in parse_set:
+        parse_set.add('oral')
+    if 'implosive' not in parse_set:
+        parse_set.add('non-implosive')
+
+
 def get_parse(segment):
     if segment in PARSES_CACHE:
-        return set(PARSES_CACHE[segment])
+        # Do not touch the cache itself.
+        tmp = set(el for el in PARSES_CACHE[segment])
     else:
-        return PARSER.parse(segment).as_set()
+        tmp = PARSER.parse(segment).as_set()
+    supply_defaults(tmp)
+    return tmp
 
 
 def get_count_for_features(language_id, features, db_connection, hit_tmp):
+    features = set(el for el in features)
+    supply_defaults(features)
     consonants = get_consonants_for_language(language_id, db_connection)
     vowels = get_vowels_for_language(language_id, db_connection)
     hit_count = 0
