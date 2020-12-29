@@ -45,11 +45,15 @@ class QueryTransformer(Transformer):
     def PHONEME(self, val):
         return val[1:-1]
 
-    def FEATURE(self, val):
-        return val[:]
+    def feature(self, vals):
+        if len(vals) == 2:
+            return '-', str(vals[1])
+        else:
+            return '+', str(vals[0])
 
-    def NUMBER(self, val):
-        return int(val)
+    FEATURE = str
+    NEGATOR = str
+    NUMBER = int
 
     features = set
 
@@ -153,9 +157,9 @@ with open(f'search_grammar.lark', 'r', encoding='utf-8') as inp:
 if __name__ == "__main__":
     query = '''
     not (
-        >= bilabial plosive, labio-dental fricative 
-        or 
-        <= bilabial plosive, labio-dental fricative
+        >= bilabial plosive, labio-dental fricative
+        or
+        <= bilabial plosive, labio-dental ^fricative
     ) or
     + /p/ and > 4 approximant
 '''

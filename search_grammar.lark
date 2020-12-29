@@ -27,11 +27,14 @@ MORETHANOREQUAL: ">="
 LESSTHANOREQUAL: "<="
 EQUAL: "="("=")?
 
-features : FEATURE+
+features : feature+
+feature : NEGATOR? FEATURE
 
 PHONEME : "/" /[^ \/]+/ "/"
+NUMBER  : /[0-9]+/
+NEGATOR : "^"
 FEATURE : /[a-z]+(-[a-z]+)?/
-NUMBER : /[0-9]+/
+
 
 %import common.WS
 %ignore WS

@@ -38,38 +38,30 @@ def get_vowels_for_language(language_id: int, db_connection: sqlite3.Connection)
     ).fetchall())
 
 
-def supply_defaults(parse_set):
-    """
-    Excludes nasals, laterals, and implosives from the search
-    if they are not mentioned explicitely.
-    """
-    if 'lateral' not in parse_set:
-        parse_set.add('non-lateral')
-    if 'nasal' not in parse_set:
-        parse_set.add('oral')
-    if 'implosive' not in parse_set:
-        parse_set.add('non-implosive')
-
-
 def get_parse(segment):
     if segment in PARSES_CACHE:
         # Do not touch the cache itself.
-        tmp = set(el for el in PARSES_CACHE[segment])
+        return set(el for el in PARSES_CACHE[segment])
     else:
-        tmp = PARSER.parse(segment).as_set()
-    supply_defaults(tmp)
-    return tmp
+        return PARSER.parse(segment).as_set()
 
 
 def get_count_for_features(language_id, features, db_connection, hit_tmp):
-    features = set(el for el in features)
-    supply_defaults(features)
+
+    pos_features = set(el[1] for el in features if el[0] == '+')
+    neg_features = set(el[1] for el in features if el[0] == '-')
+    if 'lateral' not in pos_features:
+        neg_features.add('lateral')
+    if 'nasal' not in pos_features:
+        neg_features.add('nasal')
     consonants = get_consonants_for_language(language_id, db_connection)
     vowels = get_vowels_for_language(language_id, db_connection)
     hit_count = 0
     for segment in consonants | vowels:
         if segment not in hit_tmp:
-            hit_tmp[segment] = features.issubset(get_parse(segment))
+            parse = get_parse(segment)
+            hit_tmp[segment] = pos_features.issubset(parse) and\
+                not neg_features & parse
         if hit_tmp[segment]:
             hit_count += 1
     return hit_count
