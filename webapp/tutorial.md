@@ -39,7 +39,7 @@ For example, languages with more vowels than consonants can be retrieved using `
 
 ## Combining queries
 
-Sometimes basic queries are not enough. For example, in order to make basic queries simpler, the query language does not allow for querying nasal and oral consonants simultaneously. Therefore, in order to look for languages without both oral and nasal bilabial plosives it is necessary to combine two queries: `- nasal bilabial plosive and - bilabial plosive` (or, more explicitly `- nasal bilabial plosive and - ^nasal bilabial plosive`). This is also helpful to work around variations in IPA notation, e.g. `+ /g/ or + /ɡ/` (both the special /ɡ/ symbol and the basic Latin /g/ are officially recognised as part of IPA).
+Sometimes basic queries are not enough. For example, in order to make basic queries simpler, the query language does not allow for querying nasal and oral plosives simultaneously. Therefore, in order to look for languages without both oral and nasal bilabial plosives it is necessary to combine two queries: `- nasal bilabial plosive and - bilabial plosive` (or, more explicitly `- nasal bilabial plosive and - ^nasal bilabial plosive`). This is also helpful to work around variations in IPA notation, e.g. `+ /g/ or + /ɡ/` (both the special /ɡ/ symbol and the basic Latin /g/ are officially recognised as part of IPA).
 
 Three logical operators are supported (in the order of decreasing tightness):
 
