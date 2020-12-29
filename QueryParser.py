@@ -47,9 +47,9 @@ class QueryTransformer(Transformer):
 
     def feature(self, vals):
         if len(vals) == 2:
-            return '-', str(vals[1])
+            return '-', str(vals[1]).replace('ize', 'ise')
         else:
-            return '+', str(vals[0])
+            return '+', str(vals[0]).replace('ize', 'ise')
 
     FEATURE = str
     NEGATOR = str
