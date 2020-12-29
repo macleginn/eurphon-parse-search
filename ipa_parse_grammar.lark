@@ -100,7 +100,7 @@ trill       : trill_core post_feature*
     | "c" -> voiceless_palatal_plosive
     | "ɟ" -> voiced_palatal_plosive
     | "k" -> voiceless_velar_plosive
-    | "ɡ" -> voiced_velar_plosive
+    | /ɡ|g/ -> voiced_velar_plosive
     | "q" -> voiceless_uvular_plosive
     | "ɢ" -> voiced_uvular_plosive
     | "ʡ" -> epiglottal_plosive
