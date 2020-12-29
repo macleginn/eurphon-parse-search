@@ -4,7 +4,7 @@
 
 Unlike Henning Reetz’s [Simple UPSID interface](http://web.phonetik.uni-frankfurt.de/upsid.html), this interface is exclusively text based. This introduces some complexity, but it also makes it possible to go beyond rigid search options any fixed interface can offer.
 
-The query language implemented in the interface contains two basic query types—count queries and comparison queries–and allows the user to combine them in a flexible way through logical operators. (If you are comfortable with reading CFGs, all you need to know can be find in the very short [grammar](https://github.com/macleginn/eurphon-parse-search/blob/master/search_grammar.lark), from which the query parser is constructed on the fly using [Lark](https://lark-parser.readthedocs.io/en/latest/).)
+The query language implemented in the interface contains two basic query types—count queries and comparison queries–and allows the user to combine them in a flexible way through logical operators. (If you are comfortable with reading CFGs, all you need to know can be found in the very short [grammar](https://github.com/macleginn/eurphon-parse-search/blob/master/search_grammar.lark), from which the query parser is constructed on the fly using [Lark](https://lark-parser.readthedocs.io/en/latest/).)
 
 We will describe the basic queries first and then show how to combine them into more complex ones.
 
