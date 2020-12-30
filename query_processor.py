@@ -2,6 +2,7 @@ import sqlite3
 import json
 import io
 
+from subprocess import Popen, PIPE
 from collections import defaultdict
 from typing import Set
 from unicodedata import normalize
@@ -105,7 +106,8 @@ class Language:
 
 db_connection = sqlite3.connect('europhon.sqlite')
 meta = {
-    language_id: Language(iso, language_name, phylum, genus, latitude, longitude)
+    language_id: Language(iso, language_name, phylum,
+                          genus, latitude, longitude)
     for language_id, iso, language_name, phylum, genus, latitude, longitude
     in db_connection.execute(
         """
@@ -136,9 +138,9 @@ def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
     elif type(query) == EqPhoneme:
         return apply_eq_phoneme(query, db_connection)
     elif type(query) == EqFeature:
-        return apply_eq_feature(query, db_connection)
+        return apply_eq_feature_go(query)
     elif type(query) == EqFeatures:
-        return apply_eq_features(query, db_connection)
+        return apply_eq_features_go(query)
     else:
         raise NotImplementedError(
             f'The query type is not recognised: {type(query)}')
@@ -179,6 +181,30 @@ def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
     return result
 
 
+def supply_defaults(input_set):
+    feature_set = set(el for el in input_set)
+    if ('+', 'approximant') in feature_set and ('+', 'lateral') not in feature_set:
+        feature_set.add(('-', 'lateral'))
+    if ('+', 'plosive') in feature_set and ('-', 'nasal') not in feature_set:
+        feature_set.add(('+', 'nasal'))
+    return feature_set
+
+
+def apply_eq_feature_go(query: EqFeature):
+    "Offloads the heavy lifting to a separate go binary."
+    prefixed_features = [
+        f'{prefix}{feature}' for prefix, feature in supply_defaults(query.features)]
+    buffer = [
+        query.op,
+        str(query.number),
+        json.dumps(prefixed_features)
+    ]
+    input_string = '\n'.join(buffer) + '\n'
+    go_process = Popen(['./countquery'], stdin=PIPE, stdout=PIPE)
+    output = go_process.communicate(input=input_string.encode())[0].decode()
+    return set(json.loads(output))
+
+
 def apply_eq_features(query: EqFeatures, db_connection: sqlite3.Connection):
     result = set()
     # Two caches for two sets of features.
@@ -195,8 +221,21 @@ def apply_eq_features(query: EqFeatures, db_connection: sqlite3.Connection):
     return result
 
 
-# def parse_and_apply(query, parser, db_connection):
-#     tree = parser.parse(query)
+def apply_eq_features_go(query: EqFeatures):
+    prefixed_features1 = [
+        f'{prefix}{feature}' for prefix, feature in supply_defaults(query.features_1)]
+    prefixed_features2 = [
+        f'{prefix}{feature}' for prefix, feature in supply_defaults(query.features_2)]
+    buffer = [
+        query.op,
+        json.dumps(prefixed_features1),
+        json.dumps(prefixed_features2)
+    ]
+    input_string = '\n'.join(buffer) + '\n'
+    go_process = Popen(['./comparisonquery'], stdin=PIPE, stdout=PIPE)
+    output = go_process.communicate(input=input_string.encode())[0].decode()
+    return set(json.loads(output))
+
 
 #
 # UI functions

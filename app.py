@@ -10,6 +10,9 @@ from dbprocessing import *
 from IPATabulator_2_0 import get_html_for_consonants, get_html_for_vowels
 from tests import consonant_parsing_test, vowel_parsing_test
 
+import prepare_parse_cache
+import prepare_inventory_file
+
 
 def allow_origin(resp):
     resp.headers['Access-Control-Allow-Origin'] = '*'
@@ -354,3 +357,8 @@ def css_handler():
         CSS_RESPONSE = make_response(inp.read())
         populate_headers_css(CSS_RESPONSE)
         return CSS_RESPONSE
+
+
+# Initialise data caches
+prepare_inventory_file.do_the_thing()
+prepare_parse_cache.do_the_thing()

@@ -200,6 +200,8 @@
 			byId('query-output').innerHTML = `<span>${nLangs} languages:</span><br/><br/>`
 		}
 
+		let linkSpans = [];
+
 		for (const key in data) {
 			if (!data.hasOwnProperty(key))
 				continue;
@@ -233,10 +235,21 @@
 			let a = document.createElement('a');
 			a.href = `https://eurphon.info/languages/html?lang_id=${key}`;
 			a.target = '_blank';
-			a.appendChild(document.createTextNode(`${data[key].name} (${data[key].iso})`));
+			const txt = `${data[key].name} (${data[key].iso})`;
+			a.appendChild(document.createTextNode(txt));
 			langSpan.appendChild(a);
-			byId('query-output').appendChild(langSpan);
+			linkSpans.push([langSpan, txt]);
 		}
+		linkSpans.sort((a, b) => {
+			if (a[1].toLowerCase() < b[1].toLowerCase())
+				return -1;
+			else if (a[1].toLowerCase() > b[1].toLowerCase())
+				return 1;
+			else
+				return 0;
+		})
+		for (const langSpan of linkSpans)
+			byId('query-output').appendChild(langSpan[0]);
 
 	}
 

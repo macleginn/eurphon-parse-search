@@ -63,10 +63,7 @@ def get_count_for_features(language_id, features, db_connection, hit_tmp):
             hit_tmp[segment] = pos_features.issubset(parse) and\
                 not neg_features & parse
         if hit_tmp[segment]:
-            print('Match:', segment)
             hit_count += 1
-        else:
-            print('Fail:', segment)
     return hit_count
 
 
