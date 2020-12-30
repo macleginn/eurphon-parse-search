@@ -185,8 +185,8 @@ def supply_defaults(input_set):
     feature_set = set(el for el in input_set)
     if ('+', 'approximant') in feature_set and ('+', 'lateral') not in feature_set:
         feature_set.add(('-', 'lateral'))
-    if ('+', 'plosive') in feature_set and ('-', 'nasal') not in feature_set:
-        feature_set.add(('+', 'nasal'))
+    if ('+', 'plosive') in feature_set and ('+', 'nasal') not in feature_set:
+        feature_set.add(('-', 'nasal'))
     return feature_set
 
 
