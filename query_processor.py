@@ -136,7 +136,7 @@ def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
     elif type(query) == NotNode:
         return get_all_language_ids(db_connection) - apply_query(query.query, db_connection)
     elif type(query) == EqPhoneme:
-        return apply_eq_phoneme(query, db_connection)
+        return apply_eq_phoneme_go(query)
     elif type(query) == EqFeature:
         return apply_eq_feature_go(query)
     elif type(query) == EqFeatures:
@@ -146,39 +146,23 @@ def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
             f'The query type is not recognised: {type(query)}')
 
 
-def apply_eq_phoneme(query: EqPhoneme, db_connection: sqlite3.Connection):
-    result = set()
+# It turned out to be much faster to iterate over inventories,
+# both as IPA-encoded segments and as lists of lists of features,
+# in separate Go binaries than do this in Python itself, even
+# if they have to read all the data from disk first for each run!
+# The main motivation for keeping the Python wrapper is to continue
+# using Lark.
+
+def apply_eq_phoneme_go(query: EqPhoneme):
     test_segment = normalize('NFD', query.phoneme)
-    for language_id in get_all_language_ids(db_connection):
-        segment_count = 0
-        for (segment,) in db_connection.execute(
-            'SELECT ipa FROM segments WHERE `language_id` = ?',
-            (language_id,)
-        ):
-            if segment == test_segment:
-                segment_count += 1
-                # We expect to see each segment only once
-                # in an inventory.
-                break
-        diff = segment_count - query.number
-        if check_eq(diff, query.op):
-            result.add(language_id)
-    return result
-
-
-def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
-    result = set()
-    # A search optimisation: only check the subset once for each segment.
-    hit_tmp = {}
-    for language_id in get_all_language_ids(db_connection):
-        diff = get_count_for_features(
-            language_id,
-            query.features,
-            db_connection,
-            hit_tmp) - query.number
-        if check_eq(diff, query.op):
-            result.add(language_id)
-    return result
+    input_string = '\n'.join([
+        query.op,
+        str(query.number),
+        test_segment
+    ]) + '\n'
+    go_process = Popen(['./phonemequery'], stdin=PIPE, stdout=PIPE)
+    output = go_process.communicate(input=input_string.encode())[0].decode()
+    return set(json.loads(output))
 
 
 def supply_defaults(input_set):
@@ -191,7 +175,6 @@ def supply_defaults(input_set):
 
 
 def apply_eq_feature_go(query: EqFeature):
-    "Offloads the heavy lifting to a separate go binary."
     prefixed_features = [
         f'{prefix}{feature}' for prefix, feature in supply_defaults(query.features)]
     buffer = [
@@ -203,22 +186,6 @@ def apply_eq_feature_go(query: EqFeature):
     go_process = Popen(['./countquery'], stdin=PIPE, stdout=PIPE)
     output = go_process.communicate(input=input_string.encode())[0].decode()
     return set(json.loads(output))
-
-
-def apply_eq_features(query: EqFeatures, db_connection: sqlite3.Connection):
-    result = set()
-    # Two caches for two sets of features.
-    hit_tmp1 = {}
-    hit_tmp2 = {}
-    for language_id in get_all_language_ids(db_connection):
-        lhs_count = get_count_for_features(
-            language_id, query.features_1, db_connection, hit_tmp1)
-        rhs_count = get_count_for_features(
-            language_id, query.features_2, db_connection, hit_tmp2)
-        diff = lhs_count - rhs_count
-        if check_eq(diff, query.op):
-            result.add(language_id)
-    return result
 
 
 def apply_eq_features_go(query: EqFeatures):
@@ -317,6 +284,61 @@ def apply_query_and_filter(query_tree, restrictor_dict={}):
             'longitude': meta[lang_id].longitude
         } for lang_id in result
     }
+    return result
+
+
+#
+# Legacy slow code; can be still useful for testing
+#
+
+def apply_eq_phoneme(query: EqPhoneme, db_connection: sqlite3.Connection):
+    result = set()
+    test_segment = normalize('NFD', query.phoneme)
+    for language_id in get_all_language_ids(db_connection):
+        segment_count = 0
+        for (segment,) in db_connection.execute(
+            'SELECT ipa FROM segments WHERE `language_id` = ?',
+            (language_id,)
+        ):
+            if segment == test_segment:
+                segment_count += 1
+                # We expect to see each segment only once
+                # in an inventory.
+                break
+        diff = segment_count - query.number
+        if check_eq(diff, query.op):
+            result.add(language_id)
+    return result
+
+
+def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
+    result = set()
+    # A search optimisation: only check the subset once for each segment.
+    hit_tmp = {}
+    for language_id in get_all_language_ids(db_connection):
+        diff = get_count_for_features(
+            language_id,
+            query.features,
+            db_connection,
+            hit_tmp) - query.number
+        if check_eq(diff, query.op):
+            result.add(language_id)
+    return result
+
+
+def apply_eq_features(query: EqFeatures, db_connection: sqlite3.Connection):
+    result = set()
+    # Two caches for two sets of features.
+    hit_tmp1 = {}
+    hit_tmp2 = {}
+    for language_id in get_all_language_ids(db_connection):
+        lhs_count = get_count_for_features(
+            language_id, query.features_1, db_connection, hit_tmp1)
+        rhs_count = get_count_for_features(
+            language_id, query.features_2, db_connection, hit_tmp2)
+        diff = lhs_count - rhs_count
+        if check_eq(diff, query.op):
+            result.add(language_id)
     return result
 
 

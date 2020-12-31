@@ -1,6 +1,7 @@
 import json
 import sqlite3
 from collections import defaultdict
+from unicodedata import normalize
 
 
 def do_the_thing():
@@ -13,7 +14,8 @@ def do_the_thing():
     inventories = defaultdict(list)
     for segment, language_id in cursor.execute("SELECT ipa, `language_id` FROM segments"):
         if language_id in all_lang_ids:
-            inventories[language_id].append(segment)
+            inventories[language_id].append(
+                normalize('NFD', segment))
 
     with open('inventories.json', 'w', encoding='utf-8') as out:
         json.dump(inventories, out, indent=2, ensure_ascii=False)
