@@ -1,0 +1,60 @@
+body {
+    font-family: 'IBM Plex Serif', serif;
+    /*font-family: 'Noto Serif', serif;*/
+    font-size: 12pt;
+    max-width: 960px;
+    padding-left: 20pt;
+    padding-top: 15pt;
+    padding-bottom: 70px;
+    line-height: 1.5em;
+}
+h1 {
+    line-height: 1.1em;
+}
+@font-face {
+    font-family: "DoulosSIL";
+    src: url("https://eurphon.info/static/fonts/DoulosSIL.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+table.ipa-chart {
+    font-family: "DoulosSIL", serif;
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+table.ipa-chart td {
+    font-size: 14pt;
+    border-bottom: 1px dashed lightgray;
+    border-right: 1px dashed lightgray;
+    border-left: 1px dashed lightgray;
+    padding: 5px;
+}
+table.ipa-chart td:first-child {
+    font-weight: bold;
+    text-align: right;
+}
+table.ipa-chart tr:last-child td {
+    border-bottom: 0;
+}
+table.ipa-chart tr:first-child td {
+    text-align: center;
+    font-weight: bold;
+}
+.ipa-listing {
+    font-family: "DoulosSIL", serif;
+    font-size: 14pt;
+}
+div#lang-card p {
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+a.lang-link {
+    text-decoration-color: lightgrey;
+    text-decoration-style: dotted;
+    color: black;
+}
+a.lang-link:hover {
+    background-color: lightgrey;
+    border-radius: 3px;
+}
