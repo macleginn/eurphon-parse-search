@@ -81,6 +81,7 @@ def query_handler(action):
             resp = make_response('No query provided', 400)
             populate_headers_plain(resp)
         query_string = POST_data['query_string']
+        query_phoible = 'phoible' in POST_data
         restrictor_dict = {}
         if 'phylum' in POST_data:
             restrictor_dict['phylum'] = POST_data['phylum']
@@ -89,7 +90,8 @@ def query_handler(action):
         try:
             query = qp.parse_query(query_string)
             try:
-                result = qp.apply_query_and_filter(query, restrictor_dict)
+                result = qp.apply_query_and_filter(
+                    query, restrictor_dict, query_phoible)
                 resp = make_response(jsonify(result), 200)
                 populate_headers_json(resp)
             except Exception as e:
@@ -360,5 +362,7 @@ def css_handler():
 
 
 # Initialise data caches
-prepare_inventory_file.do_the_thing()
-prepare_parse_cache.do_the_thing()
+prepare_inventory_file.prepare_eurphon()
+prepare_inventory_file.prepare_phoible()
+prepare_parse_cache.prepare_eurphon()
+prepare_parse_cache.prepare_phoible()

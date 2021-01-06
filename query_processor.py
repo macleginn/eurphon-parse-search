@@ -1,6 +1,7 @@
 import sqlite3
 import json
 import io
+import os
 
 from subprocess import Popen, PIPE
 from collections import defaultdict
@@ -10,7 +11,7 @@ from dataclasses import dataclass
 
 from QueryParser import query_parser, QueryTransformer, ASTNode, OrNode, AndNode, NotNode
 from QueryParser import EqFeature, EqPhoneme, EqFeatures
-from helpers import get_count_for_features, get_all_language_ids, check_eq
+from helpers import get_all_language_ids  # get_count_for_features, check_eq
 
 #
 # Globals
@@ -104,7 +105,7 @@ class Language:
     longitude: str
 
 
-db_connection = sqlite3.connect('europhon.sqlite')
+db_connection = sqlite3.connect(os.path.join('data', 'europhon.sqlite'))
 meta = {
     language_id: Language(iso, language_name, phylum,
                           genus, latitude, longitude)
@@ -121,26 +122,30 @@ meta = {
                     languages.genus_id = genera.id
             """)
 }
+
+with open(f'phoible_meta.json', 'r', encoding='utf-8') as inp:
+    meta_phoible = json.load(inp)
+
 query_transformer = QueryTransformer()
 
 
-def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
+def apply_query(query: ASTNode, db_connection: sqlite3.Connection, query_phoible: bool = False) -> Set[int]:
     """
     Recursively applies the query transformed into an ASTNode to the inventories
     stored in the database and returns a set of inventory ids.
     """
     if type(query) == OrNode:
-        return apply_query(query.lhs, db_connection) | apply_query(query.rhs, db_connection)
+        return apply_query(query.lhs, db_connection, query_phoible) | apply_query(query.rhs, db_connection, query_phoible)
     elif type(query) == AndNode:
-        return apply_query(query.lhs, db_connection) & apply_query(query.rhs, db_connection)
+        return apply_query(query.lhs, db_connection, query_phoible) & apply_query(query.rhs, db_connection, query_phoible)
     elif type(query) == NotNode:
-        return get_all_language_ids(db_connection) - apply_query(query.query, db_connection)
+        return get_all_language_ids(db_connection, query_phoible) - apply_query(query.query, db_connection, query_phoible)
     elif type(query) == EqPhoneme:
-        return apply_eq_phoneme_go(query)
+        return apply_eq_phoneme_go(query, query_phoible)
     elif type(query) == EqFeature:
-        return apply_eq_feature_go(query)
+        return apply_eq_feature_go(query, query_phoible)
     elif type(query) == EqFeatures:
-        return apply_eq_features_go(query)
+        return apply_eq_features_go(query, query_phoible)
     else:
         raise NotImplementedError(
             f'The query type is not recognised: {type(query)}')
@@ -153,9 +158,10 @@ def apply_query(query: ASTNode, db_connection: sqlite3.Connection) -> Set[int]:
 # The main motivation for keeping the Python wrapper is to continue
 # using Lark.
 
-def apply_eq_phoneme_go(query: EqPhoneme):
+def apply_eq_phoneme_go(query: EqPhoneme, query_phoible: bool = False):
     test_segment = normalize('NFD', query.phoneme)
     input_string = '\n'.join([
+        'phoible' if query_phoible else 'eurphon',
         query.op,
         str(query.number),
         test_segment
@@ -174,31 +180,31 @@ def supply_defaults(input_set):
     return feature_set
 
 
-def apply_eq_feature_go(query: EqFeature):
+def apply_eq_feature_go(query: EqFeature, query_phoible: bool = False):
     prefixed_features = [
         f'{prefix}{feature}' for prefix, feature in supply_defaults(query.features)]
-    buffer = [
+    input_string = '\n'.join([
+        'phoible' if query_phoible else 'eurphon',
         query.op,
         str(query.number),
         json.dumps(prefixed_features)
-    ]
-    input_string = '\n'.join(buffer) + '\n'
+    ]) + '\n'
     go_process = Popen(['./countquery'], stdin=PIPE, stdout=PIPE)
     output = go_process.communicate(input=input_string.encode())[0].decode()
     return set(json.loads(output))
 
 
-def apply_eq_features_go(query: EqFeatures):
+def apply_eq_features_go(query: EqFeatures, query_phoible: bool = False):
     prefixed_features1 = [
         f'{prefix}{feature}' for prefix, feature in supply_defaults(query.features_1)]
     prefixed_features2 = [
         f'{prefix}{feature}' for prefix, feature in supply_defaults(query.features_2)]
-    buffer = [
+    input_string = '\n'.join([
+        'phoible' if query_phoible else 'eurphon',
         query.op,
         json.dumps(prefixed_features1),
         json.dumps(prefixed_features2)
-    ]
-    input_string = '\n'.join(buffer) + '\n'
+    ]) + '\n'
     go_process = Popen(['./comparisonquery'], stdin=PIPE, stdout=PIPE)
     output = go_process.communicate(input=input_string.encode())[0].decode()
     return set(json.loads(output))
@@ -261,11 +267,10 @@ def parse_query(query_string):
     return query_parser.parse(query_string)
 
 
-def apply_query_and_filter(query_tree, restrictor_dict={}):
-    # Transforming the query after successfully
-    # parsing it should be safe.
+def apply_query_and_filter(query_tree, restrictor_dict={}, query_phoible=False):
+    # Transforming the query after successfully parsing it should be safe.
     query = query_transformer.transform(query_tree)
-    result = apply_query(query, db_connection)
+    result = apply_query(query, db_connection, query_phoible=False)
     if 'phylum' in restrictor_dict:
         phyla = restrictor_dict['phylum']
         result = list(
@@ -274,16 +279,28 @@ def apply_query_and_filter(query_tree, restrictor_dict={}):
         genera = restrictor_dict['genus']
         result = list(
             filter(lambda lang_id: meta[lang_id].genus in genera, result))
-    result = {
-        lang_id: {
-            'name': meta[lang_id].name,
-            'iso': meta[lang_id].iso,
-            'phylum': meta[lang_id].phylum,
-            'genus': meta[lang_id].genus,
-            'latitude': meta[lang_id].latitude,
-            'longitude': meta[lang_id].longitude
-        } for lang_id in result
-    }
+    if query_phoible:
+        result = {
+            lang_id: {
+                'name': meta_phoible[lang_id]['name'],
+                'glottocode': meta_phoible[lang_id]['glottocode'],
+                'phylum': meta_phoible[lang_id]['phylum'],
+                'genus': meta_phoible[lang_id]['genus'],
+                'latitude': meta_phoible[lang_id]['latitude'],
+                'longitude': meta_phoible[lang_id]['longitude']
+            } for lang_id in result
+        }
+    else:
+        result = {
+            lang_id: {
+                'name': meta[lang_id].name,
+                'iso': meta[lang_id].iso,
+                'phylum': meta[lang_id].phylum,
+                'genus': meta[lang_id].genus,
+                'latitude': meta[lang_id].latitude,
+                'longitude': meta[lang_id].longitude
+            } for lang_id in result
+        }
     return result
 
 
@@ -291,55 +308,55 @@ def apply_query_and_filter(query_tree, restrictor_dict={}):
 # Legacy slow code; can be still useful for testing
 #
 
-def apply_eq_phoneme(query: EqPhoneme, db_connection: sqlite3.Connection):
-    result = set()
-    test_segment = normalize('NFD', query.phoneme)
-    for language_id in get_all_language_ids(db_connection):
-        segment_count = 0
-        for (segment,) in db_connection.execute(
-            'SELECT ipa FROM segments WHERE `language_id` = ?',
-            (language_id,)
-        ):
-            if segment == test_segment:
-                segment_count += 1
-                # We expect to see each segment only once
-                # in an inventory.
-                break
-        diff = segment_count - query.number
-        if check_eq(diff, query.op):
-            result.add(language_id)
-    return result
+# def apply_eq_phoneme(query: EqPhoneme, db_connection: sqlite3.Connection):
+#     result = set()
+#     test_segment = normalize('NFD', query.phoneme)
+#     for language_id in get_all_language_ids(db_connection):
+#         segment_count = 0
+#         for (segment,) in db_connection.execute(
+#             'SELECT ipa FROM segments WHERE `language_id` = ?',
+#             (language_id,)
+#         ):
+#             if segment == test_segment:
+#                 segment_count += 1
+#                 # We expect to see each segment only once
+#                 # in an inventory.
+#                 break
+#         diff = segment_count - query.number
+#         if check_eq(diff, query.op):
+#             result.add(language_id)
+#     return result
 
 
-def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
-    result = set()
-    # A search optimisation: only check the subset once for each segment.
-    hit_tmp = {}
-    for language_id in get_all_language_ids(db_connection):
-        diff = get_count_for_features(
-            language_id,
-            query.features,
-            db_connection,
-            hit_tmp) - query.number
-        if check_eq(diff, query.op):
-            result.add(language_id)
-    return result
+# def apply_eq_feature(query: EqFeature, db_connection: sqlite3.Connection):
+#     result = set()
+#     # A search optimisation: only check the subset once for each segment.
+#     hit_tmp = {}
+#     for language_id in get_all_language_ids(db_connection):
+#         diff = get_count_for_features(
+#             language_id,
+#             query.features,
+#             db_connection,
+#             hit_tmp) - query.number
+#         if check_eq(diff, query.op):
+#             result.add(language_id)
+#     return result
 
 
-def apply_eq_features(query: EqFeatures, db_connection: sqlite3.Connection):
-    result = set()
-    # Two caches for two sets of features.
-    hit_tmp1 = {}
-    hit_tmp2 = {}
-    for language_id in get_all_language_ids(db_connection):
-        lhs_count = get_count_for_features(
-            language_id, query.features_1, db_connection, hit_tmp1)
-        rhs_count = get_count_for_features(
-            language_id, query.features_2, db_connection, hit_tmp2)
-        diff = lhs_count - rhs_count
-        if check_eq(diff, query.op):
-            result.add(language_id)
-    return result
+# def apply_eq_features(query: EqFeatures, db_connection: sqlite3.Connection):
+#     result = set()
+#     # Two caches for two sets of features.
+#     hit_tmp1 = {}
+#     hit_tmp2 = {}
+#     for language_id in get_all_language_ids(db_connection):
+#         lhs_count = get_count_for_features(
+#             language_id, query.features_1, db_connection, hit_tmp1)
+#         rhs_count = get_count_for_features(
+#             language_id, query.features_2, db_connection, hit_tmp2)
+#         diff = lhs_count - rhs_count
+#         if check_eq(diff, query.op):
+#             result.add(language_id)
+#     return result
 
 
 if __name__ == "__main__":
@@ -374,7 +391,9 @@ if __name__ == "__main__":
     query = query_transformer.transform(raw_query)
     print(query, '\n')
 
-    result = apply_query(query, db_connection)
+    query_phoible = False
+
+    result = apply_query(query, db_connection, query_phoible)
 
     # Filter by phylum or genus when applicable
     if len(sys.argv) > 2:
@@ -397,6 +416,10 @@ if __name__ == "__main__":
                 filter(lambda lang_id: meta[lang_id].genus in genera, result))
 
     # Format the output
-    result = list(
-        map(lambda lang_id: f'{meta[lang_id].name} ({meta[lang_id].iso})', result))
+    if query_phoible:
+        result = list(
+            map(lambda lang_id: f'{meta_phoible[str(lang_id)]["name"]} ({meta_phoible[str(lang_id)]["glottocode"]})', result))
+    else:
+        result = list(
+            map(lambda lang_id: f'{meta[lang_id].name} ({meta[lang_id].iso})', result))
     print(result)

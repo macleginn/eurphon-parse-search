@@ -4,7 +4,7 @@ from lark.exceptions import UnexpectedCharacters
 import IPAParser_3_0
 
 parser = IPAParser_3_0.IPAParser()
-phoible = pd.read_csv('test_data/phoible.csv', low_memory=False)
+phoible = pd.read_csv('data/phoible.csv', low_memory=False)
 
 # vowels = phoible.loc[phoible.SegmentClass == 'vowel'].Phoneme.unique()
 # print('Testing vowels...')
