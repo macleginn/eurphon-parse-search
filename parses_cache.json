@@ -534,8 +534,8 @@
   "kʲʰ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -543,8 +543,8 @@
   "kʲʼ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -626,8 +626,8 @@
   "t̪ʼˤ": [
     "short",
     "voiceless",
-    "pharyngealised",
     "ejective",
+    "pharyngealised",
     "dental",
     "plosive",
     "consonant"
@@ -635,8 +635,8 @@
   "tʃʼˤ": [
     "short",
     "voiceless",
-    "pharyngealised",
     "ejective",
+    "pharyngealised",
     "postalveolar",
     "affricate",
     "consonant"
@@ -1011,8 +1011,8 @@
   "pʰʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "bilabial",
     "plosive",
     "consonant"
@@ -1800,8 +1800,8 @@
   "tʰʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "alveolar",
     "plosive",
     "consonant"
@@ -1817,8 +1817,8 @@
   "kʰʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -2585,8 +2585,8 @@
   "t̺ʼ": [
     "short",
     "voiceless",
-    "apical",
     "ejective",
+    "apical",
     "alveolar",
     "plosive",
     "consonant"
@@ -2786,8 +2786,8 @@
   "pʲʰ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "bilabial",
     "plosive",
     "consonant"
@@ -2803,8 +2803,8 @@
   "tʲʰ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "alveolar",
     "plosive",
     "consonant"
@@ -2828,8 +2828,8 @@
   "r̺ʲ": [
     "short",
     "voiced",
-    "palatalised",
     "apical",
+    "palatalised",
     "alveolar",
     "trill",
     "consonant"
@@ -3389,8 +3389,8 @@
   "ä̠": [
     "short",
     "modal-voice",
-    "centralised",
     "retracted",
+    "centralised",
     "open",
     "central",
     "unrounded",
@@ -3632,8 +3632,8 @@
   "kʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "velar",
     "plosive",
     "consonant"
@@ -3641,8 +3641,8 @@
   "qʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "uvular",
     "plosive",
     "consonant"
@@ -3874,8 +3874,8 @@
   "ä̤̃ː": [
     "long",
     "breathy-voice",
-    "nasalised",
     "centralised",
+    "nasalised",
     "open",
     "central",
     "unrounded",
@@ -4157,8 +4157,8 @@
   "t̺s̺ʼ": [
     "short",
     "voiceless",
-    "apical",
     "ejective",
+    "apical",
     "alveolar",
     "affricate",
     "consonant"
@@ -4371,8 +4371,8 @@
   "tʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "alveolar",
     "plosive",
     "consonant"
@@ -4380,8 +4380,8 @@
   "tsʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "alveolar",
     "affricate",
     "consonant"
@@ -4389,8 +4389,8 @@
   "tʃʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "postalveolar",
     "affricate",
     "consonant"
@@ -4398,8 +4398,8 @@
   "tɬʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "lateral",
     "alveolar",
     "affricate",
@@ -4726,8 +4726,8 @@
   "tʷʼ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "alveolar",
     "plosive",
     "consonant"
@@ -4735,8 +4735,8 @@
   "kʷʼ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "velar",
     "plosive",
     "consonant"
@@ -4744,8 +4744,8 @@
   "qʲʼ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "uvular",
     "plosive",
     "consonant"
@@ -4753,8 +4753,8 @@
   "qʷʼ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "uvular",
     "plosive",
     "consonant"
@@ -4802,8 +4802,8 @@
   "tŝʷʼ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "hissing-hushing",
     "affricate",
     "consonant"
@@ -4881,8 +4881,8 @@
   "χˤʷ": [
     "short",
     "voiceless",
-    "pharyngealised",
     "labialised",
+    "pharyngealised",
     "uvular",
     "fricative",
     "consonant"
@@ -5157,8 +5157,8 @@
   "k’ʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "velar",
     "plosive",
     "consonant"
@@ -5166,8 +5166,8 @@
   "q’ʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "uvular",
     "plosive",
     "consonant"
@@ -5387,8 +5387,8 @@
   "kʼːʷ": [
     "long",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "velar",
     "plosive",
     "consonant"
@@ -5420,8 +5420,8 @@
   "qʼːʷ": [
     "long",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "uvular",
     "plosive",
     "consonant"
@@ -5484,8 +5484,8 @@
   "w̜ʲ": [
     "short",
     "voiced",
-    "palatalised",
     "less-rounded",
+    "palatalised",
     "labial-velar",
     "approximant",
     "consonant"
@@ -6092,8 +6092,8 @@
   "ɔ̞̃": [
     "short",
     "modal-voice",
-    "nasalised",
     "lowered",
+    "nasalised",
     "open-mid",
     "back",
     "rounded",
@@ -6123,8 +6123,8 @@
   "ɔ̞̃ː": [
     "long",
     "modal-voice",
-    "nasalised",
     "lowered",
+    "nasalised",
     "open-mid",
     "back",
     "rounded",
@@ -6282,8 +6282,8 @@
   "t̪ˢʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "affricated",
+    "palatalised",
     "dental",
     "plosive",
     "consonant"
@@ -6291,8 +6291,8 @@
   "d̪ᶻʲ": [
     "short",
     "voiced",
-    "palatalised",
     "affricated",
+    "palatalised",
     "dental",
     "plosive",
     "consonant"
@@ -6805,8 +6805,8 @@
   "pʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "bilabial",
     "plosive",
     "consonant"
@@ -6828,8 +6828,8 @@
   ],
   "ʔʼʷ": [
     "short",
-    "labialised",
     "ejective",
+    "labialised",
     "glottal",
     "plosive",
     "consonant"
@@ -6853,8 +6853,8 @@
   "ŝʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "hissing-hushing",
     "fricative",
     "consonant"
@@ -6896,8 +6896,8 @@
   "t̪ʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "dental",
     "plosive",
     "consonant"
@@ -6930,8 +6930,8 @@
   "t̪s̪ʼʷ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "dental",
     "affricate",
     "consonant"
@@ -6955,8 +6955,8 @@
   "pʼʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "bilabial",
     "plosive",
     "consonant"
@@ -6964,8 +6964,8 @@
   "t̪ʰʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "dental",
     "plosive",
     "consonant"
@@ -6973,8 +6973,8 @@
   "t̪ʼʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "dental",
     "plosive",
     "consonant"
@@ -6982,9 +6982,9 @@
   "t̪ʰʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
     "aspirated",
+    "palatalised",
     "dental",
     "plosive",
     "consonant"
@@ -6992,8 +6992,8 @@
   "t̪ʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
+    "palatalised",
     "dental",
     "plosive",
     "consonant"
@@ -7001,9 +7001,9 @@
   "t̪ʼʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
-    "labialised",
     "ejective",
+    "labialised",
+    "palatalised",
     "dental",
     "plosive",
     "consonant"
@@ -7019,8 +7019,8 @@
   "t̪s̪ʼʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "dental",
     "affricate",
     "consonant"
@@ -7028,8 +7028,8 @@
   "t̪s̪ʰʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "dental",
     "affricate",
     "consonant"
@@ -7037,9 +7037,9 @@
   "t̪s̪ʰʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
     "aspirated",
+    "palatalised",
     "dental",
     "affricate",
     "consonant"
@@ -7047,8 +7047,8 @@
   "t̪s̪ʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
+    "palatalised",
     "dental",
     "affricate",
     "consonant"
@@ -7056,9 +7056,9 @@
   "t̪s̪ʼʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
-    "labialised",
     "ejective",
+    "labialised",
+    "palatalised",
     "dental",
     "affricate",
     "consonant"
@@ -7074,8 +7074,8 @@
   "s̪ʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
+    "palatalised",
     "dental",
     "fricative",
     "consonant"
@@ -7083,8 +7083,8 @@
   "kʼʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -7092,8 +7092,8 @@
   "kʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -7101,9 +7101,9 @@
   "kʰʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
     "aspirated",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -7111,9 +7111,9 @@
   "kʼʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
-    "labialised",
     "ejective",
+    "labialised",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -7129,8 +7129,8 @@
   "qʰʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "uvular",
     "plosive",
     "consonant"
@@ -7138,8 +7138,8 @@
   "qʼʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "uvular",
     "plosive",
     "consonant"
@@ -7147,9 +7147,9 @@
   "qʼʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
-    "labialised",
     "ejective",
+    "labialised",
+    "palatalised",
     "uvular",
     "plosive",
     "consonant"
@@ -7157,9 +7157,9 @@
   "qʰʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
     "aspirated",
+    "palatalised",
     "uvular",
     "plosive",
     "consonant"
@@ -7167,8 +7167,8 @@
   "qʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
+    "palatalised",
     "uvular",
     "plosive",
     "consonant"
@@ -7176,8 +7176,8 @@
   "χʷʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "labialised",
+    "palatalised",
     "uvular",
     "fricative",
     "consonant"
@@ -8021,8 +8021,8 @@
   "ĩ̞": [
     "short",
     "modal-voice",
-    "nasalised",
     "lowered",
+    "nasalised",
     "close",
     "front",
     "unrounded",
@@ -8343,8 +8343,8 @@
   "ɨä̠": [
     "short",
     "modal-voice",
-    "centralised",
     "retracted",
+    "centralised",
     "diphthong",
     "vowel"
   ],
@@ -8381,8 +8381,8 @@
   "ä̠ː": [
     "long",
     "modal-voice",
-    "centralised",
     "retracted",
+    "centralised",
     "open",
     "central",
     "unrounded",
@@ -8458,8 +8458,8 @@
   "s̺̠": [
     "short",
     "voiceless",
-    "apical",
     "retracted",
+    "apical",
     "alveolar",
     "fricative",
     "consonant"
@@ -9601,8 +9601,8 @@
   "ɫ̺": [
     "short",
     "voiced",
-    "velarised",
     "apical",
+    "velarised",
     "lateral",
     "alveolar",
     "approximant",
@@ -9900,8 +9900,8 @@
   "t̠ʲ": [
     "short",
     "voiceless",
-    "palatalised",
     "retracted",
+    "palatalised",
     "alveolar",
     "plosive",
     "consonant"
@@ -9909,8 +9909,8 @@
   "d̠ʲ": [
     "short",
     "voiced",
-    "palatalised",
     "retracted",
+    "palatalised",
     "alveolar",
     "plosive",
     "consonant"
@@ -9927,8 +9927,8 @@
   "n̠ʲ": [
     "short",
     "voiced",
-    "palatalised",
     "retracted",
+    "palatalised",
     "nasal",
     "alveolar",
     "plosive",
@@ -9946,8 +9946,8 @@
   "l̠ʲ": [
     "short",
     "voiced",
-    "palatalised",
     "retracted",
+    "palatalised",
     "lateral",
     "alveolar",
     "approximant",
@@ -10094,8 +10094,8 @@
   "ɪ̞̈": [
     "short",
     "modal-voice",
-    "centralised",
     "lowered",
+    "centralised",
     "near-close",
     "front",
     "unrounded",
@@ -10105,8 +10105,8 @@
   "ʊ̞̈": [
     "short",
     "modal-voice",
-    "centralised",
     "lowered",
+    "centralised",
     "near-close",
     "back",
     "rounded",
@@ -10264,8 +10264,8 @@
   "pʰ˞": [
     "short",
     "voiceless",
-    "rhotacised",
     "aspirated",
+    "rhotacised",
     "bilabial",
     "plosive",
     "consonant"
@@ -10289,8 +10289,8 @@
   "kʰ˞": [
     "short",
     "voiceless",
-    "rhotacised",
     "aspirated",
+    "rhotacised",
     "velar",
     "plosive",
     "consonant"
@@ -10304,8 +10304,8 @@
   "qˤʼ": [
     "short",
     "voiceless",
-    "pharyngealised",
     "ejective",
+    "pharyngealised",
     "uvular",
     "plosive",
     "consonant"
@@ -10611,9 +10611,9 @@
   "ɔ̟̜̃ː": [
     "long",
     "modal-voice",
-    "nasalised",
     "less-rounded",
     "advanced",
+    "nasalised",
     "open-mid",
     "back",
     "rounded",
@@ -10623,8 +10623,8 @@
   "ɞ̜̃ː": [
     "long",
     "modal-voice",
-    "nasalised",
     "less-rounded",
+    "nasalised",
     "open-mid",
     "central",
     "rounded",
@@ -10959,8 +10959,8 @@
   "ɔ̜̃ː": [
     "long",
     "modal-voice",
-    "nasalised",
     "less-rounded",
+    "nasalised",
     "open-mid",
     "back",
     "rounded",
@@ -10970,8 +10970,8 @@
   "sʲʰ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "alveolar",
     "fricative",
     "consonant"
@@ -11081,8 +11081,8 @@
   "ʃ̞ʼ": [
     "short",
     "voiceless",
-    "lowered",
     "ejective",
+    "lowered",
     "postalveolar",
     "fricative",
     "consonant"
@@ -11178,8 +11178,8 @@
   "t̺ɕ̺ʼ": [
     "short",
     "voiceless",
-    "apical",
     "ejective",
+    "apical",
     "alveolo-palatal",
     "affricate",
     "consonant"
@@ -11687,8 +11687,8 @@
     "short",
     "voiceless",
     "pre-nasalised",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "bilabial",
     "plosive",
     "consonant"
@@ -11706,8 +11706,8 @@
     "short",
     "voiceless",
     "pre-nasalised",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "alveolar",
     "plosive",
     "consonant"
@@ -11733,8 +11733,8 @@
     "short",
     "voiceless",
     "pre-nasalised",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -11770,8 +11770,8 @@
   "lʲʰ": [
     "short",
     "voiced",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "lateral",
     "alveolar",
     "approximant",
@@ -12533,8 +12533,8 @@
   "ʊ̜̈": [
     "short",
     "modal-voice",
-    "centralised",
     "less-rounded",
+    "centralised",
     "near-close",
     "back",
     "rounded",
@@ -12544,8 +12544,8 @@
   "pˠʰ": [
     "short",
     "voiceless",
-    "velarised",
     "aspirated",
+    "velarised",
     "bilabial",
     "plosive",
     "consonant"
@@ -12561,8 +12561,8 @@
   "t̪ˠʰ": [
     "short",
     "voiceless",
-    "velarised",
     "aspirated",
+    "velarised",
     "dental",
     "plosive",
     "consonant"
@@ -12699,8 +12699,8 @@
   "ø̠̞": [
     "short",
     "modal-voice",
-    "lowered",
     "retracted",
+    "lowered",
     "close-mid",
     "front",
     "rounded",
@@ -12845,8 +12845,8 @@
   "i˞ˤ": [
     "short",
     "modal-voice",
-    "rhotacised",
     "pharyngealised",
+    "rhotacised",
     "close",
     "front",
     "unrounded",
@@ -12856,8 +12856,8 @@
   "u˞ˤ": [
     "short",
     "modal-voice",
-    "rhotacised",
     "pharyngealised",
+    "rhotacised",
     "close",
     "back",
     "rounded",
@@ -12867,8 +12867,8 @@
   "a˞ˤ": [
     "short",
     "modal-voice",
-    "rhotacised",
     "pharyngealised",
+    "rhotacised",
     "open",
     "central",
     "unrounded",
@@ -12898,8 +12898,8 @@
   "i˞ˤː": [
     "long",
     "modal-voice",
-    "rhotacised",
     "pharyngealised",
+    "rhotacised",
     "close",
     "front",
     "unrounded",
@@ -12909,8 +12909,8 @@
   "u˞ˤː": [
     "long",
     "modal-voice",
-    "rhotacised",
     "pharyngealised",
+    "rhotacised",
     "close",
     "back",
     "rounded",
@@ -12999,8 +12999,8 @@
   "pʲʼ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "bilabial",
     "plosive",
     "consonant"
@@ -13016,8 +13016,8 @@
   "tʲʼ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "alveolar",
     "plosive",
     "consonant"
@@ -13049,8 +13049,8 @@
   "tsʲʰ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "alveolar",
     "affricate",
     "consonant"
@@ -13058,8 +13058,8 @@
   "tsʲʼ": [
     "short",
     "voiceless",
-    "palatalised",
     "ejective",
+    "palatalised",
     "alveolar",
     "affricate",
     "consonant"
@@ -13075,8 +13075,8 @@
   "tsʷʼ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "alveolar",
     "affricate",
     "consonant"
@@ -13125,8 +13125,8 @@
   "tʃʷʼ": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "postalveolar",
     "affricate",
     "consonant"
@@ -13256,8 +13256,8 @@
   "tsʷ’": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "alveolar",
     "affricate",
     "consonant"
@@ -13281,8 +13281,8 @@
   "tʃʷ’": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "postalveolar",
     "affricate",
     "consonant"
@@ -13316,8 +13316,8 @@
   "kʟ̥̝ʷ’": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "lateral",
     "velar",
     "affricate",
@@ -13368,8 +13368,8 @@
   "kʷ’": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "velar",
     "plosive",
     "consonant"
@@ -13401,8 +13401,8 @@
   "qχʷ’": [
     "short",
     "voiceless",
-    "labialised",
     "ejective",
+    "labialised",
     "uvular",
     "affricate",
     "consonant"
@@ -13427,8 +13427,8 @@
   "ʈʲʰ": [
     "short",
     "voiceless",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "retroflex",
     "plosive",
     "consonant"
@@ -13456,8 +13456,8 @@
   "bʲʰ": [
     "short",
     "voiced",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "bilabial",
     "plosive",
     "consonant"
@@ -13465,8 +13465,8 @@
   "dʲʰ": [
     "short",
     "voiced",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "alveolar",
     "plosive",
     "consonant"
@@ -13474,8 +13474,8 @@
   "ɖʲʰ": [
     "short",
     "voiced",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "retroflex",
     "plosive",
     "consonant"
@@ -13483,8 +13483,8 @@
   "gʲʰ": [
     "short",
     "voiced",
-    "palatalised",
     "aspirated",
+    "palatalised",
     "velar",
     "plosive",
     "consonant"
@@ -13707,8 +13707,8 @@
   "ĩ̥": [
     "short",
     "modal-voice",
-    "nasalised",
     "voiceless",
+    "nasalised",
     "close",
     "front",
     "unrounded",
@@ -13718,8 +13718,8 @@
   "ũ̥": [
     "short",
     "modal-voice",
-    "nasalised",
     "voiceless",
+    "nasalised",
     "close",
     "back",
     "rounded",
@@ -13739,8 +13739,8 @@
   "ẽ̥": [
     "short",
     "modal-voice",
-    "nasalised",
     "voiceless",
+    "nasalised",
     "close-mid",
     "front",
     "unrounded",

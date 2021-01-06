@@ -1,0 +1,125 @@
+div#map {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* div.circle {
+    border: 0;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #00b33c;
+    width: 10px;
+    height: 10px;
+} */
+
+div.brown {
+    background-color: brown;
+}
+
+/* Map-marker styling */
+div.circle {
+    border-width: 1px;
+    border-color: black;
+    border-radius: 8px;
+    border-style: solid;
+    width: 8px;
+    height: 8px;
+}
+
+div.circle-6f6456 {
+    background-color: #6f6456
+}
+
+div.circle-cddc49 {
+    background-color: #cddc49
+}
+
+div.circle-cb7e94 {
+    background-color: #cb7e94
+}
+
+div.circle-e94b30 {
+    background-color: #e94b30
+}
+
+div.circle-fee659 {
+    background-color: #fee659
+}
+
+div.circle-a1cfdd {
+    background-color: #a1cfdd
+}
+
+div.circle-fdbab4 {
+    background-color: #fdbab4
+}
+
+div.circle-0cea20 {
+    background-color: #0cea20
+}
+
+div.circle-7dd97d {
+    background-color: #7dd97d
+}
+
+div.circle-bcddf7 {
+    background-color: #bcddf7
+}
+
+div.circle-f4c674 {
+    background-color: #f4c674
+}
+
+div.circle-adf875 {
+    background-color: #adf875
+}
+
+div.circle-f4d11e {
+    background-color: #f4d11e
+}
+
+div.circle-c397ca {
+    background-color: #c397ca
+}
+
+div.circle-e2f982 {
+    background-color: #e2f982
+}
+
+div.circle-f6e39c {
+    background-color: #f6e39c
+}
+
+div.circle-dd93e1 {
+    background-color: #dd93e1
+}
+
+div.circle-26f5cc {
+    background-color: #26f5cc
+}
+
+div.circle-f04b50 {
+    background-color: #f04b50
+}
+
+div.circle-005350 {
+    background-color: #005350
+}
+
+div.circle-15a67d {
+    background-color: #15a67d
+}
+
+div.circle-a0f535 {
+    background-color: #a0f535
+}
+
+div.circle-acf9b4 {
+    background-color: #acf9b4
+}

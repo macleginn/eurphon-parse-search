@@ -1,0 +1,13 @@
+4038282
+h
+h stream
+h tweets
+open 4
+show image 4
+config
+config IMAGE_ON_TERM
+config IMAGE_ON_TERM True
+h config
+config
+config IMAGE_ON_TERM
+config

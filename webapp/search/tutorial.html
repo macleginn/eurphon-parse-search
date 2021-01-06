@@ -1,0 +1,133 @@
+<head>
+  <meta charset="utf8">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    pre {
+      padding: 2px;
+      background-color: lightyellow;
+    }
+
+    code {
+      background-color: lightyellow;
+      font-size: 13pt;
+    }
+  </style>
+</head>
+
+<body style="max-width: 900px; margin-top: 10px;">
+  <p style="font-size: 12pt;"><a href="https://eurphon.info/search/">&lt;&lt;&lt; Back to search</a></p>
+  <h1 id="search-tutorial">Search tutorial</h1>
+  <h2 id="introduction">Introduction</h2>
+  <p>Unlike Henning Reetz’s <a href="http://web.phonetik.uni-frankfurt.de/upsid.html">Simple UPSID interface</a>, this
+    interface is exclusively text based. This introduces some complexity, but it also makes it possible to go beyond
+    rigid search options any fixed interface can offer.</p>
+  <p>The query language implemented in the interface contains two basic query types—count queries and comparison
+    queries–and allows the user to combine them in a flexible way through logical operators. (If you are comfortable
+    with reading CFGs, all you need to know can be found in the very short <a
+      href="https://github.com/macleginn/eurphon-parse-search/blob/master/search_grammar.lark">grammar</a>, from which
+    the query parser is constructed on the fly using <a href="https://lark-parser.readthedocs.io/en/latest/">Lark</a>.)
+  </p>
+  <p>We will describe the basic queries first and then show how to combine them into more complex ones.</p>
+  <h2 id="basic-queries">Basic queries</h2>
+  <h3 id="count-queries">Count queries</h3>
+  <p>The general form of a count query is <code>operator number features</code> or
+    <code>operator number /phoneme/</code>, where
+  </p>
+  <ul>
+    <li><code>operator</code> is one of <code>=, &lt;, &gt;, &lt;=, &gt;=</code>,</li>
+    <li><code>number</code> is a non-negative integer,</li>
+    <li><code>features</code> are one or more space-separated IPA features (see the full list at the end of the page),
+      each optionally preceded by the negator <code>^</code>, and</li>
+    <li><code>phoneme</code> is an individual segment described in standard IPA notation (https://ipa.typeit.org/full/
+      is used as a reference input system).</li>
+  </ul>
+  <p>For example, a query asking for languages without lateral segments looks like <code>= 0 lateral</code> and a query
+    to ask for languages with more than five voiceless affricates is <code>&gt; 5 voiceless affricate</code>. Each
+    feature can be turned into its complement by using <code>^</code>. Thus, the query
+    <code>&gt; 5 ^pre-nasalised voiced plosive</code> will return languages that have more than 5 oral plosives that are
+    not pre-nasalised.
+  </p>
+  <p>The order of features does not matter. Some features (e.g., <code>nasalised</code>) are shared between vowels and
+    consonants, and the words <code>vowel</code> and <code>consonant</code> can be used for disambiguation.</p>
+  <p>Diphthongs, triphthongs, and click consonants have features <code>diphthong</code>/<code>triphthong</code> and
+    <code>click</code> respectively assigned to them. Monophthong vowels have a feature <code>monophthong</code>, and
+    non-click consonants have a feature <code>non-click</code>. Use these features to explicitly query for monophthong
+    vowels and non-click consonants (the same goal can be achieved using <code>^diphthong ^triphthong vowel</code> and
+    <code>^click consonant</code> respectively).
+  </p>
+  <p>Note that the negative value for <code>lateral</code> is inserted by default for approximants and the negative
+    value for <code>nasal</code> is inserted by default for plosives. Thus, the query
+    <code>= 0 voiced bilabial plosive</code> will ignore the presence of /m/ (voiced <em>nasal</em> bilabial plosive) in
+    an inventory, but will not return languages with /b/. Likewise, the query <code>= 0 approximant</code> will skip
+    languages with /w/ and /j/, but will ignore the presence of /l/ (voiced <em>lateral</em> alveolar approxumant). The
+    query <code>= 0 fricative</code>, by contrast, will skip a hypothetical language whose fricative inventory consists
+    of /ɬ, ɮ/.
+  </p>
+  <p>To make it easier to look for presence and absence of feature bundles and phonemes, two shortcuts are provided:
+    <code>+</code>, equivalent to <code>&gt; 0</code>, and <code>-</code>, equivalent to <code>= 0</code>. E.g., a query
+    for languages without /p/ looks like <code>- /p/</code>.
+  </p>
+  <p>Note that phoneme-based queries look for a symbol-by-symbol match. Thus, a language with /b, pʰ, pʼ/ will still
+    satisfy the <code>- /p/</code> query and <code>+ /ɫ/</code> will not retrieve languages where this segment is
+    denoted by /lˠ/.</p>
+  <h3 id="comparison-queries">Comparison queries</h3>
+  <p>Comparison queries make it possible to search for languages that have more or fewer segments of some kind compared
+    to some other kind of segments. The basic form of the query is <code>operator features, features</code>, where
+    <code>operator</code> and <code>features</code> have the same form as above.
+  </p>
+  <p>For example, languages with more vowels than consonants can be retrieved using <code>&gt; vowel, consonant</code>
+    and languages with the same number of monophthong vowels and diphthongs can be queried by
+    <code>= monophthong, diphthong</code> (use <code>= monophthong vowel, ^monophthong vowel</code> if you want to count
+    all polyphthongs).
+  </p>
+  <h2 id="combining-queries">Combining queries</h2>
+  <p>Sometimes basic queries are not enough. For example, in order to make basic queries simpler, the query language
+    does not allow for querying nasal and oral plosives simultaneously. Therefore, in order to look for languages
+    without both oral and nasal bilabial plosives it is necessary to combine two queries:
+    <code>- nasal bilabial plosive and - bilabial plosive</code> (or, more explicitly
+    <code>- nasal bilabial plosive and - ^nasal bilabial plosive</code>). This is also helpful to work around variations
+    in IPA notation, e.g. <code>+ /g/ or + /ɡ/</code> (both the special /ɡ/ symbol and the basic Latin /g/ are
+    officially recognised as part of IPA).
+  </p>
+  <p>Three logical operators are supported (in the order in which they are applied):</p>
+  <ul>
+    <li><code>not</code> (return the complement of the query)</li>
+    <li><code>and</code> (return the intersection of two queries)</li>
+    <li><code>or</code> (return the union of two queries)</li>
+  </ul>
+  <p>Parentheses can be used for clarity or to override the operator precedence order. Thus,
+    <code>- /p/ and - /b/ or - /t/ and - /d/</code> is equivalent to <code>(- /p/ and - /b/) or (- /t/ and - /d/)</code>
+    (<code>and</code> binds more tightly than <code>or</code>), but <code>- /p/ or - /b/ and - /t/ or - /d/</code> is
+    not equivalent to <code>(- /p/ or - /b/) and (- /t/ or - /d/)</code>, but is instead equivalent to
+    <code>- /p/ or (- /b/ and - /t/) or - /d/</code>.
+  </p>
+  <p><code>not</code> binds the most tightly, so it is necessary to use parentheses to invert any compound query.</p>
+  <p>An example compound query:</p>
+  <pre><code>not (
+    (- /p/ or - /t/ or - /k/)
+    and
+    (- /b/ or - /d/ or - /g/)
+) or
+    &gt; 10 voiced affricate</code></pre>
+  <p>Redundant whitespace is ignored.</p>
+  <h2 id="features">Features</h2>
+  <p>Canonical feature names are listed in the British orthography, but <code>ize</code>-spellings are supported as
+    well. Note that not all possible features are listed for consonants and vowels but only those found in the database
+    (see the <a href="https://github.com/macleginn/eurphon-parse-search/blob/master/ipa_parse_grammar.lark">complete
+      list</a> in the parser grammar). E.g., all types of additional articulations are theoretically possible with both
+    consonants and vowels.</p>
+  <h3 id="vowel-features">Vowel features</h3>
+  <p>advanced, alveolar, apical, atr, back, breathy-voice, central, centralised, close, close-mid, creaky-voice,
+    diphthong, front, half-long, less-rounded, long, lowered, mid, mid-centralised, modal-voice, monophthong,
+    more-rounded, nasalised, near-close, near-open, non-syllabic, open, open-mid, overlong, pharyngealised,
+    postalveolar, raised, retracted, rhotacised, rounded, rtr, short, shortened, triphthong, unrounded, velarised,
+    voiceless</p>
+  <h3 id="consonant-features">Consonant features</h3>
+  <p>advanced, affricate, affricated, alveolar, alveolo-palatal, apical, approximant, aspirated, bilabial,
+    breathy-voice, dental, devoiced, ejective, epiglottal, fricative, glottal, glottalised, hissing-hushing, implosive,
+    interdental, labial-palatal, labial-velar, labialised, labiodental, laminal, lateral, less-rounded, long, lowered,
+    nasal, nasalised, overlong, palatal, palatal-velar, palatalised, pharyngeal, pharyngealised, plosive, postalveolar,
+    pre-aspirated, pre-glottalised, pre-labialised, pre-nasalised, raised, retracted, retroflex, rhotacised, rtr, short,
+    syllabic, tap, trill, uvular, velar, velarised, voiced, voiceless</p>
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Download the data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="{base_url}/css">
+</head>
+<body>
+        <a href="{base_url}">&lt;&lt;&lt; Home page</a>
+<h2>Downloading the data</h2>
+<p>The database is structued as the following set of tables:</p>
+<img style="width: 960px;" src="data:image/png;base64,{database_img_src}" alt="Database-structure diagram">
+<p>The tables can be downloaded individually:</p>
+<ul>
+    <li><a href="{base_url}/dump/languages">Languages</a></li>
+    <li><a href="{base_url}/dump/phyla">Phyla</a></li>
+    <li><a href="{base_url}/dump/genera">Genera</a></li>
+    <li><a href="{base_url}/dump/segments">Segments</a></li>
+    <li><a href="{base_url}/dump/tones">Tones</a></li>
+    <li><a href="{base_url}/dump/initial_clusters">Initial clusters</a></li>
+    <li><a href="{base_url}/dump/finals">Finals</a></li>
+    <li><a href="{base_url}/dump/syllabic_templates">Syllabic templates</a></li>
+    <li><a href="{base_url}/dump/contributors">Contributors</a></li>
+</ul>
+<p>Or you can grab the whole .sqlite file <a href="https://git.sr.ht/~macleginn/eurphon-backend/blob/master/europhon.sqlite">here</a>.</p>
+<p>The code for the database (both backend and frontend) is <a href="https://git.sr.ht/~macleginn/eurphon-backend/tree/">on Sourcehut</a>. A Github mirror coming soon.</p>
+</body>
+</html>
