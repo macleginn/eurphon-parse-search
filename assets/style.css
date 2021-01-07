@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "DoulosSIL";
+    src: url("https://eurphon.info/static/fonts/DoulosSIL.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'IBM Plex Serif', serif;
     /*font-family: 'Noto Serif', serif;*/
@@ -7,15 +14,16 @@ body {
     padding-top: 15pt;
     padding-bottom: 70px;
     line-height: 1.5em;
+    margin: auto;
 }
 h1 {
     line-height: 1.1em;
+    display: flex;
+    justify-content: center;
 }
-@font-face {
-    font-family: "DoulosSIL";
-    src: url("https://eurphon.info/static/fonts/DoulosSIL.woff") format("woff"); /* Modern Browsers */
-    font-weight: normal;
-    font-style: normal;
+div#menu {
+    display: flex;
+    justify-content: center;
 }
 table.ipa-chart {
     font-family: "DoulosSIL", serif;

@@ -189,6 +189,7 @@ def apply_eq_feature_go(query: EqFeature, query_phoible: bool = False):
         str(query.number),
         json.dumps(prefixed_features)
     ]) + '\n'
+    print(input_string)
     go_process = Popen(['./countquery'], stdin=PIPE, stdout=PIPE)
     output = go_process.communicate(input=input_string.encode())[0].decode()
     return set(json.loads(output))
@@ -270,7 +271,7 @@ def parse_query(query_string):
 def apply_query_and_filter(query_tree, restrictor_dict={}, query_phoible=False):
     # Transforming the query after successfully parsing it should be safe.
     query = query_transformer.transform(query_tree)
-    result = apply_query(query, db_connection, query_phoible=False)
+    result = apply_query(query, db_connection, query_phoible)
     if 'phylum' in restrictor_dict:
         phyla = restrictor_dict['phylum']
         result = list(
@@ -282,12 +283,12 @@ def apply_query_and_filter(query_tree, restrictor_dict={}, query_phoible=False):
     if query_phoible:
         result = {
             lang_id: {
-                'name': meta_phoible[lang_id]['name'],
-                'glottocode': meta_phoible[lang_id]['glottocode'],
-                'phylum': meta_phoible[lang_id]['phylum'],
-                'genus': meta_phoible[lang_id]['genus'],
-                'latitude': meta_phoible[lang_id]['latitude'],
-                'longitude': meta_phoible[lang_id]['longitude']
+                'name': meta_phoible[str(lang_id)]['name'],
+                'glottocode': meta_phoible[str(lang_id)]['glottocode'],
+                'phylum': meta_phoible[str(lang_id)]['phylum'],
+                'genus': meta_phoible[str(lang_id)]['genus'],
+                'latitude': meta_phoible[str(lang_id)]['latitude'],
+                'longitude': meta_phoible[str(lang_id)]['longitude']
             } for lang_id in result
         }
     else:

@@ -4,7 +4,7 @@ import csv
 from io import StringIO
 from unicodedata import normalize
 
-DBPATH = 'europhon.sqlite'
+DBPATH = 'data/europhon.sqlite'
 BASE_URL = 'https://eurphon.info'
 # BASE_URL = 'http://127.0.0.1:11000'
 ISO_URL = 'https://iso639-3.sil.org/code'
@@ -58,7 +58,7 @@ def dump_table_to_csv(table_name):
         csv_writer = csv.writer(csv_stream, delimiter='\t')
         csv_writer.writerow(table_names)
         for record in cursor.execute(
-            f'SELECT * FROM `{table_name}`'):
+                f'SELECT * FROM `{table_name}`'):
             csv_writer.writerow(record)
     return csv_stream.getvalue()
 
@@ -120,7 +120,7 @@ def get_genera_for_phylum(phylum_id):
                 'name': name_to_str(name, alternate_names),
                 'glottocode': glottocode
             })
-    genus_arr.sort(key = lambda x: x['name'])
+    genus_arr.sort(key=lambda x: x['name'])
     return genus_arr
 
 
@@ -143,8 +143,8 @@ def get_all_langs(with_dialects=False):
                 'name': name_to_str(name, alternate_names),
                 'lat': lat,
                 'lon': lon
-                })
-    langs_arr.sort(key = lambda x: x['name'])
+            })
+    langs_arr.sort(key=lambda x: x['name'])
     return langs_arr
 
 
@@ -157,11 +157,11 @@ def get_langs_for_genus(genus_id, with_dialects=False):
         cursor = connection.cursor()
         for (lang_id, name, alternate_names) in cursor.execute(
             stmt,
-            (genus_id,)):
+                (genus_id,)):
             langs_dict[lang_id] = {
                 'name': name,
                 'alternate_names': alternate_names
-                }
+            }
     return langs_dict
 
 
@@ -175,12 +175,12 @@ def get_langs_for_phylum(phylum_id, with_dialects=False):
         cursor = connection.cursor()
         for (lang_id, name, alternate_names) in cursor.execute(
             stmt,
-            (phylum_id,)):
+                (phylum_id,)):
             langs_arr.append({
                 'id': lang_id,
                 'name': name_to_str(name, alternate_names)
-                })
-    langs_arr.sort(key = lambda x: x['name'])
+            })
+    langs_arr.sort(key=lambda x: x['name'])
     return langs_arr
 
 
@@ -343,11 +343,11 @@ def get_lang_link(lang_id, name, alternate_names, is_a_dialect=False):
         style_element = ''
     if alternate_names:
         return normalize(
-            'NFC', 
+            'NFC',
             f'<a{style_element} class="lang-link" href="{BASE_URL}/languages/html?lang_id={lang_id}">{name} ({alternate_names})</a>')
     else:
         return normalize(
-            'NFC', 
+            'NFC',
             f'<a{style_element} class="lang-link" href="{BASE_URL}/languages/html?lang_id={lang_id}">{name}</a>')
 
 
@@ -368,12 +368,12 @@ def get_lang_link_w_dialects(lang_id, name, alternate_names):
         else:
             tmp = []
             for dialect_id, dialect_name, dialect_alternate_names in cursor.execute(
-                    f'''
-                    SELECT `id`, `name`, `alternate_names`
-                    FROM `languages`
-                    WHERE `head_dialect` = {lang_id}
-                    '''
-                ):
+                f'''
+                        SELECT `id`, `name`, `alternate_names`
+                        FROM `languages`
+                        WHERE `head_dialect` = {lang_id}
+                        '''
+            ):
                 tmp.append(
                     get_lang_link(dialect_id,
                                   dialect_name,
@@ -381,7 +381,7 @@ def get_lang_link_w_dialects(lang_id, name, alternate_names):
                                   True))
             dialect_str = f' [{", ".join(tmp)}]'
     return get_lang_link(lang_id, name, alternate_names) + dialect_str
-    
+
 
 def get_lang_links(lang_list):
     '''Lang list contains tuple of the form
@@ -403,7 +403,7 @@ def get_language_tree(with_dialects=True):
                 FROM `phyla`
                 '''
             )]
-        phyla_arr.sort(key = lambda x: x[1])
+        phyla_arr.sort(key=lambda x: x[1])
         for phylum_id, phylum_name, phylum_alternate_names in phyla_arr:
             language_count = cursor.execute(
                 f'''
@@ -411,11 +411,12 @@ def get_language_tree(with_dialects=True):
                 FROM `languages`
                 WHERE `phylum_id` = {phylum_id}
                 '''
-                ).fetchone()[0]
+            ).fetchone()[0]
             if language_count == 0:
                 continue
             phylum_full_name = name_to_str(phylum_name, phylum_alternate_names)
-            out_stream.write(f'<li>{normalize("NFC", phylum_full_name)}\n<ul>\n')
+            out_stream.write(
+                f'<li>{normalize("NFC", phylum_full_name)}\n<ul>\n')
             genera_arr = [
                 el for el in cursor.execute(
                     f'''
@@ -440,7 +441,7 @@ def get_language_tree(with_dialects=True):
                             AND `deprecated` = 0
                         ''')]
                 if lang_arr:
-                    lang_arr.sort(key = lambda x: x[1])
+                    lang_arr.sort(key=lambda x: x[1])
                     lang_string = get_lang_links(lang_arr)
                     out_stream.write(f'<li>{lang_string}</li>\n')
             else:
@@ -456,8 +457,9 @@ def get_language_tree(with_dialects=True):
                                 AND `deprecated` = 0
                             ''')]
                     if lang_arr:
-                        out_stream.write(f'<li><span style="font-variant: small-caps;">{normalize("NFC", g_name)}</span>: ')
-                        lang_arr.sort(key = lambda x: x[1])
+                        out_stream.write(
+                            f'<li><span style="font-variant: small-caps;">{normalize("NFC", g_name)}</span>: ')
+                        lang_arr.sort(key=lambda x: x[1])
                         lang_string = get_lang_links(lang_arr)
                         out_stream.write(f'{lang_string}')
                         out_stream.write('</li>\n')
@@ -476,7 +478,7 @@ def get_all_contributors():
             SELECT `id`, `name`, `email`
             FROM `contributors`
             '''
-            ):
+        ):
             contributors_dict[contr_id] = {
                 'name': name,
                 'email': email
@@ -569,7 +571,7 @@ def add_language_data(data):
                 VALUES (?,?,?)
                 ''',
                 (new_lang_id, vow, 0))
-        
+
         # Add optional elements
         if data['tones']:
             for tone in data['tones']:
@@ -586,7 +588,7 @@ def add_language_data(data):
                 (new_lang_id, data['initial_clusters']))
         if data['finals']:
             cursor.execute(
-                'INSERT INTO `finals` (`language_id`, `final`) VALUES (?,?)', 
+                'INSERT INTO `finals` (`language_id`, `final`) VALUES (?,?)',
                 (new_lang_id, data['finals']))
         if data['syllabic_templates']:
             cursor.execute(

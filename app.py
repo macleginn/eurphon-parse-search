@@ -3,15 +3,14 @@ import base64
 
 from flask import Flask, request, make_response, jsonify
 from pprint import pprint
-from io import StringIO
 
 import query_processor as qp
 from dbprocessing import *
-from IPATabulator_2_0 import get_html_for_consonants, get_html_for_vowels
+from formatter import get_homepage, get_language_page
 from tests import consonant_parsing_test, vowel_parsing_test
 
-import prepare_parse_cache
-import prepare_inventory_file
+# import prepare_parse_cache
+# import prepare_inventory_file
 
 
 def allow_origin(resp):
@@ -211,52 +210,7 @@ def language_handler(action):
             populate_headers_plain(resp)
             return resp
         lang_dict = get_language_dict(request.args['lang_id'])
-        consonants_html = get_html_for_consonants(lang_dict['consonants'])
-        vowels_html = get_html_for_vowels(lang_dict['vowels'])
-        out_stream = StringIO()
-        out_stream.write(f'<h3>Consonants</h3>\n{consonants_html}')
-        out_stream.write(f'<h3>Vowels</h3>\n{vowels_html}')
-        if lang_dict['tones']:
-            out_stream.write(
-                f'<h3>Tones</h3>\n<p class="ipa-listing">{", ".join(lang_dict["tones"])}</p>\n')
-        if lang_dict['initial_clusters']:
-            out_stream.write(
-                f'<h3>Licit initial clusters</h3>\n<p class="ipa-listing">{lang_dict["initial_clusters"]}</p>\n')
-        if lang_dict['finals']:
-            out_stream.write(
-                f'<h3>Licit finals</h3>\n<p class="ipa-listing">{lang_dict["finals"]}</p>\n')
-        if lang_dict['syllabic_templates']:
-            out_stream.write(
-                f'<h3>Licit syllabic templates</h3>\n<p class="ipa-listing">{lang_dict["syllabic_templates"]}</p>\n')
-        if lang_dict['comments']:
-            comments_section = f'''<p>Comments: {lang_dict['comments']}</p>'''
-        else:
-            comments_section = ''
-        resp = make_response(f'''
-<html>
-<head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
-    <link href="{BASE_URL}/css" rel="stylesheet">
-    <title>EURPhon: {lang_dict['name']}</title>
-</head>
-<body>
-<a href="{BASE_URL}">&lt;&lt;&lt; Home page</a>
-<h2>{name_to_str(lang_dict['name'], lang_dict['alternate_names'])}</h2>
-<div id="lang-card">
-<p>Phylum: {lang_dict['phylum']}</p>
-<p>Genus: {lang_dict['genus']}</p>
-<p>Lat/lon: {lang_dict['lat']}, {lang_dict['lon']}</p>
-<p>ISO code: {get_iso_link(lang_dict['iso_code'])}</p>
-</div>
-<div id="tables">
-{out_stream.getvalue()}
-</div>
-<p>Source: {lang_dict['source']}</p>
-{comments_section}
-<p>Contributed by: {lang_dict['contributor_name']} ({lang_dict['contributor_email']})</p>
-</body>
-</html>''', 200)
+        resp = make_response(get_language_page(lang_dict), 200)
         populate_headers_html(resp)
         return resp
     elif action == 'add':
@@ -278,31 +232,7 @@ def language_handler(action):
 
 @app.route('/', methods=['GET'])
 def homepage_handler():
-    warning = '<div style="width: 100%; border: 2px solid brown; border-radius: 5px; padding: 5px;">This is a pre-release version of the database. It only displays a tree of languages and their inventories. Please see <a href="http://eurasianphonology.info">the current stable version</a> for search, maps, and language-group reports.</div>\n'
-    header = '<h1>The Database of Eurasian Phonological Inventories (pre-release version)</h1>\n'
-    footer = '<div style="position: fixed; bottom: 0; background-color: beige; padding: 5px;">Please cite the original source as well as <a href="https://www.degruyter.com/view/j/lingvan.2018.4.issue-1/lingvan-2017-0050/lingvan-2017-0050.xml">this paper</a> if you use the data in your research.</div>'
-
-    main_content = get_language_tree()
-
-    resp = make_response(f'''
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
-    <link href="{BASE_URL}/css" rel="stylesheet">
-    <title>The Database of Eurasian Phonological Inventories (pre-release version)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    {warning}
-    {header}
-    {main_content}
-    {footer}
-</body>
-</html>
-''', 200)
+    resp = make_response(get_homepage(), 200)
     populate_headers_html(resp)
     return resp
 
@@ -353,16 +283,16 @@ def validation_handler(action):
 
 # A hack for serving CSS over https
 # TODO: refactor
-@app.route('/css', methods=['GET'])
-def css_handler():
-    with open('assets/style.css', 'r') as inp:
-        CSS_RESPONSE = make_response(inp.read())
-        populate_headers_css(CSS_RESPONSE)
-        return CSS_RESPONSE
+# @app.route('/css', methods=['GET'])
+# def css_handler():
+#     with open('assets/style.css', 'r') as inp:
+#         CSS_RESPONSE = make_response(inp.read())
+#         populate_headers_css(CSS_RESPONSE)
+#         return CSS_RESPONSE
 
 
-# Initialise data caches
-prepare_inventory_file.prepare_eurphon()
-prepare_inventory_file.prepare_phoible()
-prepare_parse_cache.prepare_eurphon()
-prepare_parse_cache.prepare_phoible()
+# Initialise data caches beforehand
+# prepare_inventory_file.prepare_eurphon()
+# prepare_inventory_file.prepare_phoible()
+# prepare_parse_cache.prepare_eurphon()
+# prepare_parse_cache.prepare_phoible()
